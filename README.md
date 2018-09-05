@@ -1,4 +1,4 @@
-# design-system-systeme-concep
+# systeme-conception-canada-ca-design-system
 Canada.ca design library - evidence-based patterns &amp; templates
 
 In order to move towards a more flexible design system, the plan is to “decouple” the detailed specs of the templates and patterns from the official “policy document” - the [Canada.ca Content and Information Architecture Specification](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html) and [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html).
