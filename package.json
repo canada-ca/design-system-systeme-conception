@@ -4,7 +4,7 @@
   "description": "**Canada.ca design library - evidence-based patterns &amp; templates**",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "java -Xss4m -jar node_modules/vnu-jar/build/dist/vnu.jar --errors-only --skip-non-html --filterfile .vnurc --no-langdetect ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nschonni/design-system-systeme-conception/issues"
   },
-  "homepage": "https://github.com/nschonni/design-system-systeme-conception#readme"
+  "homepage": "https://github.com/nschonni/design-system-systeme-conception#readme",
+  "devDependencies": {
+    "vnu-jar": "^18.11.5"
+  }
 }
