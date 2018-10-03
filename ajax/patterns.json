@@ -8,7 +8,7 @@
     "MANDATORY: "Not mandatory"
   }, {
     "NAME": "<a href="./recommended-templates/campaign-pages.html">Campaign page</a>",
-    "USE": "Gives information to support a promotional campaign. Use to support institutional, theme or <abbr title="Government of Canada">GC</abbr>-wide promotional campaigns that last for a set period of time. Don’t use for core content.",
+    "USE": "Gives information to support a promotional campaign. Use to support institutional, theme or <abbr title="Government of Canada">GC</abbr>-wide promotional campaigns that last for a set period of time. Donâ€™t use for core content.",
     "CAT": "Page layout",
     "TYPE": "Promotion",   
     "EXAMPLE": "&nbsp;",
@@ -20,7 +20,7 @@
     "TYPE": "Promotion, Visual",   
     "EXAMPLE": "<ul>
 <li><a href="http://wet-boew.github.io/themes-dist/GCWeb/theme-en.html">Theme page</a></li>
-	   <li><a href="http://wet-boew.github.io/themes-dist/GCWeb/demos/tabs/tabs-carousel-en.html">WET: Carousels</a> – use style 2</li></ul>",
+	   <li><a href="http://wet-boew.github.io/themes-dist/GCWeb/demos/tabs/tabs-carousel-en.html">WET: Carousels</a> â€“ use style 2</li></ul>",
     "MANDATORY: "Not mandatory"
   }, {
     "NAME": "<a href="./common-design-patterns/charts-graphs.html">Charts and graphs</a>",
@@ -143,7 +143,7 @@
     "MANDATORY: "Not mandatory"
   }, {
     "NAME": "<a href="./mandatory-templates/home-page.html">Home page</a>",
-    "USE": "Shows the Government of Canada’s most visited and important products and services",
+    "USE": "Shows the Government of Canadaâ€™s most visited and important products and services",
     "CAT": "Page layout",
     "TYPE": "Government-wide template",  
     "EXAMPLE": "<a href="https://www.canada.ca/en.html">Home page on live site</a>",
@@ -178,7 +178,7 @@
     "MANDATORY: "Not mandatory"
   }, {
     "NAME": "<a href="./mandatory-templates/institutional-profile-pages.html">Institutional profile page</a>",
-    "USE": "Gives an overview of an institution’s, mandate, programs and information and services",
+    "USE": "Gives an overview of an institutionâ€™s, mandate, programs and information and services",
     "CAT": "Page layout",
     "TYPE": "Institutional",   
     "EXAMPLE": "<ul><li><a href="http://wet-boew.github.io/themes-dist/GCWeb/institution-en.html">Institutional profile page</a></li>
@@ -215,7 +215,7 @@
     "MANDATORY: "Not mandatory"
   }, {
     "NAME": "<a href="./mandatory-templates/ministerial-profile-pages.html">Ministerial profile page</a>",
-    "USE": "The only source of information about a minister.Gives an overview of the biography and links to the minister’s recent activities and announcements, and social media channels",
+    "USE": "The only source of information about a minister.Gives an overview of the biography and links to the ministerâ€™s recent activities and announcements, and social media channels",
     "CAT": "Page layout",
     "TYPE": "Institution",   
     "EXAMPLE": "<a href="http://wet-boew.github.io/themes-dist/GCWeb/ministerial-en.html">Ministerial profile page</a>",
@@ -243,7 +243,7 @@
     "MANDATORY: "Not mandatory"
   }, {
     "NAME": "<a href="./mandatory-templates/news-pages.html#landing">News landing page</a>",
-    "USE": "Gives access to Government of Canada’s news products",
+    "USE": "Gives access to Government of Canadaâ€™s news products",
     "CAT": "Page layout",
     "TYPE": "Government-wide template",   
     "EXAMPLE": "&nbsp;",
@@ -280,7 +280,7 @@
     "MANDATORY: "Not mandatory"
   }, {
     "NAME": "<a href="./recommended-templates/program-description-pages.html">Program description page</a>",
-    "USE": "Offers details about a program. Gives access to services related to the program. Use to give background information about a program. Don’t use to start a task.",
+    "USE": "Offers details about a program. Gives access to services related to the program. Use to give background information about a program. Donâ€™t use to start a task.",
     "CAT": "Page layout",
     "TYPE": "Institutional",   
     "EXAMPLE": "&nbsp;",
