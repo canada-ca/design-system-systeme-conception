@@ -1006,33 +1006,24 @@ Templates and pattern libraries for Canada.ca</h1>
 
 <div class="row mrgn-tp-md">
 <div class="col-md-12">
-<details id="details-filter" open="">
-<summary class="btn btn-primary" style="text-align: left;">Filter options</summary><p class="mrgn-tp-md">Use the drop-down menu to search for patterns and templates by category and type.</p>
-<form id="form-filter-datatable" class="wb-tables-filter" name="form-filter-datatable" data-bind-to="dataset-filter">
-<div class="row"><div class="col-md-4"><div class="form-group">
-<label for="dt_category">Category</label> <select id="dt_category" class="form-control maxwidth" name="dt_category" data-column="0">
-<option selected="selected" value="">All categories <option value="Design pattern">Design patterns <option value="Page layout">Page layouts</select></div></div>
-<div class="col-md-4"><div class="form-group"><label for="dt_type">Type</label> <select id="dt_type" class="form-control maxwidth" name="dt_type" data-column="2"> <option selected="selected" value="">All types <option value="Destination">Destination content <option value="Government-wide template">Government-wide templates <option value="Institutional">Institutional content, patterns and page layouts <option value="Interaction">Interaction elements <option value="Navigation">Navigation patterns and page layouts <option value="Promotion">Promotion option value="Theme template">Theme and topic templates <option value="Visual">Visual element</select></div></div>
-
-
-<div class="row">
-<div class="col-md-3">
-<h4 class="wb-inv">Filtering Options</h4>
 <details open>
 <summary><h4 class="h4">Filter options</h4></summary>
 <p class="mrgn-tp-md">Use these filters to sort templates and patterns.</p>
 <form class="wb-tables-filter" data-bind-to="dataset-filter">
-<div class="form-group">
+<div class="row"><div class="col-md-4">
+	<div class="form-group">
 <label for="dt_cat">Category</label>
-<select class="form-control" id="dt_cat" name="dt_cat" data-column="3">
+<select class="form-control" id="dt_cat" name="dt_cat" data-column="2">
 <option value="">All categories</option>
 <option value="Design pattern">Design patterns</option>
 <option value="Page layout">Page layouts</option>
 </select>
 </div>
-<div class="form-group">
+</div>
+<div class="col-md-4">
+	<div class="form-group">
 <label for="dt_type">Type</label>
-<select class="form-control" id="dt_type" name="dt_type" data-column="4">
+<select class="form-control" id="dt_type" name="dt_type" data-column="3">
 <option value="">All types</option>
 <option value="Destination">Destination content</option>
 <option value="Government-wide template">Government-wide templates</option>
@@ -1044,18 +1035,20 @@ Templates and pattern libraries for Canada.ca</h1>
 <option value="Visual">Visual element</option>
 </select>
 </div>
+</div>
+<div class="col-md-4">
 <div class="form-group">
 <label for="dt_mand">Mandatory</label>
-<select class="form-control" id="dt_mand" name="dt_mand" data-column="6">
+<select class="form-control" id="dt_mand" name="dt_mand" data-column="5">
 <option value="">All templates and patterns</option>
 <option value="Mandatory">Mandatory templates</option>
 </select>
 </div>
-<div class="row">
-<div class="col-xs-6">
+</div>
+<div class="col-md-1">
 <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filter</button>
 </div>
-<div class="col-xs-6">
+<div class="col-md-1">
 <button type="reset" class="btn btn-default">Clear</button>
 </div>
 </div>
@@ -1065,7 +1058,7 @@ Templates and pattern libraries for Canada.ca</h1>
 
 
 
-<div class="col-md-9">
+<div class="col-md-12">
 <table class="wb-tables table table-striped table-hover" id="dataset-filter" aria-live="polite" data-wb-tables='{
 			"bDeferRender": true,
 			"ajaxSource": "ajax/patterns.json",
