@@ -36,7 +36,7 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/collection-landing-pages.html\">Collection landing page</a>",
-    "USE": "Allows people to search within a collection. Introduces the most popular items from a collection",
+    "USE": "Allows people to search within a collection. Introduces the most popular items from a collection.",
     "CAT": "Page layout",
     "TYPE": "Navigation",   
     "EXAMPLE": "&nbsp;",
@@ -57,7 +57,7 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/contact-us-pages.html\">Contact us page</a>",
-    "USE": "Provides models for contact options on Canada.ca. Use to present contact information for a person, an office, an organization or an emergency",
+    "USE": "Provides models for contact options on Canada.ca. Use to present contact information for a person, an office, an organization or an emergency.",
     "CAT": "Page layout",
     "TYPE": "Institutional",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/institution-contact-en.html\">Institutional contact page</a>",
@@ -134,7 +134,7 @@
     "MANDATORY": "Mandatory"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/guidance-legislation-pages.html\">Guidance on legislation profile page</a>",
-    "USE": "Gives access to guidance on legislation. Gives access to details and related materials",
+    "USE": "Gives access to guidance on legislation. Gives access to details and related materials.",
     "CAT": "Page layout",
     "TYPE": "Destination",  
     "EXAMPLE": "&nbsp;",
@@ -199,7 +199,7 @@
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/latest-news.html\">Latest news</a>",
     "USE": "Use to feature the most recent news items",
     "CAT": "Design pattern",
-    "TYPE": "Institution",   
+    "TYPE": "Institutional",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/institution-en.html\">Institutional profile page</a>",
     "MANDATORY": "No"
   }, {
@@ -211,9 +211,9 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/ministerial-profile-pages.html\">Ministerial profile page</a>",
-    "USE": "The only source of information about a minister.Gives an overview of the biography and links to the minister’s recent activities and announcements, and social media channels",
+    "USE": "The only source of information about a minister. Gives an overview of the biography and links to the minister’s recent activities and announcements, and social media channels.",
     "CAT": "Page layout",
-    "TYPE": "Institution",   
+    "TYPE": "Institutional",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/ministerial-en.html\">Ministerial profile page</a>",
     "MANDATORY": "Mandatory"
   }, {
@@ -289,7 +289,7 @@
 
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/feature-banner.html\">Promotional feature banner</a>",
-    "USE": "Use to promote government-wide and institution-specific activities, initiatives, programs, and services.",
+    "USE": "Use to promote government-wide and institution-specific activities, initiatives, programs, and services",
     "CAT": "Design pattern",
     "TYPE": "Promotion, Visual",   
     "EXAMPLE": "&nbsp;",
