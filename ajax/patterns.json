@@ -252,6 +252,13 @@
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Mandatory"
   }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/news-pages.html#results">News results page</a>",
+    "USE": "Enables people to efficiently find a specific news product by quickly filtering results based on keywords and pre-set metadata fields.",
+    "CAT": "Page layout",
+    "TYPE": "Government-wide template",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "Mandatory"
+  }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/ordered-multipage.html\">Ordered multi-page navigation</a>",
     "USE": "Set of links to a group of several pages intended to be read in a preferred order",
     "CAT": "Design pattern",
