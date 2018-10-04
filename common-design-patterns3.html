@@ -984,7 +984,55 @@
 
     <main role="main" property="mainContentOfPage" class="container">
 
+<script type="text/javascript">
 
+//**********************************************************
+// Query to decode parameters in the url (i.e. like the dates)
+//**********************************************************
+function getQueryParams(qs) {
+	qs = qs.split('+').join(' ');
+
+	var params = {},
+		tokens,
+		re = /[?&]?([^=]+)=([^&]*)/g;
+
+	while (tokens = re.exec(qs)) {
+		params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+	}
+
+	return params;
+}
+
+//**********************************************************
+// When document is ready
+//**********************************************************
+$( document ).ready( function() {
+
+	var query = getQueryParams( document.location.search );
+
+	if ( query ) {
+
+		var details = $('#details-filter');
+		details.attr('open', 'open');
+
+		if (query.category  != null) {
+			$( "#dt_cat" ).val( query.category );
+		}
+
+		if (query.type  != null) {
+			$( "#dt_type" ).val( query.mandatory );
+		}
+
+		if (query.mandatory != null) {
+			$( "#dt_mand" ).val( query.mandatory);
+		}
+
+		setTimeout( function(){ $( "#form-filter-datatable" ).submit(); }, 3000 );
+	}
+
+});
+
+</script>
     <h1 property="name" id="wb-cont" dir="ltr">
 Templates and pattern libraries for Canada.ca</h1>
 
