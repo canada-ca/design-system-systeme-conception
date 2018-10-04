@@ -1,4 +1,4 @@
-{
+﻿{
   "data": [{
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/laws-regulations-pages.html#act-profile\">Act profile page</a>",
     "USE": "Gives a 1 or 2 sentence description of the act, allows allows people to read the legislation, and relates an act to topics, institutions, ministers and other legislation.",
@@ -129,7 +129,7 @@
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/audience-pages.html\">Government-wide audience page</a>",
     "USE": "Gives access to information and services relevant to a government-wide audience",
     "CAT": "Page layout",
-    "TYPE": "Navigation",   
+    "TYPE": "Theme template",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/gc-audience-en.html\">GC-wide audience page</a>",
     "MANDATORY": "Mandatory"
   }, {
