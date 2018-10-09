@@ -951,10 +951,9 @@
 
 
     <nav role="navigation" id="wb-bc" property="breadcrumb"><h2 class="wb-inv">You are here:</h2><div class="container"><div class="row"><ol class="breadcrumb">
-<li><a href='/en.html'>Home</a></li>
-<li><a href='/en/government/about.html'>About Canada.ca</a></li>
-<li><a href='/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html'>Canada.ca Content and Information Architecture Specification</a></li>
-<li><a href='/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification/templates-detailed-specifications.html'>Templates and detailed specifications for Canada.ca</a></li>
+<li><a href='https://www.canada.ca/en.html'>Home</a></li>
+<li><a href='https://www.canada.ca/en/government/about.html'>About Canada.ca</a></li>
+<li><a href='..//pattern-library.html'>Template and pattern library for Canada.ca</a></li>
 </ol></div></div></nav>
 
 
@@ -997,14 +996,6 @@ Guidance on legislation pages for Canada.ca</h1>
 
 
     <p class="gc-byline"><strong>From <a href="https://www.canada.ca/en/treasury-board-secretariat.html">Treasury Board of Canada Secretariat</a></strong></p>
-<nav role="navigation" class="mrgn-bttm-lg">
-  <h2 class="wb-inv">Document navigation</h2>
-  <ul class="pager">
-    <li class="previous"><a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification/templates-detailed-specifications/laws-regulations-pages.html" rel="prev">Previous<span class="wb-inv">: Laws and regulations pages for Canada.ca</span></a></li>
-    <li class="toc"><a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">Table of contents</a></li>
-    <li class="next"><a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification/templates-detailed-specifications/audience-pages.html" rel="next">Next<span class="wb-inv">: Audience pages for Canada.ca</span></a></li>
-  </ul>
-</nav>
 <section>
 
 
@@ -1076,7 +1067,6 @@ Guidance on legislation pages for Canada.ca</h1>
         <section id="template-elements">
           <section>
             <h4>1: Page title</h4>
-            <p><span class="label label-danger">Mandatory</span></p>
             <p>Provides a clear, accurate and concise indicator of what the page contains</p>
             <ul class="list-unstyled">
               <li id="element1-1">
@@ -1091,7 +1081,6 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>2: Results count</h4>
-            <p><span class="label label-danger">Mandatory</span></p>
             <p>Displays the number of objects in the current results set, and describes the scope</p>
             <ul class="list-unstyled">
               <li id="element1-2">
@@ -1106,7 +1095,6 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>3: Keywords field</h4>
-            <p><span class="label label-danger">Mandatory</span></p>
             <p>Accepts keyword input to narrow results set</p>
             <ul class="list-unstyled">
               <li id="element1-3">
@@ -1121,20 +1109,19 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>4: Filtering controls</h4>
-            <p><span class="label label-info">Optional</span></p>
             <p>Provides additional controls allowing people to filter results using relevant metadata fields</p>
             <ul class="list-unstyled">
               <li id="element1-4">
                 <details class="mrgn-bttm-sm">
                   <summary class="wb-toggle" data-toggle="{&quot;print&quot;:&quot;on&quot;}"><strong>Content</strong></summary>
                   <ul>
-                    <li>the collapsible element containing the filtering controls must be closed by default on page load, when viewed on smaller screen sizes (mobile devices), and  open by default on desktop (large) displays</li>
-                    <li>entering filtering values and pressing the “Apply filters” button must never reset existing values in the keywords field above
+                    <li>the collapsible element containing the filtering controls should be closed by default on page load, when viewed on smaller screen sizes (mobile devices), and  open by default on desktop (large) displays</li>
+                    <li>entering filtering values and pressing the “Apply filters” button should never reset existing values in the keywords field above
                       <ul>
-                        <li>all values entered by a person must persist until they have been intentionally cleared</li>
+                        <li>all values entered by a person should persist until they have been intentionally cleared</li>
                       </ul>
                     </li>
-                    <li>must use the following filters:
+                    <li>should use the following filters:
                       <dl class="dl-horizontal">
                         <dt><strong>Type</strong></dt>
                         <dd>
@@ -1176,7 +1163,6 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>5: Results set</h4>
-            <p><span class="label label-danger">Mandatory</span></p>
             <p>Lists all objects matching keyword and filtering criteria</p>
             <ul class="list-unstyled">
               <li id="element1-6">
@@ -1202,8 +1188,8 @@ Guidance on legislation pages for Canada.ca</h1>
                     <li>individual records in the results set are separated by a horizontal border</li>
                     <li>large record sets are broken up into pages of ten records each, using the standard <abbr title="Web Experience Toolkit">WET</abbr> pagination controls</li>
                     <li>object title links use standard Canada.ca link styling (blue, underlined), with the addition of boldface</li>
-                    <li>metadata values must be listed between the object title and the excerpt text, and displayed in a lighter font colour than the rest of the page text  </li>
-                    <li>metadata values must be separated from each other by vertical pipes</li>
+                    <li>metadata values should be listed between the object title and the excerpt text, and displayed in a lighter font colour than the rest of the page text  </li>
+                    <li>metadata values should be separated from each other by vertical pipes</li>
                     <li>excerpt text is presented in normal font, except for the keywords provided by a person, which are in boldface</li>
                     <li>excerpts are truncated using an ellipsis after 2 lines</li>
                   </ul>
@@ -1231,15 +1217,14 @@ Guidance on legislation pages for Canada.ca</h1>
         <section id="template-elements2">
           <section>
             <h4>1: Guidance title</h4>
-            <p><span class="label label-danger">Mandatory</span></p>
             <p>Provides name of the guidance</p>
             <ul class="list-unstyled">
               <li id="element2-1">
                 <details class="mrgn-bttm-sm">
                   <summary class="wb-toggle" data-toggle="{&quot;print&quot;:&quot;on&quot;}"><strong>Content</strong></summary>
                   <ul>
-                    <li>the title of the guidance must exactly match the document or item being profiled</li>
-                    <li>must include institutional byline below the title with a link to the institutions responsible for the content</li>
+                    <li>the title of the guidance should exactly match the document or item being profiled</li>
+                    <li>should include institutional byline below the title with a link to the institutions responsible for the content</li>
                   </ul>
                 </details>
               </li>
@@ -1256,7 +1241,6 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>2: Guidance overview</h4>
-            <p><span class="label label-danger">Mandatory</span></p>
             <p>Provides 1 or 2 sentences that describe the guidance in plain language</p>
             <ul class="list-unstyled">
               <li id="element2-3">
@@ -1281,7 +1265,6 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>3: Alert</h4>
-            <p><span class="label label-info">Optional</span></p>
             <p>Brings attention to time-sensitive information related to the guidance</p>
             <ul class="list-unstyled">
               <li id="element2-5">
@@ -1304,7 +1287,6 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>4: Intended recipient</h4>
-            <p><span class="label label-info">Optional</span></p>
             <p>List of audiences and related tasks</p>
             <ul class="list-unstyled">
               <li id="element2-7">
@@ -1329,7 +1311,6 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>5: Contents</h4>
-            <p><span class="label label-danger">Mandatory</span></p>
             <p>Provides an outline or preview of the guidance item the profile is referencing</p>
             <ul class="list-unstyled">
               <li id="element2-9">
@@ -1355,7 +1336,6 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>6: Alternate formats</h4>
-            <p><span class="label label-warning">Conditional</span></p>
             <p>Provides access to the full document and other formats</p>
             <ul class="list-unstyled">
               <li id="element2-11">
@@ -1379,7 +1359,6 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>7: Details and history</h4>
-            <p><span class="label label-danger">Mandatory</span></p>
             <p>Outlines document lifecycle details and provides access to previous versions</p>
             <ul class="list-unstyled">
               <li id="element2-13">
@@ -1407,7 +1386,6 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>8: Contact</h4>
-            <p><span class="label label-info">Optional</span></p>
             <p>Provides contact information for people to get assistance regarding this guidance</p>
             <ul class="list-unstyled">
               <li id="element2-15">
@@ -1432,7 +1410,6 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>9: Related information</h4>
-            <p><span class="label label-warning">Conditional</span></p>
             <p>Provides links to related information and services</p>
             <ul class="list-unstyled">
               <li id="element2-17">
@@ -1481,7 +1458,6 @@ Guidance on legislation pages for Canada.ca</h1>
         <section id="template-elements3">
           <section>
             <h4>1: Guidance title</h4>
-            <p><span class="label label-danger">Mandatory</span></p>
             <p>Provides name of the guidance</p>
             <ul class="list-unstyled">
               <li id="element3-1">
@@ -1506,7 +1482,6 @@ Guidance on legislation pages for Canada.ca</h1>
           </section>
           <section>
             <h4>2: History log</h4>
-            <p><span class="label label-danger">Mandatory</span></p>
             <p>Identifies all notable changes throughout the lifecycle of the guidance</p>
             <ul class="list-unstyled">
               <li id="element3-3">
@@ -1545,15 +1520,6 @@ Guidance on legislation pages for Canada.ca</h1>
     </details>
   </figure>
 </section>
-<nav role="navigation" class="mrgn-bttm-lg">
-  <h2 class="wb-inv">Document navigation</h2>
-  <ul class="pager">
-    <li class="previous"><a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification/templates-detailed-specifications/laws-regulations-pages.html" rel="prev">Previous<span class="wb-inv">: Laws and regulations pages for Canada.ca</span></a></li>
-    <li class="toc"><a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">Table of contents</a></li>
-    <li class="next"><a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification/templates-detailed-specifications/audience-pages.html" rel="next">Next<span class="wb-inv">: Audience pages for Canada.ca</span></a></li>
-  </ul>
-</nav>
-
 
 
 </div>
