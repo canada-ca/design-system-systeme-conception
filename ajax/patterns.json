@@ -1,4 +1,4 @@
-﻿{
+{
   "data": [{
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/laws-regulations-pages.html#act-profile\">Act profile page</a>",
     "USE": "Gives a 1 or 2 sentence description of the act, allows allows people to read the legislation, and relates an act to topics, institutions, ministers and other legislation.",
@@ -91,7 +91,7 @@
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/docs/ref/tables/tables-en.html\">WET: Tables</a>",
     "MANDATORY": "No"
   }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/department-agencies-page.html\">Departments and agencies page</a>",
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/department-agencies-page.html\">Departments and agencies page</a>",
     "USE": "Provides links to all federal government institutions",
     "CAT": "Page layout",
     "TYPE": "Government-wide template",   
