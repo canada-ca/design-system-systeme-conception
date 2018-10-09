@@ -91,7 +91,7 @@
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/docs/ref/tables/tables-en.html\">WET: Tables</a>",
     "MANDATORY": "No"
   }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/department-agencies-page.html\">Departments and agencies page</a>",
+    "NAME": "<p><a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/department-agencies-page.html\">Departments and agencies page</a></p><p><span class="label label-danger">Mandatory</span></p>",
     "USE": "Provides links to all federal government institutions",
     "CAT": "Page layout",
     "TYPE": "Government-wide template",   
