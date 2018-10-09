@@ -300,12 +300,18 @@
     "TYPE": "Promotion",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "No"
-
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/feature-banner.html\">Promotional feature banner</a>",
     "USE": "Use to promote government-wide and institution-specific activities, initiatives, programs, and services",
     "CAT": "Design pattern",
     "TYPE": "Promotion, Visual",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "No"
+  }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/related-links.html\">Related links</a>",
+    "USE": "The related links pattern is a list of links to content that is related to the page on which it appears",
+    "CAT": "Design pattern",
+    "TYPE": "Navigation",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "No"
   }, {
