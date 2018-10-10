@@ -7,18 +7,18 @@
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "No"
   }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/campaign-pages.html\">Campaign page</a>",
-    "USE": "Gives information to support a promotional campaign. Use to support institutional, theme or <abbr title=\"Government of Canada\">GC</abbr>-wide promotional campaigns that last for a set period of time. Don’t use for core content.",
-    "CAT": "Page layout",
-    "TYPE": "Promotion",   
-    "EXAMPLE": "&nbsp;",
-    "MANDATORY": "No"
-  }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/buttons.html\">Buttons</a>",
     "USE": "Buttons are clickable objects intended to encourage a person to take action",
     "CAT": "Design pattern",
     "TYPE": "Interaction, Visual",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/wet-boew-styleguide/v4/design/buttons-en.html\">WET: Buttond</a>",
+    "MANDATORY": "No"  
+  }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/campaign-pages.html\">Campaign page</a>",
+    "USE": "Gives information to support a promotional campaign. Use to support institutional, theme or <abbr title=\"Government of Canada\">GC</abbr>-wide promotional campaigns that last for a set period of time. Don’t use for core content.",
+    "CAT": "Page layout",
+    "TYPE": "Promotion",   
+    "EXAMPLE": "&nbsp;",
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/carousels.html\">Carousels</a>",
