@@ -99,7 +99,7 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/department-agencies-page.html\">Departments and agencies page</a>",
-    "USE": "Mandatory template - Provides links to all federal government institutions",
+    "USE": "Provides links to all federal government institutions - Mandatory template",
     "CAT": "Page layout",
     "TYPE": "Government-wide template",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/dept-en.html\">Departments and agencies page</a>",
@@ -134,7 +134,7 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/audience-pages.html\">Government-wide audience page</a>",
-    "USE": "Gives access to information and services relevant to a government-wide audience",
+    "USE": "Gives access to information and services relevant to a government-wide audience - Mandatory template",
     "CAT": "Page layout",
     "TYPE": "Theme template",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/gc-audience-en.html\">GC-wide audience page</a>",
@@ -148,7 +148,7 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/home-page.html\">Home page</a>",
-    "USE": "Shows the Government of Canada’s most visited and important products and services",
+    "USE": "Shows the Government of Canada’s most visited and important products and services - Mandatory template",
     "CAT": "Page layout",
     "TYPE": "Government-wide template",  
     "EXAMPLE": "<a href=\"https://www.canada.ca/en.html\">Home page on live site</a>",
@@ -183,7 +183,7 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/institutional-profile-pages.html\">Institutional profile page</a>",
-    "USE": "Gives an overview of an institution’s, mandate, programs and information and services",
+    "USE": "Gives an overview of an institution’s, mandate, programs and information and services - Mandatory template",
     "CAT": "Page layout",
     "TYPE": "Institutional",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/institution-en.html\">Institutional profile page</a>",
@@ -218,7 +218,7 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/ministerial-profile-pages.html\">Ministerial profile page</a>",
-    "USE": "The only source of information about a minister. Gives an overview of the biography and links to the minister’s recent activities and announcements, and social media channels.",
+    "USE": "Gives an overview of the biography and links to the minister’s recent activities and announcements, and social media channels  - Mandatory template",
     "CAT": "Page layout",
     "TYPE": "Institutional",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/ministerial-en.html\">Ministerial profile page</a>",
@@ -246,21 +246,21 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/news-pages.html#landing\">News landing page</a>",
-    "USE": "Gives access to Government of Canada’s news products",
+    "USE": "Gives access to Government of Canada’s news products - Mandatory template",
     "CAT": "Page layout",
     "TYPE": "Government-wide template",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Mandatory"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/news-pages.html#product\">News product page</a>",
-    "USE": "Allows people to read a news product",
+    "USE": "Allows people to read a news product - Mandatory template",
     "CAT": "Page layout",
     "TYPE": "Institutional",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Mandatory"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/news-pages.html#results\">News results page</a>",
-    "USE": "Enables people to efficiently find a specific news product by quickly filtering results based on keywords and pre-set metadata fields.",
+    "USE": "Enables people to efficiently find a specific news product by quickly filtering results based on keywords and pre-set metadata fields - Mandatory template",
     "CAT": "Page layout",
     "TYPE": "Government-wide template",   
     "EXAMPLE": "&nbsp;",
@@ -274,7 +274,7 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/organizational-profile-pages.html\">Organizational profile page</a>",
-    "USE": "Gives an overview of the following the mandate, programs, informamation and services of an organization associated with a government institution",
+    "USE": "Gives an overview of the following the mandate, programs, informamation and services of an organization associated with a government institution - Mandatory template",
     "CAT": "Page layout",
     "TYPE": "Institutional",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/organizational-en.html\">Organization profile page</a>",
@@ -337,7 +337,7 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/search-page.html\">Search page</a>",
-    "USE": "Provides the template for the search engine on Canada.ca",
+    "USE": "Provides the template for the search engine on Canada.ca - Mandatory template",
     "CAT": "Page layout",
     "TYPE": "Government-wide template",   
     "EXAMPLE": "&nbsp;",
@@ -372,14 +372,14 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/theme-pages.html\">Theme page</a>",
-    "USE": "Organizes topics that makes sense to people so they can access government-wide information and services",
+    "USE": "Organizes topics that makes sense to people so they can access government-wide information and services - Mandatory template",
     "CAT": "Page layout",
     "TYPE": "Theme template",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/theme-en.html\">Theme page</a>",
     "MANDATORY": "Mandatory"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/topic-pages.html\">Topic page</a>",
-    "USE": "Allows people to discover services and information related to a specific topic across government",
+    "USE": "Allows people to discover services and information related to a specific topic across government - Mandatory template",
     "CAT": "Page layout",
     "TYPE": "Theme template",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-en.html\">Topic page</a>",
