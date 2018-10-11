@@ -99,7 +99,7 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/department-agencies-page.html\">Departments and agencies page</a>",
-    "USE": "Provides links to all federal government institutions - Mandatory template",
+    "USE": "Provides links to all federal government institutions - <strong>Mandatory template</strong>",
     "CAT": "Page layout",
     "TYPE": "Government-wide template",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/dept-en.html\">Departments and agencies page</a>",
