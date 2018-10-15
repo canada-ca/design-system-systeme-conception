@@ -11,7 +11,7 @@
     "USE": "Buttons are clickable objects intended to encourage a person to take action",
     "CAT": "Design pattern",
     "TYPE": "Interaction, Visual",   
-    "EXAMPLE": "<a href=\"http://wet-boew.github.io/wet-boew-styleguide/v4/design/buttons-en.html\">WET: Buttond</a>",
+    "EXAMPLE": "<a href=\"http://wet-boew.github.io/wet-boew-styleguide/v4/design/buttons-en.html\">WET: Buttons</a>",
     "MANDATORY": "No"  
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/campaign-pages.html\">Campaign page</a>",
