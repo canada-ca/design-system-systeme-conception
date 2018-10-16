@@ -1,8 +1,8 @@
 ﻿{
   "data": [{
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-recommandes/pages-lois-reglements.html#profil-loi\">Page de profil d'une loi</a>",
-    "USE": "Donne une description de 1 ou 2 phrases pour decrire la loi, permet aux personnes de lire loi, and relie la loi aux sujets, aux institutions, aux ministres et aux autres lois.",
-    "CAT": "Modele de page",
+    "USE": "Donne une description de 1 ou 2 phrases pour d&#233;crire la loi, permet aux personnes de lire loi, and relie la loi aux sujets, aux institutions, aux ministres et aux autres lois.",
+    "CAT": "Mod&#232;le de page",
     "TYPE": "Destination",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Non"
