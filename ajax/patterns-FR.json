@@ -1,25 +1,25 @@
 ﻿{
   "data": [{
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/boutons.html\">Boutons</a>",
+    "USE": "Les boutons sont des objets cliquables incitant une personne &#224; exécuter une action",
+    "CAT": "Configuration de conception",
+    "TYPE": "Interaction, Visuel",   
+    "EXAMPLE": "<a href=\"http://wet-boew.github.io/wet-boew-styleguide/v4/design/buttons-fr.html\">BOEW: Boutons</a>",
+    "MANDATORY": "Non"  
+  }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-recommandes/pages-lois-reglements.html#profil-loi\">Page de profil d'une loi</a>",
-    "USE": "Donne une description de 1 ou 2 phrases pour d&#233;crire la loi, permet aux personnes de lire loi, and relie la loi aux sujets, aux institutions, aux ministres et aux autres lois.",
+    "USE": "Donne une description de 1 ou 2 phrases pour d&#233;crire la loi, permet aux personnes de lire la loi, and relie la loi aux sujets, aux institutions, aux ministres et aux autres lois",
     "CAT": "Mod&#232;le de page",
     "TYPE": "Destination",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Non"
   }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/buttons.html\">Buttons</a>",
-    "USE": "Buttons are clickable objects intended to encourage a person to take action",
-    "CAT": "Design pattern",
-    "TYPE": "Interaction, Visual",   
-    "EXAMPLE": "<a href=\"http://wet-boew.github.io/wet-boew-styleguide/v4/design/buttons-en.html\">WET: Buttons</a>",
-    "MANDATORY": "No"  
-  }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/campaign-pages.html\">Campaign page</a>",
-    "USE": "Gives information to support a promotional campaign. Use to support institutional, theme or <abbr title=\"Government of Canada\">GC</abbr>-wide promotional campaigns that last for a set period of time. Don’t use for core content.",
-    "CAT": "Page layout",
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-recommandes/pages-campagnes.html\">Page de campagne</a>",
+    "USE": "Fournit des renseignements pour appuyer une campagne promotionnelle. Utilisez-le pour soutenir les campagnes de promotion institutionnelles, th&#233;matiques ou à l’&#233;chelle du gouvernement du Canada qui durent pendant une période donnée. Ne l'utilisez pas pour le contenu essentiel &#224; une t&#226;che.",
+    "CAT": "Mod&#232;le de page",
     "TYPE": "Promotion",   
     "EXAMPLE": "&nbsp;",
-    "MANDATORY": "No"
+    "MANDATORY": "Non"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/carousels.html\">Carousels</a>",
     "USE": "Use to promote multiple different activities, initiatives, programs, and services",
