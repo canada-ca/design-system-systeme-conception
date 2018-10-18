@@ -8,7 +8,7 @@
     "MANDATORY": "Non"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/autres-renseignements.html\">Autres renseignements pour les</a>",
-    "USE": "Utilisez pour lier &#224; une page connexe d’un public cible &#224; l’&#233;chelle du gouvernement,
+    "USE": "Utilisez pour lier &#224; une page connexe d’un public cible &#224; l’&#233;chelle du gouvernement",
     "CAT": "Configuration de conception",
     "TYPE": "Navigation",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-fr.html\">Page de sujet</a>",
