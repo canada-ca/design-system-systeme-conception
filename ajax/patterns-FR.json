@@ -11,7 +11,7 @@
     "USE": "Utilisez pour lier &#224; une page connexe d’un public cible &#224; l’&#233;chelle du gouvernement",
     "CAT": "Configuration de conception",
     "TYPE": "Navigation",   
-    "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-fr.html\">Page de sujet</a>",
+    "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-fr.html\">Sujet</a>",
     "MANDATORY": "Non"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception//configurations-conception-communes/couche-avertissement.html\">Avertissement superpos&#233;&#233;</a>",
@@ -32,7 +32,7 @@
     "USE": "Utilisez pour permettre aux gens de suivre les comptes officiels de m&#233;dias sociaux du gouvernement du Canada sur diverses plateformes de m&#233;dias sociaux",
     "CAT": "Configuration de conception",
     "TYPE": "Institutionnel",   
-    "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-fr.html\">Page de sujet</a>",
+    "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-fr.html\">Sujet</a>",
     "MANDATORY": "Non"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/boutons.html\">Boutons</a>",
@@ -60,7 +60,7 @@
     "USE": "Utilisez pour lier aux institutions ou aux organisations qui soutiennent le contenu sur la page",
     "CAT": "Configuration de conception",
     "TYPE": "Institutionnel",   
-    "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-fr.html\">Page de sujet</a>",
+    "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-fr.html\">Sujet</a>",
     "MANDATORY": "Non"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/contenu-reductible.html\">Contenu r&#233;ductible</a>",
@@ -88,7 +88,7 @@
     "USE": "Utilisez pour pr&#233;senter les t&#226;ches principales li&#233;es &#224; la page",
     "CAT": "Configuration de conception",
     "TYPE": "Navigation",   
-    "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-fr.html\">Page de sujet</a>",
+    "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-fr.html\">Sujet</a>",
     "MANDATORY": "Non"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/icones.html\">Ic&#244;nes</a>",
@@ -161,7 +161,7 @@
     "EXAMPLE": "<a href=\"https://www.canada.ca/fr.html\">Page d'accueil sur le site en direct</a>",
     "MANDATORY": "Obligatoire"
   }, { 
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-recommandes/pages-cibles-collections.html\">Pages d’accueil des collections</a>",
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-recommandes/pages-cibles-collections.html\">Page d’accueil des collections</a>",
     "USE": "Permet aux personnes d'effectuer des recherches dans une collection. Pr&#233;sente les &#233;l&#233;ments les plus populaires d'une collection.",
     "CAT": "Mod&#232;le de page",
     "TYPE": "Navigation",   
@@ -336,7 +336,7 @@
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Non"
   }, {
-    "NAME": "<a href=\"https://https://canada-ca.github.io/design-system-systeme-conception/modeles-recommandes/pages-index.html#long\">Page d'index long</a>",
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-recommandes/pages-index.html#long\">Page d'index long</a>",
     "USE": "Utilisez pour pr&#233;senter une liste de plus de 50 liens connexes sans description",
     "CAT": "Mod&#232;le de page",
     "TYPE": "Navigation",   
@@ -354,7 +354,7 @@
     "USE": "Utilisez pour promouvoir des activit&#233;s, des initiatives, des programmes et des services ",
     "CAT": "Configuration de conception",
     "TYPE": "Promotion, Visuel",   
-    "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/theme-fr.html\">Page de th&#232;me</a>",
+    "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/theme-fr.html\">Th&#232;me</a>",
     "MANDATORY": "Non"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/questions-interactives.html\">Questions interactives</a>",
@@ -368,7 +368,7 @@
     "USE": "Utilisez pour pr&#233;senter des ensembles de liens avec des descriptions connexes",
     "CAT": "Configuration de conception",
     "TYPE": "Navigation",   
-    "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-fr.html\">Page de sujet</a>",
+    "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-fr.html\">Sujet</a>",
     "MANDATORY": "Non"
   }, {        
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/tableaux.html\">Tableaux de donn&#233;es</a>",
