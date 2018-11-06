@@ -64,11 +64,11 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/contact-us-pages.html\">Contact us page</a>",
-    "USE": "Provides models for contact options on Canada.ca. Use to present contact information for a person, an office, an organization or an emergency.",
+    "USE": "Provides models for contact options on Canada.ca. Use to present contact information for a person, an office, an organization or an emergency. - <strong>Mandatory template</strong>",
     "CAT": "Page layout",
     "TYPE": "Institutional",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/institution-contact-en.html\">Institutional contact page</a>",
-    "MANDATORY": "No"
+    "MANDATORY": "Mandatory"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/feature-tiles.html\">Context-specific features</a>",
     "USE": "Use to promote activities, initiatives, programs, and services",
