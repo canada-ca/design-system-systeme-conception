@@ -190,11 +190,11 @@
     "MANDATORY": "Non"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-obligatoire/pages-contactez-nous.html\">Page de coordonn&#233;es</a>",
-    "USE": "Fournit un mod&#232;le d'option de communication dans Canada.ca. Utilisez pour pr&#233;senter les coordonn&#233;&#224;&#224;es d'une personne, d'un bureau, d'une organisation ou pour des urgences.",
+    "USE": "Fournit un mod&#232;le d'option de communication dans Canada.ca. Utilisez pour pr&#233;senter les coordonn&#233;&#224;&#224;es d'une personne, d'un bureau, d'une organisation ou pour des urgences. - <strong>Mod&#232;le obligatoire</strong>",
     "CAT": "Mod&#232;le de page",
     "TYPE": "Institutionnel",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/institution-contact-fr.html\">Page de coordonn&#233;es institutionnelles</a>",
-    "MANDATORY": "Non"
+    "MANDATORY": "Obligatoire"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-recommandes/pages-description-programme.html \">Page de description de programme</a>",
     "USE": "Fournit des d&#233;tails sur un programme. Donne acc&#232;s aux services li&#233;s &#224; un programme. Utilisez pour donner des renseignements g&#233;n&#233;raux sur un programme. Ne pas utiliser pour d&#233;buter une tâche.",
