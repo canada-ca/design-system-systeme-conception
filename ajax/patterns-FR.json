@@ -14,7 +14,7 @@
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/topic-fr.html\">Sujet</a>",
     "MANDATORY": "Non"
   }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception//configurations-conception-communes/couche-avertissement.html\">Avertissement superpos&#233;&#233;</a>",
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception//configurations-conception-communes/couche-avertissement.html\">Avertissement superpos&#233;</a>",
     "USE": "Utilisez pour afficher des d&#233;clarations de confidentialit&#233; et d'autres avertissements similaires",
     "CAT": "Configuration de conception",
     "TYPE": "Interaction",   
