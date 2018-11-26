@@ -357,6 +357,13 @@
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "No"
   }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/site-menu.html\">Site-wide menu</a>",
+    "USE": "Use on all Canada.ca web page as the main theme-based navigation",
+    "CAT": "Design pattern",
+    "TYPE": "Site",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "Mandatory"
+  }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/social-media-feeds.html\">Social media feeds widget</a>",
     "USE": "Use to embed the latest posts from official Government of Canada social media accounts",
     "CAT": "Design pattern",
