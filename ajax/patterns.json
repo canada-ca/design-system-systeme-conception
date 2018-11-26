@@ -7,6 +7,13 @@
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "No"
   }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/breadcrumb-trail.html\">Breadcrumb trail</a>",
+    "USE": "Represents the location of the current page as it stands in relation to the site’s user navigation model - <strong>Mandatory pattern</strong>",
+    "CAT": "Design pattern",
+    "TYPE": "Site, Interaction",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "Mandatory"
+  }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/buttons.html\">Buttons</a>",
     "USE": "Buttons are clickable objects intended to encourage a person to take action",
     "CAT": "Design pattern",
@@ -98,6 +105,13 @@
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/docs/ref/tables/tables-en.html\">WET: Tables</a>",
     "MANDATORY": "No"
   }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/date-modified.html\">Date modified</a>",
+    "USE": "Indicates how recently the content of a web page has been updated - <strong>Mandatory pattern</strong>",
+    "CAT": "Design pattern",
+    "TYPE": "Site",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "Mandatory
+  }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/department-agencies-page.html\">Departments and agencies page</a>",
     "USE": "Provides links to all federal government institutions - <strong>Mandatory template</strong>",
     "CAT": "Page layout",
@@ -132,6 +146,13 @@
     "TYPE": "Navigation",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "No"
+  }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/signature.html\">Government of Canada signature</a>",
+    "USE": "The Government of Canada signature as specified in Federal Identity Program (FIP) policy instruments is prominently featured in the global header area across Canada.ca <strong>Mandatory pattern</strong>",
+    "CAT": "Design pattern",
+    "TYPE": "Site, Visual",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "Mandatory"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/audience-pages.html\">Government-wide audience page</a>",
     "USE": "Gives access to information and services relevant to a government-wide audience - <strong>Mandatory template</strong>",
@@ -202,6 +223,13 @@
     "TYPE": "Destination",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/demos/fieldflow/fieldflow-en.html\">WET: Field flow</a>",
     "MANDATORY": "No"
+  }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/language-toggle.html\">Language toggle link</a>",
+    "USE": "Gives people access to site content in either French or English - <strong>Mandatory pattern</strong>",
+    "CAT": "Design pattern",
+    "TYPE": "Site, Interaction",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "Mandatory"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/latest-news.html\">Latest news</a>",
     "USE": "Use to feature the most recent news items",
@@ -322,6 +350,13 @@
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "No"
   }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/report-problem.html\">Report a problem</a>",
+    "USE": "Allows people to provide feedback via a form for any problems that may have happened.  - <strong>Mandatory pattern</strong>",
+    "CAT": "Design pattern",
+    "TYPE": "Site, Interaction",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "Mandatory"
+  }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/services-information.html\">Services and information</a>",
     "USE": "Use to present sets of links with accompanying descriptions",
     "CAT": "Design pattern",
@@ -350,6 +385,13 @@
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "No"
   }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/share-page.html\">Share this page</a>",
+    "USE": "Allows people to share the content of the page to other users",
+    "CAT": "Design pattern",
+    "TYPE": "Site, Interaction",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "Mandatory"
+  }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/pages-index.html#short\">Short index page</a>",
     "USE": "Use to present a list of 10 to 50 related links without text descriptions",
     "CAT": "Page layout",
@@ -357,8 +399,22 @@
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "No"
   }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/site-footer.html\">Site footer</a>",
+    "USE": "The global (site-wide) footer at the bottom of each web page- <strong>Mandatory pattern</strong>",
+    "CAT": "Design pattern",
+    "TYPE": "Site, Interaction",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "Mandatory
+  }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/search-box.html\">Site search box</a>",
+    "USE": "Gives the ability to search all content from the Governement of Canada - <strong>Mandatory pattern</strong>",
+    "CAT": "Design pattern",
+    "TYPE": "Site, Interaction",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "Mandatory"
+  }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/site-menu.html\">Site-wide menu</a>",
-    "USE": "Use on all Canada.ca web page as the main theme-based navigation",
+    "USE": "Use on all Canada.ca web page as the main theme-based navigation <strong>Mandatory pattern</strong>",
     "CAT": "Design pattern",
     "TYPE": "Site",   
     "EXAMPLE": "&nbsp;",
