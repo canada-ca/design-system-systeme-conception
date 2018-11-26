@@ -136,7 +136,7 @@
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/menu-site.html\">Menu général du site</a>",
     "USE": "Utilisez sur toutes les pages comme navigation principale par thème - <strong>Conception obligatoire</strong>",
     "CAT": "Configuration de conception",
-    "TYPE": "Conception &#224; l'&#233;chelle du site",   
+    "TYPE": "Configuration &#224; l'&#233;chelle du site",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Obligatoire"
   }, {
