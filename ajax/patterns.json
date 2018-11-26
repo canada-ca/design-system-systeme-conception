@@ -110,7 +110,7 @@
     "CAT": "Design pattern",
     "TYPE": "Site",   
     "EXAMPLE": "&nbsp;",
-    "MANDATORY": "Mandatory
+    "MANDATORY": "Mandatory"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/department-agencies-page.html\">Departments and agencies page</a>",
     "USE": "Provides links to all federal government institutions - <strong>Mandatory template</strong>",
@@ -404,7 +404,7 @@
     "CAT": "Design pattern",
     "TYPE": "Site, Interaction",   
     "EXAMPLE": "&nbsp;",
-    "MANDATORY": "Mandatory
+    "MANDATORY": "Mandatory"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/search-box.html\">Site search box</a>",
     "USE": "Gives the ability to search all content from the Governement of Canada - <strong>Mandatory pattern</strong>",
