@@ -108,7 +108,7 @@
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/date-modified.html\">Date modified</a>",
     "USE": "Indicates how recently the content of a web page has been updated - <strong>Mandatory pattern</strong>",
     "CAT": "Design pattern",
-    "TYPE": "Site",   
+    "TYPE": "Site-wide pattern",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Mandatory"
   }, {
@@ -148,9 +148,9 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/signature.html\">Government of Canada signature</a>",
-    "USE": "The Government of Canada signature as specified in Federal Identity Program (FIP) policy instruments is prominently featured in the global header area across Canada.ca <strong>Mandatory pattern</strong>",
+    "USE": "The Government of Canada signature as specified in Federal Identity Program (FIP) policy instruments is prominently featured in the global header area across Canada.ca - <strong>Mandatory pattern</strong>",
     "CAT": "Design pattern",
-    "TYPE": "Site, Visual",   
+    "TYPE": "Site-wide pattern, Visual",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Mandatory"
   }, {
@@ -227,7 +227,7 @@
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/language-toggle.html\">Language toggle link</a>",
     "USE": "Gives people access to site content in either French or English - <strong>Mandatory pattern</strong>",
     "CAT": "Design pattern",
-    "TYPE": "Site, Interaction",   
+    "TYPE": "Site-wide pattern, Interaction",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Mandatory"
   }, {
@@ -351,9 +351,9 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/report-problem.html\">Report a problem</a>",
-    "USE": "Allows people to provide feedback via a form for any problems that may have happened.  - <strong>Mandatory pattern</strong>",
+    "USE": "Allows people to provide feedback via a form for any problems that may have happened - <strong>Mandatory pattern</strong>",
     "CAT": "Design pattern",
-    "TYPE": "Site, Interaction",   
+    "TYPE": "Site-wide pattern, Interaction",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Mandatory"
   }, {
@@ -388,7 +388,7 @@
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/share-page.html\">Share this page</a>",
     "USE": "Allows people to share the content of the page to other users",
     "CAT": "Design pattern",
-    "TYPE": "Site, Interaction",   
+    "TYPE": "Site-wide pattern, Interaction",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Mandatory"
   }, {
@@ -400,23 +400,23 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/site-footer.html\">Site footer</a>",
-    "USE": "The global (site-wide) footer at the bottom of each web page- <strong>Mandatory pattern</strong>",
+    "USE": "The global (site-wide) footer at the bottom of each web page - <strong>Mandatory pattern</strong>",
     "CAT": "Design pattern",
-    "TYPE": "Site, Interaction",   
+    "TYPE": "Site-wide pattern, Interaction",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Mandatory"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/search-box.html\">Site search box</a>",
     "USE": "Gives the ability to search all content from the Governement of Canada - <strong>Mandatory pattern</strong>",
     "CAT": "Design pattern",
-    "TYPE": "Site, Interaction",   
+    "TYPE": "Site-wide pattern, Interaction",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Mandatory"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/site-menu.html\">Site-wide menu</a>",
-    "USE": "Use on all Canada.ca web page as the main theme-based navigation <strong>Mandatory pattern</strong>",
+    "USE": "Use on all Canada.ca web page as the main theme-based navigation - <strong>Mandatory pattern</strong>",
     "CAT": "Design pattern",
-    "TYPE": "Site",   
+    "TYPE": "Site-wide pattern",   
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Mandatory"
   }, {
