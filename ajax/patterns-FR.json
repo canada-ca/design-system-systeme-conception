@@ -133,6 +133,13 @@
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/components-fr.html\">Exemples de composantes</a>",
     "MANDATORY": "Non"
   }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/menu-site.html\">Menu général du site</a>",
+    "USE": "Utilisez sur toutes les pages comme navigation principale par thème - <strong>Conception obligatoire</strong>",
+    "CAT": "Configuration de conception",
+    "TYPE": "Conception &#224; l'&#233;chelle du site",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "Obligatoire"
+  }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/multimedia.html\">Multim&#233;dia (vid&#233;o et audio)</a>",
     "USE": "Utilisez pour compl&#233;ter ou rehausser le texte",
     "CAT": "Configuration de conception",
