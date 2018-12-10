@@ -1,966 +1,135 @@
 
-<!doctype html>
-
-<!--[if lt IE 9]>
-<html class="no-js lt-ie9" dir="ltr" lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" dir="ltr" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
 <!--<![endif]-->
 <head>
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
-<title>Carousels - Common design patterns - Canada.ca</title>
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Buttons - Common design patterns - Canada.ca
+</title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
-
-
-	<link rel="schema.dcterms" href="http://purl.org/dc/terms/"/>
-
-		<meta name="description" content="The common design patterns can be used across various templates from this Specification."/>
-
-
-		<meta name="keywords" content="canada.ca, content, information, architecture, specification, templates, design, patterns, controlled, vocabulary, government, canada, common"/>
-
-
-		<meta name="author" content="Treasury Board of Canada Secretariat"/>
-
-
-		<meta property="dcterms.title" content="Common design patterns for Canada.ca"/>
-		<meta property="dcterms:title" content="Common design patterns for Canada.ca"/>
-
-
-		<meta property="dcterms.description" content="The common design patterns can be used across various templates from this Specification."/>
-		<meta property="dcterms:description" content="The common design patterns can be used across various templates from this Specification."/>
-
-
-		<meta property="dcterms.creator" content="Treasury Board of Canada Secretariat"/>
-		<meta property="dcterms:creator" content="Treasury Board of Canada Secretariat"/>
-
-
-
-		<meta property="dcterms.language" title="ISO639-2/T" content="eng"/>
-		<meta property="dcterms:language" title="ISO639-2/T" content="eng"/>
-
-
-		<meta property="dcterms.subject" title="gccore" content="IN Information and Communications"/>
-		<meta property="dcterms:subject" title="gccore" content="IN Information and Communications"/>
-
-
-		<meta property="dcterms.issued" title="W3CDTF" content="2017-10-05"/>
-		<meta property="dcterms:issued" title="W3CDTF" content="2017-10-05"/>
-
-
-		<meta property="dcterms.modified" title="W3CDTF" content="2018-09-19"/>
-		<meta property="dcterms:modified" title="W3CDTF" content="2018-09-19"/>
-
-
-
-		<meta property="dcterms.spatial" content="Canada"/>
-		<meta property="dcterms:spatial" content="Canada"/>
-
-
-		<meta property="dcterms.type" content="guidance"/>
-		<meta property="dcterms:type" content="guidance"/>
-
-
-
-
-
-		<meta name="dcterms.source" content="aem"/>
-
-
-		<meta name="dcterms.identifier" content="Treasury_Board_of_Canada_Secretariat"/>
-
-
-
-
-
-
-	<meta prefix="fb: https://www.facebook.com/2008/fbml" property="fb:pages" content="645328159200459, 167891083224996, 1562729973959056, 362400293941960, 769857139754987, 466882737009651, 126404198009505">
-
-
-
-
-<script src="//assets.adobedtm.com/caacec67651710193d2331efef325107c23a0145/satelliteLib-78cf42deb149c9766cbaaa6151e252b9b67c0200.js"></script>
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/clientlib-all.min.css" type="text/css">
-
-
-
-
-<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/wet-boew.min.css"/>
-<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.css"/>
-
+<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
 <!--[if gte IE 9 | !IE ]><!-->
-<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/theme.min.css">
 <!--<![endif]-->
-
 <!--[if lt IE 9]>
-<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="shortcut icon" />
-<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/ie8-wet-boew.min.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/ie8-wet-boew.min.js"></script>
-<![endif]-->
+		<link href="./GCWeb/assets/favicon.ico" rel="shortcut icon" />
 
-<noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css"/></noscript>
-<script>dataLayer = []; dataLayer1 = [];</script>
+		<link rel="stylesheet" href="http://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="./wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+<!--[if lte IE 9]>
+
+
+		<![endif]-->
+<noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/wet-boew/css/noscript.min.css" /></noscript>
 </head>
-
-<body vocab="http://schema.org/" typeof="WebPage">
-
-
-<noscript><iframe title="Google Tag Manager GCWeb" src="//www.googletagmanager.com/ns.html?id=GTM-TLGQ9K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer1'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer1','GTM-TLGQ9K');</script>
-
-
-
-
-
-
-
-
-        <div class="par iparys_inherited">
-
-
-
-
-
-
-
-
-        <div class="global-header"><!-- Accessibility -->
+<body class="cnt-wdth-lmtd" vocab="http://schema.org/" typeof="WebPage">
 <ul id="wb-tphp">
-    <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
-    <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to &#34;About this site&#34;</a></li>
-
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+</li>
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+</li>
 </ul>
-
-<header role="banner">
+<header>
 <div id="wb-bnr" class="container">
-
-
-    <section id="wb-lng" class="visible-md visible-lg text-right">
-    <h2 class="wb-inv">Language selection</h2>
-    <div class="row">
-        <div class="col-md-12">
-            <ul class="list-inline margin-bottom-none">
-                <li>
-                    <a lang="fr" href="../configurations-conception-communes/carrousels.html">
-                        Fran&ccedil;ais
-
-                    </a>
-                </li>
-
-
-            </ul>
-        </div>
-    </div>
+<section id="wb-lng" class="text-right">
+<h2 class="wb-inv">Language selection</h2>
+<div class="row">
+<div class="col-md-12">
+<ul class="list-inline margin-bottom-none">
+<li><a lang="fr" href="../configurations-conception-communes/boutons.html">Français</a></li>
+</ul>
+</div>
+</div>
 </section>
-    <div class="row">
+<div class="row">
+<div class="brand col-xs-5 col-md-4">
+<a href="https://www.canada.ca/en.html"><img src="http://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt=""><span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
+</div>
+<section id="wb-srch" class="col-lg-8 text-right">
+<h2>Search</h2>
+<form action="https://recherche-search.gc.ca/rGs/s_r?#wb-land" method="get" role="search" class="form-inline">
 
-        <div class="brand col-xs-8 col-sm-9 col-md-6">
-            <a href="/en.html">
-                <object type="image/svg+xml" tabindex="-1" data="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg"></object>
-                <span class="wb-inv">Government of Canada</span>
-            </a>
-        </div>
-
-
-        <section id="wb-srch" class="col-xs-6 text-right visible-md visible-lg">
-            <h2 class="wb-inv">Search</h2>
-
-<form action="/en/sr/srb.html" method="get" name="cse-search-box" role="search" class="form-inline">
 <div class="form-group">
+
 <label for="wb-srch-q" class="wb-inv">Search website</label>
-<input name="cdn" value="canada" type="hidden"/>
+
+<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" placeholder="Search Canada.ca">
+
 <input name="st" value="s" type="hidden"/>
+
 <input name="num" value="10" type="hidden"/>
-<input name="langs" value="en" type="hidden"/>
-<input name="st1rt" value="1" type="hidden"/>
+
+<input name="langs" value="eng" type="hidden"/>
+
+<input name="st1rt" value="0" type="hidden">
+
 <input name="s5bm3ts21rch" value="x" type="hidden"/>
 
-	<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="150" placeholder="Search Canada.ca"/>
-
-
-<input type="hidden" name="_charset_" value="UTF-8"/>
-
 <datalist id="wb-srch-q-ac">
+
 <!--[if lte IE 9]><select><![endif]-->
+
 <!--[if lte IE 9]></select><![endif]-->
+
 </datalist>
+
 </div>
+
 <div class="form-group submit">
+
 <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
 
 </div>
+
 </form>
 
-        </section>
 
-
-        <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
-            <h2>Search and menus</h2>
-            <ul class="list-inline text-right chvrn">
-                <li>
-                    <a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl" class="overlay-lnk" role="button">
-                <span class="glyphicon glyphicon-search">
-                    <span class="glyphicon glyphicon-th-list">
-                        <span class="wb-inv">Search and menus</span>
-                    </span>
-                </span>
-                    </a>
-                </li>
-            </ul>
-            <div id="mb-pnl"></div>
-        </section>
-    </div>
+</section>
 </div>
-
-
-<nav role="navigation" id="wb-sm" class="wb-menu visible-md visible-lg" data-trgt="mb-pnl" typeof="SiteNavigationElement">
-         <div class="pnl-strt container nvbar">
-        <h2 class="wb-inv">Topics menu</h2>
-        <div class="row">
-
-            <ul class="list-inline menu" role="menubar">
-                <li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <a href="https://www.canada.ca/en/services/jobs.html" class="item">Jobs</a>
-
-
-                    <ul id="jobs" class="sm list-unstyled" role="menu">
-
-                        <li>
-
-                            <a href="http://www.jobbank.gc.ca/home-eng.do?lang=eng" role="menuitem">Job Bank</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/jobs/opportunities.html" role="menuitem">Find a job</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/jobs/training.html" role="menuitem">Training</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="http://www.canada.ca/business-management" role="menuitem">Hire and manage employees</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="http://www.canada.ca/start-business" role="menuitem">Starting a business</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/jobs/workplace.html" role="menuitem">Workplace standards</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/finance/pensions.html" role="menuitem">Pensions and retirement</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="http://www.canada.ca/ei" role="menuitem">Employment Insurance and leave</a>
-                        </li>
-
-                        <li class="slflnk">
-                            <a href="https://www.canada.ca/en/services/jobs.html" role="menuitem">Jobs – More</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <a href="https://www.canada.ca/en/services/immigration-citizenship.html" class="item">Immigration</a>
-
-
-                    <ul id="immigration" class="sm list-unstyled" role="menu">
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application.html" role="menuitem">My application</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html" role="menuitem">Visit</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada.html" role="menuitem">Immigrate</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada.html" role="menuitem">Work</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html" role="menuitem">Study</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship.html" role="menuitem">Citizenship</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants.html" role="menuitem">New immigrants</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadians.html" role="menuitem">Canadians</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees.html" role="menuitem">Refugees and asylum</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/immigration-citizenship/enforcement-violations.html" role="menuitem">Enforcement and violations</a>
-                        </li>
-
-                        <li class="slflnk">
-                            <a href="https://www.canada.ca/en/services/immigration-citizenship.html" role="menuitem">Immigration – More</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <a href="http://travel.gc.ca/" class="item">Travel</a>
-
-
-                    <ul id="travel" class="sm list-unstyled" role="menu">
-
-                        <li>
-
-                            <a href="http://travel.gc.ca/travelling/advisories" role="menuitem">Travel advice and advisories</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="http://travel.gc.ca/canadian-tourism" role="menuitem">Canadian attractions, events and experiences</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports.html" role="menuitem">Canadian passports</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="http://travel.gc.ca/travelling" role="menuitem">Travelling abroad</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="http://travel.gc.ca/air" role="menuitem">Air travel</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="http://travel.gc.ca/returning" role="menuitem">Returning to Canada</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="http://travel.gc.ca/assistance" role="menuitem">Assistance abroad</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="http://travel.gc.ca/stay-connected" role="menuitem">Stay connected</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="http://www.canada.ca/visit" role="menuitem">Visit Canada</a>
-                        </li>
-
-                        <li class="slflnk">
-                            <a href="http://travel.gc.ca/" role="menuitem">Travel – More</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <a href="https://www.canada.ca/en/services/business.html" class="item">Business</a>
-
-
-                    <ul id="business" class="sm list-unstyled" role="menu">
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/start.html" role="menuitem">Starting a business</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/grants.html" role="menuitem">Business grants and financing</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/taxes.html" role="menuitem">Business taxes</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/federal-corporations.html" role="menuitem">Federal corporations</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/hire.html" role="menuitem">Hiring and managing employees</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/trade.html" role="menuitem">International trade and investment</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/permits.html" role="menuitem">Permits, licences and regulations</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/doing-business.html" role="menuitem">Doing business with government</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/science/innovation.html" role="menuitem">R&amp;D and innovation</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/research.html" role="menuitem">Research and business intelligence</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/ip.html" role="menuitem">Intellectual property and copyright</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/maintaingrowimprovebusiness.html" role="menuitem">Maintaining your business</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/protecting.html" role="menuitem">Protecting your business</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/business/bankruptcy.html" role="menuitem">Insolvency for business</a>
-                        </li>
-
-                        <li class="slflnk">
-                            <a href="https://www.canada.ca/en/services/business.html" role="menuitem">Business – More</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <a href="https://www.canada.ca/en/services/benefits.html" class="item">Benefits</a>
-
-
-                    <ul id="benefits" class="sm list-unstyled" role="menu">
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/benefits/ei.html" role="menuitem">Employment Insurance and leave</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/benefits/family.html" role="menuitem">Family and caregiving benefits</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/benefits/publicpensions.html" role="menuitem">Public pensions</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/benefits/education.html" role="menuitem">Education and training</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/benefits/housing.html" role="menuitem">Housing benefits</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/benefits/disability.html" role="menuitem">Disability benefits</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="http://www.canadabenefits.gc.ca" role="menuitem">Benefits finder</a>
-                        </li>
-
-                        <li class="slflnk">
-                            <a href="https://www.canada.ca/en/services/benefits.html" role="menuitem">Benefits – More</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <a href="https://www.canada.ca/en/services/health.html" class="item">Health</a>
-
-
-                    <ul id="health" class="sm list-unstyled" role="menu">
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/health/food-nutrition.html" role="menuitem">Food and nutrition</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/public-health/services/diseases.html" role="menuitem">Diseases and conditions</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/public-health/topics/immunization-vaccines.html" role="menuitem">Vaccines and immunization</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/health/drug-health-products.html" role="menuitem">Drug and health products</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/health/product-safety.html" role="menuitem">Product safety</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/health/health-risks-safety.html" role="menuitem">Health risks and safety</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/health/healthy-living.html" role="menuitem">Healthy living</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/health/aboriginal-health.html" role="menuitem">Indigenous health</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/health/health-system-services.html" role="menuitem">Health system and services</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/health/science-research-data.html" role="menuitem">Science, research and data</a>
-                        </li>
-
-                        <li class="slflnk">
-                            <a href="https://www.canada.ca/en/services/health.html" role="menuitem">Health – More</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <a href="https://www.canada.ca/en/services/taxes.html" class="item">Taxes</a>
-
-
-                    <ul id="taxes" class="sm list-unstyled" role="menu">
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/taxes/income-tax.html" role="menuitem">Income Tax</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/taxes/gsthst.html" role="menuitem">GST/HST</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/taxes/payroll.html" role="menuitem">Payroll</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/taxes/business-number.html" role="menuitem">Business number</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/taxes/savings-and-pension-plans.html" role="menuitem">Savings and pension plans</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/taxes/child-and-family-benefits.html" role="menuitem">Child and family benefits</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/taxes/excise-taxes-duties-and-levies.html" role="menuitem">Excise taxes, duties, and levies</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/taxes/charities.html" role="menuitem">Charities and giving</a>
-                        </li>
-
-                        <li class="slflnk">
-                            <a href="https://www.canada.ca/en/services/taxes.html" role="menuitem">Taxes  – More</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <a href="https://www.canada.ca/en/services.html" class="item">More services</a>
-
-
-                    <ul id="moreservices" class="sm list-unstyled" role="menu">
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/environment.html" role="menuitem">Environment and natural resources</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/defence.html" role="menuitem">National security and defence</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/culture.html" role="menuitem">Culture, history and sport</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/policing.html" role="menuitem">Policing, justice and emergencies</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/transport.html" role="menuitem">Transport and infrastructure</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="http://international.gc.ca/world-monde/index.aspx?lang=eng" role="menuitem">Canada and the world</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/finance.html" role="menuitem">Money and finances</a>
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.canada.ca/en/services/science.html" role="menuitem">Science and innovation</a>
-                        </li>
-
-                        <li class="slflnk">
-                            <a href="https://www.canada.ca/en/services.html" role="menuitem">All services</a>
-                        </li>
-
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
+</div>
+<nav class="gcweb-v2" typeof="SiteNavigationElement">
+<div class="container">
+<h2 class="wb-inv">Menu</h2>
+<button type="button" aria-haspopup="true" aria-controls="gc-mnu" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+<ul id="gc-mnu" role="menu" aria-orientation="vertical" data-ajax-replace="https://wet-boew.github.io/themes-dist/GCWeb/ajax/sitemenu-v2-en.html">
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/jobs.html">Jobs and the workplace</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://travel.gc.ca/">Travel and tourism</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/business.html">Business and industry</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/health.html">Health</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="http://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance.html">Money and finances</a></li>
+	<li role="none presentation"><a role="menuitem" tabindex="-1" href="https://www.canada.ca/en/services/finance.html">Science and innovation</a></li>
+</ul>
+</div>
 </nav>
-
-
-
-    <nav role="navigation" id="wb-bc" property="breadcrumb"><h2 class="wb-inv">You are here:</h2><div class="container"><div class="row"><ol class="breadcrumb">
-<li><a href='https://www.canada.ca/en.html'>Home</a></li>
-<li><a href='https://www.canada.ca/en/government/about.html'>About Canada.ca</a></li>
-<li><a href='https://www.canada.ca/en/government/about/pattern-library.html'>Template and pattern library for Canada.ca</a></li>
-</ol></div></div></nav>
-
-
-
-
+<nav id="wb-bc" property="breadcrumb">
+<h2>You are here:</h2>
+<div class="container">
+<ol class="breadcrumb">
+	<li><a href='https://www.canada.ca/en.html'>Home</a></li>
+	<li><a href='https://www.canada.ca/en/government/about.html'>About Canada.ca</a></li>
+	<li><a href='https://www.canada.ca/en/government/about/pattern-library.html'>Template and pattern library for Canada.ca</a></li>
+</ol>
+</div>
+</nav>
 </header>
-<div data-ajax-replace="/bin/canada/alert/messages.en.html" class="original"></div>
+
+
 </div>
 
 
@@ -982,68 +151,85 @@
 
 <!--/* Hide Nav; Hide Right Rail /*-->
 
-    <main role="main" property="mainContentOfPage" class="container">
+<main role="main" property="mainContentOfPage" class="container">
 
 
-    <h1 property="name" id="wb-cont" dir="ltr">Carousels - Common design patterns</h1>
+<h1 property="name" id="wb-cont" dir="ltr">Buttons - Common design patterns</h1>
 
 
 
 
-        <div><div class="mwsgeneric-base-html parbase section">
+		<div><div class="mwsgeneric-base-html parbase section">
 
-<section>
-  <p>Responsive carousels are in-page components used to promote multiple different activities, initiatives, programs, and services within the same content space.</p>
-  <section>
-    <h2>When to use this pattern </h2>
-    <ul>
-      <li>Use this component to promote timely, current activities and initiatives</li>
-      <li>Do not use this component when a person’s flow must not be interrupted, as in a transactional process</li>
-      <li>Do not duplicate content from other promotional components on the page</li>
-    </ul>
-  </section>
-  <section>
-    <h2>How to use this pattern</h2>
-    <ul>
-      <li>Responsive carousels are a set of 2 to 4 rotating slides that refresh on page load, with user-controls to rotate through the slides and to toggle to auto-rotation</li>
-      <li>The default controls for stepping through the slides are thumbnails for large screens and forward/back buttons, including an “Item X of X” message for small screens</li>
-      <li>When auto-play is activated, the default slide for the start of auto-rotation is slide one</li>
-      <li>The default timing for auto-rotation is 9 seconds per slide</li>
-      <li>The default style for transitioning between slides is horizontal sliding transition, starting from the right edge</li>
-      <li>Carousels may be implemented at various sizes, ranging from a single column to the full width of the screen</li>
-      <li>Each slide is made up of a combination of text and imagery, with the option to add a button link</li>
-      <li>Both text and imagery must be linked, but all links in the carousel slide must point to the same destination</li>
-      <li>Any call to action must be described in the hyperlink text or button link</li>
-      <li>A maximum of 65 characters is allowed for all of the text on a carousel slide (including link label)</li>
-      <li>Textual elements must be coded as HTML text—do not embed text into imagery</li>
-      <li>Use the defined presentation classes included in the Canada.ca <abbr title="Web Experience Toolkit">WET</abbr> theme</li>
-      <li>For image sizing details, consult the <a href="http://wet-boew.github.io/themes-dist/GCWeb/index-en.html">Canada.ca GitHub page</a></li>
-    </ul>
-  </section>
+
+
+<p class="gc-byline"><strong>From <a href="https://www.canada.ca/en/treasury-board-secretariat.html">Treasury Board of Canada Secretariat</a></strong></p>
 
 <section>
-    <h2>Working example</h2>
-    <ul>
-      <li><a href="http://wet-boew.github.io/themes-dist/GCWeb/theme-en.html">Theme page template</a></li>
-      <li><a href="http://wet-boew.github.io/themes-dist/GCWeb/demos/tabs/tabs-carousel-en.html">WET: Carousels</a> – use style 2</li>
-    </ul>
+<p>Buttons are clickable objects intended to encourage a person to take action.</p>
+<section>
+<h2>When to use this pattern</h2>
+<p>Use the button pattern to execute actions or commands that will change the system state at the front or back end, for example “Add comment,” “Submit,” “Send.”</p>
+<p>Use buttons when:</p>
+<ul>
+	<li>helping a person into or through a transaction such as “Feedback”</li>
+		 <li>invoking functionality, for example “Share this page”</li>
+		 <li>providing a persistent set of UI controls across a series of pages, for example “previous”, “next”, or “back to table of contents”</li>
+</ul>
+
+<p>Do not use buttons when:</p>
+<ul>
+	<li>an ordinary text link will do the job just as well, like when providing a single, simple link to another page</li>
+</ul>
+
+<p>Buttons are used to activate system controls, or to draw attention to prominent actions on the page. Limit their use accordingly, to prevent their visual impact from being worn by overuse.</p>
 </section>
- <section class="panel panel-primary">
-    <header class="panel-heading">
-      <h3 class="panel-title">Example</h3>
-    </header>
-    <div class="panel-body">
-      <figure class="mrgn-bttm-sm">
-        <figcaption class="text-center"><b>Carousels pattern</b></figcaption>
-        <img src="https://www.canada.ca/content/dam/tbs-sct/images/government-communications/canada-content-style-guide/carousels-pattern-eng.jpg" class="img-responsive center-block" alt="Screenshot illustrating the full-width carousel pattern on Canada.ca. Details on this graphic can be found in the surrounding text."></figure>
-    </div>
-  </section>
+<section>
+<h2>How to use this pattern</h2>
+<ul>
+	<li>Use a high-contrast button colour for primary actions, and aim to have only one primary action per page</li>
+	<li>Only use primary action buttons when they truly represent the primary action on the page
+	<ul>
+		<li>for example, never use it for “more information” or “see our FAQs”</li>
+	</ul>
+</li>
+	<li>When possible, avoid using a secondary action
+	<ul>
+		<li>if a secondary action is required, use background colour that provides lower contrast than the primary action</li>
+	</ul>
+</li>
+	<li>On forms, avoid including unrelated buttons at the bottom of the page such as “Share this page”</li>
+	<li>Retain adequate space around buttons. Do not place them in line with text</li>
+	<li>The default alignment is flush left</li>
+	<li>Use only&nbsp;WET&nbsp;button styles</li>
+</ul>
+
 </section>
+
+<section>
+<h2>Working example</h2>
+<ul>
+	<li><a href="http://wet-boew.github.io/wet-boew-styleguide/v4/design/buttons-en.html">WET: Buttons</a></li>
+</ul>
+</section>
+<section class="panel panel-primary">
+<header class="panel-heading">
+	<h3 class="panel-title">Example</h3>
+</header>
+<div class="panel-body">
+	<figure class="mrgn-bttm-sm">
+		<figcaption class="text-center"><b>Buttons pattern</b></figcaption>
+		<img src="https://www.canada.ca/content/dam/tbs-sct/images/government-communications/canada-content-style-guide/buttons-pattern-eng.jpg" class="img-responsive center-block" alt="Screenshot illustrating the button pattern on Canada.ca. Details on this graphic can be found in the surrounding text."></figure>
+</div>
+</section>
+</section>
+
 
 </div>
 
 </div>
-        <div class="row pagedetails">
+		<div class="row pagedetails">
+
 
     <details class="brdr-0 col-sm-6 col-lg-4 mrgn-tp-sm">
 
@@ -1149,169 +335,54 @@
 
 
 
-        <div class="par iparys_inherited">
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-        <div class="par iparys_inherited">
-
-
-
-
-
-
-
-
-        <div class="global-footer">
-    <footer role="contentinfo" id="wb-info">
-        <nav role="navigation" class="container wb-navcurr">
-            <h2 class="wb-inv">About government</h2>
-            <ul class="list-unstyled colcount-sm-2 colcount-md-3">
-
-
-                         <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
-
-
-
-
-                        <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
-
-
-
-
-                        <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
-
-
-
-
-                        <li><a href="https://www.canada.ca/en/news.html">News</a></li>
-
-
-
-
-                        <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
-
-
-
-
-                        <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
-
-
-
-
-                        <li><a href="http://pm.gc.ca/eng">Prime Minister</a></li>
-
-
-
-
-                        <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
-
-
-
-
-                        <li><a href="http://open.canada.ca/en/">Open government</a></li>
-
-
-            </ul>
-        </nav>
-        <div class="brand">
-            <div class="container">
-                <div class="row">
-                    <nav class="col-md-10 ftr-urlt-lnk">
-                        <h2 class="wb-inv">About this site</h2>
-                        <ul>
-
-
-                                    <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
-
-
-
-
-                                    <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
-
-
-
-
-                                    <li><a href="https://www.canada.ca/en/government/about.html">About Canada.ca</a></li>
-
-
-
-
-                                    <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
-
-
-
-
-                                    <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
-
-
-
-
-
-                        </ul>
-                    </nav>
-                    <div class="col-xs-6 visible-sm visible-xs tofpg">
-                        <a href="#wb-cont">Top of page <span class="glyphicon glyphicon-chevron-up"></span></a>
-                    </div>
-                    <div class="col-xs-6 col-md-2 text-right">
-                        <object type="image/svg+xml" tabindex="-1" role="img" data="https://www.canada.ca/etc/designs/canada/wet-boew/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<script type="text/javascript">_satellite.pageBottom();</script>
-
-
-
-
-
-
-
-<script type="text/javascript" src="https://www.canada.ca/etc/clientlibs/granite/jquery.min.js"></script>
-<script type="text/javascript" src="https://www.canada.ca/etc/clientlibs/granite/utils.min.js"></script>
-<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/clientlib-publish.min.js"></script>
-
-
-
-
-<!--[if gte IE 9 | !IE ]><!-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/wet-boew.min.js"></script>
-<!--<![endif]-->
-
-<!--[if lt IE 9]>
-<script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/ie8-wet-boew2.min.js"></script>
-<![endif]-->
-
-<script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/theme.min.js"></script>
-</body>
-</html>
+		<footer id="wb-info">
+	<div class="landscape">
+	<nav class="container wb-navcurr">
+	<h2 class="wb-inv">About government</h2>
+	<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+	<li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
+	<li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+	<li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
+	<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+	<li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
+	<li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
+	<li><a href="https://pm.gc.ca/eng">Prime Minister</a></li>
+	<li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
+	<li><a href="https://open.canada.ca/en/">Open government</a></li>
+	</ul>
+	</nav>
+	</div>
+	<div class="brand">
+	<div class="container">
+	<div class="row">
+	<nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+	<h2 class="wb-inv">About this site</h2>
+	<ul>
+	<li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+	<li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+	<li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+	<li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+	<li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+	</ul>
+	</nav>
+	<div class="col-xs-6 visible-sm visible-xs tofpg">
+	<a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+	</div>
+	<div class="col-xs-6 col-md-3 col-lg-2 text-right">
+	<img src="http://www.canada.ca/etc/designs/canada/wet-boew/assets/wmms-blk.svg" alt="Symbol of the Government of Canada">
+	</div>
+	</div>
+	</div>
+	</div>
+	</footer>
+	<!--[if gte IE 9 | !IE ]><!-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+	<script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+	<!--<![endif]-->
+	<!--[if lt IE 9]>
+			<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+			<![endif]-->
+	<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+	</body>
+	</html>
