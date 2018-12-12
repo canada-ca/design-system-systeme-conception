@@ -322,7 +322,7 @@
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Obligatoire"
   }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/department-agencies-page.html\">Page des minist&#232;res et organismes</a>",
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-obligatoire/page-ministeres-organismes.html\">Page des minist&#232;res et organismes</a>",
     "USE": "Fournit des liens vers toutes les institutions f&#233;d&#233;rales - <strong>Mod&#232;le obligatoire</strong>",
     "CAT": "Mod&#232;le de page",
     "TYPE": "Mod&#232;le &#224; l'&#233;chelle du gouvernement",   
