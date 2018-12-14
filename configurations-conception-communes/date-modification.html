@@ -992,27 +992,30 @@
 
 <section>
  <p><span class="label label-danger">Obligatoire</span></p>
-  <p>La composante de date de modification est destinée à indiquer la mise à jour récente du contenu de la page Web où il s’affiche.</p>
+  <p>La composante de date de modification indique la date de la dernière mise à jour d'une page Web.</p>
   <section>
    <h4>Objectifs</h4>
    <p>Utilisez la composante «&nbsp;Date de modification&nbsp;» pour fournir à aux gens la date où le contenu a été mis à jour en dernier.</p>
   </section>
   <section>
-   <h4>Quand utiliser la date de modification</h4>
+   <h4>Quand mettre à jour la date de modification</h4>
    <p>Cette composante&nbsp;:</p>
    <ul>
- <li>est obligatoire sur toutes les pages à l’exception des scénarios d’opérations, où l’on peut remplacer la composante par un «&nbsp;Numéro de version&nbsp;», au besoin;</li>
+
  <li>ne devrait généralement être mise à jour que lorsque d’importants changements au contenu se produisent;</li>
  <li>ne devrait généralement pas être mise à jour lors de corrections aux erreurs typographiques ou de changements au code HTML sous-jacent;</li>
  <li>peut être mise à jour manuellement pour signifier que le contenu a été entièrement revu et qu’il est encore valide à cette date.</li>
    </ul>
+	  
+	  
+ <p>Dans les scénarios transactionnels, il est possible de remplacer la composante par un «&nbsp;Numéro de version&nbsp;», au besoin;</p>
   </section>
   <section>
    <h4>Comment mettre en œuvre la date de modification</h4>
    <ul>
  <li>Cette composante commence toujours par les mots «&nbsp;Date de modification&nbsp;:&nbsp;» suivis d’une date.</li>
  <li>La date s’affiche à l’aide de la méthode alphanumérique commune, c’est-à-dire, le 4 octobre 2016.</li>
- <li>Placement&nbsp;: alignée à gauche, sous le bouton «&nbsp;Signaler un problème sur cette page&nbsp;».</li>
+ <li>Placement&nbsp;: alignée à gauche, sous le contenu général. Si elle est utilisée conjointement avec la composante, «&nbsp;Signaler un problème sur cette page&nbsp;», elle est placée sous le bouton qui sert à signaler un problème.</li>
    </ul>
   </section>
  </section>
