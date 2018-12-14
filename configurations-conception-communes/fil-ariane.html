@@ -1003,20 +1003,21 @@
 
 <section>
  <p><span class="label label-danger">Obligatoire</span></p>
- <p>Une série de liens présentée sur ligne horizontale, appelée «&nbsp;Fil d’Ariane&nbsp;», figure juste en dessous du menu de navigation générale pour les thèmes et sujets dans l’en-tête de toutes les pages du site.</p>
+ <p>Une série de liens présentée sur ligne horizontale, appelée «&nbsp;Fil d’Ariane&nbsp;», donne aux gens une idée de l'endroit où ils se trouvent par rapport à la structure du site.</p>
   <p>Les liens dans la piste de navigation ne visent pas à refléter le chemin par lequel le visiteur est arrivé à l’emplacement actuel. Au contraire, les liens représentent toujours l’emplacement de la page actuelle dans le modèle de navigation de l’utilisateur du site.</p>
   <section>
    <h2>Objectif</h2>
-   <p>L’objectif de la piste de navigation est de renforcer l’emplacement actuel des visiteurs dans le modèle de navigation de l’utilisateur du site Canada.ca, en indiquant l’emplacement de la page actuelle par rapport à son parent dans l’AI. La piste de navigation fournit également aux utilisateurs une méthode simple pour se déplacer vers le haut dans la structure du site au cas où ils souhaiteraient accéder à des sections supérieures sans devoir retourner à la page d’accueil du site ou effectuer une recherche.</p>
+   <p>L’objectif de la piste de navigation est de renforcer l’emplacement actuel des visiteurs dans le modèle de navigation de l’utilisateur du site Canada.ca, en indiquant l’emplacement de la page actuelle par rapport à son parent dans l’AI. La piste de navigation fournit également aux utilisateurs une méthode simple pour se déplacer vers le haut dans la structure du site au cas où ils souhaiteraient accéder à des sections supérieures sans devoir retourner à la page d’accueil ou effectuer une recherche.</p>
   </section>
   <section>
    <h2>Comment mettre en œuvre le fil d’Ariane</h2>
    <ul>
 <li>La piste de navigation commence par «&nbsp;Accueil&nbsp;» (un lien vers la page d’accueil de chaque langue de Canada.ca) et se termine à un niveau au-dessus de la page actuelle du visiteur dans le site.
-  <p class="mrgn-tp-md">Par exemple, si un utilisateur se trouve sur la page «&nbsp;Conseils sur l’alimentation saine&nbsp;» dans le thème de la Santé, la piste de navigation devrait être «&nbsp;Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Santé <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Alimentation et nutrition <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Alimentation saine&nbsp;».</p>
-</li><li>Sur les appareils mobiles, seulement deux liens devraient être affichés dans la piste de navigation. Lorsque des liens intermédiaires ont été supprimés, on doit utiliser des points de suspension (…) pour indiquer que des niveaux sont masqués dans la piste de navigation.
-  <p class="mrgn-tp-md">Par exemple, si un utilisateur se trouve sur la page «&nbsp;Conseils sur l’alimentation saine&nbsp;» dans le thème de la Santé, la piste de navigation sur appareil mobile devrait être «&nbsp;Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> … <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Alimentation saine&nbsp;», et non «&nbsp;Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Santé <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Alimentation et nutrition <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Alimentation saine&nbsp;».</p>
- </li>
+  <p class="mrgn-tp-md">Par exemple, si un utilisateur se trouve sur la page «&nbsp;Conseils sur l’alimentation saine&nbsp;» dans le thème de la Santé, la piste de navigation devrait être :</p>
+
+<p class="mrgn-tp-md">Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Santé <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Alimentation et nutrition <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Alimentation saine</p>
+</li>
+	   
  <li>La page en cours n’est jamais affichée à la fin de la piste de navigation.</li>
  <li>Des flèches servent de séparateurs, conformément aux recommandations du W3C.</li>
  <li>Les longs titres de page doivent être raccourcis dans la mesure du possible, pour permettre de réduire l’espace horizontal nécessaire pour afficher la piste. Le nom de chaque page ou section dans le site Canada.ca doit être associé à une version raccourcie du nom, aux fins de la piste de navigation et d’autres systèmes de navigation. Par exemple, «&nbsp;Entreprises et industrie&nbsp;» est raccourci à «&nbsp;Entreprises&nbsp;» dans le fil d’Ariane.</li>
@@ -1031,11 +1032,7 @@
  <dt><strong>Pages de sujet du premier niveau</strong></dt>
  <dd>Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Thème parent]</dd>
  <dt><strong>Pages de sujet du niveau intermédiaire</strong></dt>
- <dd>Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> … <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Sujet parent]</dd>
- <dt><strong>Pages de sujet du dernier niveau</strong></dt>
- <dd>Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> … <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Sujet parent]</dd>
- <dt><strong>Pages de collection</strong></dt>
- <dd>Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Collection]</dd>
+ <dd>Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Thème parent]<span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Sujet parent]</dd>
  <dt><strong>Pages de profil institutionnel</strong></dt>
  <dd>Accueil</dd>
  <dt><strong>Pages de profil organisationnel</strong></dt>
@@ -1043,7 +1040,7 @@
  <dt><strong>Pages de partenariat ou d’entente de collaboration</strong></dt>
  <dd>Accueil</dd>
  <dt><strong>Services</strong></dt>
- <dd>Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> … <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Sujet parent]</dd>
+ <dd>Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Thème parent]<span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Sujet parent]</dd>
  <dt><strong>Pages de résultats du moteur de recherche</strong></dt>
  <dd>Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Recherche</dd>
    </dl>
