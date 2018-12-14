@@ -998,19 +998,20 @@
 <section>
 <p><span class="label label-danger">Mandatory</span></p>
 
- <p>The ability to search all <abbr title="Government of Canada">GC</abbr> content in Canada.ca is supported by a simple search field, which is provided in the global header used across the site.</p>
+ <p>The ability to search all Government of Canada content is supported by a simple search field, which is provided in the global header used across the site.</p>
     <section>
       <h2>Objective</h2>
-      <p>The search feature provides an alternative method to discover content that can be used by visitors to directly locate any content contained on Canada.ca. It allows people to bypass the government-wide navigation layer completely by submitting keywords that the system will match with relevant <abbr title="Government of Canada">GC</abbr> content.</p>
+      <p>The search feature provides an alternative method to discover content that can be used by visitors to directly locate any content contained on Canada.ca. It allows people to bypass the navigation completely by submitting keywords that the system will match with relevant Government of Canada content.</p>
     </section>
     <section>
       <h4>How to implement the Site search box</h4>
       <ul>
-        <li>Basic search consists of 2 elements: a keyword text field and a search button to initiate the query</li>
-        <li>Basic search is accessible through the global header area, across all pages of the site. On smaller screens, it is located inside the mobile slide-out menu panel triggered by the button in the top right corner of the header</li>
+        <li>Basic search consists of 2 elements: a keyword text input field and a search button to initiate the query</li>
+        <li>On large screens, basic search is positionned on the right-hand side of the global header area, below the language toggle link. </li>
+	<li>On smaller screens basic search is positioned underneath the Government of Canada signature.</li>
+	 <li>Basic search is configured to scale automatically according to screen size to allow for
+responsive design.</li>
         <li>The basic search function allows for the use of Boolean operators in the text field to submit more refined or specific queries to the search engine</li>
-        <li>Basic search also includes type-ahead (auto-complete) functionality, so that as a person begins typing a query in the search box, suggested words will automatically appear below</li>
-        <li>Exceptionally, the search box may be omitted on <a href="#transactional">transactional pages</a>).</li>
       </ul>
     </section>
   </section>
