@@ -161,7 +161,7 @@
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/components-fr.html\">Exemples de composantes</a>",
     "MANDATORY": "Non"
   }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/menu-site.html\">Menu g&#233;n&#233;ral du site</a>",
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/menu-site.html\">Menu thématique</a>",
     "USE": "Utilisez sur toutes les pages comme navigation principale par th&#232me - <strong>Conception obligatoire</strong>",
     "CAT": "Configuration de conception",
     "TYPE": "Configuration &#224; l'&#233;chelle du site",   
@@ -413,7 +413,7 @@
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/demos/fieldflow/fieldflow-fr.html\">BOEW : D&#233;roulement de champs</a>",
     "MANDATORY": "Non"
   }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/signature.html\">Services et renseignements</a>",
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/services-renseignements.html\">Services et renseignements</a>",
     "USE": "Utilisez pour pr&#233;senter des ensembles de liens avec des descriptions connexes",
     "CAT": "Configuration de conception",
     "TYPE": "Navigation",   
@@ -427,7 +427,7 @@
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Obligatoire"
   }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/menu-site.html\">Signature du gouvernement du Canada</a>",
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/configurations-conception-communes/signature.html\">Signature du gouvernement du Canada</a>",
     "USE": "La signature du gouvernement du Canada d&#233;finie dans les instruments strat&#233;giques du Programme de coordination de l’image de marque (PCIM) est mise en &#233;vidence dans l’en-t&#234;te g&#233;n&#233;ral du site Web Canada.ca. - <strong>Conception obligatoire</strong>",
     "CAT": "Configuration de conception",
     "TYPE": "Configuration &#224; l'&#233;chelle du site, Visuel",   
