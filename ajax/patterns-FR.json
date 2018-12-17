@@ -195,13 +195,6 @@
     "TYPE": "Mod&#232;le &#224; l'&#233;chelle du gouvernement",  
     "EXAMPLE": "<a href=\"https://www.canada.ca/fr.html\">Page d'accueil sur le site en direct</a>",
     "MANDATORY": "Obligatoire"
-  }, { 
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-recommandes/pages-cibles-collections.html\">Page d’accueil des collections</a>",
-    "USE": "Permet aux personnes d'effectuer des recherches dans une collection. Pr&#233;sente les &#233;l&#233;ments les plus populaires d'une collection.",
-    "CAT": "Mod&#232;le de page",
-    "TYPE": "Navigation",   
-    "EXAMPLE": "&nbsp;",
-    "MANDATORY": "Non"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-obligatoire/pages-nouvelles.html#accueil\">Page d'accueil des nouvelles</a>",
     "USE": "Donne acc&#232;s aux produits de nouvelles du gouvernement du Canada - <strong>Mod&#232;le obligatoire</strong>",
@@ -225,11 +218,11 @@
     "MANDATORY": "Non"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-obligatoire/pages-contactez-nous.html\">Page de coordonn&#233;es</a>",
-    "USE": "Fournit un mod&#232;le d'option de communication dans Canada.ca. Utilisez pour pr&#233;senter les coordonn&#233;&#224;&#224;es d'une personne, d'un bureau, d'une organisation ou pour des urgences. - <strong>Mod&#232;le obligatoire</strong>",
+    "USE": "Fournit un mod&#232;le d'option de communication dans Canada.ca. Utilisez pour pr&#233;senter les coordonn&#233;&#224;&#224;es d'une personne, d'un bureau, d'une organisation ou pour des urgences.",
     "CAT": "Mod&#232;le de page",
     "TYPE": "Institutionnel",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/institution-contact-fr.html\">Page de coordonn&#233;es institutionnelles</a>",
-    "MANDATORY": "Obligatoire"
+    "MANDATORY": "Non"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-recommandes/pages-description-programme.html \">Page de description de programme</a>",
     "USE": "Fournit des d&#233;tails sur un programme. Donne acc&#232;s aux services li&#233;s &#224; un programme. Utilisez pour donner des renseignements g&#233;n&#233;raux sur un programme. Ne pas utiliser pour d&#233;buter une tâche.",
