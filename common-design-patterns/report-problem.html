@@ -167,10 +167,16 @@
 <section>
 <p><span class="label label-danger">Mandatory</span></p>
 
-<p>The Report a problem component allows people to provide feedback via a form for any problems that may have happened. This component is intended to collect and address any issues for the page on which it resides.</p>
+<p>The report a problem component allows people to provide feedback via a form for any problems they experience with a web page. This component is intended to collect and address any issues for the page on which it resides.</p>
+</section>
+<figure>
+		<img src="../images/report-en.png" alt="Screenshot of a webpage: button labeled 'Report a problem on this page' appears on the left. 'Share this page' appears on the right, and 'Date modified: 2017-12-05' appears below.">
+	<figcaption>Report a problem buttons</figcaption>
+</figure>
+
 <section>
 	<h2>Objectives</h2>
-	<p>Use this component to enable page-level feedback. Common web page content issues are presented for a person to select using checkboxes. If none of these options are applicable, they may select “Other”.</p>
+	<p>Use this component to enable page-level feedback. Common issues are presented for a person to select using checkboxes. If none of these options are applicable, they may select “Other”.</p>
 </section>
 <section>
 	<h2>How to implement Report a problem</h2>
@@ -193,16 +199,16 @@
 		</li>
 		<li>The form includes a hyperlink to a Privacy statement, which appears in a dismissible overlay when clicked</li>
 		<li>The submit button is labeled “Submit”</li>
-		<li>When a person hits the “Submit” button, the form is submitted and replaced by a thank you message
+		<li>When the form is submitted it is replaced by a thank-you message
 			<ul>
-				<li>the thank you message can be collapsed by clicking the “Report a problem with this page” button. </li>
-				<li>the form must then be reset so that people may submit any other problems they encounter on that page</li>
+				<li>the thank-you message can be collapsed by clicking the “Report a problem with this page” button</li>
+				<li>if the "Report a problem with this page" button is clicked again, the form resets so that additional problems can be reported</li>
 			</ul>
 		</li>
 	</ul>
 	<figure class="mrgn-bttm-lg">
-		<figcaption class="text-center"><b>Report a problem</b></figcaption>
-		<img src="https://www.canada.ca/content/dam/tbs-sct/images/government-communications/canada-content-style-guide/report-a-problem-eng.jpg" class="img-responsive center-block" alt="Diagram of report a problem functionality. Text version below:">
+		<figcaption><b>Report a problem</b></figcaption>
+		<img src="https://www.canada.ca/content/dam/tbs-sct/images/government-communications/canada-content-style-guide/report-a-problem-eng.jpg" class="img-responsive" alt="Diagram of report a problem functionality. Text version below:">
 		<details>
 			<summary class="wb-toggle" data-toggle="{&quot;print&quot;:&quot;on&quot;}">Text version</summary>
 			<p>The report a problem component is titled “Report a problem on this page” with checkboxes for “Something is broken”, “It has a spelling or grammar mistake”, “The information is wrong”, and “The information is outdated” (which is checked in this case). It also contains a small textbox labeled as “Provide more details (optional):”. These are followed by: a textbox labeled “I can’t find what I’m looking for” and “Other”, a link to the privacy statement and finally a send button.</p>
