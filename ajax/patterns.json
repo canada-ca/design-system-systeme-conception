@@ -47,14 +47,7 @@
     "CAT": "Design pattern",
     "TYPE": "Interaction",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/demos/details/details-en.html\">WET: Details/summary polyfill (expandable/collapsible content)</a>",
-    "MANDATORY": "No"
-  }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/collection-landing-pages.html\">Collection landing page</a>",
-    "USE": "Allows people to search within a collection. Introduces the most popular items from a collection.",
-    "CAT": "Page layout",
-    "TYPE": "Navigation",   
-    "EXAMPLE": "&nbsp;",
-    "MANDATORY": "No"
+    "MANDATORY": "No"  
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/consultations-page.html\">Consultation profile page</a>",
     "USE": "Describes a consultation or engagement activity. Provides the status and outcome of the initiative, background material, data and information about planned or completed events.",
@@ -71,11 +64,11 @@
     "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/contact-us-pages.html\">Contact us page</a>",
-    "USE": "Provides models for contact options on Canada.ca. Use to present contact information for a person, an office, an organization or an emergency. - <strong>Mandatory template</strong>",
+    "USE": "Provides models for contact options on Canada.ca. Use to present contact information for a person, an office, an organization or an emergency.",
     "CAT": "Page layout",
     "TYPE": "Institutional",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/institution-contact-en.html\">Institutional contact page</a>",
-    "MANDATORY": "Mandatory"
+    "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/feature-tiles.html\">Context-specific features</a>",
     "USE": "Use to promote activities, initiatives, programs, and services",
