@@ -217,7 +217,7 @@
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/institutional-service-performance-fr.html\">Compte rendu du rendement des services institutionnels</a>",
     "MANDATORY": "Non"
   }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-obligatoire/pages-contactez-nous.html\">Page de coordonn&#233;es</a>",
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/modeles-recommandes/pages-contactez-nous.html\">Page de coordonn&#233;es</a>",
     "USE": "Fournit un mod&#232;le d'option de communication dans Canada.ca. Utilisez pour pr&#233;senter les coordonn&#233;&#224;&#224;es d'une personne, d'un bureau, d'une organisation ou pour des urgences.",
     "CAT": "Mod&#232;le de page",
     "TYPE": "Institutionnel",   
