@@ -413,13 +413,6 @@
     "EXAMPLE": "&nbsp;",
     "MANDATORY": "Mandatory"
   }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/site-menu.html\">Site-wide menu</a>",
-    "USE": "Use on all Canada.ca web page as the main theme-based navigation - <strong>Mandatory pattern</strong>",
-    "CAT": "Design pattern",
-    "TYPE": "Site-wide pattern",   
-    "EXAMPLE": "&nbsp;",
-    "MANDATORY": "Mandatory"
-  }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/social-media-feeds.html\">Social media feeds widget</a>",
     "USE": "Use to embed the latest posts from official Government of Canada social media accounts",
     "CAT": "Design pattern",
@@ -433,6 +426,13 @@
     "TYPE": "Navigation",   
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/act-en.html\">Act profile</a>",
     "MANDATORY": "No"
+  }, {
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/site-menu.html\">Theme and topic menu</a>",
+    "USE": "Use on all Canada.ca web page as the main theme-based navigation - <strong>Mandatory pattern</strong>",
+    "CAT": "Design pattern",
+    "TYPE": "Site-wide pattern",   
+    "EXAMPLE": "&nbsp;",
+    "MANDATORY": "Mandatory"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/theme-pages.html\">Theme page</a>",
     "USE": "Organizes topics that makes sense to people so they can access government-wide information and services - <strong>Mandatory template</strong>",
