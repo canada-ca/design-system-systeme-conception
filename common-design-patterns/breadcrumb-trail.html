@@ -169,46 +169,49 @@
 
  <p>A horizontal series of links known as a “breadcrumb trail” gives people a sense of where they are in relation to the site structure.</p>
     <p>The links in the breadcrumb trail are not intended to reflect the path by which the visitor arrived at the current location. Rather, the links always represent the location of the current page as it stands in relation to the site’s user navigation model.</p>
+
+	<figure>
+			<img src="../images/breadcrumb-en.png" alt="Breadcrumb trail appears on the lower left of the Canada.ca header">
+		<figcaption>Breadcrumb trail</figcaption>
+	</figure>
+	</section>
     <section>
       <h2>Objective</h2>
-      <p>The purpose of the breadcrumb trail is to reinforce a visitor’s current location in the Canada.ca user navigation model, by indicating the location of the current page in relation to its parent in the IA. It also provides users with a simple method for moving upwards through the site structure, in cases where they wish to access higher-level sections without being forced to return to the home page or to use search.</p>
+      <p>The purpose of the breadcrumb trail is to reinforce a visitor’s current location in the Canada.ca user navigation model. It indicates the location of the current page in relation to its parent in the site structure. It also provides a simple method to navigate to higher levels in the site structure.</p>
     </section>
     <section>
       <h2>How to implement the breadcrumb trail</h2>
       <ul>
-
- <li>The breadcrumb trail begins with  “Home” (a link to the home page in each language of Canada.ca) and ends one level above the visitor’s current page on the site.
-          <p class="mrgn-tp-md">For example, if a person is on the “Tips for healthy eating” page in the Health Theme, the breadcrumb trail will be:</p>
-	    <p class="mrgn-tp-md">Home <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">arrow pointing right</span> Health <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">arrow pointing right</span> Food and nutrition <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">arrow pointing right</span> Healthy eating.</p>
-        </li>
-
- 
-        <li>The current page is never displayed at the end of the breadcrumb trail.</li>
-        <li>Arrows are used as separators, as per W3C recommendations.</li>
-        <li>Longer page titles are to be shortened where possible, to help reduce the horizontal space required to display the trail. Each page or section name on the Canada.ca site should be associated with a shortened version of the name, for the purposes of breadcrumb and other navigation systems. For  example, “Business and industry” is shortened to “Business” in the trail.</li>
+				<li>The first item is always “Home”, which always links to the Canada.ca home page in the current language</li>
+				<li>The current page is never displayed at the end of the breadcrumb trail</li>
+				<li>Use a greater-then sign (&gt;) to separate levels</li>
+				<li>Longer page titles are to be shortened where possible to reduce the space required to display the trail</li>
       </ul>
+			<p>Each page or section name on the Canada.ca site should be associated with a shortened version of the name, for the purposes of breadcrumb and other navigation systems.</p>
+			<p>For example, when on the “Planning a business” page in the Business and industry theme, the breadcrumb trail will be:</p>
+	<p class="mrgn-tp-md">Home&nbsp;&nbsp; &gt;&nbsp;&nbsp; Business&nbsp;&nbsp; &gt;&nbsp;&nbsp; Starting a business</p>
     </section>
     <section>
-      <h2>Breadcrumb trail links</h2>
+      <h2>Example breadcrumb trail links</h2>
       <p>The breadcrumb trail always begins with "Home". Proper usage for different locations on Canada.ca is as follows:</p>
       <dl>
-        <dt><strong>Theme pages</strong></dt>
+        <dt><b>Theme pages</b></dt>
         <dd>Home</dd>
-        <dt><strong>First-level topic pages</strong></dt>
-        <dd>Home <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">arrow pointing right</span>[Parent theme]</dd>
-        <dt><strong>Mid-level topic pages</strong></dt>
-        <dd>Home <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">arrow pointing right</span>[Parent theme] <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">arrow pointing right</span> [Parent topic]</dd>
-        
-        <dt><strong>Institutional profile pages</strong></dt>
+        <dt><b>First-level topic pages</b></dt>
+        <dd>Home&nbsp;&nbsp; &gt;&nbsp;&nbsp; [Parent theme]</dd>
+        <dt><b>Mid-level topic pages</b></dt>
+        <dd>Home &nbsp;&nbsp; &gt;&nbsp;&nbsp; [Parent theme] &nbsp;&nbsp; &gt;&nbsp;&nbsp; [Parent topic]</dd>
+
+        <dt><b>Institutional profile pages</b></dt>
         <dd>Home</dd>
-        <dt><strong>Organizational profile pages</strong></dt>
+        <dt><b>Organizational profile pages</b></dt>
         <dd>Home</dd>
-        <dt><strong>Partnering and collaborative arrangement profile pages</strong></dt>
+        <dt><b>Partnering and collaborative arrangement profile pages</b></dt>
         <dd>Home</dd>
-        <dt><strong>Services</strong></dt>
-        <dd>Home <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">arrow pointing right</span>[Parent theme] <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">arrow pointing right</span> [Parent topic]</dd>
-        <dt><strong>Search engine results pages</strong></dt>
-        <dd>Home <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">arrow pointing right</span> Search</dd>
+        <dt><b>Services</b></dt>
+        <dd>Home &nbsp;&nbsp; &gt;&nbsp;&nbsp; [Parent theme] &nbsp;&nbsp; &gt;&nbsp;&nbsp; [Parent topic]</dd>
+        <dt><b>Search engine results pages</b></dt>
+        <dd>Home &nbsp;&nbsp; &gt;&nbsp;&nbsp;  Search</dd>
       </dl>
     </section>
   </section>
