@@ -63,7 +63,7 @@
     "EXAMPLE": "<a href=\"http://wet-boew.github.io/themes-dist/GCWeb/institution-contact-en.html\">Institutional contact page</a>",
     "MANDATORY": "No"
   }, {
-    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/contact-us-pages.html\">Contact us page</a>",
+    "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/contact-us-pages.html\">Contact us page</a>",
     "USE": "Provides models for contact options on Canada.ca. Use to present contact information for a person, an office, an organization or an emergency.",
     "CAT": "Page layout",
     "TYPE": "Institutional",   
