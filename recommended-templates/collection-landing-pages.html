@@ -433,7 +433,7 @@ Collection landing pages - Canada.ca template</h1>
     <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
 			<form id="gc-rprt-prblm-form" action="https://www.canada.ca/gc/services/generateemail" method="post">
             <input type="hidden" name="pageTitle" value="Common design patterns for Canada.ca">
-            <input type="hidden" name="submissionPage" value="/content/canadasite/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification/common-design-patterns.html">
+            <input type="hidden" name="submissionPage" id="submissionPage" value="/content/canadasite/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification/common-design-patterns.html">
             <input type="hidden" name="lang" value="en">
             <input type="hidden" name="pageOwner" value="gc:institutions/treasury-board-secretariat">
             <input id="emailTemplate" name="emailTemplate" type="hidden" value="reportaproblem/rap">
@@ -577,5 +577,8 @@ Collection landing pages - Canada.ca template</h1>
 
 			<![endif]-->
 	<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
-	</body>
+	<script>
+	document.getElementById('submissionPage').value = location.href;
+</script>
+</body>
 	</html>

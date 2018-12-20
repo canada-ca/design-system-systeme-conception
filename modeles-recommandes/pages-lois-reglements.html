@@ -796,7 +796,7 @@ Pages des lois et des règlements - Modèle de Canada.ca</h1>
 <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
 	<form id="gc-rprt-prblm-form" action="https://www.canada.ca/gc/services/generateemail" method="post">
 				<input type="hidden" name="pageTitle" value="Page d&rsquo;accueil de Canada.ca">
-				<input type="hidden" name="submissionPage" value="/content/canadasite/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada/modeles-specifications-detailles/page-accueil.html">
+				<input type="hidden" name="submissionPage" id="submissionPage" value="/content/canadasite/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada/modeles-specifications-detailles/page-accueil.html">
 				<input type="hidden" name="lang" value="fr">
 				<input type="hidden" name="pageOwner" value="gc:institutions/treasury-board-secretariat">
 				<input id="emailTemplate" name="emailTemplate" type="hidden" value="reportaproblem/rap">
@@ -939,5 +939,8 @@ Pages des lois et des règlements - Modèle de Canada.ca</h1>
 
 			<![endif]-->
 	<script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
-	</body>
+	<script>
+	document.getElementById('submissionPage').value = location.href;
+</script>
+</body>
 	</html>
