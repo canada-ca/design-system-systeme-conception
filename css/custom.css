@@ -1,6 +1,6 @@
 
-.img-border {
+figure img {
 
-	border-style: 5px red solid !important;
+	border: 1px #ccc solid !important;
 
 }
