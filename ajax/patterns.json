@@ -383,7 +383,7 @@
     "CAT": "Design pattern",
     "TYPE": "Site-wide pattern, Interaction",   
     "EXAMPLE": "&nbsp;",
-    "MANDATORY": "Mandatory"
+    "MANDATORY": "No"
   }, {
     "NAME": "<a href=\"https://canada-ca.github.io/design-system-systeme-conception/recommended-templates/pages-index.html#short\">Short index page</a>",
     "USE": "Use to present a list of 10 to 50 related links without text descriptions",
