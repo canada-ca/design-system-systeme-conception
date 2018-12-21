@@ -5,14 +5,18 @@ figure img {
 
 }
 
+@media only screen and (min-width: 768px) {
+
 .dl-horizontal dt {
 
-	width: 10em !important;
+	width: 11em !important;
 
 }
 
 .dl-horizontal dd {
 
-	margin-left: 10em !important;
+	margin-left: 11em !important;
+
+}
 
 }
