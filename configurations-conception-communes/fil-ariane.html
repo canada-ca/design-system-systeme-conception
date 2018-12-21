@@ -189,42 +189,45 @@
 </section>
 <section>
 <h2>Objectif</h2>
-<p>L’objectif de la piste de navigation est de renforcer l’emplacement actuel des visiteurs dans le modèle de navigation de l’utilisateur du site Canada.ca, en indiquant l’emplacement de la page actuelle par rapport à son parent dans l’AI. La piste de navigation fournit également aux utilisateurs une méthode simple pour se déplacer vers le haut dans la structure du site au cas où ils souhaiteraient accéder à des sections supérieures sans devoir retourner à la page d’accueil ou effectuer une recherche.</p>
+<p>L’objectif du fil d'Ariane est de renforcer l’emplacement actuel des visiteurs dans le modèle de navigation de l’utilisateur du site Canada.ca. Il indique l’emplacement de la page actuelle par rapport à son parenr dans la structure du site. Il fournit également aux utilisateurs une méthode simple pour accéder à des sections supérieures de la structure du site.</p>
 </section>
 <section>
 <h2>Comment mettre en œuvre le fil d’Ariane</h2>
 <ul>
-<li>La piste de navigation commence par «&nbsp;Accueil&nbsp;» (un lien vers la page d’accueil de chaque langue de Canada.ca) et se termine à un niveau au-dessus de la page actuelle du visiteur dans le site.
-<p class="mrgn-tp-md">Par exemple, si un utilisateur se trouve sur la page «&nbsp;Conseils sur l’alimentation saine&nbsp;» dans le thème de la Santé, la piste de navigation devrait être :</p>
-
-<p class="mrgn-tp-md">Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Santé <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Alimentation et nutrition <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Alimentation saine</p>
-</li>
-
+<li>Le fil d'Ariane commence toujours par «&nbsp;Accueil&nbsp;», qui est toujours un lien vers la page d'accueil de Canda.ca dans la langue actuelle.</li>
 <li>La page en cours n’est jamais affichée à la fin de la piste de navigation.</li>
-<li>Des flèches servent de séparateurs, conformément aux recommandations du W3C.</li>
-<li>Les longs titres de page doivent être raccourcis dans la mesure du possible, pour permettre de réduire l’espace horizontal nécessaire pour afficher la piste. Le nom de chaque page ou section dans le site Canada.ca doit être associé à une version raccourcie du nom, aux fins de la piste de navigation et d’autres systèmes de navigation. Par exemple, «&nbsp;Entreprises et industrie&nbsp;» est raccourci à «&nbsp;Entreprises&nbsp;» dans le fil d’Ariane.</li>
+<li>Utilisez un signe «&nbsp;plus grand que&nbsp;» (>) pour séparer les niveaux</li>
+<li>Les longs titres de page doivent être raccourcis dans la mesure du possible, pour permettre de réduire l’espace horizontal nécessaire pour afficher la piste.</li>
 </ul>
+<p>Le nom de chaque page ou section dans le site Canada.ca doit être associé à une version raccourcie du nom, aux fins du fil d'Ariane et d’autres systèmes de navigation. </p>
+	
+<p>Par exemple, lorsqu'une personn est sur la page «&nbsp;Planification d'entreprirse&nbsp;» dans le thème «&nbsp;Entreprises et industrie&nbsp;» le fil d'Ariane sera :</p>
+	
+<p>Par exemple, lorsqu'une personn est sur la page «&nbsp;Planification d'entreprirse&nbsp;» dans le thème «&nbsp;Entreprises et industrie&nbsp;» le fil d'Ariane sera :</p>
+	
+<p>Accueil > Entreprises > Lancer une entreprise</p>
+	
 </section>
 <section>
-<h2>Liens du fil d’Ariane</h2>
+<h2>Exemples des liens du fil d’Ariane</h2>
 <p>Le fil d’Ariane commence toujours par «&nbsp;Accueil&nbsp;». Voici la façon adéquate d’utiliser un fil d’Ariane pour les différents emplacements sur le site Canada.ca&nbsp;:</p>
 <dl>
-<dt><strong>Pages de thème</strong></dt>
+<dt><b>Pages de thème</b></dt>
 <dd>Accueil</dd>
-<dt><strong>Pages de sujet du premier niveau</strong></dt>
-<dd>Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Thème parent]</dd>
-<dt><strong>Pages de sujet du niveau intermédiaire</strong></dt>
-<dd>Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Thème parent] <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Sujet parent]</dd>
-<dt><strong>Pages de profil institutionnel</strong></dt>
+<dt><b>Pages de sujet du premier niveau</b></dt>
+<dd>Accueil&nbsp;&nbsp; &gt;&nbsp;&nbsp; [Thème parent]</dd>
+<dt><b>Pages de sujet du niveau intermédiaire</b></dt>
+<dd>Accueil&nbsp;&nbsp; &gt;&nbsp;&nbsp; [Thème parent]&nbsp;&nbsp; &gt;&nbsp;&nbsp; [Sujet parent]</dd>
+<dt><b>Pages de profil institutionnel</b></dt>
 <dd>Accueil</dd>
-<dt><strong>Pages de profil organisationnel</strong></dt>
+<dt><b>Pages de profil organisationnel</b></dt>
 <dd>Accueil</dd>
-<dt><strong>Pages de partenariat ou d’entente de collaboration</strong></dt>
+<dt><b>Pages de partenariat ou d’entente de collaboration</b></dt>
 <dd>Accueil</dd>
-<dt><strong>Services</strong></dt>
-<dd>Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Thème parent] <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> [Sujet parent]</dd>
-<dt><strong>Pages de résultats du moteur de recherche</strong></dt>
-<dd>Accueil <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">flèche pointant vers la droite</span> Recherche</dd>
+<dt><b>Services</b></dt>
+<dd>Accueil &nbsp;&nbsp; &gt;&nbsp;&nbsp; [Thème parent]&nbsp;&nbsp; &gt;&nbsp;&nbsp; [Sujet parent]</dd>
+<dt><b>Pages de résultats du moteur de recherche</b></dt>
+<dd>Accueil&nbsp;&nbsp; &gt;&nbsp;&nbsp;  Recherche</dd>
 </dl>
 </section>
 </section>
