@@ -4,3 +4,15 @@ figure img {
 	border: 1px #ddd solid !important;
 
 }
+
+.dl-horizontal dt {
+
+	width: 10em !important;
+
+}
+
+.dl-horizontal dd {
+
+	margin-left: 10em !important;
+
+}
