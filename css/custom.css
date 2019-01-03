@@ -5,6 +5,8 @@ figure img {
 
 }
 
+
+/* fixes these times of tables from the title truncating */
 @media only screen and (min-width: 768px) {
 
 .dl-horizontal dt {
