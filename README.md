@@ -1,6 +1,6 @@
 # design-system-systeme-conception
 
-Staging enviromnemt for the design system.
+Staging environment for the design system. Currently providing redirects for repos:
 
 EN: https://github.com/canada-ca/design-system
 
