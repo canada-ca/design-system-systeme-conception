@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Template and pattern library for Canada.ca - Canada.ca</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<!-- Meta data -->
+		<!-- Meta data-->
+		<!-- Load closure template scripts -->
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			document.write(wet.builder.refTop({
+			}));
+		</script>
+	</head>
+	<body vocab="http://schema.org/" typeof="WebPage">
+		<div id="def-top">
+		</div>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.top({
+				lngLinks: [{
+					lang: "fr",
+					href: "#",
+					text: "Français"
+				}],
+				breadcrumbs: [{
+					title: "Home",
+					href: "https://www.canada.ca/en.html"
+				},{
+					title: "About Canada.ca",
+					href: 'https://www.canada.ca/en/government/about.html'
+				},{
+					title: "Canada.ca design system",
+					href: 'https://www.canada.ca/en/government/about/design-system.html'
+				}],
+				search: true,
+				siteMenu: true,
+				showPreContent: true
+			});
+</script>
+
+<main role="main" property="mainContentOfPage" class="container">
+
+
+<h1 property="name" id="wb-cont" dir="ltr">Template and pattern library for Canada.ca</h1>
+
+
+
+<div><div class="mwsgeneric-base-html parbase section">
+
+<p>Ces modèles et configurations de conception ont été testés par les utilisateurs. Ils ont été conçus pour vous aider à concevoir du contenu numérique axé sur les tâches que les utilisateurs tentent d'accomplir.</p>
+    <p>Vous pouvez également répondre à quelques questions pour vous aider à trouver des modèles et de configurations de conception pour le contenu que vous voulez publier :</p>
+    <a href="/fr/gouvernement/a-propos/systeme-conception/bibliotheque-modeles/trouvez-modeles-configurations-conception-contenu-web.html" class="btn btn-call-to-action btn-cust mrgn-bttm-md" style="color: white !important; margin-top: 0px !important;">Trouvez un modèle ou une configuration de conception</a>
+	<h2>Tous les modèles et toutes les configurations de conception</h2>
+    <div class="row mrgn-tp-md">
+      <div class="col-md-3">
+        <details open>
+          <summary class="btn btn-primary" style="text-align: left;">Options de filtrage</summary>
+          <p class="mrgn-tp-md">Utilisez ces filtres pour trouver des modèles et des configurations de conception.</p>
+          <form class="wb-tables-filter mrgn-lft-md mrgn-rght-md" data-bind-to="dataset-filter">
+            <div class="row">
+              <div class="form-group">
+                <label for="dt_cat">Configurations et modèles de page</label>
+                <select class="form-control maxwidth" id="dt_cat" class="form-control maxwidth" name="dt_cat" data-column="2">
+                <option value="">Tout afficher</option>
+                <option value="Configuration de conception">Configurations de conception</option>
+                <option value="Mod&#232;le de page">Modèles de page</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="dt_type">Types</label>
+                <select class="form-control maxwidth" id="dt_type" name="dt_type" data-column="3">
+                  <option value="">Tout afficher</option>
+                  <option value="Destination">Contenu de destination</option>
+                  <option value="Mod&#232;le à l'&#233;chelle du gouvernement">Modèles à l'échelle du gouvernement</option>
+                  <option value="Institutionnel">Modèles institutionnels</option>
+                  <option value="Configuration &#224; l'&#233;chelle du site">Configurations à l'échelle du site</option>
+                  <option value="Interaction">Configurations d'interaction</option>
+                  <option value="Navigation">Modèles de navigation</option>
+                  <option value="Promotion">Modèles de promotion</option>
+                  <option value="Mod&#232;le de th&#232;me">Modèles de thème et de sujet</option>
+                  <option value="Visuel">Modèles visuels</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="dt_mand">Obligatoire ou suggéré</label>
+                <select class="form-control maxwidth" id="dt_mand" class="form-control maxwidth" name="dt_mand" data-column="5">
+                <option value="">Tout afficher</option>
+                <option value="Obligatoire">Modèles et conceptions obligatoires</option>
+                <option value="Non">Modèles et configurations suggérés</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filtrer</button>
+              </div>
+              <div class="col-md-6">
+                <button type="reset" class="btn btn-default">Effacer</button>
+              </div>
+            </div>
+          </form>
+        </details>
+      </div>
+      <div class="col-md-9 small">
+        <table class="wb-tables table table-striped table-hover" id="dataset-filter" aria-live="polite" data-wb-tables='{
+			"iDisplayLength": 70,
+                        "bDeferRender": true,
+			"ajaxSource": "https://conception.canada.ca/ajax/patterns-FR.json",
+			"order": [0, "asc"],
+			"columns": [
+				{ "data": "NAME", "className": "nws-tbl-name h4" },
+				{ "data": "USE", "className": "nws-tbl-use" },
+				{ "data": "CAT", "className": "nws-tbl-cat" },
+				{ "data": "TYPE", "className": "nws-tbl-type" },
+				{ "data": "EXAMPLE", "className": "nws-tbl-exmpl" },
+				{ "data": "MANDATORY", "visible": false }
+			]}'>
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Quand utiliser ce modèle</th>
+              <th>Catégorie</th>
+              <th>Type</th>
+              <th>Exemple</th>
+              <th>Obligatoire</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    </section>
+  </div>
+</div>
+<div id="def-preFooter">
+</div>
+<!-- Write closure template -->
+<script type="text/javascript">
+	var defPreFooter = document.getElementById("def-preFooter");
+	defPreFooter.outerHTML = wet.builder.preFooter({
+		dateModified: "April 1, 2019",
+		showPostContent: true,
+		showFeedback: true,
+		showShare: true
+	});
+</script>
+		</main>
+		<div id="def-footer">
+
+		</div>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.footer({
+				showFooter: true,
+				showFeatures: true
+			});
+		</script>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			document.write(wet.builder.refFooter({
+			}));
+		</script>
+	</body>
+</html>
