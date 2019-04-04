@@ -55,53 +55,54 @@
 
 <div><div class="mwsgeneric-base-html parbase section">
 
-<p>Ces modèles et configurations de conception ont été testés par les utilisateurs. Ils ont été conçus pour vous aider à concevoir du contenu numérique axé sur les tâches que les utilisateurs tentent d'accomplir.</p>
-    <p>Vous pouvez également répondre à quelques questions pour vous aider à trouver des modèles et de configurations de conception pour le contenu que vous voulez publier :</p>
-    <a href="/fr/gouvernement/a-propos/systeme-conception/bibliotheque-modeles/trouvez-modeles-configurations-conception-contenu-web.html" class="btn btn-call-to-action btn-cust mrgn-bttm-md" style="color: white !important; margin-top: 0px !important;">Trouvez un modèle ou une configuration de conception</a>
-	<h2>Tous les modèles et toutes les configurations de conception</h2>
-    <div class="row mrgn-tp-md">
+p class="gc-byline"><strong>From <a href="https://www.canada.ca/en/treasury-board-secretariat.html">Treasury Board of Canada Secretariat</a></strong></p>
+    <p>These patterns and page layouts were user-tested. They were designed help you design digital content focused on the task people are trying to accomplish.</p>
+    <p>Answer a few questions to help you find templates and patterns for the content you want to publish:</p>
+	<a href="/en/government/about/design-system/pattern-library/find-right-template-design-pattern-web-content.html" class="btn btn-call-to-action btn-cust mrgn-bttm-md" style="color: white !important; margin-top: 0px !important;">Find a design pattern or template</a>
+	<h2>All tempaltes and patterns</h2>
+	<div class="row mrgn-tp-md">
       <div class="col-md-3">
         <details open>
-          <summary class="btn btn-primary" style="text-align: left;">Options de filtrage</summary>
-          <p class="mrgn-tp-md">Utilisez ces filtres pour trouver des modèles et des configurations de conception.</p>
+          <summary class="btn btn-primary" style="text-align: left;">Filter options</summary>
+          <p class="mrgn-tp-md">Use these filters to find templates and patterns.</p>
           <form class="wb-tables-filter mrgn-lft-md mrgn-rght-md" data-bind-to="dataset-filter">
             <div class="row">
               <div class="form-group">
-                <label for="dt_cat">Configurations et modèles de page</label>
-                <select class="form-control maxwidth" id="dt_cat" class="form-control maxwidth" name="dt_cat" data-column="2">
-                <option value="">Tout afficher</option>
-                <option value="Configuration de conception">Configurations de conception</option>
-                <option value="Mod&#232;le de page">Modèles de page</option>
-                </select>
+                <label for="dt_cat">Design patterns or page layouts</label>
+                <select class="form-control maxwidth" id="dt_cat" name="dt_cat" data-column="2">
+                  <option value="">All</option>
+                  <option value="Design pattern">Design patterns</option>
+                  <option value="Page layout">Page layouts</option>
+                  </select>
               </div>
               <div class="form-group">
                 <label for="dt_type">Types</label>
                 <select class="form-control maxwidth" id="dt_type" name="dt_type" data-column="3">
-                  <option value="">Tout afficher</option>
-                  <option value="Destination">Contenu de destination</option>
-                  <option value="Mod&#232;le à l'&#233;chelle du gouvernement">Modèles à l'échelle du gouvernement</option>
-                  <option value="Institutionnel">Modèles institutionnels</option>
-                  <option value="Configuration &#224; l'&#233;chelle du site">Configurations à l'échelle du site</option>
-                  <option value="Interaction">Configurations d'interaction</option>
-                  <option value="Navigation">Modèles de navigation</option>
-                  <option value="Promotion">Modèles de promotion</option>
-                  <option value="Mod&#232;le de th&#232;me">Modèles de thème et de sujet</option>
-                  <option value="Visuel">Modèles visuels</option>
+                  <option value="">All</option>
+                  <option value="Destination">Destination patterns and page layouts</option>
+                  <option value="Government-wide template">Government-wide templates</option>
+                  <option value="Institutional">Institutional patterns and page layouts</option>
+                  <option value="Interaction">Interaction patterns</option>
+                  <option value="Navigation">Navigation patterns and page layouts</option>
+                  <option value="Promotion">Promotional patterns and page layouts</option>
+                  <option value="Site">Site-wide pattern</option>
+                  <option value="Theme template">Theme and topic templates</option>
+                  <option value="Visual">Visual patterns</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="dt_mand">Obligatoire ou suggéré</label>
-                <select class="form-control maxwidth" id="dt_mand" class="form-control maxwidth" name="dt_mand" data-column="5">
-                <option value="">Tout afficher</option>
-                <option value="Obligatoire">Modèles et conceptions obligatoires</option>
-                <option value="Non">Modèles et configurations suggérés</option>
+                <label for="dt_mand">Mandatory or suggested</label>
+                <select class="form-control maxwidth" id="dt_mand" name="dt_mand" data-column="5">
+                <option value="">All</option>
+                <option value="Mandatory">Mandatory templates and patterns</option>
+                <option value="No">Suggested patterns and page layouts</option>
                 </select>
               </div>
               <div class="col-md-6">
-                <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filtrer</button>
+                <button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filter</button>
               </div>
               <div class="col-md-6">
-                <button type="reset" class="btn btn-default">Effacer</button>
+                <button type="reset" class="btn btn-default">Clear</button>
               </div>
             </div>
           </form>
@@ -111,7 +112,7 @@
         <table class="wb-tables table table-striped table-hover" id="dataset-filter" aria-live="polite" data-wb-tables='{
 			"iDisplayLength": 70,
                         "bDeferRender": true,
-			"ajaxSource": "https://conception.canada.ca/ajax/patterns-FR.json",
+			"ajaxSource": "https://design.canada.ca/ajax/patterns.json",
 			"order": [0, "asc"],
 			"columns": [
 				{ "data": "NAME", "className": "nws-tbl-name h4" },
@@ -123,12 +124,12 @@
 			]}'>
           <thead>
             <tr>
-              <th>Nom</th>
-              <th>Quand utiliser ce modèle</th>
-              <th>Catégorie</th>
+              <th>Name</th>
+              <th>When to use this pattern</th>
+              <th>Category</th>
               <th>Type</th>
-              <th>Exemple</th>
-              <th>Obligatoire</th>
+              <th>Example</th>
+              <th>Mandatory</th>
             </tr>
           </thead>
         </table>
