@@ -57,10 +57,10 @@
 	    <h2 class="h4 mrgn-tp-0">Table of contents</h2>
 	    <ol class="vertical-steps">
 	     <li class="completed"><span>Who has to use this design system</span></li>
-	     <li class="active"><a href="./mandatory-vertical-test.html">Mandatory elements</a>
+	     <li class="completed"><a href="./mandatory-vertical-test.html">Mandatory elements</a>
 
 				 <ol>
-					 <li><a href="./typog-vertical-test.html">Typography, colours and layouts</a></li>
+					 <li class="active"><a href="./typog-vertical-test.html">Typography, colours and layouts</a></li>
 					 <li><a href="./header-footer-vertical-test.html">Header and footer</a></li>
 					 <li><a href="./URL-vertical-test.html">URL model</a></li>
 					 <li><a href="./usernav-vertical-test.html">User navigation and breadcrumb</a></li>
@@ -82,21 +82,84 @@
 	     </header>
 	     <div class="modal-body" data-ajax-replace="https://gc-proto.github.io/cra-contactus/scenarioA//revenue-agency/services/child-family-benefits/canada-child-benefit-2.html .vertical-steps"></div>
 	    </section>
-	    <h1 class="secondh1">Mandatory elements</h1>
-			<p>Canada.ca pages must be easily identifiable as part of Canada.ca. Each page must convey the overall brand and feel of Canada.ca, and provide a consistent experience for site visitors. </p>
+	    <h1 class="secondh1">Typography, colours and layouts - Mandatory elements</h1>
+			<h2 class="h3">On this page</h2>
+									<ul>
+									  <li><a href="#typog">Typography</a></li>
+									  <li><a href="#colours">Colours</a></li>
+									  <li><a href="#layouts">Layouts</a></li>
+									</ul>
 
-			<p>These mandatory elements were designed to reflect the trusted digital brand of the Government of Canada: modern, open, helpful and credible.</p>
+									<h2 id="typog">Typography</h2>
+
+									<p>Fonts should be easily readable across devices. We use a combination of Lato for headings, and Noto sans for body text.</p>
+
+									<h3>Desktop and tablet default font specification</h3>
+									<ul>
+										<li>H1: Lato, 38px, bold, with a red rule below</li>
+										<li>H2: Lato, 36px, bold</li>
+										<li>H3: Lato, 24px, bold</li>
+										<li>H4: Lato, 22px, bold</li>
+										<li>H5: Lato, 20px, bold</li>
+										<li>H6: Lato, 19px, plain text</li>
+										<li>Body: Noto sans, 20px, plain text</li>
+									</ul>
+									<h3>Smaller device default font specification</h3>
+									<ul>
+										<li>H1: Lato, 34px, bold, with a red rule below</li>
+										<li>H2: Lato, 32px, bold</li>
+										<li>H3: Lato, 24px, bold</li>
+										<li>H4: Lato, 22px, bold</li>
+										<li>H5: Lato, 20px, bold</li>
+										<li>H6: Lato, 19px, plain text</li>
+										<li>Body: Noto sans, 20px, plain text</li>
+									</ul>
+
+									<h3>Line length</h3>
+									<p>Text lines are constrained to 65 characters in length. This ensures that no lines extend beyond a comfortable reading length.</p>
+									<p>Page layouts may be wider that 65 characters. The line length restriction applies only to lines of text. </p>
+
+									<h3>Links</h3>
+									<p>Links are underlined, using an underline style that skips descenders.</p>
+
+									<h2 id="colours">Colours</h2>
+
+									<h3>Backgrounds</h3>
+									<p>The default background colour for Canada.ca is white (#FFF).</p>
+									<p>While another background colour may be used for specific portions of the page, ensure that the majority of the page has a white background.
+									When other background colours are used, ensure sufficient contrast with text to meet WCAG success criterion 1.4.6: Contrast (Enhanced) (Level AAA).
+									</p>
+
+									<h3>Text</h3>
+									<p>Text on Canada.ca is black (#000).</p>
+									<p>Always use the following colours for links:
+									</p><ul>
+										<li>default link: #2b4380</li>
+										<li>selected link (on hover or focus): #0535d2</li>
+										<li>visited link: #7834bc</li>
+									</ul>
+									<p></p>
+
+									<h3>Additional colours</h3>
+									<p>Only use additional colours for accents:</p>
+									<ul>
+										<li>main accent colour: #26374A</li>
+										<li>form error or required element indicator: #d3080c</li>
+										<li>selected element (in service initiation templates): #333</li>
+									</ul>
+									<p></p>
+									<p>Alert and information messages have additional colours. These are described in the relevant <a href="/en/government/about/design-system/pattern-library.html">pattern descriptions</a>. </p>
+
+									<h2 id="layouts">Layouts</h2>
+									<p>The underlying grid system for Canada.ca allows for responsive layouts at various screen sizes. This allows for flexible layouts while maintaining consistent placement of elements. </p>
+
+									<p>The default maximum content width is 1140 pixels. In some rare cases, a layout may need to be wider. For example, some very large data tables may be too wide to fit in this space. This will require viewers to scroll right to see the entire layout. </p>
+
+									<p>On smaller screens layouts will typically display as a single-column.</p>
 
 
-			<p>All institutions who have to follow the Canada.ca design system have to implement the following mandatory elements:</p>
 
-			<ul>
-				<li><a href="./typog-vertical-test.html">Typography, colours and layouts</a></li>
-				<li><a href="./header-footer-vertical-test.html">Header and footer</a></li>
-				<li><a href="./URL-vertical-test.html">URL model</a></li>
-				<li><a href="./usernav-vertical-test.html">User navigation and breadcrumb</a></li>
 
-</ul>
 
 
 
@@ -105,7 +168,7 @@
 	    <nav role="navigation" class="mrgn-bttm-lg">
 	    <h3 class="wb-inv">Document navigation</h3>
 	    <ul class="pager">
-	    <li class="next h3"><a href="./mandatory.html" rel="next">Next: Design principles</a></li>
+	    <li class="next h3"><a href="./header-footer-vertical-test.html" rel="next">Next: Header and footer</a></li>
 	    </ul>
 	    </nav>
 	   </div>
