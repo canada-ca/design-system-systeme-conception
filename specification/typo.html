@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Canada.ca Content and Information Architecture Specification: Typography, colours and layouts</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<!-- Meta data -->
+		<!-- Meta data-->
+		<!-- Load closure template scripts -->
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			document.write(wet.builder.refTop({
+			}));
+		</script>
+	</head>
+	<body vocab="http://schema.org/" typeof="WebPage">
+		<div id="def-top">
+		</div>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.top({
+				lngLinks: [{
+					lang: "fr",
+					href: "#",
+					text: "Français"
+				}],
+				breadcrumbs: [{
+					title: "Home",
+					href: "https://www.canada.ca/en.html"
+				},{
+					title: "About Canada.ca",
+					href: 'https://www.canada.ca/en/government/about.html'
+				},{
+					title: "Canada.ca design system",
+					href: 'https://www.canada.ca/en/government/about/design-system.html'
+				},{
+					title: "Canada.ca Content and Information Architecture Specification",
+					href: '../specification.html'
+				}],
+				search: true,
+				siteMenu: true,
+				showPreContent: true
+			});
+</script>
+
+<main role="main" property="mainContentOfPage" class="container">
+
+
+	<h1 property="name" id="wb-cont" dir="ltr">
+	Canada.ca Content and Information Architecture Specification: Typography, colours and layouts</h1>
+
+<div><div class="mwsgeneric-base-html parbase section">
+
+						<div>
+							<div class="mrgn-tp-md mrgn-bttm-sm brdr-bttm">
+								<div class="row  mrgn-bttm-sm">
+									<ul class="toc lst-spcd col-md-12">
+										<li class="col-md-4">
+											<a href="./typo.html" class="list-group-item cust-active active">Typography and colours</a>
+										</li>
+										<li class="col-md-4">
+											<a href="./header-footer.html" class="list-group-item">Header and footer</a>
+										</li>
+										<li class="col-md-4">
+											<a href="./mandatory-templates.html" class="list-group-item">Mandatory templates</a>
+										</li>
+										<li class="col-md-4">
+											<a href="./url-model.html" class="list-group-item">URL model</a>
+										</li>
+										<li class="col-md-4">
+											<a href="./user-navigation.html" class="list-group-item">User navigation and breadcrumbs</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+
+
+							<h2 id="typog">Typography</h2>
+
+							<p>Fonts should be easily readable across devices. We use a combination of Lato for headings, and Noto sans for body text.</p>
+
+							<h3>Desktop and tablet default font specification</h3>
+							<ul>
+								<li>H1: Lato, 38px, bold, with a red rule below</li>
+								<li>H2: Lato, 36px, bold</li>
+								<li>H3: Lato, 24px, bold</li>
+								<li>H4: Lato, 22px, bold</li>
+								<li>H5: Lato, 20px, bold</li>
+								<li>H6: Lato, 19px, plain text</li>
+								<li>Body: Noto sans, 20px, plain text</li>
+							</ul>
+							<h3>Smaller device default font specification</h3>
+							<ul>
+								<li>H1: Lato, 34px, bold, with a red rule below</li>
+								<li>H2: Lato, 32px, bold</li>
+								<li>H3: Lato, 24px, bold</li>
+								<li>H4: Lato, 22px, bold</li>
+								<li>H5: Lato, 20px, bold</li>
+								<li>H6: Lato, 19px, plain text</li>
+								<li>Body: Noto sans, 20px, plain text</li>
+							</ul>
+
+							<h3>Line length</h3>
+							<p>Text lines are constrained to 65 characters in length. This ensures that no lines extend beyond a comfortable reading length.</p>
+							<p>Page layouts may be wider that 65 characters. The line length restriction applies only to lines of text. </p>
+
+							<h3>Links</h3>
+							<p>Links are underlined, using an underline style that skips descenders.</p>
+
+							<h2 id="colours">Colours</h2>
+
+							<h3>Backgrounds</h3>
+							<p>The default background colour for Canada.ca is white (#FFF).</p>
+							<p>While another background colour may be used for specific portions of the page, ensure that the majority of the page has a white background.
+							When other background colours are used, ensure sufficient contrast with text to meet WCAG success criterion 1.4.6: Contrast (Enhanced) (Level AAA).
+							</p>
+
+							<h3>Text</h3>
+							<p>Text on Canada.ca is black (#000).</p>
+							<p>Always use the following colours for links:
+							</p><ul>
+								<li>default link: #2b4380</li>
+								<li>selected link (on hover or focus): #0535d2</li>
+								<li>visited link: #7834bc</li>
+							</ul>
+							<p></p>
+
+							<h3>Additional colours</h3>
+							<p>Only use additional colours for accents:</p>
+							<ul>
+								<li>main accent colour: #26374A</li>
+								<li>form error or required element indicator: #d3080c</li>
+								<li>selected element (in service initiation templates): #333</li>
+							</ul>
+							<p></p>
+							<p>Alert and information messages have additional colours. These are described in the relevant <a href="/en/government/about/design-system/pattern-library.html">pattern descriptions</a>. </p>
+
+							<h2 id="layouts">Layouts</h2>
+							<p>The underlying grid system for Canada.ca allows for responsive layouts at various screen sizes. This allows for flexible layouts while maintaining consistent placement of elements. </p>
+
+							<p>The default maximum content width is 1140 pixels. In some rare cases, a layout may need to be wider. For example, some very large data tables may be too wide to fit in this space. This will require viewers to scroll right to see the entire layout. </p>
+
+							<p>On smaller screens layouts will typically display as a single-column.</p>
+
+
+
+
+							<nav role="navigation" class="mrgn-bttm-lg">
+
+							<h2 class="wb-inv">Document navigation</h2>
+
+							<ul class="pager">
+
+							 <li class="next"><a href="./header-footer.html" rel="next">Next<span class="wb-inv">: Header and footer</span></a></li>
+
+							</ul>
+
+							</nav>
+
+							</section></div>
+
+
+
+
+	</div>
+
+	</div>
+
+
+<div id="def-preFooter">
+</div>
+<!-- Write closure template -->
+<script type="text/javascript">
+	var defPreFooter = document.getElementById("def-preFooter");
+	defPreFooter.outerHTML = wet.builder.preFooter({
+		dateModified: "April 1, 2019",
+		showPostContent: true,
+		showFeedback: true,
+		showShare: true
+	});
+</script>
+		</main>
+		<div id="def-footer">
+
+		</div>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.footer({
+				showFooter: true,
+				showFeatures: true
+			});
+		</script>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			document.write(wet.builder.refFooter({
+			}));
+		</script>
+	</body>
+</html>
