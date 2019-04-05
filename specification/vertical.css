@@ -362,3 +362,9 @@ ol.vertical-steps {
   cursor:pointer;
 
 }
+
+.img-responsive {
+
+	border: 1px #ddd solid !important;
+
+}
