@@ -69,48 +69,57 @@
 <main role="main" property="mainContentOfPage" class="container">
 
 
-<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>H1 subtitle</span> : <span>Alpha design pattern</span></span></h1>
+<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>H1 subtitle</span>: <span>Alpha design pattern</span></span></h1>
 
-<span class="label label-danger">This pattern is in alpha</span>
+<p>Some pages have a subtitle that describes a category the page belongs to. This pattern renders that subtitle in a way that more clearly shows it's part of that category, making the title easier to read.</p>
+
+<h2 class="h3">On this page</h2>
+<ul>
+	<li><a href="#rationale">Rationale</a></li>
+	<li><a href="#objective">Objective</a></li>
+	<li><a href="#when">When to use</a></li>
+	<li><a href="#how">How to use</a></li>
+	<li><a href="#status">Pattern status</a></li>
+	<li><a href="#discuss">Discussion</a></li>
+</ul>
 <section>
-<h2>Rationale</h2>
+<h2 id="rationale">Rationale</h2>
 
-<p>Many pages fit into a section of other pages. To make the context of the page clear, we often put that section in the title. For example: </p>
+<p>Many pages fit into a section or category of other pages. To make the context of the page clear, we often make that section or category part of the title. For example: </p>
 <p><blockquote>How to apply - EI maternity and parental benefits</blockquote></p>
-<p>This is important because even though we want to focus on the "How to apply" part, each page needs a clear and unique title that stands alone.</p>
-<p>We also put this in the H1, to make the purpose of the page sufficiently clear when people visit it. </p>
-<p>This can make for some very long H1s, with repeated content across many of them that is only really useful to people the first time they get to the page.</p>
-
-	</section>
-    <section>
-      <h2>Objective</h2>
-      <p>Alternate layout that leaves the section visible, but emphasizes the current page. </p>
-    </section>
-
+<p>This is important because even though we want to focus on "How to apply", we need it to be clear that it's maternity and parental benefits that are being applied to.</p>
 	<section>
-<h2>When to use</h2>
-<p>Use when you would otherwise write the pagename, followed by a dash, followed by the section name.</p>
-
+<h2 id="when">When to use</h2>
+<p>Use when you would write the h1 with a subtitle that describes the category or section the page belongs to.</p>
 </section>
+
     <section>
-      <h2>How to implement</h2>
+      <h2 id="how">How to implement</h2>
+			<p>A single h1 is used with spans to separate the 3 components:</p>
+			<ul>
+				<li>the page name, which should be read 1st</li>
+				<li>the separator, which should be an em dash or colon</li>
+				<li>the subtitle, which should be read last</li>
+			</ul>
+			<p>Use the following HTML for the h1:</p>
   <code>
-<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>Page name</span> - <span>Section name</span></span></h1>
-	</code>
+&#x3C;h1 property=&#x22;name&#x22; id=&#x22;wb-cont&#x22; dir=&#x22;ltr&#x22;&#x3E;&#x3C;span class=&#x22;stacked&#x22;&#x3E;&#x3C;span&#x3E;Page name&#x3C;/span&#x3E; - &#x3C;span&#x3E;Section name&#x3C;/span&#x3E;&#x3C;/span&#x3E;&#x3C;/h1&#x3E;
+</code>
     </section>
     <section>
 
-			<h2>Status</h2>
+			<h2 id="status">Pattern status</h2>
 			<dl>
 				<dt>Lead department</dt>
-				<dd>TBD</dd>
+				<dd>Canada Revenue Agency</dd>
 				<dt>Current stage</dt>
-				<dd>TBD</dd>
+				<dd>Alpha</dd>
 				<dt>Testing</dt>
-				<dd>TBD</dd>
-				<dt>Code</dt>
-				<dd>TBD</dd>
+				<dd>Currently underway (link to test results or more information)</dd>
 			</dl>
+
+			<h2 id="discuss">Discussion</h2>
+			<p>Notes etc. about this pattern</p>
 
 <div id="def-preFooter">
 </div>
@@ -118,7 +127,7 @@
 <script type="text/javascript">
 	var defPreFooter = document.getElementById("def-preFooter");
 	defPreFooter.outerHTML = wet.builder.preFooter({
-		dateModified: "April 1, 2019",
+		dateModified: "April 5, 2019",
 		showPostContent: true,
 		showFeedback: true,
 		showShare: true
