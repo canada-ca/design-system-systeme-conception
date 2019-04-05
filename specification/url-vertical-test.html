@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Canada.ca Content and Information Architecture Specification - URL model - Canada.ca</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<!-- Meta data -->
+		<!-- Meta data-->
+		<!-- Load closure template scripts -->
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+		<link rel="stylesheet" href="./vertical.css">
+
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			document.write(wet.builder.refTop({
+			}));
+		</script>
+	</head>
+	<body vocab="http://schema.org/" typeof="WebPage">
+		<div id="def-top">
+		</div>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.top({
+				lngLinks: [{
+					lang: "fr",
+					href: "#",
+					text: "Français"
+				}],
+				breadcrumbs: [{
+					title: "Home",
+					href: "https://www.canada.ca/en.html"
+				},{
+					title: "About government",
+					href: 'https://www.canada.ca/en/government/system.html'
+				},{
+					title: "Policies, standards, directives and guidelines",
+					href: 'http://www.tbs-sct.gc.ca/pol/index-eng.aspx'
+				},{
+					title: "Canada.ca Content and Information Architecture Specification",
+					href: './specification-vertical-test.html'
+				}],
+				search: true,
+				siteMenu: true,
+				showPreContent: true
+			});
+</script>
+
+	<main property="mainContentOfPage" class="container gc-theme">
+	 <div class="row">
+	  <section class="section-nav wb-inview show-none bar-demo" data-inview="bottom-bar">
+	   <div class="profile firsth1">
+	    <h1 property="name" id="wb-cont">Canada.ca Content and Information Architecture Specification</h1>
+
+	   </div>
+	   <div  class="col-md-4 hidden-xs hidden-sm">
+	    <h2 class="h4 mrgn-tp-0">Table of contents</h2>
+	    <ol class="vertical-steps">
+	     <li class="completed"><a href="./usage-vertical-test.html">Who has to use this design system</a></li>
+	     <li class="completed"><span>Mandatory elements</span>
+
+				 <ol>
+					 <li class="completed"><a href="./typog-vertical-test.html">Typography, colours and layouts</a></li>
+					 <li class="completed"><a href="./header-footer-vertical-test.html">Header and footer</a></li>
+					 <li class="active"><span>URL model</span></li>
+					 <li><a href="./usernav-vertical-test.html">User navigation and breadcrumb</a></li>
+					 <li><a href="./templates-vertical-test.html">Mandatory templates</a></li>
+			           </ol>
+
+
+			 </li>
+
+	     <li><a href="./principles-vertical-test.html">Design principles</a></li>
+	    </ol>
+
+			<br>
+						<h2 class="h4">Other resources</h2>
+					       <ul class="lst-spcd">
+					         <li><a href="../design-system/library.html">Template and pattern library for Canada.ca</a></li>
+					         <li><a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html">Canada.ca Content Style Guide</a></li>
+					       </ul>
+
+	   </div>
+	  </section>
+	  <section class="local-nav">
+	   <div class="col-md-8">
+	    <p class="mrgn-tp-sm hidden-md hidden-lg mobile-nav"><a href="#right-panel" aria-controls="right-panel" class="overlay-lnk btn btn-default btn-sm" role="button"><span class="fas fa-list-ul fa-lg mrgn-rght-sm"></span>Table of contents</a></p>
+	    <section id="right-panel" class="wb-overlay modal-content overlay-def wb-panel-r">
+	     <header class="modal-header">
+	      <h2 class="modal-title">Table of contents</h2>
+	     </header>
+	     <div class="modal-body" data-ajax-replace="https://gc-proto.github.io/cra-contactus/scenarioA//revenue-agency/services/child-family-benefits/canada-child-benefit-2.html .vertical-steps"></div>
+	    </section>
+	    <h1 class="secondh1">URL model - Mandatory elements</h1>
+
+			<p>Each web page has a primary URL, displayed in the browser’s address bar. All other URLs referring to the web page resolve to the primary URL. This applies to URL aliases, vanity URLs, redirected URLs or any other non-primary URL.</p>
+
+			<h2 class="h3">On this page</h2>
+									<ul>
+										<li><a href="#how">How to write URLs</a></li>
+										<li><a href="#comms">Writing URLs for communications products</a></li>
+										<li><a href="#sub">Sub-domains</a></li>
+									</ul>
+
+			<section>
+
+			  <h2 id="how">How to write URLs</h2>
+
+			  <p>This applies to all URLs, including vanity URLs and subdomains:</p>
+
+			  <ul>
+
+			    <li>use plain language keywords</li>
+
+			    <li>avoid superfluous words such as “to”, “the”,  “a”, “an”, “by”, “for” (for example, “/apply-student-loan” instead of  “/how-to-apply-for-a-canadian-student-loan”</li>
+
+			    <li>separate keywords and path segments by hyphens</li>
+
+			    <li>use lowercase</li>
+
+			    <li>it is strongly recommended that you use unilingual keywords, in the  language of the page</li>
+
+			    <li>use only US-ASCII (7-bit version of ASCII)  characters (for example, “meteo” instead of “météo”)</li>
+
+			    <li>avoid duplicate keywords and apostrophes</li>
+
+			    <li>avoid acronyms and abbreviations, unless they are better understood than the full version or perform better on search engines </li>
+
+			  </ul>
+
+			</section>
+
+			<section>
+
+			  <h2 id="comms">Writing URLs for communications products</h2>
+
+			  <p>When writing URLs for communication products, you can use either the primary URL or a vanity URL.</p>
+
+			  <p>Vanity URLs must:</p>
+
+			  <ul>
+
+			    <li>be easy to type and to communicate</li>
+
+			    <li>only include 1 path segment (only a  single slash)
+
+			    </li><li>hide the file extension for HTML-based pages (for example, “canada.ca/passport”, “canada.ca/weather”) </li>
+			</ul>
+
+			    <p>If the URL will be spoken out loud (for example, in radio and television advertisements), you can also have another vanity URL without hyphens. This will make it easier to read out loud.</p>
+
+			      <p>Example – Television advertisement:</p>
+
+
+
+			   <ul>
+
+			      <li>vanity URL for print:  canada.ca/employment-insurance-maternity </li>
+
+			      <li>vanity URL for television or radio:  canada.ca/employmentinsurancematernity (spoken “canada dot c a slash employment  insurance maternity”) </li>
+
+			    </ul>
+
+
+
+			  <p><strong>Note</strong>: your account manager can submit new vanity URLs and change requests to the Principal Publisher using the <a href="http://requestform.portal.gc.ca/tickets.html">Request form for Canada.ca</a>. </p>
+
+			</section>
+
+
+
+
+			    <h2 id="sub">Sub-domains</h2>
+
+			    <p>Only use subdomains for content or services hosted outside the Managed Web Service.</p>
+
+
+			     <p>When choosing a subdomain:</p>
+			    <ul>
+			      <li>use plain language keywords that make sense to the user</li>
+
+			      <li>a maximum of 2 keywords is recommended</li>
+
+			      <li>it is strongly recommended that you use unilingual keywords, in the  language of the page</li>
+			      <li>related sub-sites and digital services must  be grouped under the same sub-domain, where possible
+
+			        <p class="mrgn-tp-md"><strong>Examples:</strong></p>
+
+			        <ul>
+
+			          <li>Application for Employment Insurance benefits online <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">arrow pointing right</span> <code>employment-insurance.canada.ca/benefits/apply</code></li>
+
+			          <li>Employment Insurance Internet reporting service <span class="glyphicon glyphicon-arrow-right"></span><span class="wb-inv">arrow pointing right</span> <code>employment-insurance.canada.ca/reporting</code></li>
+
+			        </ul>
+
+			      </li>
+
+			    </ul>
+
+			    <p><strong>Note</strong>: your account manager can submit new Canada.ca sub-domains and change requests to the Principal Publisher using the <a href="http://requestform.portal.gc.ca/tickets.html">Request form for Canada.ca</a>. Sub-domain requests are reviewed by the Treasury Board of Canada Secretariat. </p>
+
+
+			<div class="clearfix"></div>
+			<nav role="navigation" class="mrgn-bttm-lg">
+			<h3 class="wb-inv">Document navigation</h3>
+			<ul class="pager">
+			<li class="next h3"><a href="./user-navigation-vertical-test.html" rel="next">Next: User navigation</a></li>
+			</ul>
+			</nav>
+			</div>
+
+			</section>
+			</div>
+
+
+
+<div id="def-preFooter">
+</div>
+<!-- Write closure template -->
+<script type="text/javascript">
+	var defPreFooter = document.getElementById("def-preFooter");
+	defPreFooter.outerHTML = wet.builder.preFooter({
+		dateModified: "April 1, 2019",
+		showPostContent: true,
+		showFeedback: true,
+		showShare: true
+	});
+</script>
+		</main>
+		<div id="def-footer">
+
+		</div>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.footer({
+				showFooter: true,
+				showFeatures: true
+			});
+		</script>
+		<!-- Write closure template -->
+		<script type="text/javascript">
+			document.write(wet.builder.refFooter({
+			}));
+		</script>
+	</body>
+</html>
