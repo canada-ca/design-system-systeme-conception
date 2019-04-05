@@ -292,7 +292,7 @@ ol.vertical-steps {
 	font-size: 1.4em;
 	color: #777;
 	float: none;
-	/* padding-left: 15px; */
+	padding-left: 15px;
 	padding-right: 15px;
 	font-weight: 400;
 	border:none;
@@ -305,6 +305,11 @@ ol.vertical-steps {
 	font-size: 1.7em;
 	}
 }
+
+.gc-theme .profile {
+  margin-bottom: 0px !important;
+}
+
 .gc-theme h1.secondh1 {
 	margin: 0 0 0.2em;
 	padding: 0 0 0.2em;
