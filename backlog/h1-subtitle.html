@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>Alpha design pattern - h1 subtitle - Canada.ca</title>
+		<title>H1 subtitle - Alpha design pattern - Canada.ca</title>
 		<meta content="width=device-width,initial-scale=1" name="viewport">
 		<!-- Meta data -->
 		<!-- Meta data-->
@@ -18,21 +18,21 @@
 			}));
 		</script>
 		<style>
-			h1 span.stacked {
-				display: flex;
-				flex-direction: column-reverse;
-				text-indent:-999em;
-			}
-			h1 span.stacked span {
-				text-indent: 0em;
-			}
-			h1 span.stacked span:last-child {
-				font-size: 0.8em;
-				color: #777;
-			}
-			h1 span.stacked span:first-child {
-				margin-top: -1.1em
-			}
+		h1 span.stacked {
+		                display: flex;
+		                flex-direction: column-reverse;
+		                margin-left: -9999px;
+		}
+		h1 span.stacked span:nth-child(1), h1 span.stacked span:nth-child(2) {
+		                margin-left: 9999px;
+		}
+		h1 span.stacked span:nth-child(2) {
+		                font-size: 0.8em;
+		                color: #777;
+		}
+		h1 span.stacked span:nth-child(1) {
+		                margin-top: -1.1em;
+		}
 		</style>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
@@ -69,9 +69,9 @@
 <main role="main" property="mainContentOfPage" class="container">
 
 
-<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>H1 subtitle</span> - <span>Alpha design pattern</span></span></h1>
+<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>H1 subtitle</span> : <span>Alpha design pattern</span></span></h1>
 
-<span class="label label-danger">Alpha state - do not use</span>
+<span class="label label-danger">This pattern is in alpha</span>
 <section>
 <h2>Rationale</h2>
 
@@ -84,17 +84,19 @@
 	</section>
     <section>
       <h2>Objective</h2>
-      <p>This pattern proposes an alternate layout that leaves the section visible, works with assistive technology, but makes the main heading easier to read. </p>
+      <p>Alternate layout that leaves the section visible, but emphasizes the current page. </p>
     </section>
 
 	<section>
 <h2>When to use</h2>
-<p>Clear guidance</p>
+<p>Use when you would otherwise write the pagename, followed by a dash, followed by the section name.</p>
 
 </section>
     <section>
       <h2>How to implement</h2>
-  <p>Clear guidance</p>
+  <code>
+<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>Page name</span> - <span>Section name</span></span></h1>
+	</code>
     </section>
     <section>
 
