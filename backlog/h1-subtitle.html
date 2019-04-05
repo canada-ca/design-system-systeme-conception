@@ -17,6 +17,23 @@
 			document.write(wet.builder.refTop({
 			}));
 		</script>
+		<style>
+			h1 span.stacked {
+				display: flex;
+				flex-direction: column-reverse;
+				text-indent:-999em;
+			}
+			h1 span.stacked span {
+				text-indent: 0em;
+			}
+			h1 span.stacked span:last-child {
+				font-size: 0.8em;
+				color: #777;
+			}
+			h1 span.stacked span:first-child {
+				margin-top: -1.1em
+			}
+		</style>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
 		<div id="def-top">
@@ -52,30 +69,24 @@
 <main role="main" property="mainContentOfPage" class="container">
 
 
-<h1 property="name" id="wb-cont" dir="ltr">H1 subtitle - Alpha pattern</h1>
+<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>H1 subtitle</span> - <span>Alpha pattern</span></span></h1>
 
 <span class="label label-danger">Alpha state - do not use</span>
-
+<section>
 <h2>Rationale</h2>
 
-<p>Many pages are part of a section, and to make the context of the page clear, we'd put it in the title. For example: "How to apply - EI maternity and parental benefits". This is crucial because each page needs a clear and unique title that stands alone. </p>
+<p>Many pages fit into a section of other pages. To make the context of the page clear, we often put that section in the title. For example: </p>
+<p><blockquote>How to apply - EI maternity and parental benefits</blockquote></p>
+<p>This is important because even though we want to focus on the "How to apply" part, each page needs a clear and unique title that stands alone.</p>
 <p>We also put this in the H1, to make the purpose of the page sufficiently clear when people visit it. </p>
 <p>This can make for some very long H1s, with repeated content across many of them that is only really useful to people the first time they get to the page.</p>
-<p>This pattern proposes an alternate layout that leaves the section visible, works with assistive technology, but makes the main heading easier to read. </p>
 
-
-	<figure>
-
-		<figcaption class="caption"><b>Image of pattern</b></figcaption>
-
-			<img src="" alt="">
-
-	</figure>
 	</section>
     <section>
       <h2>Objective</h2>
-      <p>Describe the purpose, built from the rationale</p>
+      <p>This pattern proposes an alternate layout that leaves the section visible, works with assistive technology, but makes the main heading easier to read. </p>
     </section>
+
 	<section>
 <h2>When to use</h2>
 <p>Clear guidance</p>
