@@ -1,14 +1,14 @@
 .longtoc {
-            margin-left: -15px !important;
+            margin-left: -20px !important;
 }
 
 .longtoc-sp {
-            margin-left: -15px !important;
+            margin-left: -20px !important;
 
 }
 
 .lst-spcd {
-  margin-right: 50px;
+  margin-right: 70px;
 
 }
 
@@ -178,9 +178,7 @@ li.active {
 	padding-bottom: 5px;
 	font-size: 1.4em;
 	color: #757575;
-	float: right;
-	padding-left: 0px;
-	padding-right: 15px;
+	padding-right: 75px;
 	font-weight: 400;
 	border:none;
 	margin:0;
