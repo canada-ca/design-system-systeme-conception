@@ -1,35 +1,44 @@
 .longtoc {
-            margin-left: -10px !important;
+            margin-left: -15px !important;
+}
+
+.longtoc-sp {
+            margin-left: -15px !important;
+
 }
 
 .lst-spcd {
-  margin-right: 30px;
+  margin-right: 50px;
 
+}
+
+
+.col-md-8 {
+  margin-left: -70px;
 }
 
 ul.vertical-steps {
 
-               margin-left: -10px;
+               margin-left: -20px;
                padding-left: 0px;
-               margin-right: 30px;
+               margin-right: 70px;
 
 }
 
 .vertical-steps li {
 
-               padding-bottom: 10px;
+               padding-bottom: 6px;
+               padding-top: 6px;
 
                list-style: none;
 
                margin-left: 0px;
 
-               /* border-left: 5px solid #26374a; */
 
                position: relative;
 
                padding-left: 0px;
 
-               /* counter-increment: step-counter; */
 
 }
 
@@ -51,13 +60,9 @@ ul.vertical-steps {
 
 .vertical-steps li>:first-child::before {
 
-               /* border-radius: 50%;
-
-               /* border: 3px solid #26374a; */
 
                background-color: #fff;
 
-               /* content: counter(step-counter); */
 
                float: left;
 
@@ -77,28 +82,10 @@ ul.vertical-steps {
 
                margin-left: 0px;
 
-               -webkit-transition: all 0.2s; /* For Safari 3.1 to 6.0 */
-
-               transition: all 0.2s;
 
 }
 
-/* .vertical-steps li a[href]:hover::before {
 
-               width: 38px;
-
-               height: 38px;
-
-               margin-top: -2px;
-
-               font-size: 1.2em;
-
-               margin-right: 10px;
-
-               margin-left: -54px;
-
-               line-height: 1.5;
- */
 }
 
 .vertical-steps .description {
@@ -111,23 +98,7 @@ ul.vertical-steps {
 
 }
 
-/*sub-steps un-ordered*/
 
-/* .vertical-steps ul li a[href]:hover::before {
-
-               width: 38px;
-
-               height: 38px;
-
-               margin-top: -2px;
-
-               margin-right: 10px;
-
-               margin-left: -54px;
-
-               line-height: 0.75
-
-} */
 
 .vertical-steps li:last-child {
 
@@ -150,7 +121,7 @@ ul.vertical-steps {
 
 .vertical-steps li li:first-child {
 
-               margin-top: 10px;
+
 
 }
 
@@ -160,69 +131,26 @@ ul.vertical-steps {
 
 }
 
-/* .vertical-steps > li li {
 
-               counter-increment: sub-step-counter;
 
-}
+.vertical-steps > li ul li  {
 
-.vertical-steps > li li > :first-child::before {
 
-               content: counter(sub-step-counter, lower-alpha);
+               margin-left: -8px !important;
 
-} */
-
-/*sub-steps un-ordered*/
-
-.vertical-steps > li ul li > :first-child::before {
-
-               content: "\25cf";
-
-               background-color: #fff;
-
-               color: #eaeaea;
-
-               font-size: 2em;
-
-               line-height: 0.75;
-
-               border-color: #fff;
 
 }
 
-.vertical-steps > li ul li.active> :first-child::before {
 
-               content: "\25cf";
+li.active {
 
-               background-color: #fff;
 
-               color: #26374a;
+               border-left: 6px solid #26374a;
+               margin-left: -23px;
+               padding-left: 15px;
+               margin-top: 12px;
+               margin-bottom: 12px;
 
-               line-height: 0.75;
-
-               border-color: #26374a;
-
-}
-
-/*sub-sub-steps un-ordered*/
-
-.vertical-steps > li li ul li > :first-child::before {
-
-               content: "\25cf";
-
-               background-color: #fff;
-
-               color: #eaeaea;
-
-}
-
-.vertical-steps > li li ul li.active> :first-child::before {
-
-               content: "\25cf";
-
-               background-color: #fff;
-
-               color: #26374a;
 
 }
 
@@ -247,12 +175,12 @@ ul.vertical-steps {
 
 .gc-theme .firsth1 {margin:7px 0 0; padding:0}
 .gc-theme .firsth1 h1 {
-	padding-bottom: 0;
+	padding-bottom: 5px;
 	font-size: 1.4em;
-	color: #777;
+	color: #757575;
 	float: right;
 	padding-left: 0px;
-	padding-right: 5px;
+	padding-right: 15px;
 	font-weight: 400;
 	border:none;
 	margin:0;
@@ -276,7 +204,6 @@ ul.vertical-steps {
 	border-bottom: 1px solid #af3c43
 }
 .section-nav h2 {
-	color: #777;
 	margin-top:10px;
 }
 .circle-nav h2 {
