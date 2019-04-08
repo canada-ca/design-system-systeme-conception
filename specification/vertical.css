@@ -174,7 +174,7 @@ ol.vertical-steps {
 
 .vertical-steps > li li > :first-child::before {
 
-               content: counter(sub-step-counter, upper-alpha);
+               content: counter(sub-step-counter, lower-alpha);
 
 }
 
