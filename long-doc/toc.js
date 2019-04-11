@@ -28,11 +28,13 @@
             createChildNavList: function(e) {
                 var t = this.createNavList();
                 return e.append(t), t
+
             },
             generateNavItem: function(e) {
                 var t = this.generateAnchor(e),
                     n = $(e).text();
-                return $('<li><a href="#' + t + '">' + n + "</a></li>")
+                return $('<li><a href="#' + t + '">' + n + "</a></li>");
+
             },
             getTopLevel: function(e) {
                 for (var t, n = 1; 4 > n; n++) {
@@ -42,7 +44,8 @@
                         break
                     }
                 }
-                return t || 1
+
+                return t || 1;
             },
             getHeadings: function(e, t) {
                 var n = "h" + t,
@@ -56,10 +59,14 @@
             populateNav: function(e, t, n) {
                 var r, a = e,
                     i = this;
+
                 n.each(function(n, o) {
+                  // console.log(n);
+                  if (n > 4) {
                     var s = i.generateNavItem(o),
                         u = i.getNavLevel(o);
                     u === t ? a = e : r && a === e && (a = i.createChildNavList(r)), a.append(s), r = s
+                  }
                 })
             },
             parseOps: function(e) {
@@ -75,11 +82,13 @@
                 n = this.helpers.getTopLevel(e.$scope),
                 r = this.helpers.getHeadings(e.$scope, n);
             this.helpers.populateNav(t, n, r)
+
         }
     }, $(function() {
         $('nav[data-toggle="toc"]').each(function(e, t) {
             var n = $(t);
-            Toc.init(n)
+            Toc.init(n);
+
         })
     })
 }();
