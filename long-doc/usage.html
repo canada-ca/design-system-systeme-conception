@@ -18,7 +18,7 @@
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script> 		<!-- makes ToC work -->
-<script src="./toc.js"></script> 		<!-- makes ToC work -->
+
 
 <!--<![endif]-->
 <!--[if lt IE 9]>
@@ -145,7 +145,27 @@
       </div>
       <div class="row">
         <div class="col-sm-4">
-          <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+          <nav id="toc" data-spy="affix" data-toggle="toc" class="affix">
+
+            <ul class="nav">
+                <li class=""><a href="#who-has-to-use-this-design-system">Who has to use this design system</a>
+                    <ul class="nav">
+                      <li class=""><a href="#out-of-scope-situations">Out-of-scope situations</a></li>
+                      <li class=""><a href="#using-the-web-experience-toolkit">Using the Web Experience Toolkit</a></li>
+                    </ul>
+                </li>
+
+                <li class=""><a href="#mandatory-elements">Mandatory elements</a>
+                    <ul class="nav">
+                      <li class=""><a href="#typog">Typography</a></li>
+                      <li class=""><a href="#colours">Colours</a></li>
+                      <li class=""><a href="#layouts">Layouts</a></li>
+                      <li class=""><a href="#header-and-footer">Header and footer</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+
         </div>
         <div class="col-sm-8 col-md-7">
           <h1>Who has to use this design system</h1>
