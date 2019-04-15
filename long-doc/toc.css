@@ -3,6 +3,11 @@
  * Copyright 2015 Aidan Feldman
  * Licensed under MIT (https://github.com/afeld/bootstrap-toc/blob/gh-pages/LICENSE.md) */
 
+.always-li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .always-active {
   color: #26374A;
   text-decoration: none;
