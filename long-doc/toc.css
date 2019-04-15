@@ -3,13 +3,15 @@
  * Copyright 2015 Aidan Feldman
  * Licensed under MIT (https://github.com/afeld/bootstrap-toc/blob/gh-pages/LICENSE.md) */
 
+
+
  .firsth1 {margin:7px 0 0; padding:0}
  .firsth1 h1 {
  	padding-bottom: 0;
  	font-size: 1.4em;
  	color: #777;
  	float: none;
- 	padding-left: 15px;
+ 	padding-left: 0px;
  	padding-right: 15px;
  	font-weight: 400;
  	border:none;
@@ -30,19 +32,19 @@ body p, body p ul  {
 
 nav[data-toggle=toc] .nav>li>a {
     display: block;
-    padding: 4px 20px;
+    padding: 5px 20px;
     font-size: 18px;
     font-weight: 500;
-    color: #767676
+    color: #666
 }
 
 nav[data-toggle=toc] .nav>li>a:focus,
 nav[data-toggle=toc] .nav>li>a:hover {
     padding-left: 19px;
-    color: #563d7c;
+    color: #26374A;
     text-decoration: none;
     background-color: transparent;
-    border-left: 1px solid #563d7c
+    border-left: 3px solid #26374A
 }
 
 nav[data-toggle=toc] .nav>.active:focus>a,
@@ -50,9 +52,9 @@ nav[data-toggle=toc] .nav>.active:hover>a,
 nav[data-toggle=toc] .nav>.active>a {
     padding-left: 18px;
     font-weight: 700;
-    color: #563d7c;
+    color: #26374A;
     background-color: transparent;
-    border-left: 2px solid #563d7c
+    border-left: 3px solid #26374A
 }
 
 nav[data-toggle=toc] .nav .nav {
@@ -61,8 +63,8 @@ nav[data-toggle=toc] .nav .nav {
 }
 
 nav[data-toggle=toc] .nav .nav>li>a {
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     padding-left: 30px;
     font-size: 16px;
     font-weight: 400
@@ -77,7 +79,7 @@ nav[data-toggle=toc] .nav .nav>.active:focus>a,
 nav[data-toggle=toc] .nav .nav>.active:hover>a,
 nav[data-toggle=toc] .nav .nav>.active>a {
     padding-left: 28px;
-    font-weight: 500
+    font-weight: 700
 }
 
 nav[data-toggle=toc] .nav>.active>ul {

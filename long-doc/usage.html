@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
 <!--<![endif]-->
@@ -138,7 +136,6 @@
 
 
 
-
     <div class="container">
       <div class="profile firsth1">
        <h1 property="name" id="wb-cont">Canada.ca Content and Information Architecture Specification</h1>
@@ -161,8 +158,20 @@
                       <li class=""><a href="#colours">Colours</a></li>
                       <li class=""><a href="#layouts">Layouts</a></li>
                       <li class=""><a href="#header-and-footer">Header and footer</a></li>
+                      <li class=""><a href="#url-model">URL model</a></li>
+                      <li class=""><a href="#user-nav-bc">User navigation and breadcrumbs</a></li>
+                      <li class=""><a href="#mandatory-templates">Mandatory templates</a></li>
                     </ul>
                   </li>
+
+
+                <li class=""><a href="#design-principals">Design principles</a>
+
+                  </li>
+                  <li class=""><a href="#improve">Help improve this design system</a>
+
+                    </li>
+
                 </ul>
               </nav>
 
@@ -222,7 +231,7 @@
 
 </section>
 
-<h1 class="secondh1">Mandatory elements</h1>
+<h2 id="mandatory-elements">Mandatory elements</h2>
     <p>Canada.ca pages must be easily identifiable as part of Canada.ca. Each page must convey the overall brand and feel of Canada.ca, and provide a consistent experience for site visitors. </p>
 
     <p>These mandatory elements were designed to reflect the trusted digital brand of the Government of Canada: modern, open, helpful and credible.</p>
@@ -231,11 +240,11 @@
     <p>All institutions who have to follow the Canada.ca design system have to implement the following mandatory elements:</p>
 
 
-                 <h2 id="typog">Typography</h2>
+                 <h3 id="typog">Typography</h3>
 
                  <p>Fonts should be easily readable across devices. We use a combination of Lato for headings, and Noto sans for body text.</p>
 
-                 <h3>Desktop and tablet default font specification</h3>
+                 <h4>Desktop and tablet default font specification</h4>
                  <ul>
                    <li>H1: Lato, 38px, bold, with a red rule below</li>
                    <li>H2: Lato, 36px, bold</li>
@@ -245,7 +254,7 @@
                    <li>H6: Lato, 19px, plain text</li>
                    <li>Body: Noto sans, 20px, plain text</li>
                  </ul>
-                 <h3>Smaller device default font specification</h3>
+                 <h4>Smaller device default font specification</h4>
                  <ul>
                    <li>H1: Lato, 34px, bold, with a red rule below</li>
                    <li>H2: Lato, 32px, bold</li>
@@ -256,23 +265,23 @@
                    <li>Body: Noto sans, 20px, plain text</li>
                  </ul>
 
-                 <h3>Line length</h3>
+                 <h4>Line length</h4>
                  <p>Text lines are constrained to 65 characters in length. This ensures that no lines extend beyond a comfortable reading length.</p>
                  <p>Page layouts may be wider that 65 characters. The line length restriction applies only to lines of text. </p>
 
-                 <h3>Links</h3>
+                 <h4>Links</h4>
                  <p>Links are underlined, using an underline style that skips descenders.</p>
 
-                 <h2 id="colours">Colours</h2>
+                 <h3 id="colours">Colours</h3>
 
-                 <h3>Backgrounds</h3>
+                 <h4>Backgrounds</h4>
                  <p>The default background colour for Canada.ca is white (#FFF).</p>
                  <p>While another background colour may be used for specific portions of the page, ensure that the majority of the page has a white background.
                  When other background colours are used, ensure sufficient contrast with text to meet WCAG success criterion 1.4.6: Contrast (Enhanced) (Level AAA).
                  </p>
 
-                 <h3>Text</h3>
-                 <p>Text on Canada.ca is black (#000).</p>
+                 <h4>Text</h4>
+                 <p>Text on Canada.ca is near-black (#333).</p>
                  <p>Always use the following colours for links:
                  </p><ul>
                    <li>default link: #2b4380</li>
@@ -281,7 +290,7 @@
                  </ul>
                  <p></p>
 
-                 <h3>Additional colours</h3>
+                 <h4>Additional colours</h4>
                  <p>Only use additional colours for accents:</p>
                  <ul>
                    <li>main accent colour: #26374A</li>
@@ -291,7 +300,7 @@
                  <p></p>
                  <p>Alert and information messages have additional colours. These are described in the relevant <a href="/en/government/about/design-system/pattern-library.html">pattern descriptions</a>. </p>
 
-                 <h2 id="layouts">Layouts</h2>
+                 <h3 id="layouts">Layouts</h3>
                  <p>The underlying grid system for Canada.ca allows for responsive layouts at various screen sizes. This allows for flexible layouts while maintaining consistent placement of elements. </p>
 
                  <p>The default maximum content width is 1140 pixels. In some rare cases, a layout may need to be wider. For example, some very large data tables may be too wide to fit in this space. This will require viewers to scroll right to see the entire layout. </p>
@@ -301,7 +310,7 @@
 
 
 
-                 <h2 id="header-and-footer">Header and footer</h2>
+                 <h3 id="header-and-footer">Header and footer</h3>
 
                 <p>Every page must use the standard header and footer, except in these situations:</p>
                 <ul>
@@ -313,7 +322,7 @@
                 </li></ul>
                 <p>How the header and footer elements may vary in these situations is shown in the tables below.</p>
 
-                <h3>Global header</h3>
+                <h4>Global header</h4>
 
                 <img class="img-responsive" src="https://gc-proto.github.io/spec2.0/images/header-en.png" alt="Elements of the Canada.ca header. See table for details">
 
@@ -417,7 +426,7 @@
 
 
 
-                <h3>Global footer</h3>
+                <h4>Global footer</h4>
 
                 <img class="img-responsive" src="https://gc-proto.github.io/spec2.0/images/footer-en.png" alt="Elements of the Canada.ca footer. See table for details">
 
