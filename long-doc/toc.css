@@ -3,7 +3,15 @@
  * Copyright 2015 Aidan Feldman
  * Licensed under MIT (https://github.com/afeld/bootstrap-toc/blob/gh-pages/LICENSE.md) */
 
-
+.always-active {
+  color: #26374A;
+  text-decoration: none;
+  background-color: transparent;
+  border-left: 3px solid #26374A;
+  font-size: 18px;
+  padding: 5px 18px;
+  font-weight: 700;
+}
 
  .firsth1 {margin:7px 0 0; padding:0}
  .firsth1 h1 {
