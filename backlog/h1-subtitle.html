@@ -70,7 +70,7 @@
 
 <main role="main" property="mainContentOfPage" class="container wb-prettify">
 
-<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>H1 subtitle</span>: <span>Alpha design pattern</span></span></h1>
+<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked" role="text"><span>H1 subtitle</span>: <span>Alpha design pattern</span></span></h1>
 
 <p>Some pages have a subtitle that describes a category the page belongs to. This pattern renders that subtitle in a way that more clearly shows it's part of that category, making the title easier to read.</p>
 
@@ -88,10 +88,10 @@
 
 <p>Many pages fit into a section or category of other pages. To make the context of the page clear, we often make that section or category part of the title. For example: </p>
 <p><blockquote>How to apply - EI maternity and parental benefits</blockquote></p>
-<p>This is important because even though we want to focus on "How to apply", we need it to be clear that it's maternity and parental benefits that are being applied to.</p>
+<p>This is important because even though we want to focus on "How to apply", we need it to be clear that maternity and parental benefits are what are being applied to.</p>
 	<section>
 <h2 id="when">When to use</h2>
-<p>Use when you would write the h1 with a subtitle that describes the category or section the page belongs to.</p>
+<p>Use when you would write the main page heading with a subtitle that describes the category or section the page belongs to.</p>
 </section>
 
     <section>
@@ -99,14 +99,14 @@
 			<p>A single h1 is used with spans to separate the 3 components:</p>
 			<ul>
 				<li>the page name, which should be read 1st</li>
-				<li>the separator, which should be an em dash or colon</li>
+				<li>the separator, which should be a colon</li>
 				<li>the subtitle, which should be read last</li>
 			</ul>
 			<p>Use the following HTML for the h1:</p>
 <pre class="prettyprint">
 &#x3C;h1 property=&#x22;name&#x22; id=&#x22;wb-cont&#x22; dir=&#x22;ltr&#x22;&#x3E;
-  &#x3C;span class=&#x22;stacked&#x22;&#x3E;
-    &#x3C;span&#x3E;Page name&#x3C;/span&#x3E; - &#x3C;span&#x3E;Subtitle&#x3C;/span&#x3E;
+  &#x3C;span class=&#x22;stacked&#x22; role=&#x22;text&#x22;&#x3E;
+    &#x3C;span&#x3E;Page name&#x3C;/span&#x3E;: &#x3C;span&#x3E;Subtitle&#x3C;/span&#x3E;
   &#x3C;/span&#x3E;
 &#x3C;/h1&#x3E;
 </pre>
