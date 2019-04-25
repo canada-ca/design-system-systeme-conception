@@ -35,6 +35,11 @@
 		h1 span.stacked span:nth-child(1) {
 		                margin-top: -1.1em;
 		}
+
+		img.pattern-demo {
+		  -webkit-filter: drop-shadow(3px 3px 5px #aaaaaa);
+		  filter: drop-shadow(3px 3px 5px #aaaaaa);
+}
 		</style>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
@@ -72,30 +77,44 @@
 
 <h1 property="name" id="wb-cont" dir="ltr"><span class="stacked" role="text"><span>H1 subtitle</span>: <span>Alpha design pattern</span></span></h1>
 
-<p>Some pages have a subtitle that describes a category the page belongs to. This pattern renders that subtitle in a way that more clearly shows it's part of that category, making the title easier to read.</p>
+<p>Some pages have a subtitle that describes a category the page belongs to. Render that subtitle in a way that more clearly shows it's part of that category, making the title easier to read.</p>
 
-<h2 class="h3">On this page</h2>
+<img class="pattern-demo" src="h1-subtitle-demo.png" alt="Sample h1 shows 'EI maternity and parental benefits' in grey above 'Apply'">
+
+<h2>On this page</h2>
 <ul>
-	<li><a href="#rationale">Rationale</a></li>
-	<li><a href="#objective">Objective</a></li>
-	<li><a href="#when">When to use</a></li>
-	<li><a href="#how">How to use</a></li>
 	<li><a href="#status">Pattern status</a></li>
+	<li><a href="#rationale">When to use</a></li>
+	<li><a href="#cautions">What to avoid</a></li>
+	<li><a href="#how">Implementation</a></li>
 	<li><a href="#discuss">Discussion</a></li>
 </ul>
 <section>
-<h2 id="rationale">Rationale</h2>
+	<h2 id="status">Pattern status</h2>
+	<dl>
+		<dt>Lead department</dt>
+		<dd>Canada Revenue Agency</dd>
+		<dt>Current stage</dt>
+		<dd>Alpha</dd>
+		<dt>Testing</dt>
+		<dd>Explanation of the testing </dd>
+	</dl>
+
+<h2 id="rationale">When to use</h2>
 
 <p>Many pages fit into a section or category of other pages. To make the context of the page clear, we often make that section or category part of the title. For example: </p>
 <p><blockquote>How to apply - EI maternity and parental benefits</blockquote></p>
 <p>This is important because even though we want to focus on "How to apply", we need it to be clear that maternity and parental benefits are what are being applied to.</p>
 	<section>
-<h2 id="when">When to use</h2>
 <p>Use when you would write the main page heading with a subtitle that describes the category or section the page belongs to.</p>
 </section>
+<section>
+<h2 id="cautions">What to avoid</h2>
 
+<p>Not sure what might be an issue here. </p>
+</section>
     <section>
-      <h2 id="how">How to implement</h2>
+      <h2 id="how">Implementation</h2>
 			<p>A single h1 is used with spans to separate the 3 components:</p>
 			<ul>
 				<li>the page name, which should be read 1st</li>
@@ -112,16 +131,6 @@
 </pre>
     </section>
     <section>
-
-			<h2 id="status">Pattern status</h2>
-			<dl>
-				<dt>Lead department</dt>
-				<dd>Canada Revenue Agency</dd>
-				<dt>Current stage</dt>
-				<dd>Alpha</dd>
-				<dt>Testing</dt>
-				<dd>Currently underway (link to test results or more information)</dd>
-			</dl>
 
 			<h2 id="discuss">Discussion</h2>
 			<p>Notes etc. about this pattern</p>
