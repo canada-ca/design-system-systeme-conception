@@ -1,0 +1,681 @@
+/* take out table lines for phone lines */
+/* removed the in details condition, since it's better without lines elsewhere too... */
+
+details dl.dl-horizontal dd, details dl.dl-horizontal dt {
+  border-top: 0px solid #ccc !important;
+}
+
+/* bigger label */
+label {
+  font-size: 18px !important;
+}
+/* increase field flow sizing */
+
+legend.h5 {
+  margin-top: 0px !important;
+  font-size: 22px !important;
+  margin-bottom: 15px !important;
+}
+
+/* need padding to the left of register when next to a button */
+
+.register {
+  padding-left: 15px;
+}
+
+
+.home h2 {
+  font-size: 1.2em;
+}
+
+ul.feeds-cont li {
+
+ font-size: 18px !important;
+ line-height: 1.5em !important;
+}
+
+
+ul.feeds-cont li a {
+
+ text-decoration: underline !important;
+}
+
+ul.toc {
+
+  font-size: 17px !important;
+}
+
+ul.toc .active {
+  background-color: #333 !important;
+  border-color: #8f8f8f  !important;
+}
+
+main section.lnkbx ul li a {
+  line-height: .8em !important;  /* not targetting properly, being overrideen by main line-height... need to look at again later */
+}
+
+
+.cra-contacts div.col-md-4 {
+
+    margin-top: -8px !important;
+}
+
+.btn-login {
+
+background-color: #26374a !important;
+border: 1px solid #26374a !important;
+
+/* background-color: #904114 !important; */
+/* border: 1px solid #7D3912 !important; */
+
+/*	background-color: #318000 !important; */
+/*	border: 1px solid #455E82 !important; */
+	font-weight: 600 !important;
+	font-family: "Lato";
+  font-size: 17px !important;
+	padding-top: 7px;
+	padding-bottom: 7px;
+  padding-left: 16px;
+  padding-right: 16px;
+	margin-top: 3px;
+
+}
+
+/* in page buttons that are not primary call to action */
+
+main .btn {
+  font-family: "Lato";
+  font-size: 20px !important;
+  color: #333;
+}
+
+main .btn-primary {
+  color: #fff !important;
+}
+
+.edge-color .btn-default {
+  background-color: white!important;
+}
+
+div.pagedetails .btn {
+
+  font-family: "Lato";
+  font-size: 16px !important;
+  color: #335075;
+  border: 1px solid #dcdee1 !important;
+
+
+}
+
+/* sigh */
+
+
+
+
+
+/* shared components for radio and check */
+
+/* container for checks and radios */
+
+
+
+
+/* .checkbox  {
+
+  top: 0;
+  left: 0;
+  height: 36px;
+  width: 36px;
+  background-color: #eee;
+  border: 2px solid #333;
+
+} */
+
+/* surrounding div for hiding default browser components of radio/check */
+
+/* .cst-inputs input {
+  position: absolute;
+  opacity: 0;
+}
+
+.cst-inputs {
+    margin-top: 15px;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 35px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.checkbox label::before {
+
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #333;
+  margin-top:-4px;
+ }
+
+
+.checkbox label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  width: 13px;
+  height: 22px;
+  border: solid #333;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.checkbox input:checked {
+  background-color: white;
+}
+
+.checkbox input:hover {
+  background-color: #ccc;
+} */
+
+
+ /* .checkbox label:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 10px;
+  top: 2px;
+  width: 13px;
+  height: 22px;
+  border: solid #333;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); */
+
+
+   /* content: "";
+  position: absolute;
+  left:8px;
+  width: 0;
+  height: 0;
+  border: 10px solid currentColor;
+  border-radius: 50%;
+  opacity: 0;
+  margin-top:-21px;
+  background: currentColor;
+  opacity: 1;
+
+  }
+  */
+
+
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+/* .checkbox label:after  {
+  content: "";
+  position: absolute;
+  display: none;
+} */
+
+
+
+
+/* controls the container for both checks and radios */
+
+/* show the checkmark or dot when checked */
+/* input:checked ~ .checkbox label:after {
+  display: block;
+} */
+
+/* sets the background to white */
+
+/* mouse-over, grey */
+
+
+
+/* end of shared components */
+
+
+/* style the checkmark/indicator */
+/* .checkbox label:after {
+  left: 10px;
+  top: 2px;
+  width: 13px;
+  height: 22px;
+  border: solid #333;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/** end checks and radios **/
+
+
+
+/* start custom breadcrumb  */
+
+
+@media screen and (max-width: 737px) {
+#wb-bc li:before {
+		color: #333;
+		content: "<"!important;
+		font-size: 1.5em;
+}
+
+.gcweb-v2~#wb-bc ol {
+
+  margin-top: 5px !important;
+}
+
+}
+@media screen and (min-width: 737px) {
+.no-break-breadcrumb {
+	display: inline-block!important;
+}
+
+
+}
+
+/* end breadcrumb */
+
+@media screen and (max-width: 1200px) {
+
+  .promo {
+  	padding-left: 1em;
+
+}
+
+}
+
+
+@media screen and (max-width: 760px) {
+
+  .mobile-left {
+    float: left !important;
+  }
+
+}
+
+
+
+
+
+ol.vertical-steps {
+
+               margin-left: -10px;
+
+}
+
+.vertical-steps li {
+
+               padding-bottom: 20px;
+
+               list-style: none;
+
+               margin-left: -12px;
+
+               border-left: 5px solid #26374a;
+
+               position: relative;
+
+               padding-left: 30px;
+
+               counter-increment: step-counter;
+
+}
+
+.vertical-steps ul li {
+
+               border-left: none;
+
+               padding-left: 35px;
+
+}
+
+.vertical-steps li a::before {
+
+               text-decoration: underline;
+
+}
+
+.vertical-steps li>:first-child::before {
+
+               border-radius: 50%;
+
+               border: 3px solid #26374a;
+
+               background-color: #fff;
+
+               content: counter(step-counter);
+
+               float: left;
+
+               display: inline-block;
+
+               text-decoration: none;
+
+               box-sizing: content-box;
+
+               line-height: 1.7;
+
+               height: 34px;
+
+               width: 34px;
+
+               text-align: center;
+
+               margin-left: -52px;
+
+               -webkit-transition: all 0.2s; /* For Safari 3.1 to 6.0 */
+
+               transition: all 0.2s;
+
+}
+
+.vertical-steps li a[href]:hover::before {
+
+               width: 38px;
+
+               height: 38px;
+
+               margin-top: -2px;
+
+               font-size: 1.2em;
+
+               margin-right: 10px;
+
+               margin-left: -54px;
+
+               line-height: 1.5;
+
+}
+
+.vertical-steps .description {
+
+               display: block;
+
+               font-size: 87%;
+
+               color: #6f6f6f;
+
+}
+
+/*sub-steps un-ordered*/
+
+.vertical-steps ul li a[href]:hover::before {
+
+               width: 38px;
+
+               height: 38px;
+
+               margin-top: -2px;
+
+               margin-right: 10px;
+
+               margin-left: -54px;
+
+               line-height: 0.75
+
+}
+
+.vertical-steps li:last-child {
+
+               border-left: 5px solid transparent;
+
+               padding-bottom: 0;
+
+}
+
+/*sub-steps un-ordered*/
+
+.vertical-steps ul li:last-child {
+
+               border-left: none;
+
+}
+
+/*completed*/
+
+.vertical-steps li.completed {
+
+               border-color: #ccc
+
+}
+
+.vertical-steps li.completed>:first-child::before {
+
+               border-color: #ccc
+
+}
+
+/*active*/
+
+.vertical-steps li.active>:first-child::before {
+
+               background-color: #26374a;
+
+               color: #fff;
+
+}
+
+/*sub-steps*/
+
+.vertical-steps li li:first-child {
+
+               margin-top: 10px;
+
+}
+
+.vertical-steps > li li {
+
+               counter-increment: sub-step-counter;
+
+}
+
+.vertical-steps > li li > :first-child::before {
+
+               content: counter(sub-step-counter, upper-alpha);
+
+}
+
+/*sub-steps un-ordered*/
+
+.vertical-steps > li ul li > :first-child::before {
+
+               content: "\25cf";
+
+               background-color: #fff;
+
+               color: #eaeaea;
+
+               font-size: 2em;
+
+               line-height: 0.75;
+
+               border-color: #fff;
+
+}
+
+.vertical-steps > li ul li.active> :first-child::before {
+
+               content: "\25cf";
+
+               background-color: #fff;
+
+               color: #26374a;
+
+               line-height: 0.75;
+
+               border-color: #26374a;
+
+}
+
+/* sub-sub-steps */
+
+.vertical-steps > li li li {
+
+               counter-increment: sub-sub-step-counter;
+
+}
+
+.vertical-steps > li li li > :first-child::before {
+
+               content: counter(sub-sub-step-counter, lower-roman);
+
+}
+
+/*sub-sub-steps un-ordered*/
+
+.vertical-steps > li li ul li > :first-child::before {
+
+               content: "\25cf";
+
+               background-color: #fff;
+
+               color: #eaeaea;
+
+}
+
+.vertical-steps > li li ul li.active> :first-child::before {
+
+               content: "\25cf";
+
+               background-color: #fff;
+
+               color: #26374a;
+
+}
+
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+.vertical-steps > li li ul li.active> :first-child::before {
+
+               line-height: 0.75;
+
+}
+
+}
+
+.alert-success, .alert-info, .alert-warning, .alert-danger {
+	background: #fff !important;
+}
+.alert {
+	border-width: 1px 1px 1px 4px !important;
+	margin-left: 12px;
+	padding-left: 20px;
+	border-width: 0px 0px 0px 6px!important
+}
+.alert-success > :first-child::before, .alert-info > :first-child::before, .alert-warning > :first-child::before, .alert-danger > :first-child::before {
+	font-size: 26px;
+	margin-left: -1.48em;
+	background: #fff;
+	padding: 2px
+}
+.alert > :first-child {
+	margin-left: 0em;
+}
+.alert >:first-child::before {
+	margin-right: 0.4em
+}
+@media screen and (min-width:992px) {.skipto {display:none;}}
+@media screen and (max-width:991px) {
+.skipto {display:none;}
+:target ~ .skipto  {display:block;}
+.skipto {position: fixed; bottom:5px; color:#fff; background:#26374a; padding:2px 10px;   z-index:10000; right:0; margin:0; font-size:.85em;}
+.skipto a {color:#fff !important;}}
+
+.gc-theme .firsth1 {margin:7px 0 0; padding:0}
+.gc-theme .firsth1 h1 {
+	padding-bottom: 0;
+	font-size: 1.4em;
+	color: #777;
+	float: none;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: 400;
+	border:none;
+	margin:0;
+}
+@media all and (max-width: 991px) {
+.gc-theme .firsth1 h1 {
+	color: #333;
+	font-weight: 600;
+	font-size: 1.7em;
+	}
+}
+.gc-theme h1.secondh1 {
+	margin: 0 0 0.2em;
+	padding: 0 0 0.2em;
+	border-bottom: 1px solid #af3c43
+}
+.section-nav h2 {
+	color: #777;
+	margin-top:10px;
+}
+.circle-nav h2 {
+	color: #777;
+	margin-top:15px;
+}
+@media all and (min-width: 992px) {
+.circle-nav h2 {
+	margin-top:48px;
+}
+}
+@media all and (min-width: 992px) {
+.section-nav .col-md-4 {
+	position: absolute;
+	right: 0;
+}
+}
+@media all and (min-width: 992px) {
+.circle-nav {
+	float:right;
+}
+}
+
+.wb-overlay .pager {margin-bottom:10px}
+
+.pager > li > a, .pagination > li > a {margin-top: 0.5em; margin-bottom:0; }
+.pager {margin-left:10px; margin-right: 10px; }
+
+
+.overlay-def.wb-bar-b, .overlay-def.wb-bar-b header, .overlay-def.wb-bar-t, .overlay-def.wb-bar-t header {background-color:#26374a}
+
+@media all and (max-width: 479px) {
+#wb-srch input {
+	border-right: 1px solid #e0e0e0;
+	max-width: 246px;
+
+}
+}
+
+.hoverimagewow:hover {
+  opacity: 0.8;
+  cursor:pointer;
+
+}
