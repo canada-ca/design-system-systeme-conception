@@ -25,7 +25,212 @@
 <!--[if lte IE 9]>
 
 
-		<![endif]-->
+    <![endif]-->
+    <style>
+
+        .cst-inputs input {
+          position: absolute;
+          opacity: 0;
+        }
+        
+        .cst-inputs {
+            margin-top: 15px;
+        }
+        
+        .checkbox {
+          display: block;
+          position: relative;
+          padding-left: 30px;
+          margin-bottom: 35px;
+          cursor: pointer;
+          font-size: 19px;
+          font-weight: normal;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        
+        
+        .checkbox label::before {
+        
+          content: "";
+          box-sizing: border-box;
+          position: absolute;
+          display: inline-block;
+          top: 0;
+          left: 0;
+          width: 36px;
+          height: 36px;
+          border: 2px solid #333;
+          margin-top:-4px;
+         }
+        
+        
+        .checkbox label::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          left: 12px;
+          top: 0px;
+          width: 13px;
+          height: 22px;
+          border: solid #333;
+          border-width: 0 5px 5px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        
+        }
+        
+        .checkbox input:checked {
+          background-color: white;
+        }
+        
+        .checkbox input:hover {
+          background-color: #ccc;
+        }
+        
+        </style>
+        
+        <!-- <style>
+        /*
+        
+        .radio input[type=radio], .radio-inline input[type=radio] {
+            position: absolute;
+            margin-left: -20px;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            margin: 0;
+            margin-top:-4px;
+            opacity: 0;
+        }
+        
+        .radio label:before {
+          content: "";
+          box-sizing: border-box;
+          position: absolute;
+          left: 0;
+          width: 36px;
+          height: 36px;
+          border: 2px solid currentColor;
+          border-radius: 50%;
+          margin-top:-4px;
+          background: transparent;
+        }
+        
+        .radio label:after {
+          content: "";
+          position: absolute;
+          left:8px;
+          width: 0;
+          height: 0;
+          border: 10px solid currentColor;
+          border-radius: 50%;
+          opacity: 0;
+          margin-top:-21px;
+          background: currentColor;
+          opacity: 1;
+        }
+        
+        
+        
+        .radio label {
+          padding-left:50px;
+          padding-top:10px;
+          padding-bottom:10px;
+          font-size:20px!important;
+        }
+        
+        */
+        div.cst-inputs .checkbox input[type="checkbox"] {
+            opacity: 0;
+        }
+        
+        div.cst-inputs .checkbox label {
+            position: relative;
+            display: inline-block;
+        
+            /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+            padding-left: 22px;
+        }
+        
+        div.cst-inputs .checkbox label::before,
+        div.cst-inputs .checkbox label::after {
+            position: absolute;
+            content: "";
+        
+           /*Needed for the line-height to take effect*/
+            display: inline-block;
+        }
+        
+         /*Outer box of the fake checkbox*/
+        div.cst-inputs .checkbox label::before{
+            height: 16px;
+            width: 16px;
+        
+            border: 1px solid;
+            left: 0px;
+        
+            /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+             *to vertically center it.
+             */
+            top: 3px;
+        }
+        
+         /*Checkmark of the fake checkbox*/
+        div.cst-inputs .checkbox label::after {
+            height: 5px;
+            width: 9px;
+            border-left: 2px solid;
+            border-bottom: 2px solid;
+            transform: rotate(-45deg);
+        
+            left: 4px;
+            top: 7px;
+        }
+        
+        /*Hide the checkmark by default*/
+        div.cst-inputs .checkbox input[type="checkbox"] + label::after {
+            content: none;
+        }
+        
+         /*Unhide on the checked state*/
+        div.cst-inputs .checkbox input[type="checkbox"]:checked + label::after {
+            content: "";
+        }
+        
+        /*Adding focus styles on the outer-box of the fake checkbox*/
+        div.cst-inputs .checkbox input[type="checkbox"]:focus + label::before {
+            outline: rgb(59, 153, 252) auto 5px;
+        }
+        
+          </style> -->
+
+          <style>
+
+              button#wb-srch-sub a:visited {
+            
+              color: white !important;
+            
+            
+              }
+            
+            
+              button#wb-srch-sub a {
+            
+              color: white !important;
+            
+            
+              }
+            
+            
+            
+              </style>
 <noscript><link rel="stylesheet" href="./wet-boew/css/noscript.min.css" /></noscript>
 </head>
 <body class="page-type-nav" vocab="http://schema.org/" typeof="WebPage">
@@ -52,28 +257,6 @@
 <section id="wb-srch" class="col-lg-8 text-right">
 <h2>Search</h2>
 <form action="#" method="get" name="cse-search-box" role="search" class="form-inline">
-
-  <style>
-
-  button#wb-srch-sub a:visited {
-
-  color: white !important;
-
-
-  }
-
-
-  button#wb-srch-sub a {
-
-  color: white !important;
-
-
-  }
-
-
-
-  </style>
-
 <div class="form-group">
 <label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
 <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca">
@@ -121,191 +304,6 @@
 </div>
 </nav>
 </header>
-
-<style>
-
-.cst-inputs input {
-  position: absolute;
-  opacity: 0;
-}
-
-.cst-inputs {
-    margin-top: 15px;
-}
-
-.checkbox {
-  display: block;
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 35px;
-  cursor: pointer;
-  font-size: 19px;
-  font-weight: normal;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-
-.checkbox label::before {
-
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 0;
-  width: 36px;
-  height: 36px;
-  border: 2px solid #333;
-  margin-top:-4px;
- }
-
-
-.checkbox label::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 12px;
-  top: 0px;
-  width: 13px;
-  height: 22px;
-  border: solid #333;
-  border-width: 0 5px 5px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-
-}
-
-.checkbox input:checked {
-  background-color: white;
-}
-
-.checkbox input:hover {
-  background-color: #ccc;
-}
-
-</style>
-
-<!-- <style>
-/*
-
-.radio input[type=radio], .radio-inline input[type=radio] {
-    position: absolute;
-    margin-left: -20px;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
-    margin: 0;
-    margin-top:-4px;
-    opacity: 0;
-}
-
-.radio label:before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  width: 36px;
-  height: 36px;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-  margin-top:-4px;
-  background: transparent;
-}
-
-.radio label:after {
-  content: "";
-  position: absolute;
-  left:8px;
-  width: 0;
-  height: 0;
-  border: 10px solid currentColor;
-  border-radius: 50%;
-  opacity: 0;
-  margin-top:-21px;
-  background: currentColor;
-  opacity: 1;
-}
-
-
-
-.radio label {
-  padding-left:50px;
-  padding-top:10px;
-  padding-bottom:10px;
-  font-size:20px!important;
-}
-
-*/
-div.cst-inputs .checkbox input[type="checkbox"] {
-    opacity: 0;
-}
-
-div.cst-inputs .checkbox label {
-    position: relative;
-    display: inline-block;
-
-    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
-    padding-left: 22px;
-}
-
-div.cst-inputs .checkbox label::before,
-div.cst-inputs .checkbox label::after {
-    position: absolute;
-    content: "";
-
-   /*Needed for the line-height to take effect*/
-    display: inline-block;
-}
-
- /*Outer box of the fake checkbox*/
-div.cst-inputs .checkbox label::before{
-    height: 16px;
-    width: 16px;
-
-    border: 1px solid;
-    left: 0px;
-
-    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
-     *to vertically center it.
-     */
-    top: 3px;
-}
-
- /*Checkmark of the fake checkbox*/
-div.cst-inputs .checkbox label::after {
-    height: 5px;
-    width: 9px;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
-    transform: rotate(-45deg);
-
-    left: 4px;
-    top: 7px;
-}
-
-/*Hide the checkmark by default*/
-div.cst-inputs .checkbox input[type="checkbox"] + label::after {
-    content: none;
-}
-
- /*Unhide on the checked state*/
-div.cst-inputs .checkbox input[type="checkbox"]:checked + label::after {
-    content: "";
-}
-
-/*Adding focus styles on the outer-box of the fake checkbox*/
-div.cst-inputs .checkbox input[type="checkbox"]:focus + label::before {
-    outline: rgb(59, 153, 252) auto 5px;
-}
-
-  </style> -->
 
 <!-- class="gc-theme" is doing some weird stuff with the first h2... -->
 <main property="mainContentOfPage" class="container">

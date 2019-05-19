@@ -33,6 +33,5 @@ Unclosed element “span”.
 “<” in attribute name. Probable cause: “>” missing immediately before.
 The “type” attribute on the “ul” element is obsolete. Use CSS instead.
 End tag “div” seen, but there were open elements.
-Element “style” not allowed as child of element “form” in this context.
 Duplicate ID “defaultCheck1”.
 Any “input” descendant of a “label” element with a “for” attribute must have an ID value that matches that “for” attribute.
