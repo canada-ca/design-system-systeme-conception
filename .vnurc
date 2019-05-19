@@ -9,7 +9,6 @@ No space between attributes.
 “td” start tag in table body.
 Stray end tag “a”.
 Stray end tag “div”.
-Element “p” not allowed as child of element “ol” in this context. (Suppressing further errors from this subtree.)
 End tag “section” seen, but there were open elements.
 Unclosed element “ol”.
 Stray end tag “section”.
