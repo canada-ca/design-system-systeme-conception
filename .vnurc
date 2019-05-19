@@ -23,7 +23,6 @@ No “li” element in scope but a “li” end tag seen.
 Duplicate attribute “id”.
 The “type” attribute on the “ul” element is obsolete. Use CSS instead.
 Element “tbody” not allowed as child of element “table” in this context.
-Stray end tag “pthe”.
 The text content of element “time” was not in the required format: The literal did not satisfy the time-datetime format.
 Stray end tag “main”.
 The element “footer” must not appear as a descendant of the “header” element.
@@ -34,7 +33,6 @@ Element “tbody” not allowed as child of element “table” in this context.
 End tag “li” seen, but there were open elements.
 Unclosed element “span”.
 “<” in attribute name. Probable cause: “>” missing immediately before.
-Element “pthe” not allowed as child of element “div” in this context.
 The “type” attribute on the “ul” element is obsolete. Use CSS instead.
 End tag “div” seen, but there were open elements.
 Element “style” not allowed as child of element “form” in this context.
