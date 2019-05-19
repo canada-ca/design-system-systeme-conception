@@ -1,5 +1,4 @@
 # Ignoring current failures
-Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”.
 Bad value “text” for attribute “role” on element “span”.
 No “p” element in scope but a “p” end tag seen.
 End tag “main” seen, but there were open elements.
