@@ -1,0 +1,35 @@
+# Ignoring current failures
+Bad value “text” for attribute “role” on element “span”.
+End tag “main” seen, but there were open elements.
+Unclosed element “section”.
+Unclosed element “div”.
+No space between attributes.
+“td” start tag in table body.
+Stray end tag “a”.
+Stray end tag “div”.
+End tag “section” seen, but there were open elements.
+Unclosed element “ol”.
+Stray end tag “section”.
+Stray end tag “cite”.
+End tag “details” seen, but there were open elements.
+Unclosed element “form”.
+Saw a “form” start tag, but there was already an active “form” element. Nested forms are not allowed. Ignoring the tag.
+Stray end tag “form”.
+Element “meta” is missing one or more of the following attributes: “content”, “property”.
+End tag “h2” seen, but there were open elements.
+No “li” element in scope but a “li” end tag seen.
+Duplicate attribute “id”.
+The “type” attribute on the “ul” element is obsolete. Use CSS instead.
+The text content of element “time” was not in the required format: The literal did not satisfy the time-datetime format.
+Stray end tag “main”.
+The element “footer” must not appear as a descendant of the “header” element.
+End tag for  “body” seen, but there were unclosed elements.
+Unclosed element “header”.
+The value of the “for” attribute of the “label” element must be the ID of a non-hidden form control.
+End tag “li” seen, but there were open elements.
+Unclosed element “span”.
+“<” in attribute name. Probable cause: “>” missing immediately before.
+The “type” attribute on the “ul” element is obsolete. Use CSS instead.
+End tag “div” seen, but there were open elements.
+Duplicate ID “defaultCheck1”.
+Any “input” descendant of a “label” element with a “for” attribute must have an ID value that matches that “for” attribute.
