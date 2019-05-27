@@ -20,8 +20,6 @@ The element “footer” must not appear as a descendant of the “header” ele
 End tag for  “body” seen, but there were unclosed elements.
 Unclosed element “header”.
 The value of the “for” attribute of the “label” element must be the ID of a non-hidden form control.
-End tag “li” seen, but there were open elements.
-Unclosed element “span”.
 The “type” attribute on the “ul” element is obsolete. Use CSS instead.
 End tag “div” seen, but there were open elements.
 Duplicate ID “defaultCheck1”.
