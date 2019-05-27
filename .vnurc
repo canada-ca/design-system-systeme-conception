@@ -6,7 +6,6 @@ Unclosed element “div”.
 Stray end tag “div”.
 End tag “section” seen, but there were open elements.
 Stray end tag “section”.
-Stray end tag “cite”.
 End tag “details” seen, but there were open elements.
 Unclosed element “form”.
 Saw a “form” start tag, but there was already an active “form” element. Nested forms are not allowed. Ignoring the tag.
