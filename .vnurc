@@ -17,8 +17,5 @@ Stray end tag “main”.
 The element “footer” must not appear as a descendant of the “header” element.
 End tag for  “body” seen, but there were unclosed elements.
 Unclosed element “header”.
-The value of the “for” attribute of the “label” element must be the ID of a non-hidden form control.
 The “type” attribute on the “ul” element is obsolete. Use CSS instead.
 End tag “div” seen, but there were open elements.
-Duplicate ID “defaultCheck1”.
-Any “input” descendant of a “label” element with a “for” attribute must have an ID value that matches that “for” attribute.
