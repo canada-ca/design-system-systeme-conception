@@ -16,7 +16,6 @@ Element “meta” is missing one or more of the following attributes: “conten
 No “li” element in scope but a “li” end tag seen.
 Duplicate attribute “id”.
 The “type” attribute on the “ul” element is obsolete. Use CSS instead.
-The text content of element “time” was not in the required format: The literal did not satisfy the time-datetime format.
 Stray end tag “main”.
 The element “footer” must not appear as a descendant of the “header” element.
 End tag for  “body” seen, but there were unclosed elements.
