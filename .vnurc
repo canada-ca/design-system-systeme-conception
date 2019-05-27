@@ -11,7 +11,6 @@ End tag “details” seen, but there were open elements.
 Unclosed element “form”.
 Saw a “form” start tag, but there was already an active “form” element. Nested forms are not allowed. Ignoring the tag.
 Stray end tag “form”.
-No “li” element in scope but a “li” end tag seen.
 The “type” attribute on the “ul” element is obsolete. Use CSS instead.
 Stray end tag “main”.
 The element “footer” must not appear as a descendant of the “header” element.
