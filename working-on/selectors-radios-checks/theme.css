@@ -10,7 +10,8 @@
  * + Minor - Add custom style for wms author interface to show hidden title
  * + Minor temporary - Add bottom spacing for carrousel
  * + Hotfix GCWeb menu V2 - 2019-05-07
- * - 2019-05-07 - Hotfix GCWeb menu V2
+ * + Minor fix to AEM author CSS - 2019-05-09
+ * - 2019-05-14 - GCWeb responsive header and Experimental
  */
 
 @import "https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&subset=latin,latin-ext";
@@ -14167,86 +14168,18 @@ aside.features .thumbnail img {
     max-width: 100%
 }
 
-.home h2 {
-    font-size: 1.2em
-}
-
-.home .home-banner {
-    background-color: #eee;
-    background-image: url(https://www.canada.ca/content/dam/canada/carousel/bkg-home-banner.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    color: #fff
-}
-
-.home .home-banner .innerbox,
-.home .home-banner.sky .innerbox {
-    background-color: #26374a;
-    margin: 2em 0;
-    padding: 20px;
-    width: 50%
-}
-
-.home .home-banner .innerbox h1,
-.home .home-banner.sky .innerbox h1 {
+.home h1 {
     border-bottom-width: 4px;
     font-weight: 500;
     margin-top: 10px
 }
 
-.home .home-banner .innerbox p,
-.home .home-banner.sky .innerbox p {
-    margin-top: 15px
+.home h2 {
+    font-size: 1.2em
 }
 
-.home .home-banner .promo {
-    background-color: #355688;
-    opacity: .9
-}
-
-.home .home-banner.earth .innerbox {
-    background-color: #2b1900
-}
-
-.home .home-banner.earth .promo {
-    background-color: #5c3e18
-}
-
-.home .home-banner.vegetation .innerbox {
-    background-color: #1a3902
-}
-
-.home .home-banner.vegetation .promo {
-    background-color: #295e01
-}
-
-.home .home-banner.night .innerbox {
-    background-color: #0d0c0b
-}
-
-.home .home-banner.night .promo {
-    background-color: #000
-}
-
-.home .home-banner.forest .innerbox {
-    background-color: #5a3700
-}
-
-.home .home-banner.forest .promo {
-    background-color: #745001
-}
-
-.home .home-banner.autumn .innerbox {
-    background-color: #4a1a00
-}
-
-.home .home-banner.autumn .promo {
-    background-color: #7a3900
-}
-
-.home .home-banner a.figcaption *,
-.home .home-banner a:visited.figcaption * {
-    color: #fff
+.home .header-rwd {
+    margin: 2em 0
 }
 
 .home .home-most-requested li {
@@ -14352,8 +14285,8 @@ a.figcaption {
     text-decoration: none
 }
 
-a.figcaption *:not(figcaption) {
-    color: #000
+a.figcaption:not([class*="text-"]) *:not(figcaption) {
+    color: #333
 }
 
 a.figcaption figure >:not(blockquote):not(img):not(table):not(div) {
@@ -14435,6 +14368,35 @@ h6,
 .h6 {
     font-size: .95em;
     font-weight: 400
+}
+
+.experimental .bg-darker {
+    background-color: #000
+}
+
+.experimental .bg-gctheme {
+    background-color: #355688
+}
+
+.experimental .bg-gctheme.well.header-rwd {
+    background-color: #26374a
+}
+
+.experimental .bg-cover,
+.experimental {
+    background-size: cover
+}
+
+.experimental .bg-pnkDy {
+    background-color: #AD005F
+}
+
+.experimental .bg-pnkDy.well.header-rwd {
+    background-color: #570030
+}
+
+.experimental .p-0 {
+    padding: 0
 }
 
 .wb-mltmd {
@@ -16019,14 +15981,9 @@ a.shr-opn:hover {
     z-index: 2
 }
 
-.carousel-s1 a,
-.carousel-s2 a {
-    text-decoration: none
-}
-
-.carousel-s1 a:hover,
-.carousel-s2 a:hover {
-    text-decoration: underline
+.carousel-s1 .wb-mltmd,
+.carousel-s2 .wb-mltmd {
+    margin-top: 0
 }
 
 .backgroundsize.csstransitions .product-name,
@@ -16527,6 +16484,29 @@ a.shr-opn:hover {
     margin-top: 15px
 }
 
+.text-white,
+a.text-white:visited {
+    color: #fff
+}
+
+a.text-white:hover,
+a.text-white:focus {
+    color: #b3ffff
+}
+
+.bg-dark {
+    background-color: #343a40
+}
+
+button.bg-dark:hover,
+button.bg-dark:focus {
+    background-color: #1d2124
+}
+
+.well.header-rwd {
+    width: 100%
+}
+
 .whtwedo p {
     font-weight: 700;
     margin-bottom: 30px;
@@ -16791,9 +16771,6 @@ table.nws-tbl > thead > tr > th {
         clear: right;
         width: 100%
     }
-    .home .home-banner > .container {
-        padding: 0
-    }
     header .brand a {
         margin-top: 15px
     }
@@ -16802,6 +16779,11 @@ table.nws-tbl > thead > tr > th {
     }
     #wb-glb-mn ul.chvrn li a {
         font-size: 1.7em
+    }
+    [class*=col-] .well.header-rwd[class*=pstn-] {
+        left: 15px;
+        right: 15px;
+        width: inherit
     }
     .gcweb-v2 .container {
         padding-left: 15px;
@@ -17000,10 +16982,7 @@ table.nws-tbl > thead > tr > th {
 }
 
 @media screen and (max-width: 1199px) {
-    .home .home-banner .innerbox {
-        width: 75%
-    }
-    .home .home-banner .innerbox h1 {
+    .home .well.header-rwd h1 {
         width: 55%
     }
     #wb-sm .menu {
@@ -17015,6 +16994,19 @@ table.nws-tbl > thead > tr > th {
 }
 
 @media screen and (min-width: 768px) {
+    .experimental .mb-sm-5 {
+        margin-bottom: 50px
+    }
+    .experimental .p-sm-3 {
+        padding: 15px
+    }
+    .experimental .px-sm-3 {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    .well.header-rwd {
+        width: 75%
+    }
     table.nws-tbl td {
         display: inline;
         margin-top: 10px
@@ -17077,14 +17069,17 @@ table.nws-tbl > thead > tr > th {
 }
 
 @media screen and (min-width: 1200px) {
+    .well.header-rwd {
+        width: 50%
+    }
+    .home .well.header-rwd h1 {
+        width: 50%
+    }
     .list-responsive > li {
         width: 25%
     }
     .list-responsive > li:nth-child(4n+4) {
         clear: right
-    }
-    .home .home-banner .innerbox h1 {
-        width: 50%
     }
     .sect-lnks {
         margin-right: 15px;
@@ -17102,14 +17097,11 @@ table.nws-tbl > thead > tr > th {
 }
 
 @media screen and (max-width: 479px) {
+    .home .well.header-rwd h1 {
+        width: 80%
+    }
     .gc-fld-srvy-container {
         padding-bottom: 100%
-    }
-    .home .home-banner .innerbox {
-        width: 100%
-    }
-    .home .home-banner .innerbox h1 {
-        width: 80%
     }
     #wb-srch input {
         border-right: 1px solid #e0e0e0;
@@ -17162,15 +17154,12 @@ table.nws-tbl > thead > tr > th {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-    .home .home-banner .innerbox {
-        width: 100%
-    }
-    .home .home-banner .innerbox h1 {
-        width: 59%
-    }
     #wb-srch input {
         max-width: 200px;
         min-width: 150px
+    }
+    .home .well.header-rwd h1 {
+        width: 59%
     }
 }
 
@@ -17184,7 +17173,7 @@ table.nws-tbl > thead > tr > th {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .home .home-banner .innerbox h1 {
+    .home .well.header-rwd h1 {
         width: 58.3%
     }
     .sect-lnks {
@@ -20011,7 +20000,11 @@ table.dataTable .label.label-success {
     outline: #555 dotted
 }
 
-.aem-AuthorLayer-Edit main .mwstitle .wb-inv:after {
-    content: " [This title will be hidden when published]";
+.aem-AuthorLayer-Edit main .mwstitle .wb-inv:before {
+    content: "[Invisible when published] ";
     font-size: 50%
+}
+
+.aem-AuthorLayer-Edit[lang=fr] main .mwstitle .wb-inv:before {
+    content: "[Invisible une fois publié] "
 }
