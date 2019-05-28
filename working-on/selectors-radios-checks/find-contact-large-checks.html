@@ -28,68 +28,6 @@
     <![endif]-->
     <style>
 
-        .cst-inputs input {
-          position: absolute;
-          opacity: 0;
-        }
-
-        .cst-inputs {
-            margin-top: 15px;
-        }
-
-        .checkbox {
-          display: block;
-          position: relative;
-          padding-left: 30px;
-          margin-bottom: 35px;
-          cursor: pointer;
-          font-size: 19px;
-          font-weight: normal;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-        }
-
-
-        .checkbox label::before {
-
-          content: "";
-          box-sizing: border-box;
-          position: absolute;
-          display: inline-block;
-          top: 0;
-          left: 0;
-          width: 36px;
-          height: 36px;
-          border: 2px solid #333;
-          margin-top:-4px;
-         }
-
-
-        .checkbox label::after {
-          content: "";
-          display: inline-block;
-          position: absolute;
-          left: 12px;
-          top: 0px;
-          width: 13px;
-          height: 22px;
-          border: solid #333;
-          border-width: 0 5px 5px 0;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-
-        }
-
-        .checkbox input:checked {
-          background-color: white;
-        }
-
-        .checkbox input:hover {
-          background-color: #ccc;
-        }
 
         </style>
 
@@ -308,31 +246,213 @@
 <!-- class="gc-theme" is doing some weird stuff with the first h2... -->
 <main property="mainContentOfPage" class="container">
 
+<style>
+/* .checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox label::before{
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border: 1px solid;
+}
+
+.checkbox label::after {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+}
+
+.checkbox label {
+    position: relative;
+}
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+}
+/*Outer-box*/
+/* .checkbox label::before {
+    top: 3px;
+}
+/*Checkmark*/
+/* .checkbox label::after {
+    left: 4px;
+    top: 7px;
+} */
+
+
+.cst-inputs input {
+  position: absolute;
+  opacity: 0;
+}
+
+.cst-inputs {
+    margin-top: 15px;
+}
+
+.checkbox, .radio {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 35px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.checkbox label::before, .radio label::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #333;
+  margin-top:-4px;
+ }
+
+.radio label::before {
+  content: "";
+  border-radius: 50%;
+  margin-top: -5px
+}
+
+.checkbox label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  width: 13px;
+  height: 22px;
+  border: solid #333;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.radio label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #333;
+}
+
+/* .checkbox input:checked {
+  background-color: white;
+}
+
+.checkbox input:hover {
+  background-color: #ccc;
+} */
+
+
+/*Hide the checkmark by default*/
+ .checkbox input[type="checkbox"] + label::after,  .radio input[type="radio"] + label::after {
+    content: none;
+}
+/*Unhide the checkmark on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after,  .radio input[type="radio"]:checked + label::after {
+    content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="checkbox"]:focus + label::before {
+    box-shadow: 0 0 3pt 2pt rgb(59, 153, 252);
+}
+
+.radio input[type="radio"]:focus + label::before {
+    box-shadow: 0 0 3pt 2pt rgb(59, 153, 252);
+
+
+}
+
+</style>
+
+
+
 
   <h1 property="name" id="wb-cont" dir="ltr">Find the right CRA contact or telephone number</h1>
   <p>Answer a few questions to find the telephone number or contact you need.</p>
 
   <div class="mrgn-tp-lg">
-    <fieldset>
     <legend class="h5 ">Which of these are you calling for?</legend>
     <div class="clearfix"></div>
 <div class="cst-inputs">
   <ul class="list-unstyled">
-  <li class="checkbox">
-   <label for="defaultCheck1"><input id="defaultCheck1" type="checkbox" value="opt1">Option 1</label>
-</li>
 
-  <li class="checkbox">
-   <label for="defaultCheck2"><input id="defaultCheck1" type="checkbox" value="opt2">Option 2</label>
-</li>
+    <li class="checkbox">
+        <input type="checkbox" id="checkbox_1">
+        <label for="checkbox_1">Pure CSS Checkbox</label>
+    </li>
 
-  <li class="checkbox">
-   <label for="defaultCheck3"><input id="defaultCheck1" type="checkbox" value="opt3">Option 3</label>
-</li>
+    <li class="checkbox">
+        <input type="checkbox" id="checkbox_2">
+        <label for="checkbox_2">Pure CSS Checkbox 2</label>
+    </li>
+
+    <li class="checkbox">
+        <input type="checkbox" id="checkbox_3">
+        <label for="checkbox_3">Pure CSS Checkbox 3</label>
+    </li>
+
+    <li class="checkbox">
+        <input type="checkbox" id="checkbox_4">
+        <label for="checkbox_4">Pure CSS Checkbox 4</label>
+    </li>
+
 </ul>
 
 </div>
-    </fieldset>
+
+
+
+    <div class="clearfix"></div>
+<!-- <div class="cst-inputs"> -->
+
+
+  <legend class="h5 ">Which of these are you calling for?</legend>
+  <div class="clearfix"></div>
+  <div class="cst-inputs">
+
+  <li class="radio">
+    <input id="overnight" type="radio" name="shipping" value="overnight">
+<label for="overnight">Overnight</label>
+  </li>
+
+  <li class="radio">
+    <input id="twoday" type="radio" name="shipping" value="twoday">
+<label for="twoday">Two day</label>
+  </li>
+
+
+    <li class="radio">
+      <input id="ground" type="radio" name="shipping" value="ground">
+      <label for="ground">Ground</label>
+    </li>
+
+</div>
+
   </div>
 
 <div class="pagedetails">
