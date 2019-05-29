@@ -230,13 +230,18 @@
 }
 
 /* hide the check */
-.cst-inputs .form-checkbox input[type="checkbox"] + label::after, .cst-inputs .form-radio input[type="radio"] + label::after,
-.cst-inputs .checkbox input[type="checkbox"] + label::after,  .cst-inputs .radio input[type="radio"] + label::after {
+.cst-inputs .form-checkbox input[type="checkbox"] + label::after,
+.cst-inputs .form-radio input[type="radio"] + label::after,
+.cst-inputs .checkbox input[type="checkbox"] + label::after,
+.cst-inputs .radio input[type="radio"] + label::after {
     content: none;
 }
+
 /* unhide check when checked */
-.cst-inputs .form-checkbox input[type="checkbox"]:checked + label::after,  .cst-inputs .form-radio input[type="radio"]:checked + label::after,
-.cst-inputs .checkbox input[type="checkbox"]:checked + label::after,  .cst-inputs .radio input[type="radio"]:checked + label::after {
+.cst-inputs .form-checkbox input[type="checkbox"]:checked + label::after,
+.cst-inputs .form-radio input[type="radio"]:checked + label::after,
+.cst-inputs .checkbox input[type="checkbox"]:checked + label::after,
+.cst-inputs .radio input[type="radio"]:checked + label::after {
     content: "";
 }
 
