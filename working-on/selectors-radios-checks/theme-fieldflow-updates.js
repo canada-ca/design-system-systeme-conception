@@ -1039,7 +1039,7 @@ function(a, b, c) {
     			}
     		}
         if ( isInline ) {
-          radCheckOut = "<div class='clearfix'></div><ul class='cst-inputs'>" + radCheckOut;
+          radCheckOut = "<div class='clearfix'></div><ul class='list-unstyled cst-inputs'>" + radCheckOut;
         } else {
           radCheckOut = "<div class='clearfix'></div><ul class='list-unstyled cst-inputs'>" + radCheckOut;
         }
