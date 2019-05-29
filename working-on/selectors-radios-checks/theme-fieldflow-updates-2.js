@@ -1039,7 +1039,7 @@ function(a, b, c) {
     			}
     		}
         if ( isInline ) {
-          radCheckOut = "<div class='clearfix'></div><div class='cst-inputs'>" + radCheckOut;
+          radCheckOut = "<div class='clearfix'></div><ul class='list-unstyled cst-inputs'>" + radCheckOut;
         } else {
           radCheckOut = "<div class='clearfix'></div><ul class='list-unstyled cst-inputs'>" + radCheckOut;
         }
@@ -1174,7 +1174,7 @@ function(a, b, c) {
           inline = isInline ? "-inline" : "",
           out = "<"
         if ( isInline ) {
-          out += "span class='form-" + inputType + "'><input id='" + fieldID + "' type='" + inputType + "' name='" + fieldName + "' value='" + label + "'" ; //used to have + out - what is this inline thing?
+          out += "label class='" + inputType + inline + "'" ; //used to have + out - what is this inline thing?
         } else {
           out += "li class='" + inputType + "'><input id='" + fieldID + "' type='" + inputType + "' name='" + fieldName + "' value='" + label + "'";
         }
@@ -1183,17 +1183,13 @@ function(a, b, c) {
     		if ( isReq ) {
     			out += " required='required'";
     		}
-
-        if ( isInline) {
-          out += "/><label class='form-" + inputType + " " + "form-" + inputType + "-inline'" + "for='" + fieldID + "'";
-          out += " >" + label + "</label></span>";
-
-
-        } else {
         out += "/><label for='" + fieldID + "'";
-        out += " >" + label + "</label></li>";
-        }
 
+        out += " >" + label + "</label></li>"; //could simplify to one line? type doesnt matter
+
+    		// if ( !isInline ) {
+    		// 	out += "</li>";
+    		// }
 
 
         console.log(out);

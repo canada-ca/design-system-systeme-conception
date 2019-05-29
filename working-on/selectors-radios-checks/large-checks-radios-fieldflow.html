@@ -230,6 +230,117 @@
 </style>
 
 
+<style>
+
+.form-checkbox label, .form-radio label {
+  padding-left: 50px;
+
+}
+
+.form-checkbox, .form-radio {
+  /* display: block; */
+   position: relative;
+  margin-right: 30px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-width: 26%; /* prevents weird overlapping */
+
+}
+
+ @media only screen and (max-width: 1200px) {
+
+  .form-checkbox, .form-radio {
+    min-width: 50%;
+  }
+
+}
+
+.form-checkbox label::before, .form-radio label::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #333;
+  margin-top:-4px;
+ }
+
+.form-radio label::before {
+  content: "";
+  border-radius: 50%;
+  margin-top: -5px
+}
+
+.form-checkbox label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  width: 13px;
+  height: 22px;
+  border: solid #333;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.form-radio label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #333;
+}
+
+/* .checkbox input:checked {
+  background-color: white;
+}
+
+.checkbox input:hover {
+  background-color: #ccc;
+} */
+
+
+/*Hide the checkmark by default*/
+ .form-checkbox input[type="checkbox"] + label::after,  .form-radio input[type="radio"] + label::after {
+    content: none;
+}
+/*Unhide the checkmark on the checked state*/
+.form-checkbox input[type="checkbox"]:checked + label::after,  .form-radio input[type="radio"]:checked + label::after {
+    content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.form-checkbox input[type="checkbox"]:focus + label::before {
+    box-shadow: 0 0 3pt 2pt rgb(59, 153, 252);
+}
+
+.form-radio input[type="radio"]:focus + label::before {
+    box-shadow: 0 0 3pt 2pt rgb(59, 153, 252);
+
+}
+
+.form-label-inline {
+  font-weight: 300;
+}
+</style>
+
 
 <h1 property="name" id="wb-cont" dir="ltr">Test of radio buttons</h1>
 <p>Answer a few questions to find the telephone number or contact you need.</p>
@@ -300,7 +411,7 @@
       <!--Smart question!-->
       <div id="question1" class="wb-fieldflow" data-wb-fieldflow='{
           "noForm":false,
-          "renderas":"checkbox",
+          "renderas":"radio",
           "base": { "live": false },
           "noreqlabel": true,
           "inline": true
@@ -310,9 +421,9 @@
           <li><a href="find-contact-personal.html">Personal</a></li> <!--result-->
           <li><a href="../contact-us.html#charities">Charities</a></li>
           <li><a href="find-contact-fraud.html">Report a scam or tax fraud</a></li>
-          <li><a href="https://www.canada.ca/en/revenue-agency/news/newsroom/media-contact-list.html">Media enquiries</a></li>
+          <!-- <li><a href="https://www.canada.ca/en/revenue-agency/news/newsroom/media-contact-list.html">Media enquiries</a></li>
           <li><a href="../contact-us.html#tax-court">Contact the Tax Court of Canada</a></li>
-          <li><a href="../contact-us.html#commissioner">Contact the Commissioner's Office</a></li>
+          <li><a href="../contact-us.html#commissioner">Contact the Commissioner's Office</a></li> -->
         </ul>
       </div>
     <!-- </form> -->
@@ -339,9 +450,9 @@
           <li><a href="find-contact-personal.html">Personal</a></li> <!--result-->
           <li><a href="../contact-us.html#charities">Charities</a></li>
           <li><a href="find-contact-fraud.html">Report a scam or tax fraud</a></li>
-          <li><a href="https://www.canada.ca/en/revenue-agency/news/newsroom/media-contact-list.html">Media enquiries</a></li>
+          <!-- <li><a href="https://www.canada.ca/en/revenue-agency/news/newsroom/media-contact-list.html">Media enquiries</a></li>
           <li><a href="../contact-us.html#tax-court">Contact the Tax Court of Canada</a></li>
-          <li><a href="../contact-us.html#commissioner">Contact the Commissioner's Office</a></li>
+          <li><a href="../contact-us.html#commissioner">Contact the Commissioner's Office</a></li> -->
         </ul>
       </div>
     <!-- </form> -->
