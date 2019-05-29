@@ -1,21 +1,26 @@
 
 /* bigger label */
 label {
-  font-size: 18px !important;
+  font-size: 20px !important; /*will not use important tags on PR, will correct source */
 }
 /* increase field flow sizing */
 
 legend.h5 {
-  margin-top: 0px !important;
-  font-size: 22px !important;
-  margin-bottom: 15px !important;
+  margin-top: 0px !important; /*will not use important tags on PR, will correct source */
+  font-size: 22px !important; /*will not use important tags on PR, will correct source */
+  margin-bottom: 15px !important; /*will not use important tags on PR, will correct source */
 }
 
 .btn {
-  font-size: 1.1em !important;
+  font-size: 20px !important; /*will not use important tags on PR, will correct source */
   font-variant-ligatures: no-common-ligatures;
 }
 
+input[type="reset"], input[type="button"], input[type="submit"]
+
+{
+  height: 50px;
+}
 /* custom checkboxes */
 
 .cst-inputs input {
@@ -34,7 +39,6 @@ legend.h5 {
   /* display: block; */
   position: relative;
   cursor: pointer;
-  font-size: 19px;
   font-weight: normal;
   -webkit-user-select: none;
   -moz-user-select: none;
