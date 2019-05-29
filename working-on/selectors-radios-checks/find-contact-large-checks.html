@@ -424,7 +424,7 @@
 </ul>
 
 
-
+<hr>
 
     <div class="clearfix"></div>
 <!-- <div class="cst-inputs"> -->
@@ -453,6 +453,152 @@
 </ul>
 
   </div>
+<hr>
+  <div class="mrgn-tp-lg">
+    <legend class="h5 ">Which of these are you calling for?</legend>
+    <div class="clearfix"></div>
+
+<style>
+
+.form-checkbox label, .form-radio label {
+  padding-left: 50px;
+
+}
+.form-checkbox, .form-radio {
+  /* display: block; */
+   position: relative;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.form-checkbox label::before, .form-radio label::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #333;
+  margin-top:-4px;
+ }
+
+.form-radio label::before {
+  content: "";
+  border-radius: 50%;
+  margin-top: -5px
+}
+
+.form-checkbox label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  width: 13px;
+  height: 22px;
+  border: solid #333;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.form-radio label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #333;
+}
+
+/* .checkbox input:checked {
+  background-color: white;
+}
+
+.checkbox input:hover {
+  background-color: #ccc;
+} */
+
+
+/*Hide the checkmark by default*/
+ .form-checkbox input[type="checkbox"] + label::after,  .form-radio input[type="radio"] + label::after {
+    content: none;
+}
+/*Unhide the checkmark on the checked state*/
+.form-checkbox input[type="checkbox"]:checked + label::after,  .form-radio input[type="radio"]:checked + label::after {
+    content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.form-checkbox input[type="checkbox"]:focus + label::before {
+    box-shadow: 0 0 3pt 2pt rgb(59, 153, 252);
+}
+
+.form-radio input[type="radio"]:focus + label::before {
+    box-shadow: 0 0 3pt 2pt rgb(59, 153, 252);
+
+}
+
+.form-label-inline {
+  font-weight: 300;
+}
+</style>
+
+<div class="cst-inputs">
+  <span class="form-checkbox">
+        <input type="checkbox" id="checkbox1">
+        <label class="form-checkbox form-label-inline" for="checkbox1">Pure CSS Checkbox</label>
+  </span>
+
+  <span class="form-checkbox">
+        <input type="checkbox" id="checkbox2">
+        <label class="form-checkbox form-label-inline" for="checkbox2">Pure CSS Checkbox 2</label>
+  </span>
+
+  <span class="form-checkbox">
+        <input type="checkbox" id="checkbox3">
+        <label class="form-checkbox form-label-inline" for="checkbox3">Pure CSS Checkbox 3</label>
+  </span>
+
+</div>
+<div class="clearfix"></div>
+<hr>
+
+  <legend class="h5 ">Which of these are you calling for?</legend>
+  <div class="clearfix"></div>
+
+<div class="cst-inputs">
+  <span class="form-radio">
+        <input type="radio" id="radio1">
+        <label class="form-radio form-radio-inline" for="radio1">Inline Radio 1</label>
+  </span>
+
+  <span class="form-radio">
+        <input type="radio" id="radio2">
+        <label class="form-radio form-radio-inline" for="radio2">Inline Radio 2</label>
+  </span>
+
+  <span class="form-radio">
+        <input type="radio" id="radio3">
+        <label class="form-radio form-radio-inline" for="radio3">Inline Radio 3</label>
+  </span>
+
+</div>
 
 <div class="pagedetails">
 <div class="row">
