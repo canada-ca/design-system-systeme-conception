@@ -137,11 +137,12 @@
     margin-top: 15px;
 }
 
-.cst-inputs .checkbox, .cst-inputs .radio {
-  display: block;
+.cst-inputs .checkbox,
+.cst-inputs .radio,
+.cst-inputs .form-checkbox,
+.cst-inputs .form-radio {
+  /* display: block; */
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 35px;
   cursor: pointer;
   font-size: 19px;
   font-weight: normal;
@@ -151,8 +152,33 @@
   user-select: none;
 }
 
+.cst-inputs .checkbox,
+.cst-inputs .radio {
 
-.cst-inputs .checkbox label::before, .cst-inputs .radio label::before {
+  padding-left: 30px;
+  margin-bottom: 35px;
+
+}
+
+.cst-inputs .form-checkbox,
+.cst-inputs .form-radio {
+
+  margin-right: 30px;
+  margin-bottom: 25px;
+  min-width: 26%; /* prevents weird overlapping */
+
+}
+
+.cst-inputs .form-checkbox label,
+.cst-inputs .form-radio label {
+  padding-left: 50px;
+
+}
+
+.cst-inputs .checkbox label::before,
+.cst-inputs .radio label::before,
+.cst-inputs .form-checkbox label::before,
+.cst-inputs .form-radio label::before {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -165,12 +191,16 @@
   margin-top: -4px;
  }
 
-.cst-inputs .radio label::before {
+
+.cst-inputs .radio label::before,
+.cst-inputs .form-radio label::before {
   content: "";
   border-radius: 50%;
 }
 
-.cst-inputs .checkbox label::after {
+
+.cst-inputs .checkbox label::after,
+.cst-inputs .form-checkbox label::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -186,7 +216,8 @@
 
 }
 
-.cst-inputs .radio label::after {
+.cst-inputs .radio label::after,
+.cst-inputs .form-radio label::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -198,147 +229,37 @@
   background: #333;
 }
 
-/* .checkbox input:checked {
-  background-color: white;
-}
-
-.checkbox input:hover {
-  background-color: #ccc;
-} */
-
-
-/*Hide the checkmark by default*/
- .cst-inputs .checkbox input[type="checkbox"] + label::after,  .cst-inputs .radio input[type="radio"] + label::after {
+/* hide the check */
+.cst-inputs .form-checkbox input[type="checkbox"] + label::after, .cst-inputs .form-radio input[type="radio"] + label::after,
+.cst-inputs .checkbox input[type="checkbox"] + label::after,  .cst-inputs .radio input[type="radio"] + label::after {
     content: none;
 }
-/*Unhide the checkmark on the checked state*/
+/* unhide check when checked */
+.cst-inputs .form-checkbox input[type="checkbox"]:checked + label::after,  .cst-inputs .form-radio input[type="radio"]:checked + label::after,
 .cst-inputs .checkbox input[type="checkbox"]:checked + label::after,  .cst-inputs .radio input[type="radio"]:checked + label::after {
     content: "";
 }
 
-/*Adding focus styles on the outer-box of the fake checkbox*/
-.cst-inputs .checkbox input[type="checkbox"]:focus + label::before {
+/* add focus */
+.cst-inputs .checkbox input[type="checkbox"]:focus + label::before,
+.cst-inputs .form-checkbox input[type="checkbox"]:focus + label::before,
+.cst-inputs .form-radio input[type="radio"]:focus + label::before,
+.cst-inputs .radio input[type="radio"]:focus + label::before  {
     box-shadow: 0 0 3pt 2pt rgb(59, 153, 252);
 }
 
-.cst-inputs .radio input[type="radio"]:focus + label::before {
-    box-shadow: 0 0 3pt 2pt rgb(59, 153, 252);
 
-
-}
-
-</style>
-
-
-<style>
-
-.form-checkbox label, .form-radio label {
-  padding-left: 50px;
-
-}
-
-.form-checkbox, .form-radio {
-  /* display: block; */
-   position: relative;
-  margin-right: 30px;
-  margin-bottom: 25px;
-  cursor: pointer;
-  font-size: 19px;
-  font-weight: normal;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  min-width: 26%; /* prevents weird overlapping */
-
-}
 
  @media only screen and (max-width: 1200px) {
 
-  .form-checkbox, .form-radio {
+.cst-inputs .form-checkbox,
+.cst-inputs .form-radio {
     min-width: 50%;
   }
 
 }
 
-.form-checkbox label::before, .form-radio label::before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 0;
-  width: 36px;
-  height: 36px;
-  border: 2px solid #333;
-  margin-top:-4px;
- }
 
-.form-radio label::before {
-  content: "";
-  border-radius: 50%;
-  margin-top: -5px
-}
-
-.form-checkbox label::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 12px;
-  top: 0px;
-  width: 13px;
-  height: 22px;
-  border: solid #333;
-  border-width: 0 5px 5px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-
-}
-
-.form-radio label::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 3px;
-  left: 8px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #333;
-}
-
-/* .checkbox input:checked {
-  background-color: white;
-}
-
-.checkbox input:hover {
-  background-color: #ccc;
-} */
-
-
-/*Hide the checkmark by default*/
- .form-checkbox input[type="checkbox"] + label::after,  .form-radio input[type="radio"] + label::after {
-    content: none;
-}
-/*Unhide the checkmark on the checked state*/
-.form-checkbox input[type="checkbox"]:checked + label::after,  .form-radio input[type="radio"]:checked + label::after {
-    content: "";
-}
-
-/*Adding focus styles on the outer-box of the fake checkbox*/
-.form-checkbox input[type="checkbox"]:focus + label::before {
-    box-shadow: 0 0 3pt 2pt rgb(59, 153, 252);
-}
-
-.form-radio input[type="radio"]:focus + label::before {
-    box-shadow: 0 0 3pt 2pt rgb(59, 153, 252);
-
-}
-
-.form-label-inline {
-  font-weight: 300;
-}
 </style>
 
 
