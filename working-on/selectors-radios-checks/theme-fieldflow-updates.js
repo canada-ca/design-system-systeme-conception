@@ -1038,7 +1038,11 @@ function(a, b, c) {
     				}
     			}
     		}
-        radCheckOut = "<div class='clearfix'></div><ul class='list-unstyled cst-inputs'>" + radCheckOut;
+        if ( isInline ) {
+          radCheckOut = "<div class='clearfix'></div><ul class='cst-inputs'>" + radCheckOut;
+        } else {
+          radCheckOut = "<div class='clearfix'></div><ul class='list-unstyled cst-inputs'>" + radCheckOut;
+        }
     		$out.append( radCheckOut );
     		$( "#" + bodyId ).append( $out );
     		if ( $prevContent ) {
@@ -1163,33 +1167,30 @@ function(a, b, c) {
 
     		return out;
     	},
-  
+
       buildCheckboxRadio = function( data, fieldName, inputType, isInline, isReq, iLoopBuilder ) {
         var label = data.label,
           fieldID = wb.getId(),
           inline = isInline ? "-inline" : "",
-          out = " >" + label + "<label for='" + fieldID + "''" + out;
-          console.log("hi");
+          out = "<"
         if ( isInline ) {
-          out = "<label class='" + inputType + inline + "'" + out;
+          out += "label class='" + inputType + inline + "'" ; //used to have + out - what is this inline thing?
         } else {
-          out = "<li class='" + inputType + "'><input id='" + fieldID + "' type='" + inputType + "' name='" + fieldName + "' value='" + label + "'" + out;
+          out += "li class='" + inputType + "'><input id='" + fieldID + "' type='" + inputType + "' name='" + fieldName + "' value='" + label + "'";
         }
     		out += buildDataAttribute( data );
 
     		if ( isReq ) {
     			out += " required='required'";
     		}
+        out += "/><label for='" + fieldID + "'";
 
-        if ( inputType == "radio") {
-          out += " /></label>"; //could simplify to one line? type doesnt matter
-        } else {
-          out += " /></label>";
-        }
+        out += " >" + label + "</label></li>"; //could simplify to one line? type doesnt matter
 
-    		if ( !isInline ) {
-    			out += "</div>";
-    		}
+    		// if ( !isInline ) {
+    		// 	out += "</li>";
+    		// }
+
 
         console.log(out);
     		return out;
