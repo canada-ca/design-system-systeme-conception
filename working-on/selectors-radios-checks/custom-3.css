@@ -16,6 +16,11 @@ legend.h5 {
   font-variant-ligatures: no-common-ligatures;
 }
 
+.pagedetails .btn  {
+  font-size: 16px !important; /*will not use important tags on PR, will correct source */
+  font-variant-ligatures: no-common-ligatures;
+}
+
 input[type="reset"], input[type="button"], input[type="submit"]
 
 {
