@@ -1038,11 +1038,7 @@ function(a, b, c) {
     				}
     			}
     		}
-        if ( typeRadCheck == "checkbox") {
-          radCheckOut = "<div class='clearfix'></div><div class='cst-inputs checkbox-container'>" + radCheckOut; /*need to close div still*/
-        } else if (typeRadCheck == "radio") {
-          radCheckOut = "<div class='clearfix'></div><div class='cst-inputs radio-container'>" + radCheckOut; /*need to close div still*/
-        }
+        radCheckOut = "<div class='clearfix'></div><ul class='list-unstyled cst-inputs'>" + radCheckOut;
     		$out.append( radCheckOut );
     		$( "#" + bodyId ).append( $out );
     		if ( $prevContent ) {
@@ -1167,18 +1163,18 @@ function(a, b, c) {
 
     		return out;
     	},
-    	buildCheckboxRadio = function( data, fieldName, inputType, isInline, isReq, iLoopBuilder ) {
-    		var label = data.label,
-    			fieldID = wb.getId(),
-    			inline = isInline ? "-inline" : "",
-    			out = " for='" + fieldID + "'>" + label + "<input id='" + fieldID + "' type='" + inputType + "' name='" + fieldName + "' value='" + label + "'";
-
-    		if ( isInline ) {
-    			out = "<label class='" + inputType + inline + "'" + out;
-    		} else {
-    			out = "<label" + out;
-    		}
-
+  
+      buildCheckboxRadio = function( data, fieldName, inputType, isInline, isReq, iLoopBuilder ) {
+        var label = data.label,
+          fieldID = wb.getId(),
+          inline = isInline ? "-inline" : "",
+          out = " >" + label + "<label for='" + fieldID + "''" + out;
+          console.log("hi");
+        if ( isInline ) {
+          out = "<label class='" + inputType + inline + "'" + out;
+        } else {
+          out = "<li class='" + inputType + "'><input id='" + fieldID + "' type='" + inputType + "' name='" + fieldName + "' value='" + label + "'" + out;
+        }
     		out += buildDataAttribute( data );
 
     		if ( isReq ) {
@@ -1186,14 +1182,14 @@ function(a, b, c) {
     		}
 
         if ( inputType == "radio") {
-          out += " /></span><span></span></label>";
+          out += " /></label>"; //could simplify to one line? type doesnt matter
         } else {
-          out += " /><span></span></label>";
+          out += " /></label>";
         }
 
-    		// if ( !isInline ) {
-    		// 	out += "</div>";
-    		// }
+    		if ( !isInline ) {
+    			out += "</div>";
+    		}
 
         console.log(out);
     		return out;
