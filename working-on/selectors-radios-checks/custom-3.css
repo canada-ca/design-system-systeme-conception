@@ -26,6 +26,13 @@ input[type="reset"], input[type="button"], input[type="submit"]
 {
   height: 50px;
 }
+
+/* better focus on buttons */
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 5pt 4pt rgb(59, 153, 252);
+  outline: 2px solid white;
+}
 /* custom checkboxes */
 
 .cst-inputs input {
