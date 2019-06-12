@@ -180,7 +180,7 @@ dd.modal-body {
 <script>
 	    $(function() {
         "use strict";
-        var def = $('.dfn-pull')
+        var def = $('.lbx-dfn')
 
         if (def.length) {
             def.append(
@@ -190,7 +190,7 @@ dd.modal-body {
         }
 
     })
-$(".wb-lbx.dfn-pull").on("mfpOpen", function() {
+$(".wb-lbx.lbx-dfn").on("mfpOpen", function() {
     var $url = $(this).attr("href");
     $.ajax({
         url: $url,
