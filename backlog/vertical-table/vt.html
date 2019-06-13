@@ -39,25 +39,96 @@
 
 		</script>
 <style>
-	.table-vertical td {display: block; clear: both; border-width: 0 !important; padding:0px!important;}
-.table-vertical thead {clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: 0; overflow: hidden; position: absolute; width: 1px;}
-.table-vertical.table-bordered tr {border-bottom:1px solid #ddd; border-left:hidden; border-right:hidden}
-.table-vertical.dataTable {border-collapse:collapse}
-.table-vertical td.vertical-table-inline:not(:empty) 
-{ display:inline; padding-right:8px!important;}
-.table-vertical td.vertical-table-inline:not(:empty) ~ td.vertical-table-inline:not(:empty)
-{ display:inline; padding-left:8px!important; padding-right:8px!important;}
-td.vertical-table-inline:empty
-{display: inline; clear: both; border-width: 0 !important; padding:0px!important;}
+.table-vertical td {
+	display: block;
+	clear: both;
+	border-width: 0 !important;
+	padding: 0px!important;
+}
+.table-vertical thead {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+.table-vertical.table-bordered tr {
+	border-bottom: 1px solid #ddd;
+	border-left: hidden;
+	border-right: hidden
+}
+.table-vertical.dataTable {
+	border-collapse: collapse
+}
+.table-vertical td.vertical-table-inline:not(:empty) {
+	display: inline;
+	padding-right: 8px!important;
+}
+.table-vertical td.vertical-table-inline:not(:empty) ~ td.vertical-table-inline:not(:empty) {
+	display: inline;
+	padding-left: 8px!important;
+	padding-right: 8px!important;
+}
+td.vertical-table-inline:empty {
+	display: inline;
+	clear: both;
+	border-width: 0 !important;
+	padding: 0px!important;
+}
 /*vertical table w/ headers */
-.table-vertical-header td { display: block; clear: both; border-width: 0 !important;}
-.table-vertical-header thead { clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: 0; overflow: hidden; position: absolute; width: 1px;}
-.table-vertical-header td { margin-left: 165px;}
-.table-vertical-header td::before { display: inline-block; padding-right: 15px; width: 160px; margin-left: -165px; float: left; text-align:right; font-weight: bold; content: attr(data-header); color:#333; font-size:20px; font-family: "Noto Sans", sans-serif;}
-.table-vertical-header.table-bordered tr {border-bottom:1px solid #ddd; border-left:hidden; border-right:hidden}
-.table-vertical-header.dataTable {border-collapse:collapse}
-.table-vertical-header thead, .table-vertical-header td:empty { clip: rect(1px, 1px, 1px, 1px); height: 1px; margin: 0; overflow: hidden; position: absolute; width: 1px;}
-	</style>
+.table-vertical-header td {
+	display: block;
+	clear: both;
+	border-width: 0 !important;
+}
+.table-vertical-header thead {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+.table-vertical-header.table-bordered tr {
+	border-bottom: 1px solid #ddd;
+	border-left: hidden;
+	border-right: hidden
+}
+.table-vertical-header.dataTable {
+	border-collapse: collapse
+}
+.table-vertical-header thead, .table-vertical-header td:empty {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+.table-vertical-header td::before {
+	display: block;
+	font-weight: bold;
+	content: attr(data-header);
+	color: #333;
+	font-size: 20px;
+	font-family: "Noto Sans", sans-serif
+}
+
+@media (min-width:992px) {
+.table-vertical-header td::before {
+	display: inline-block;
+	margin-left: -165px;
+	width: 160px;
+	float: left;
+	padding-right: 15px;
+	text-align: right;
+}
+.table-vertical-header td {
+	margin-left: 165px;
+}
+}
+</style>
 </head>
 
 <body vocab="http://schema.org/" typeof="WebPage">
