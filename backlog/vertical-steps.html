@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+		<title>Circle steps various iterations</title>
+
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+
+		<!-- Meta data -->
+
+		<!-- Meta data-->
+
+		<!-- Load closure template scripts -->
+
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+
+
+
+		<!-- Write closure template -->
+
+		<script type="text/javascript">
+
+			document.write(wet.builder.refTop({
+
+			}));
+
+		</script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="http://test.canada.ca/canada-child-benefit-2/circles-service-intiation-template/files/navigation.css" />
+	</head>
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		<div id="def-top">
+
+		</div>
+
+		<!-- Write closure template -->
+
+		<script type="text/javascript">
+
+			var defTop = document.getElementById("def-top");
+
+			defTop.outerHTML = wet.builder.top({
+
+				lngLinks: [{
+
+					lang: "fr",
+
+					href: "#",
+
+					text: "Français"
+
+				}],
+
+				breadcrumbs: [{
+
+					title: "Home",
+
+					href: "https://www.canada.ca/en.html"
+
+				},{
+
+					title: "About Canada.ca",
+
+					href: 'https://www.canada.ca/en/government/about.html'
+
+				},{
+
+					title: "Canada.ca design system",
+
+					href: 'https://www.canada.ca/en/government/about/design-system.html'
+
+				}],
+
+				search: true,
+
+				siteMenu: true,
+
+				showPreContent: true
+
+			});
+
+</script>
+
+
+
+<main role="main" property="mainContentOfPage" class="container">
+
+
+  <h1 property="name" id="wb-cont">Circle steps various iterations</h1>
+  <p>Trapped in a <code>.col-md-4</code> class to mimic typical right side positioning.</p>	
+	<h2 class="h3">On this page</h2>
+	<ul>
+	  <li><a href="#h_1">Basic list </a></li>
+	  <li><a href="#h_2">Un-ordered list</a></li>
+	  <li><a href="#h_3">Un-ordered list with noline class</a></li>
+	  <li><a href="#h_4">Ordered list with sub list</a></li>
+	  <li><a href="#h_5">Un-ordered list with ordered sub list</a></li>
+	  <li><a href="#h_6">Ordered list with sub-sub list</a></li>
+	  <li><a href="#h_7">Un-ordered Font Awesome icon list</a></li>
+	  <li><a href="#h_8">Ordered list with sub-sub list (different number styling)</a></li>
+	  <li><a href="#h_9">Un-ordered Font Awesome timeline</a></li>
+  </ul>
+	
+  <div class="row">
+    <div class="col-md-4">
+      <h2 id="h_1">Basic list</h2>
+      <ol class="vertical-steps">
+        <li class="completed"><a href="#">[Step / section page name]</a><br>
+          <span class="text-muted">test</span></li>
+        <li class="completed"><a href="#">[Step / section <br>
+          [Step name] </a> </li>
+        <li class="active"><a>[Sections page names]</a><br>
+        <span class="text-muted">This is teaser text</span></li>
+        <li><a href="#">[ Sections  pages names ] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li><a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li><a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a><br>
+          [Step] </li>
+      </ol>
+      <h2 id="h_2">Un-ordered list</h2>
+      <ul class="vertical-steps">
+        <li class="completed"><a href="#">[Step / section page name]</a></li>
+        <li class="completed"><a href="#">[Step / section page name]</a></li>
+        <li class="active"><a>[Step / section page name]</a></li>
+        <li><a href="#">[Step / section page name]</a></li>
+      </ul>
+		<h2 id="h_3">Un-ordered list with <code>.noline</code> class</h2>
+      <ul class="vertical-steps noline">
+        <li class="completed"><a href="#">[Step / section page name]</a></li>
+        <li class="completed"><a href="#">[Step / section page name]</a></li>
+        <li class="active"><a>[Step / section page name]</a></li>
+        <li><a href="#">[Step / section page name]</a></li>
+      </ul>
+      <h2 id="h_4">Ordered list with sub list</h2>
+      <ol class="vertical-steps">
+        <li class="completed"><a href="#">[Step / section page name]</a><br>
+          <span class="text-muted">test</span></li>
+        <li class="completed"> <a href="#">[Step / section <br>
+          [Step name] </a> </li>
+        <li class="completed"><a href="#">[Step / section page name] </a>
+          <ol class="vertical-steps">
+            <li class="completed"><a href="#">[Step / section page name]</a></li>
+            <li class="completed"><a href="#">[Step / section page name]</a></li>
+            <li class="active"><a>[Step / section page name]</a><br>
+            <span class="text-muted small">This is teaser text with small</span></li>
+            <li><a href="#">[Step / section page name]</a></li>
+            <li><a href="#">[Step / section page name]</a></li>
+          </ol>
+        </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li><a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li><a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a><br>
+          [Step] </li>
+      </ol>
+      <h2 id="h_5">Un-ordered list with ordered sub list</h2>
+      <ul class="vertical-steps">
+        <li class="completed"><a href="#">[Step / section page name]</a><br>
+          <span class="text-muted">test</span></li>
+        <li class="completed"> <a href="#">[Step / section <br>
+          [Step name] </a> </li>
+        <li class="completed"><a href="#">[Step / section page name] </a>
+          <ol class="vertical-steps">
+            <li class="completed"><a href="#">[Step 1 / section page name]</a></li>
+            <li class="completed"><a href="#">[Step 2 / section page name]</a></li>
+            <li class="active"><a>[Step 3 / section page name]</a><br>
+            <span class="text-muted small">This is teaser text with small</span></li>
+            <li><a href="#">[Step 4 / section page name]</a></li>
+            <li><a href="#">[Step 5 / section page name]</a></li>
+          </ol>
+        </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li><a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li><a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a><br>
+          [Step] </li>
+      </ul>
+      <h2 id="h_6">Ordered list with sub-sub list</h2>
+      <ol class="vertical-steps">
+        <li class="completed"><a href="#">[Step / section page name]</a><br>
+          <span class="text-muted">test</span></li>
+        <li class="completed"> <a href="#">[Step / section <br>
+          [Step name] </a> </li>
+        <li class="completed"><a href="#">[Step / section page name] </a>
+          <ol class="vertical-steps">
+            <li class="completed"><a href="#">[Step / section page name]</a>
+              <ol class="vertical-steps">
+                <li class="completed"><a href="#">[Step / section page name]</a></li>
+                <li class="completed"><a href="#">[Step / section page name]</a></li>
+                <li class="active"><a>[Step / section page name]</a></li>
+                <li><a href="#">[Step / section page name]</a></li>
+                <li><a href="#">[Step / section page name]</a></li>
+              </ol>
+            </li>
+            <li><a href="#">[Step / section page name]</a></li>
+            <li><a href="#">[Step / section page name]</a></li>
+            <li><a href="#">[Step / section page name]</a></li>
+          </ol>
+        </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li><a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li><a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a><br>
+          [Step] </li>
+      </ol>
+      <h2 id="h_7">Un-ordered Font Awesome icon list</h2>
+      <ul class="fa-ul fa-vertical-steps">
+        <li class="completed"><a href="#"><span  class="fa-li fas fa-user fa-2x"></span>List Item</a></li>
+        <li class="completed"><a href="#"><span class="fa-li fas fa-pencil-alt"></span>List Item</a></li>
+        <li class="active h2"><span class="fa-li fas fa-plus"></span>List Item</li>
+        <li><a href="#"><span class="fa-li fas fa-lock"></span>List Item</a></li>
+        <li><a href="#"><span class="fa-li fas fa-thumbs-up"></span>List Item</a></li>
+      </ul>
+      <h2 id="h_8">Ordered list with sub-sub list (different number styling)</h2>
+      <ol class="vertical-steps lst-lwr-alph">
+        <li class="completed"><a href="#">[Step / section page name]</a><br>
+          <span class="text-muted">test</span></li>
+        <li class="completed"> <a href="#">[Step / section <br>
+          [Step name] </a> </li>
+        <li class="completed"><a href="#">[Step / section page name] </a>
+          <ol  class="vertical-steps lst-upr-rmn">
+            <li class="completed"><a href="#">[Step / section page name]</a>
+              <ol  class="vertical-steps lst-num">
+                <li class="completed"><a href="#">[Step / section page name]</a></li>
+                <li class="completed"><a href="#">[Step / section page name]</a></li>
+                <li class="active"><a>[Step / section page name]</a></li>
+                <li><a href="#">[Step / section page name]</a></li>
+                <li><a href="#">[Step / section page name]</a></li>
+              </ol>
+            </li>
+            <li><a href="#">[Step / section page name]</a></li>
+            <li><a href="#">[Step / section page name]</a></li>
+            <li><a href="#">[Step / section page name]</a></li>
+          </ol>
+        </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li><a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li><a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a> </li>
+        <li> <a href="#">[Step / section page name] </a><br>
+          [Step] </li>
+      </ol>
+      <h2 id="h_9">Font Awesome timeline</h2>
+      <ul class="fa-ul fa-vertical-steps">
+        <li class="completed"><span  class="fa-li far fa-calendar-check"></span>2017
+          <ul class="vertical-steps">
+			  <li class="completed"><span>Details go here</span></li>
+            <li class="completed"><span>Details go here
+            </span></li>
+          </ul>
+        </li>
+        <li class="completed"><span class="fa-li far fa-calendar-check"></span>2018
+          <ul class="vertical-steps">
+            <li class="completed"><a href="#">Item one</a></li>
+            <li class="completed"><a href="#">Item two</a></li>
+            <li class="completed"><a href="#">Item three</a></li>
+          </ul>
+        </li>
+        <li class="active"><span class="fa-li far fa-calendar-alt"></span>2019
+          <ul class="vertical-steps">
+            <li class="completed"><span>Item one</span></li>
+            <li class="active"><span>Item two</span></li>
+            <li class="active"><span>Item three</span></li>
+            <li><span>Item four</span></li>
+          </ul>
+        </li>
+        <li><span class="fa-li far fa-calendar-alt"></span>2020</li>
+        <li><span class="fa-li far fa-calendar-alt"></span>2021</li>
+      </ul>
+      
+  <div id="def-preFooter">
+
+</div>
+
+<!-- Write closure template -->
+
+<script type="text/javascript">
+
+	var defPreFooter = document.getElementById("def-preFooter");
+
+	defPreFooter.outerHTML = wet.builder.preFooter({
+
+		dateModified: "April 1, 2019",
+
+		showPostContent: true,
+
+		showFeedback: true,
+
+		showShare: true
+
+	});
+
+</script>
+
+		</main>
+
+		<div id="def-footer">
+
+
+
+		</div>
+
+		<!-- Write closure template -->
+
+		<script type="text/javascript">
+
+			var defFooter = document.getElementById("def-footer");
+
+			defFooter.outerHTML = wet.builder.footer({
+
+				showFooter: true,
+
+				showFeatures: true
+
+			});
+
+		</script>
+
+		<!-- Write closure template -->
+
+		<script type="text/javascript">
+
+			document.write(wet.builder.refFooter({
+
+			}));
+
+		</script>
+
+
+	</body>
+
+</html>
+
