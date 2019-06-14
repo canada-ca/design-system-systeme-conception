@@ -1,6 +1,6 @@
 $(function() {	
 $(".table-row-group").on("wb-ready.wb-tables", function (event) {
-		$.getScript("/wet4/development/cxo149/gcweb/nutheme/showcase/various/files/dataTables.rowGroup.min.js", function () {
+		$.getScript("/design-system-systeme-conception/backlog/stacked-table/dataTables.rowGroup.min.js", function () {
 			$(".table-row-group").each(function () {
 				var table = $(this).DataTable();
 				new $.fn.dataTable.RowGroup(table);
