@@ -1,6 +1,6 @@
 $(function() {	
 $(".table-row-group").on("wb-ready.wb-tables", function (event) {
-		$.getScript("/design-system-systeme-conception/backlog/stacked-table/dataTables.rowGroup.min.js", function () {
+		$.getScript("/design-system-systeme-conception/backlog/stacked-table/datatables.rowgroup.min.js", function () {
 			$(".table-row-group").each(function () {
 				var table = $(this).DataTable();
 				new $.fn.dataTable.RowGroup(table);
