@@ -504,7 +504,8 @@ td.vertical-table-inline:empty {
 
 		</script> 
 <script>
-	
+	$(function() {
+	  "use strict";	
 var table =	$(".table-vertical-header");
 var heading = function() {
 	var $th = $(this).find("thead th");
@@ -516,7 +517,7 @@ $td.attr('data-header', function () {
 
   	table.each(heading);
 	table.on('wb-updated.wb-tables', heading);
-
+	});
 
 </script>
 </body>
