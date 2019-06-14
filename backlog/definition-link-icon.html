@@ -35,6 +35,7 @@
 			}));
 
 		</script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <style>
 dt.modal-header {
 	margin-bottom: 0px
@@ -51,6 +52,12 @@ dd.modal-body:last-of-type {
 }
 dd.modal-body {
 	margin-top: -1px
+}
+	.dfn-pull {
+	white-space: nowrap
+}
+.dfn-pull sup {
+	padding-left: 3px
 }
 </style>
 	</head>
@@ -193,7 +200,7 @@ dd.modal-body {
 
         if (def.length) {
             def.append(
-                '&nbsp;<sup title="definition">def<span class="wb-inv">inition</span>.</sup>'
+                '<sup title="definition"><span class="far fa-question-circle"></span><span class="wb-inv"> definition</span></sup>'
             )
 
         }
