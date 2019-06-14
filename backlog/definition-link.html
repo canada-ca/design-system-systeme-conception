@@ -53,10 +53,10 @@ dd.modal-body:last-of-type {
 dd.modal-body {
 	margin-top: -1px
 }
-	.dfn-pull {
+	.lbx-dfn {
 	white-space: nowrap
 }
-.dfn-pull sup {
+.lbx-dfn sup {
 	padding-left: 3px
 }
 </style>
@@ -124,7 +124,7 @@ dd.modal-body {
   <h1 property="name" id="wb-cont">Definition link page</h1>
   <p>This is a test for the <a href="#test">defintion page</a>.</p>
   <p>The goal is to only apply an <code>id</code> to the <code>dt</code> in a definition page (source). And when using the <code>.lbx-dfn</code> extension with <code>.wb-lbx</code>, the ajax will pull the <code>dt</code> tag and treat it as the <code>.modal-header</code>, and all the child <code>dd</code> elements and treat them as <code>.modal-body</code> elements.</p>
-  <p>This code also adds a <code>sup</code> element with the phrase defintion, shortened to "def." but "inition" is in invisible text, and has the title attribute with the word.</p>
+  <p>Original design added a <code>sup</code> element with the phrase defintion, shortened to "def." but "inition" is in invisible text, and has the title attribute with the word. New design uses upcoming FA icon set.</p>
   <p>This allows users to know that the link is a definition of that word/phrase, and know that the link does not progress a task.</p>
   <p>If the user does want to know that it's a definition, the lightbox will not take them away from the task.</p>
   <p>Currently this is just an expanded event that overrides some of the ajax code.  It should be merged into the current AJAX pull as another type of extension (e.g. to utilize i18n).</p>
