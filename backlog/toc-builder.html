@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+		<title>Table of contents builder</title>
+
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+
+		<!-- Meta data -->
+
+		<!-- Meta data-->
+
+		<!-- Load closure template scripts -->
+
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+
+
+
+		<!-- Write closure template -->
+
+		<script type="text/javascript">
+
+			document.write(wet.builder.refTop({
+
+			}));
+
+		</script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://test.canada.ca/canada-child-benefit-2/circles-service-intiation-template/files/navigation.css" />
+	</head>
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		<div id="def-top">
+
+		</div>
+
+		<!-- Write closure template -->
+
+		<script type="text/javascript">
+
+			var defTop = document.getElementById("def-top");
+
+			defTop.outerHTML = wet.builder.top({
+
+				lngLinks: [{
+
+					lang: "fr",
+
+					href: "#",
+
+					text: "Français"
+
+				}],
+
+				breadcrumbs: [{
+
+					title: "Home",
+
+					href: "https://www.canada.ca/en.html"
+
+				},{
+
+					title: "About Canada.ca",
+
+					href: 'https://www.canada.ca/en/government/about.html'
+
+				},{
+
+					title: "Canada.ca design system",
+
+					href: 'https://www.canada.ca/en/government/about/design-system.html'
+
+				}],
+
+				search: true,
+
+				siteMenu: true,
+
+				showPreContent: true
+
+			});
+
+</script>
+
+
+
+<main role="main" property="mainContentOfPage" class="container">
+
+
+  <h1 property="name" id="wb-cont">Table of contents builder</h1>
+  
+  <section id="steps-content">
+  <nav id="toc"></nav>
+  <h2 id="intro">Background</h2>
+ <p>Table of contents builder as of June 15, 2019</p>
+ <ul>
+ <li>Builds a table of content based on headers contained in an container with <code>id="step-content"</code> (may need to amend to allow use in non step navigation pages</li>
+ <li>Standardizes header (currently "On this page"), and also builds header in French</li>
+ <li>Accessibility or scripting not a concern due to ability of screen readers can navigate headers without a TOC</li>
+ 
+  <li>Current builder is based on script that also builds <code>&lt;id&gt;</code> for headers that do not have an id (need to remove)</li>
+  <li>CRA team looking to recreating script with more restrictions (and to not print header if no <code>h2</code> exists)</li>  
+  </ul>
+<h2 id="h_1">Header 1</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor mi id tortor euismod, non elementum dui ornare.</p>
+<h3 id="h_1_1">H3 header 1</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam egestas enim, in sodales felis tristique sit amet. Cras id urna quis neque egestas ornare. Cras blandit orci sed sollicitudin condimentum. Integer cursus volutpat blandit. Curabitur at purus pulvinar, ultricies tortor non, mattis nibh. Nullam arcu dolor, ultricies a felis at, pulvinar tempus sem.
+</p>
+<h2 id="h_2">Header 2</h2>
+<p>
+Mauris cursus ut tellus vel porta. Proin suscipit fermentum ligula, non varius nibh tincidunt eu. Proin sodales mattis mauris, sit amet ultricies nibh posuere laoreet. Duis condimentum augue eros, in facilisis nulla tempus in. Mauris diam mi, aliquet sed mi id, lobortis vestibulum nulla. Mauris luctus congue placerat. Nullam eu lobortis tortor, ac elementum diam.
+</p>
+<p>
+Mauris quis tincidunt est. Aenean euismod, metus non mollis blandit, felis massa consequat mi, in lacinia nibh nibh sit amet dui. Fusce pellentesque elit at cursus tincidunt. Maecenas nec dignissim diam, et lacinia nunc. Sed vitae iaculis ligula. Aenean nec commodo sem, at vestibulum orci. Vivamus eu finibus nulla. Duis condimentum ornare nibh, sed euismod magna venenatis rhoncus. Curabitur ac sapien pretium, fringilla sapien sit amet, maximus ex. Nullam lorem ipsum, porttitor at varius a, ornare vitae diam. Phasellus a leo vitae nisl mollis tincidunt eget id augue. Proin eget efficitur elit, vitae euismod dolor. Nullam congue ut ipsum et tincidunt.
+</p>
+<h2 id="h_3">Header 3</h2>
+<p>
+Praesent porta, dui id suscipit congue, diam orci sagittis magna, at fermentum dui tellus eu libero.</p>
+<h3 id="h_3_1">H3 header 1</h3>
+<p>Proin nulla tortor, rhoncus bibendum sem viverra, fringilla sodales felis. Pellentesque id justo vitae ipsum maximus tristique. Donec porta, nisl nec bibendum accumsan, orci magna pellentesque purus, nec rhoncus ante eros ac nulla.</p>
+<h4 id="h_3_1_1">H4 header 1</h3>
+<p>Suspendisse non metus non libero dignissim pretium. Nulla finibus, purus quis ornare tincidunt, nibh orci finibus nisi, rhoncus suscipit lacus odio feugiat ligula. Quisque interdum rhoncus ultricies. Nullam sed purus tincidunt, viverra mi sit amet, viverra nulla.</p>
+<h3 id="h_3_2">H3 header 2</h3>
+<p>Maecenas vel nisi cursus, luctus massa sed, lacinia mi. Nam aliquam ligula ut risus semper finibus. Duis in felis turpis. Suspendisse potenti. Curabitur non nunc auctor, interdum justo non, maximus ante.
+</p>
+<h2 id="h_4">Header 4 <span class="text-muted">with muted text</span></h2>
+<p>
+Nulla tempus, elit non imperdiet commodo, justo sapien ornare odio, nec aliquam dolor arcu id lectus. Aenean pharetra vestibulum feugiat. Integer vulputate, tellus nec placerat condimentum, nibh massa euismod ex, a pharetra est libero in est. In venenatis lorem vitae egestas dictum. In pellentesque vulputate viverra. Nulla a eros elit. Aliquam erat volutpat. Donec quis egestas lorem. Maecenas fringilla, metus sed maximus lobortis, mi dolor viverra justo, eget pellentesque purus tellus a purus.
+</p>
+
+</div>
+ <nav id="tp-pg"><a href="#wb-tphp">Top<span class="wb-inv"> of the page</a> </nav>     
+  <div id="def-preFooter">
+
+</div>
+
+<!-- Write closure template -->
+
+<script type="text/javascript">
+
+	var defPreFooter = document.getElementById("def-preFooter");
+
+	defPreFooter.outerHTML = wet.builder.preFooter({
+
+		dateModified: "April 1, 2019",
+
+		showPostContent: true,
+
+		showFeedback: true,
+
+		showShare: true
+
+	});
+
+</script>
+
+		</main>
+
+		<div id="def-footer">
+
+
+
+		</div>
+
+		<!-- Write closure template -->
+
+		<script type="text/javascript">
+
+			var defFooter = document.getElementById("def-footer");
+
+			defFooter.outerHTML = wet.builder.footer({
+
+				showFooter: true,
+
+				showFeatures: true
+
+			});
+
+		</script>
+
+		<!-- Write closure template -->
+
+		<script type="text/javascript">
+
+			document.write(wet.builder.refFooter({
+
+			}));
+
+		</script>
+<script type="text/javascript" src="https://test.canada.ca/canada-child-benefit-2/circles-service-intiation-template/files/navigation.js"></script>
+
+	</body>
+
+</html>
+
