@@ -153,9 +153,9 @@ input[type="reset"], input[type="button"], input[type="submit"]
   display: inline-block;
   position: absolute;
   left: 8px;
-  top: 4px;
+  top: 2px;
   width: 8px;
-  height: 12px;
+  height: 14px;
   border: solid #333;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
