@@ -56,6 +56,7 @@ input[type="reset"], input[type="button"], input[type="submit"]
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
 }
 
 .cst-inputs .checkbox,
@@ -95,6 +96,7 @@ input[type="reset"], input[type="button"], input[type="submit"]
   height: 36px;
   border: 2px solid #333;
   margin-top: -4px;
+
  }
 
 
@@ -160,15 +162,19 @@ input[type="reset"], input[type="button"], input[type="submit"]
 }
 
 
+/* for green checks */
+
 .cst-inputs .checkbox-green label::after {
   content: "";
+  overflow: visible;
   border: solid white;
   border-width: 0 5px 5px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: #318000;
 
+}
+
+/* for green checks */
+.cst-inputs .checkbox-green input[type="checkbox"]:checked + label:before {
+  background-color: #318000;
 }
 
  @media only screen and (max-width: 1200px) {
