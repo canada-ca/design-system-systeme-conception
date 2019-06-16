@@ -160,6 +160,16 @@ input[type="reset"], input[type="button"], input[type="submit"]
 }
 
 
+.cst-inputs .checkbox-green label::after {
+  content: "";
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #318000;
+
+}
 
  @media only screen and (max-width: 1200px) {
 
