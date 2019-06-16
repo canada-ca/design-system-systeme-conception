@@ -166,7 +166,6 @@ input[type="reset"], input[type="button"], input[type="submit"]
 
 .cst-inputs .checkbox-green label::after {
   content: "";
-  overflow: visible;
   border: solid white;
   border-width: 0 5px 5px 0;
 
