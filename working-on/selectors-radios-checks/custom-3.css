@@ -3,6 +3,10 @@
 label {
   font-size: 20px !important; /*will not use important tags on PR, will correct source */
 }
+
+.checkbox-small label {
+  font-size: 17px !important;
+}
 /* increase field flow sizing */
 
 legend.h5 {
@@ -67,6 +71,11 @@ input[type="reset"], input[type="button"], input[type="submit"]
 
 }
 
+.cst-inputs .checkbox-small {
+  padding-left: 16px;
+  margin-bottom: 25px;
+}
+
 .cst-inputs .form-checkbox,
 .cst-inputs .form-radio {
 
@@ -75,6 +84,7 @@ input[type="reset"], input[type="button"], input[type="submit"]
   min-width: 26%; /* prevents weird overlapping */
 
 }
+
 
 .cst-inputs .form-checkbox label,
 .cst-inputs .form-radio label {
@@ -99,6 +109,20 @@ input[type="reset"], input[type="button"], input[type="submit"]
 
  }
 
+ .cst-inputs .checkbox-small label::before {
+   content: "";
+   box-sizing: border-box;
+   position: absolute;
+   display: inline-block;
+   top: 0;
+   left: 0;
+   width: 24px;
+   height: 24px;
+   border: 2px solid #333;
+   margin-top: 0;
+
+  }
+
 
 .cst-inputs .radio label::before,
 .cst-inputs .form-radio label::before {
@@ -118,6 +142,22 @@ input[type="reset"], input[type="button"], input[type="submit"]
   height: 22px;
   border: solid #333;
   border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.cst-inputs .checkbox-small label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  width: 8px;
+  height: 12px;
+  border: solid #333;
+  border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -168,7 +208,6 @@ input[type="reset"], input[type="button"], input[type="submit"]
   content: "";
   border: solid white;
   border-width: 0 5px 5px 0;
-
 }
 
 /* for green checks */
