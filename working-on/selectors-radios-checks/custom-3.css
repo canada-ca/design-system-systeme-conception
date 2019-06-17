@@ -5,7 +5,7 @@ label {
 }
 
 .checkbox-small label {
-  font-size: 17px !important;
+  font-size: 17px !important; /* important needed for now, will rmv later */
 }
 /* increase field flow sizing */
 
