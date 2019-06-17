@@ -45,14 +45,15 @@ input[type="reset"], input[type="button"], input[type="submit"]
 }
 
 .can-ca-form {
-    margin-top: 15px;
+    clear: both;
+    padding-top: 6px;
 }
 
 .can-ca-form .checkbox,
 .can-ca-form .radio,
 .can-ca-form .form-checkbox,
 .can-ca-form .form-radio {
-  /* display: block; */
+
   position: relative;
   cursor: pointer;
   font-weight: normal;
