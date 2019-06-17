@@ -39,19 +39,19 @@ input[type="reset"], input[type="button"], input[type="submit"]
 }
 /* custom checkboxes */
 
-.cst-inputs input {
+.can-ca-form input {
   position: absolute;
   opacity: 0;
 }
 
-.cst-inputs {
+.can-ca-form {
     margin-top: 15px;
 }
 
-.cst-inputs .checkbox,
-.cst-inputs .radio,
-.cst-inputs .form-checkbox,
-.cst-inputs .form-radio {
+.can-ca-form .checkbox,
+.can-ca-form .radio,
+.can-ca-form .form-checkbox,
+.can-ca-form .form-radio {
   /* display: block; */
   position: relative;
   cursor: pointer;
@@ -63,21 +63,21 @@ input[type="reset"], input[type="button"], input[type="submit"]
 
 }
 
-.cst-inputs .checkbox,
-.cst-inputs .radio {
+.can-ca-form .checkbox,
+.can-ca-form .radio {
 
   padding-left: 30px;
   margin-bottom: 35px;
 
 }
 
-.cst-inputs .checkbox-small {
+.can-ca-form .checkbox-small {
   padding-left: 16px;
   margin-bottom: 25px;
 }
 
-.cst-inputs .form-checkbox,
-.cst-inputs .form-radio {
+.can-ca-form .form-checkbox,
+.can-ca-form .form-radio {
 
   margin-right: 30px;
   margin-bottom: 25px;
@@ -86,16 +86,16 @@ input[type="reset"], input[type="button"], input[type="submit"]
 }
 
 
-.cst-inputs .form-checkbox label,
-.cst-inputs .form-radio label {
+.can-ca-form .form-checkbox label,
+.can-ca-form .form-radio label {
   padding-left: 50px;
 
 }
 
-.cst-inputs .checkbox label::before,
-.cst-inputs .radio label::before,
-.cst-inputs .form-checkbox label::before,
-.cst-inputs .form-radio label::before {
+.can-ca-form .checkbox label::before,
+.can-ca-form .radio label::before,
+.can-ca-form .form-checkbox label::before,
+.can-ca-form .form-radio label::before {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -109,7 +109,7 @@ input[type="reset"], input[type="button"], input[type="submit"]
 
  }
 
- .cst-inputs .checkbox-small label::before {
+ .can-ca-form .checkbox-small label::before {
    content: "";
    box-sizing: border-box;
    position: absolute;
@@ -124,15 +124,15 @@ input[type="reset"], input[type="button"], input[type="submit"]
   }
 
 
-.cst-inputs .radio label::before,
-.cst-inputs .form-radio label::before {
+.can-ca-form .radio label::before,
+.can-ca-form .form-radio label::before {
   content: "";
   border-radius: 50%;
 }
 
 
-.cst-inputs .checkbox label::after,
-.cst-inputs .form-checkbox label::after {
+.can-ca-form .checkbox label::after,
+.can-ca-form .form-checkbox label::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -148,7 +148,7 @@ input[type="reset"], input[type="button"], input[type="submit"]
 
 }
 
-.cst-inputs .checkbox-small label::after {
+.can-ca-form .checkbox-small label::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -164,8 +164,8 @@ input[type="reset"], input[type="button"], input[type="submit"]
 
 }
 
-.cst-inputs .radio label::after,
-.cst-inputs .form-radio label::after {
+.can-ca-form .radio label::after,
+.can-ca-form .form-radio label::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -178,47 +178,47 @@ input[type="reset"], input[type="button"], input[type="submit"]
 }
 
 /* hide the check */
-.cst-inputs .form-checkbox input[type="checkbox"] + label::after,
-.cst-inputs .form-radio input[type="radio"] + label::after,
-.cst-inputs .checkbox input[type="checkbox"] + label::after,
-.cst-inputs .radio input[type="radio"] + label::after {
+.can-ca-form .form-checkbox input[type="checkbox"] + label::after,
+.can-ca-form .form-radio input[type="radio"] + label::after,
+.can-ca-form .checkbox input[type="checkbox"] + label::after,
+.can-ca-form .radio input[type="radio"] + label::after {
     content: none;
 }
 
 /* unhide check when checked */
-.cst-inputs .form-checkbox input[type="checkbox"]:checked + label::after,
-.cst-inputs .form-radio input[type="radio"]:checked + label::after,
-.cst-inputs .checkbox input[type="checkbox"]:checked + label::after,
-.cst-inputs .radio input[type="radio"]:checked + label::after {
+.can-ca-form .form-checkbox input[type="checkbox"]:checked + label::after,
+.can-ca-form .form-radio input[type="radio"]:checked + label::after,
+.can-ca-form .checkbox input[type="checkbox"]:checked + label::after,
+.can-ca-form .radio input[type="radio"]:checked + label::after {
     content: "";
 }
 
 /* add focus */
-.cst-inputs .checkbox input[type="checkbox"]:focus + label::before,
-.cst-inputs .form-checkbox input[type="checkbox"]:focus + label::before,
-.cst-inputs .form-radio input[type="radio"]:focus + label::before,
-.cst-inputs .radio input[type="radio"]:focus + label::before  {
+.can-ca-form .checkbox input[type="checkbox"]:focus + label::before,
+.can-ca-form .form-checkbox input[type="checkbox"]:focus + label::before,
+.can-ca-form .form-radio input[type="radio"]:focus + label::before,
+.can-ca-form .radio input[type="radio"]:focus + label::before  {
     box-shadow: 0 0 3pt 2pt rgb(59, 153, 252);
 }
 
 
 /* for green checks */
 
-.cst-inputs .checkbox-green label::after {
+.can-ca-form .checkbox-green label::after {
   content: "";
   border: solid white;
   border-width: 0 5px 5px 0;
 }
 
 /* for green checks */
-.cst-inputs .checkbox-green input[type="checkbox"]:checked + label:before {
+.can-ca-form .checkbox-green input[type="checkbox"]:checked + label:before {
   background-color: #318000;
 }
 
  @media only screen and (max-width: 1200px) {
 
-.cst-inputs .form-checkbox,
-.cst-inputs .form-radio {
+.can-ca-form .form-checkbox,
+.can-ca-form .form-radio {
     min-width: 50%;
   }
 

@@ -1039,9 +1039,9 @@ function(a, b, c) {
     			}
     		}
         if ( isInline ) {
-          radCheckOut = "<div class='clearfix'></div><div class='cst-inputs'>" + radCheckOut;
+          radCheckOut = "<div class='clearfix'></div><div class='can-ca-form'>" + radCheckOut;
         } else {
-          radCheckOut = "<div class='clearfix'></div><ul class='list-unstyled cst-inputs'>" + radCheckOut;
+          radCheckOut = "<div class='clearfix'></div><ul class='list-unstyled can-ca-form'>" + radCheckOut;
         }
     		$out.append( radCheckOut );
     		$( "#" + bodyId ).append( $out );
