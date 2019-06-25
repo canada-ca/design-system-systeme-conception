@@ -38,6 +38,10 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link rel="stylesheet" href="https://test.canada.ca/canada-child-benefit-2/circles-service-intiation-template/files/navigation.css" />
 		<style>
+			abbr[title] {
+	text-decoration: none!important;
+	border-bottom: 1px dotted #333;
+}
 @media (max-width: 768px) {
 	
 #default abbr {text-decoration:none!important;}
@@ -80,11 +84,10 @@ transition-delay: 30s;
 }
 #mixed abbr:hover { border-bottom:none;
 }
-#mixed a abbr, #mixed button abbr, #mixed summary abbr {
+#mixed a abbr[title], #mixed button abbr[title], #mixed summary abbr[title] {
 border-bottom:none;
 }
 #mixed a abbr:after, #mixed button abbr:after, #mixed summary abbr:after {
-border-bottom:none;
 font-size: inherit;
 }
 }
