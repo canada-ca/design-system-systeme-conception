@@ -39,25 +39,26 @@
 <link rel="stylesheet" href="https://test.canada.ca/canada-child-benefit-2/circles-service-intiation-template/files/navigation.css" />
 		<style>
 @media (max-width: 768px) {
-	abbr {text-decoration:none!important;}
-abbr:after {content: "(" attr(title) ")";  padding-left: 5px;}
+	
+#default abbr {text-decoration:none!important;}
+#default abbr:after {content: "(" attr(title) ")";  padding-left: 5px;}
 
-abbr.style {transition: all 180s;
+#expand abbr {transition: all 30s;
 text-decoration:none!important;
 border-bottom:1px dotted black;
 transition-delay: 20s;}
 
-abbr.style:hover { transition: all 10s; text-decoration:none; border-bottom:none}
-abbr.style:after 
+#expand abb:hover { transition: all 10s; text-decoration:none; border-bottom:none}
+#expand abbr:after 
 {content: "(" attr(title) ")";
 font-size: 0em;
-transition: all 180s;
+transition: all 30s;
 border-bottom: none;
 transition-delay: 20s;
 
 }
 
-abbr.style:hover:after
+#expand abbr:hover:after
 {
 border-bottom:none;
 transition: all 1s;
@@ -66,6 +67,27 @@ float:none;
 font-size:1em;
 
 }}
+
+@media (max-width: 768px) {
+#mixed abbr {text-decoration:none!important; border-bottom:1px dotted black; transition-delay: 30s;
+}
+#mixedabbr:after {content: " (" attr(title) ")"; font-size: 0em; border-bottom:none;
+transition: all 1s;
+transition-delay: 30s;
+}
+#mixedabbr:hover:after
+{transition: all 1s;font-size:1em;
+}
+#mixedabbr:hover { border-bottom:none;
+}
+#mixeda abbr, #mixed button abbr, #mixed summary abbr {
+border-bottom:none;
+}
+#mixed a abbr:after, #mixed button abbr:after, #mixed summary abbr:after {
+border-bottom:none;
+font-size: inherit;
+}
+}
 
 </style>
 			
@@ -133,27 +155,44 @@ font-size:1em;
   <h1 property="name" id="wb-cont">ABBR style for mobile/touch devices</h1>
  <p>In mobile, ABBR tags do not repond to touch without adding extra hover.  However, the hover only lasts as long as the user presses the element and leaves (in desktop), or moves to the next focused type item (in mobile).</p>
  <p>Below are possible solutions for mobile touch with ABBR elements.</p>
+	<p><strong>Note:</strong> only available for XS/SM resolutions, acts as default for MD/LG views, only functions when abbrs use the element.</p>
  
  <h2>Default show of title value in mobile (CSS only)</h2>
  <p>This example, the title attribute is always shown as an <code>:after</code> pseudo element in small/tablet modes (most used with touch). The text-decoration is removed since screen readers can still pick up on the ABBR tag but visual users will not need them to determine that something is an ABBR since it's defined in the CSS.</p>
- 
+	<h3>Example</h3>
+	<div id="default">
 <p>The <abbr title="Canada Revenue Agency">CRA</abbr> is working with <abbr title="Treasury Board Secretariat">TBS</abbr> to help enhance the <abbr title="Web Experience Toolkit">WET</abbr>5 template.</p>
- 
+	</div>
  <p><strong>Pros:</strong></p>
  <ul><li>Simplest to impliment</li><li>Acts just like regular text</li></ul>
  <p><strong>Cons:</strong></p>
-  <ul><li>May not be desirable where width space is a premium (e.g. table header)</li></ul>
+  <ul><li>May not be desirable where width space is a premium (e.g. table header)</li><li>For some common abbreviations (e.g. CRA or GST), repeated expanded abbrs might be overwhelming</li> </ul>
   
    <h2>Use <code>:hover</code> and few other CSS styles to create an almost "click" expand (CSS only)</h2>
  <p>This example, the title attribute is activated with <code>:hover:after</code> pseudo element in small/tablet modes (most used with touch) are pressed. The text-decoration is replaced with a similar border-bottom pattern so that when active, the border disapears (and does not cascade into the <code>:after</code> element).</p>
- <p>This design uses animation and holds the after effect for 180 seconds (can be adjusted) so the item does not disappear right after the user moves away (by accident or on purpose).</p>
-<p>The <abbr class="style" title="Canada Revenue Agency">CRA</abbr> is working with <abbr class="style" title="Treasury Board Secretariat">TBS</abbr> to help enhance the <abbr class="style" title="Web Experience Toolkit">WET</abbr>5 template.</p>
- 
+ <p>This design uses animation and holds the after effect for 30 seconds (can be adjusted) so the item does not disappear right after the user moves away (by accident or on purpose).</p>
+	<h3>Example</h3>
+	<div id="expand">
+	<p>The <abbr title="Canada Revenue Agency">CRA</abbr> is working with <abbr title="Treasury Board Secretariat">TBS</abbr> to help enhance the <abbr title="Web Experience Toolkit">WET</abbr>5 template.</p>
+	</div>
  <p><strong>Pros:</strong></p>
  <ul><li>Does not provide abbrs unless user clicks</li><li>Acts just like regular text</li></ul>
  <p><strong>Cons:</strong></p>
-  <ul><li>May be mistaken as an expand hide (does not dissapear for 3 mins)</li></ul>
+  <ul><li>May be mistaken as an expand hide (does not dissapear for 30 seconds)</li></ul>
  
+	 <h2>Mixed options from above (CSS only)</h2>
+ <p>This uses expands when in links or click elements (a, buttons, details), since expanding by click will navigate instead. It keeps the hover for non click abbrs.</p>
+	<h3>Example</h3>
+	<div id="mixed">
+		<p><strong>No click events:</strong> The <abbr title="Canada Revenue Agency">CRA</abbr> is working with <abbr title="Treasury Board Secretariat">TBS</abbr> to help enhance the <abbr title="Web Experience Toolkit">WET</abbr>5 template.</p>
+	<p><strong>Mix of click events:</strong> The <abbr title="Canada Revenue Agency">CRA</abbr> is working with <a href="https://www.canada.ca/en/treasury-board-secretariat.html">the <abbr title="Treasury Board Secretariat">TBS</abbr></a> to help enhance the <abbr title="Web Experience Toolkit">WET</abbr>5 template.</p>
+	
+	</div>
+ <p><strong>Pros:</strong></p>
+ <ul><li>Does not provide abbrs unless user clicks (when not in a click event)</li><li>Acts just like regular text</li></ul>
+ <p><strong>Cons:</strong></p>
+  <ul><li>May be mistaken as an expand hide (does not dissapear for 30 seconds)</li></ul>
+	
   <h2>Use script</h2>
  <p>Using script, could create an expand/hide, popup (e.g. popover) or any other type of function (depending on best experience).</p>
 <p>No examples currently, need to review CSS only ideas first</p>
