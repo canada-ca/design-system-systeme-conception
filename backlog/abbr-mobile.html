@@ -67,15 +67,9 @@ float:none;
 font-size:1em;
 
 }}
-@media (min-width: 768px) {			
-abbr {text-decoration:none!important; border-bottom-width: 1px!important;
-    border-bottom-style: dotted!important;
-    border-bottom-color: #333!important;
-}
-			}
-			}
+
 @media (max-width: 767px) {
-#mixed abbr { transition-delay: 30s;
+#mixed abbr {text-decoration:none!important; border-bottom: 1px dotted #333; transition-delay: 30s;
 }
 #mixed abbr:after {content: " (" attr(title) ")"; font-size: 0em; border-bottom:none;
 transition: all 1s;
