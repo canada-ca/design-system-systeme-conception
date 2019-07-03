@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+		<title>Screen reader text (.wb-inv) text at different resolutions</title>
+
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+
+		<!-- Meta data -->
+
+		<!-- Meta data-->
+
+		<!-- Load closure template scripts -->
+
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+
+		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+
+
+
+		<!-- Write closure template -->
+
+		<script type="text/javascript">
+
+			document.write(wet.builder.refTop({
+
+			}));
+
+		</script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://test.canada.ca/canada-child-benefit-2/circles-service-intiation-template/files/navigation.css" />
+		<style>
+			abbr[title] {
+	text-decoration: none!important;
+	border-bottom: 1px dashed #333;
+}
+@media (max-width: 768px) {
+	
+#default abbr {text-decoration:none!important;}
+#default abbr:after {content: "(" attr(title) ")";  padding-left: 5px;}
+
+#expand abbr {transition: all 30s;
+text-decoration:none!important;
+border-bottom:1px dashed #333;
+transition-delay: 20s;}
+
+#expand abb:hover { transition: all 10s; text-decoration:none; border-bottom:none}
+#expand abbr:after 
+{content: "(" attr(title) ")";
+font-size: 0em;
+transition: all 30s;
+border-bottom: none;
+transition-delay: 20s;
+
+}
+
+#expand abbr:hover:after
+{
+border-bottom:none;
+transition: all 1s;
+padding-left: 5px;
+float:none;
+font-size:1em;
+
+}}
+
+@media (max-width: 767px) {
+#mixed abbr {text-decoration:none!important; border-bottom: 1px dashed #333; transition-delay: 30s;
+}
+#mixed abbr:after {content: " (" attr(title) ")"; font-size: 0em; border-bottom:none;
+transition: all 1s;
+transition-delay: 30s;
+}
+#mixed abbr:hover:after
+{transition: all 1s;font-size:1em;
+}
+#mixed abbr:hover { border-bottom:none;
+}
+#mixed a abbr[title], #mixed button abbr[title], #mixed summary abbr[title] {
+border-bottom:none;
+}
+#mixed a abbr:after, #mixed button abbr:after, #mixed summary abbr:after {
+font-size: inherit;
+}
+}
+
+</style>
+			
+	</head>
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		<div id="def-top">
+
+		</div>
+
+		<!-- Write closure template -->
+
+		<script type="text/javascript">
+
+			var defTop = document.getElementById("def-top");
+
+			defTop.outerHTML = wet.builder.top({
+
+				lngLinks: [{
+
+					lang: "fr",
+
+					href: "#",
+
+					text: "Français"
+
+				}],
+
+				breadcrumbs: [{
+
+					title: "Home",
+
+					href: "https://www.canada.ca/en.html"
+
+				},{
+
+					title: "About Canada.ca",
+
+					href: 'https://www.canada.ca/en/government/about.html'
+
+				},{
+
+					title: "Canada.ca design system",
+
+					href: 'https://www.canada.ca/en/government/about/design-system.html'
+
+				}],
+
+				search: true,
+
+				siteMenu: true,
+
+				showPreContent: true
+
+			});
+
+</script>
+
+
+
+<main role="main" property="mainContentOfPage" class="container">
+
+
+  <h1 property="name" id="wb-cont">Screen reader text (.wb-inv) text at different resolutions</h1>
+ <p>On the left is the affected design based on resolution, on the right is the same design but always visible.</p>
+
+	
+	<h2>Default (always invisible for screen readers)</h2>
+<div class="row">
+	<div class="col-xs-6 "><div class="well wb-inv">
+	<p>This content is hidden for screen readers at all resolutions using <code class="nowrap">.wb-inv</code></p>
+	</div></div>
+	<div class="col-xs-6 brdr-lft"><div class="well opct-50">
+	<p>This content is hidden for screen readers at all resolutions using <code class="nowrap">.wb-inv</code></p>
+	</div></div>
+	</div>
+	
+<h2>Hidden in xs resolution only</h2>
+<div class="row">
+	<div class="col-xs-6 "><div class="well wb-inv-xs">
+	<p>This content is hidden for screen readers at less than 767px using <code class="nowrap">.wb-inv-xs</code></p>
+	</div></div>
+	<div class="col-xs-6 brdr-lft"><div class="well opct-50">
+	<p>This content is hidden for screen readers at less than 767px using <code class="nowrap">.wb-inv-xs</code></p>
+	</div></div>
+	</div>	
+	
+<h2>Hidden in sm resolution only</h2>
+<div class="row">
+	<div class="col-xs-6 "><div class="well wb-inv-sm">
+	<p>This content is hidden for screen readers between 768px and 991px using <code class="nowrap">.wb-inv-sm</code></p>
+	</div></div>
+	<div class="col-xs-6 brdr-lft"><div class="well opct-50">
+<p>This content is hidden for screen readers between 768px and 991px using <code class="nowrap">.wb-inv-sm</code></p>
+	</div></div>
+	</div>
+	
+<h2>Hidden in md resolution only</h2>
+<div class="row">
+	<div class="col-xs-6 "><div class="well wb-inv-md">
+	<p>This content is hidden for screen readers between 992px and 1199px using <code class="nowrap">.wb-inv-md</code></p>
+	</div></div>
+	<div class="col-xs-6 brdr-lft"><div class="well opct-50">
+<p>This content is hidden for screen readers between 992px and 1199px using <code class="nowrap">.wb-inv-md</code></p>
+	</div></div>
+	</div>	
+	
+<h2>Hidden in lg resolution only</h2>
+<div class="row">
+	<div class="col-xs-6 "><div class="well wb-inv-lg">
+	<p>This content is hidden for screen readers greater than 1200px using <code class="nowrap">.wb-inv-lg</code></p>
+	</div></div>
+	<div class="col-xs-6 brdr-lft"><div class="well opct-50">
+<p>This content is hidden for screen readers greater than 1200px using <code class="nowrap">.wb-inv-lg</code></p>
+	</div></div>
+	</div>	
+
+<h2>Multiple resolution hide</h2>
+<div class="row">
+	<div class="col-xs-6 "><div class="well wb-inv-sm wb-inv-md">
+	<p>This content is hidden for screen readers in small (sm) and medium (md) resolution using <code class="nowrap">.wb-inv-sm</code> and <code class="nowrap">.wb-inv-md</code>, and visible in mobile (xs) and large desktop (lg) resolution</p>
+	</div></div>
+	<div class="col-xs-6 brdr-lft"><div class="well opct-50">
+<p>This content is hidden for screen readers in small (sm) and medium (md) resolution using <code class="nowrap">.wb-inv-sm</code> and <code class="nowrap">.wb-inv-md</code>, and visible in mobile (xs) and large desktop (lg) resolution</p>
+	</div></div>
+	</div>		
+ 
+ <nav id="tp-pg"><a href="#wb-tphp">Top<span class="wb-inv"> of the page</a> </nav>     
+  <div id="def-preFooter">
+
+</div>
+
+<!-- Write closure template -->
+
+<script type="text/javascript">
+
+	var defPreFooter = document.getElementById("def-preFooter");
+
+	defPreFooter.outerHTML = wet.builder.preFooter({
+
+		dateModified: "April 1, 2019",
+
+		showPostContent: true,
+
+		showFeedback: true,
+
+		showShare: true
+
+	});
+
+</script>
+
+		</main>
+
+		<div id="def-footer">
+
+
+
+		</div>
+
+		<!-- Write closure template -->
+
+		<script type="text/javascript">
+
+			var defFooter = document.getElementById("def-footer");
+
+			defFooter.outerHTML = wet.builder.footer({
+
+				showFooter: true,
+
+				showFeatures: true
+
+			});
+
+		</script>
+
+		<!-- Write closure template -->
+
+		<script type="text/javascript">
+
+			document.write(wet.builder.refFooter({
+
+			}));
+
+		</script>
+<script type="text/javascript" src="https://test.canada.ca/canada-child-benefit-2/circles-service-intiation-template/files/navigation.js"></script>
+
+	</body>
+
+</html>
+
