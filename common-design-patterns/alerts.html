@@ -11,7 +11,8 @@
 		<!-- Load closure template scripts -->
 		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
 		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
-
+		<link rel="stylesheet" href="../src/custom-3.css">
+		<link rel="stylesheet" href="../src/navigation.css">
 		<!-- Write closure template -->
 		<script type="text/javascript">
 			document.write(wet.builder.refTop({
@@ -111,7 +112,7 @@
 
 <p>Users' attention often needs to be brought to specific content that makes them aware of a result of a user action, a clarification or exception to surrounding content or to warn the user of a consequence of an action or inaction in their task.</p>
 
-<img class="pattern-demo" src="zika-warning.png" alt="Sample warning shows a do not travel advisory for Costa Rica for those who could be affected by Zika">
+<!-- <img class="pattern-demo" src="zika-warning.png" alt="Sample warning shows a do not travel advisory for Costa Rica for those who could be affected by Zika"> -->
 
 <h2>On this page</h2>
 <ul>
@@ -146,10 +147,13 @@
 			<h3>Danger alert</h3>
 			<p><b>When to use:</b> Use the danger alert to draw attention to a situation that could place the user in danger, such as a do not travel warning, or to alert the user of a technical issue that could cause them to be unable to complete their task.</p>
 
-			<section class="alert alert-danger">
-	      <h3>If pregnant or considering pregnancy - both partners</h3>
-	      <p>Avoid travel to Costa Rica if you are pregnant or planning to conceive a child in the next 3 months.</p>
-	    </section>
+			<div class="callout">
+
+				<section class="alert alert-danger">
+		      <h3>If pregnant or considering pregnancy - both partners</h3>
+		      <p>Avoid travel to Costa Rica if you are pregnant or planning to conceive a child in the next 3 months.</p>
+		    </section>
+			</div>
 
 
 			<details>
@@ -162,10 +166,12 @@
 			<h3>Warning alert</h3>
 			<p><b>When to use:</b> Use the warning alert to draw attention to a possible consequence of an action or inaction, such as legal penalty that could apply.</p>
 
-			<section class="alert alert-warning">
-	      <h3>Changes to impaired driving and cannabis-related crime laws</h3>
-	      <p><a href="https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/impaired-driving-cannabis-penalties-affect-immigration-status.html">New penalties for impaired driving and cannabis-related crimes may affect your immigration status in Canada</a>. If you commit one of these crimes, you may not be able to come to or stay in Canada.</p>
-	    </section>
+			<div class="callout">
+				<section class="alert alert-warning">
+		      <h3>Changes to impaired driving and cannabis-related crime laws</h3>
+		      <p><a href="https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/impaired-driving-cannabis-penalties-affect-immigration-status.html">New penalties for impaired driving and cannabis-related crimes may affect your immigration status in Canada</a>. If you commit one of these crimes, you may not be able to come to or stay in Canada.</p>
+		    </section>
+			</div>
 			<details>
 				<summary>Code</summary>
 <pre class="prettyprint"><code>&#x3C;section class=&#x22;alert alert-warning&#x22;&#x3E;
@@ -176,10 +182,12 @@
 			<h3>Info alert</h3>
 			<p><b>When to use:</b> Use the info alert to draw attention to a clarification, caveat or status of surrounding content.</p>
 
-			<section class="alert alert-info">
-	      <h3>Current status of the call for applications: Closed</h3>
-	      <p>Thank you for your interest in Canada Summer Jobs. Applications are now closed.</p>
-	    </section>
+			<div class="callout">
+				<section class="alert alert-info">
+		      <h3>Current status of the call for applications: Closed</h3>
+		      <p>Thank you for your interest in Canada Summer Jobs. Applications are now closed.</p>
+		    </section>
+			</div>
 			<details>
 				<summary>Code</summary>
 <pre class="prettyprint"><code>&#x3C;section class=&#x22;alert alert-info&#x22;&#x3E;
@@ -190,10 +198,12 @@
 			<h3>Success alert</h3>
 			<p><b>When to use:</b> Use success alert to draw attention to a successful action, such as with form validation.</p>
 
-			<section class="alert alert-success">
-	      <h3>Your request for publicly available data from the list of charities has been successful</h3>
-	      <p>The turnaround time to process your request may take up to four (4) weeks. We will contact you if we need more information.</p>
-	    </section>
+			<div class="callout">
+				<section class="alert alert-success">
+		      <h3>Your request for publicly available data from the list of charities has been successful</h3>
+		      <p>The turnaround time to process your request may take up to four (4) weeks. We will contact you if we need more information.</p>
+		    </section>
+			</div>
 			<details>
 				<summary>Code</summary>
 <pre class="prettyprint"><code>

@@ -44,6 +44,14 @@ input[type="reset"], input[type="button"], input[type="submit"]
   opacity: 0;
 }
 
+.can-ca-form input:disabled {
+  background: #dddddd;
+}
+
+.can-ca-form input:disabled+label {
+  color: #ccc;
+}
+
 .can-ca-form {
     clear: both;
     padding-top: 6px;

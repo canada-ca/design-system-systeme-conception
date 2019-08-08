@@ -11,7 +11,8 @@
 		<!-- Load closure template scripts -->
 		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
 		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
-		<link rel="stylesheet" href="./files/custom-3.css">
+		<link rel="stylesheet" href="../src/custom-3.css">
+		<link rel="stylesheet" href="../src/navigation.css">
 
 
 
@@ -134,28 +135,26 @@
 		</dl>
 
 		<h2 id="when">When to use</h2>
-		<p>The updated design for checkboxes and radio buttons affords better usability for all Canadians. Any use of checkboxes and radio buttons on Canada.ca should follow this design.</p>
-		<p>Checkboxes and radio buttons should be used in interactive questions, such as in applications to a service, estimators or smart pages and wizards.</p>
-		<p>It is encouraged to use interactive questions whenever possible on Canada.ca to help Canadians find and complete their task.</p>
-		<p>Checkboxes can also be used to indicate checklists, such as for things that must be at hand before making a call or eligibility criteria to meet before applying for a service.</p>
+		<p>Checkboxes and radio buttons should be used in interactive questions, such as in application forms for a service, wizards, or checklists.</p>
+		<p>Use of interactive questions or checklists is highly encouraged on Canada.ca.</p>
 
-		<h2 id="cautions">What to avoid</h2>
-		<p>Do not use an interactive pattern with radio buttons and checkboxes if a choice is more complex than answering a single question. Use doormat links to provide navigation to a loosely related set of pages.</p>
+		<!-- <h2 id="cautions">What to avoid</h2>
+		<p>Do not use an interactive patterns, such as radio buttons and checkboxes if presenting loosely related navigation options. Use doormat links to provide navigation to a loosely related set of pages.</p>
 		<p>For example:</p>
 		<ul>
 			<li>use a radio button pattern to ask which type of funding a Canadian is looking for</li>
 			<li>use a doormat links pattern instead to present loosely related tasks related to starting a business.</li>
 		</ul>
-		<p><a href="https://design.canada.ca/common-design-patterns/services-information.html">Doormat links pattern for services and information on Canada.ca</a></p>
+		<p><a href="https://design.canada.ca/common-design-patterns/services-information.html">Doormat links pattern for services and information on Canada.ca</a></p> -->
 	</section>
 
 	<section>
 		<h2 id="how">When to use and how to implement</h2>
 		<h3>Checkboxes</h3>
-		<p><b>When to use:</b> Use checkboxes when one or more selections can be made in answer to a question.</p>
-		<p><b>When not to use:</b> Do not use these larger checkboxes when you are making a checklist or when there is a single item that can be checked. For these situations, use the <a href="#small-checkbox-component">small checkboxes</a> below.</p>
+		<p><b>When to use:</b> Use checkboxes when one or more selections can be made to answer a question.</p>
+		<p><b>When not to use:</b> Do not use the large checkbox design when you are making a checklist or when there is a single item that can be checked. For these situations, use the <a href="#small-checkbox-component">small checkboxes</a> below.</p>
 
-		<div class="mrgn-tp-lg">
+		<div class="mrgn-tp-lg callout">
 	    <legend class="h5">Which of the following pets do you keep?</legend>
 			<ul class="list-unstyled can-ca-form">
 				<li class="checkbox">
@@ -199,80 +198,156 @@
     &#x3C;label for=&#x22;checkbox_4&#x22;&#x3E;Hamster&#x3C;/label&#x3E;
    &#x3C;/li&#x3E;
   &#x3C;/ul&#x3E;
-  &#x3C;input type=&#x22;submit&#x22; value=&#x22;Continue&#x22; class=&#x22;btn btn-primary mrgn-bttm-md&#x22;&#x3E;</code></pre>
+  &#x3C;input type=&#x22;submit&#x22; value=&#x22;Continue&#x22; class=&#x22;btn btn-primary mrgn-bttm-md&#x22;&#x3E;
+&#x3C;/div&#x3E;</code></pre>
 		</details>
 
 		<h3 id="small-checkbox-component">Small checkboxes</h3>
 		<p><b>When to use:</b> Use small checkboxes when making a checklist or when there is a single item that can be checked.</p>
 		<p><b>When not to use:</b> Do not use these larger checkboxes when you are making a checklist or when there is a single item that is being checked. For these situations, use the <a href="#small-checkbox-component">small checkboxes</a> below.</p>
 
-		<ul class="list-unstyled can-ca-form">
-			<li class="checkbox checkbox-small">
-				<input type="checkbox" id="disability1">
-				<label for="disability1">This child is a qualified disabled dependent</label>
-			</li>
-		</ul>
 
-
-
+		<div class="wb-tabs">
+			<div class="tabpanels">
+				<details id="single-small-checkbox-example">
+					<summary>Single item</summary>
+					<div class="callout">
+						<ul class="list-unstyled can-ca-form">
+							<li class="checkbox checkbox-small">
+								<input type="checkbox" id="confirmation-checkbox">
+								<label for="confirmation-checkbox">Home address is the same as mailing address</label>
+							</li>
+						</ul>
+					</div>
+					<details>
+						<summary>Code</summary>
+						<pre class="prettyprint"><code>&#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
+ &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;confirmation-checkbox&#x22;&#x3E;
+  &#x3C;label for=&#x22;confirmation-checkbox&#x22;&#x3E;Home address is the same as mailing address&#x3C;/label&#x3E;
+ &#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;</code></pre>
+					</details>
+				</details>
+				<details id="checklist-small-checkbox-example">
+					<summary>Checklist</summary>
+					<div class="callout">
+						<p>To be eligible, you must meet all of the following conditions:</p>
+						<ul class="list-unstyled can-ca-form">
+							<li class="checkbox checkbox-small">
+								<input type="checkbox" id="elibility-checkbox1" disabled>
+								<label for="elibility-checkbox1">You have a cat</label>
+							</li>
+							<li class="checkbox checkbox-small">
+								<input type="checkbox" id="elibility-checkbox2">
+								<label for="elibility-checkbox2">You have a dog</label>
+							</li>
+							<li class="checkbox checkbox-small">
+								<input type="checkbox" id="elibility-checkbox3">
+								<label for="elibility-checkbox3">You have a goldfish</label>
+							</li>
+							<li class="checkbox checkbox-small">
+								<input type="checkbox" id="elibility-checkbox4">
+								<label for="elibility-checkbox4">You have a hamster</label>
+							</li>
+						</ul>
+					</div>
+					<details>
+						<summary>Code</summary>
+						<pre class="prettyprint"><code>&#x3C;p&#x3E;To be eligible, you must meet all of the following conditions:&#x3C;/p&#x3E;
+&#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
+ &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility-checkbox1&#x22;&#x3E;
+  &#x3C;label for=&#x22;elibility-checkbox1&#x22;&#x3E;You have a cat&#x3C;/label&#x3E;
+ &#x3C;/li&#x3E;
+ &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility-checkbox2&#x22;&#x3E;
+  &#x3C;label for=&#x22;elibility-checkbox2&#x22;&#x3E;You have a dog&#x3C;/label&#x3E;
+ &#x3C;/li&#x3E;
+ &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility-checkbox3&#x22;&#x3E;
+  &#x3C;label for=&#x22;elibility-checkbox3&#x22;&#x3E;You have a goldfish&#x3C;/label&#x3E;
+ &#x3C;/li&#x3E;
+ &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility-checkbox4&#x22;&#x3E;
+  &#x3C;label for=&#x22;elibility-checkbox4&#x22;&#x3E;You have a hamster&#x3C;/label&#x3E;
+ &#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;</code></pre>
+					</details>
+				</details>
+			</div>
+		</div>
 
 		<h3>Radio buttons</h3>
 		<p><b>When to use:</b> Use radio buttons when only one selection can be made.</p>
 
-
-		<p>The small checkbox pattern, also included in this spec should be used in preference to the large checkbox pattern in 2 scenarios:</p>
-		<ul>
-			<li>When there are stand alone checkboxes to tick off an agreement or detail
-				<li>In checklists, particularly where the checklist items have longer text associated to each checkbox
-		<p>Use the larger checkboxes for questions and wizard patterns</p>
-
-
-
-		<section class="alert alert-warning">
-      <h3>Changes to impaired driving and cannabis-related crime laws</h3>
-      <p><a href="https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/impaired-driving-cannabis-penalties-affect-immigration-status.html">New penalties for impaired driving and cannabis-related crimes may affect your immigration status in Canada</a>. If you commit one of these crimes, you may not be able to come to or stay in Canada.</p>
-    </section>
+		<div class="mrgn-tp-lg callout">
+			<legend class="h5 ">What is your marital status?</legend>
+			<ul class="list-unstyled can-ca-form">
+				<li class="radio">
+					<input id="married" type="radio" name="marital-status">
+					<label for="married">Married</label>
+				</li>
+				<li class="radio">
+					<input id="single" type="radio" name="marital-status">
+					<label for="single">Single</label>
+				</li>
+				<li class="radio">
+					<input id="divorced" type="radio" name="marital-status">
+					<label for="divorced">Divorced</label>
+				</li>
+				<li class="radio">
+					<input id="widowed" type="radio" name="marital-status">
+					<label for="widowed">Widowed</label>
+				</li>
+				<li class="radio">
+					<input id="separated" type="radio" name="marital-status">
+					<label for="separated">Seperated</label>
+				</li>
+				<li class="radio">
+					<input id="common-law" type="radio" name="marital-status">
+					<label for="common-law">Common law</label>
+				</li>
+			</ul>
+			<input type="submit" value="Continue" class="btn btn-primary mrgn-bttm-md">
+		</div>
 		<details>
 			<summary>Code</summary>
-			<pre class="prettyprint">
-			&#x3C;section class=&#x22;alert alert-warning&#x22;&#x3E;
-			 &#x3C;h3&#x3E;Changes to impaired driving and cannabis-related crime laws&#x3C;/h3&#x3E;
-			 &#x3C;p&#x3E;&#x3C;a href=&#x22;https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/impaired-driving-cannabis-penalties-affect-immigration-status.html&#x22;&#x3E;New penalties for impaired driving and cannabis-related crimes may affect your immigration status in Canada&#x3C;/a&#x3E;. If you commit one of these crimes, you may not be able to come to or stay in Canada.&#x3C;/p&#x3E;
-			&#x3C;/section&#x3E;
-			</pre>
+			<pre class="prettyprint"><code>&#x3C;legend class=&#x22;h5 &#x22;&#x3E;What is your marital status?&#x3C;/legend&#x3E;
+ &#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
+  &#x3C;li class=&#x22;radio&#x22;&#x3E;
+   &#x3C;input id=&#x22;married&#x22; type=&#x22;radio&#x22; name=&#x22;marital-status&#x22;&#x3E;
+   &#x3C;label for=&#x22;married&#x22;&#x3E;Married&#x3C;/label&#x3E;
+  &#x3C;/li&#x3E;
+  &#x3C;li class=&#x22;radio&#x22;&#x3E;
+   &#x3C;input id=&#x22;single&#x22; type=&#x22;radio&#x22; name=&#x22;marital-status&#x22;&#x3E;
+   &#x3C;label for=&#x22;single&#x22;&#x3E;Single&#x3C;/label&#x3E;
+  &#x3C;/li&#x3E;
+  &#x3C;li class=&#x22;radio&#x22;&#x3E;
+   &#x3C;input id=&#x22;divorced&#x22; type=&#x22;radio&#x22; name=&#x22;marital-status&#x22;&#x3E;
+   &#x3C;label for=&#x22;divorced&#x22;&#x3E;Divorced&#x3C;/label&#x3E;
+  &#x3C;/li&#x3E;
+  &#x3C;li class=&#x22;radio&#x22;&#x3E;
+   &#x3C;input id=&#x22;widowed&#x22; type=&#x22;radio&#x22; name=&#x22;marital-status&#x22;&#x3E;
+   &#x3C;label for=&#x22;widowed&#x22;&#x3E;Widowed&#x3C;/label&#x3E;
+  &#x3C;/li&#x3E;
+  &#x3C;li class=&#x22;radio&#x22;&#x3E;
+   &#x3C;input id=&#x22;separated&#x22; type=&#x22;radio&#x22; name=&#x22;marital-status&#x22;&#x3E;
+   &#x3C;label for=&#x22;separated&#x22;&#x3E;Seperated&#x3C;/label&#x3E;
+  &#x3C;/li&#x3E;
+  &#x3C;li class=&#x22;radio&#x22;&#x3E;
+   &#x3C;input id=&#x22;common-law&#x22; type=&#x22;radio&#x22; name=&#x22;marital-status&#x22;&#x3E;
+   &#x3C;label for=&#x22;common-law&#x22;&#x3E;Common law&#x3C;/label&#x3E;
+  &#x3C;/li&#x3E;
+ &#x3C;/ul&#x3E;
+&#x3C;input type=&#x22;submit&#x22; value=&#x22;Continue&#x22; class=&#x22;btn btn-primary mrgn-bttm-md&#x22;&#x3E;</code></pre>
 		</details>
-		<h3>Info alert</h3>
-		<p><b>When to use:</b> Use the info alert to draw attention to a clarification, caveat or status of surrounding content.</p>
 
-		<section class="alert alert-info">
-      <h3>Current status of the call for applications: Closed</h3>
-      <p>Thank you for your interest in Canada Summer Jobs. Applications are now closed.</p>
-    </section>
-		<details>
-			<summary>Code</summary>
-			<pre class="prettyprint">
-			&#x3C;section class=&#x22;alert alert-info&#x22;&#x3E;
-			 &#x3C;h3&#x3E;Current status of the call for applications: Closed&#x3C;/h3&#x3E;
-			 &#x3C;p&#x3E;Thank you for your interest in Canada Summer Jobs. Applications are now closed.&#x3C;/p&#x3E;
-			&#x3C;/section&#x3E;
-			</pre>
-		</details>
-		<h3>Success alert</h3>
-		<p><b>When to use:</b> Use success alert to draw attention to a successful action, such as with form validation.</p>
+		<h3>Inline styles</h3>
+		<p><b>When to use:</b> Use inline radio buttons or checkboxes when toggling a page's state or .</p>
 
-		<section class="alert alert-success">
-      <h3>Your request for publicly available data from the list of charities has been successful</h3>
-      <p>The turnaround time to process your request may take up to four (4) weeks. We will contact you if we need more information.</p>
-    </section>
-		<details>
-			<summary>Code</summary>
-			<pre class="prettyprint">
-			&#x3C;section class=&#x22;alert alert-success&#x22;&#x3E;
-			 &#x3C;h3&#x3E;Your request for publicly available data from the List of charities has been successful&#x3C;/h3&#x3E;
-			 &#x3C;p&#x3E;The turnaround time to process your request may take up to four (4) weeks. We will contact you if we need more information.&#x3C;/p&#x3E;
-			&#x3C;/section&#x3E;
-			</pre>
-		</details>
+		<div class="mrgn-tp-lg callout">
+
 
 	</section>
 
