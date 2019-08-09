@@ -44,12 +44,13 @@ input[type="reset"], input[type="button"], input[type="submit"]
   opacity: 0;
 }
 
-.can-ca-form input:disabled {
-  background: #dddddd;
+
+.can-ca-form .is-disabled {
+  opacity: 0.5;
 }
 
-.can-ca-form input:disabled+label {
-  color: #ccc;
+.can-ca-form .is-disabled label {
+  cursor: not-allowed;
 }
 
 .can-ca-form {
