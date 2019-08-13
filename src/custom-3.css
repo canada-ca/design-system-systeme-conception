@@ -234,7 +234,10 @@ input[type="reset"], input[type="button"], input[type="submit"]
 
 }
 
+.remove-width-restriction li, .remove-width-restriction p, .remove-width-restriction h2, .remove-width-restriction h3, .remove-width-restriction h4, .remove-width-restriction h5, .remove-width-restriction h6 {
+    max-width:5000ch!important;
+}
 
 .contact-dl dd, .contact-dl dt {
-  border-top: 0px solid #ccc !important;
+  border-top: 0px solid #ccc!important;
 }

@@ -136,37 +136,236 @@
 	<section>
 		<h2 id="how">When to use and how to implement</h2>
 		<h3 id="telephone-pattern">Telephone channel block</h3>
-		<p><b>When to use:</b> Use the telephone channel block to show details about how to contact the government by phone for an institution or service. Determine whether to use a simple or complex patterns based on your needs.</p>
+		<p><strong>When to use:</strong> Use the telephone channel block to show details about how to contact the government by phone for an institution or service. Determine whether to use a simple or complex patterns based on your needs.</p>
 
-		<div class="wb-tabs">
-			<div class="tabpanels">
-				<details id="complex-telephone-contact" class="checklist-completion-check">
-					<summary>Complex</summary>
-					<div class="callout">
-						<dl class="dl-horizontal contact-dl">
+		<div class="callout">
+			<dl class="dl-horizontal contact-dl">
+				<dt>Before you call</dt>
+				<dd>
+					<p>To verify your identity, you'll need:</p>
+					<ul class="list-unstyled can-ca-form checklist-completion-check">
+						<li class="checkbox checkbox-green">
+							<input type="checkbox" id="checkbox_1" name="before-calling">
+							<label for="checkbox_1">Social Insurance Number</label>
+						</li>
+						<li class="checkbox checkbox-green">
+							<input type="checkbox" id="checkbox_2" name="before-calling">
+							<label for="checkbox_2">Full name and date of birth</label>
+						</li>
+						<li class="checkbox checkbox-green">
+							<input type="checkbox" id="checkbox_3" name="before-calling">
+							<label for="checkbox_3">Your complete address</label>
+						</li>
+					</ul>
+					<p><label class="label label-danger" id="before-calling-label"><span id="before-calling-message">You need all of the above</span> to call</label></p>
+				</dd>
+				<dt>Telephone number</dt>
+				<dd><p><strong>1-800-xxx-xxxx</strong></p><p>Outside Canada and the US*: <br><strong>1-613-xxx-xxxx</strong></p></dd>
+				<dt>Hours</dt>
+				<dd>Hours in local time
+					<table class="table">
+						<thead>
+							<tr>
+								<th class="wb-inv">Day</th>
+								<th class="wb-inv">Hours</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Mon-Fri</td>
+								<td>9am-9pm</td>
+							</tr>
+							<tr>
+								<td>Sat</td>
+								<td>9am-5pm</td>
+							</tr>
+							<tr>
+								<td>Sun</td>
+								<td>Closed</td>
+							</tr>
+						</tbody>
+					</table>
+					<details>
+						<summary>Wait times and holidays</summary>
+						<div class="row">
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="wb-inv">Day</th>
+										<th class="wb-inv">Wait times</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mon-Tue</td>
+										<td>Long wait times</td>
+									</tr>
+									<tr>
+										<td>Wed</td>
+										<td>Medium wait times</td>
+									</tr>
+									<tr>
+										<td>Thu-Sat</td>
+										<td>Short wait times</td>
+									</tr>
+									<tr>
+										<td>Sun</td>
+										<td>Closed</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3 class="h4">Holiday closures 2019:</h3>
+						<ul>
+							<li>April 19 (Good Friday) </li>
+							<li>April 22 (Easter Monday) </li>
+							<li>May 20 (Victoria Day)</li>
+							<li>(etc.)</li>
+						</ul>
+					</details>
+					<small>*When calling outside of Canada lines operate in Eastern time</small>
+				</dd>
+			</dl>
+		</div>
+		<details>
+			<summary>Code</summary>
+			<pre class="prettyprint"><code>&#x3C;dl class=&#x22;dl-horizontal contact-dl&#x22;&#x3E;
+ &#x3C;dt&#x3E;Before you call&#x3C;/dt&#x3E;
+  &#x3C;dd&#x3E;
+   &#x3C;p&#x3E;To verify your identity, you&#x27;ll need:&#x3C;/p&#x3E;
+   &#x3C;ul class=&#x22;list-unstyled can-ca-form checklist-completion-check&#x22;&#x3E;
+    &#x3C;li class=&#x22;checkbox checkbox-green&#x22;&#x3E;
+     &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox_1&#x22; name=&#x22;before-calling&#x22;&#x3E;
+     &#x3C;label for=&#x22;checkbox_1&#x22;&#x3E;Social Insurance Number&#x3C;/label&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;checkbox checkbox-green&#x22;&#x3E;
+     &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox_2&#x22; name=&#x22;before-calling&#x22;&#x3E;
+     &#x3C;label for=&#x22;checkbox_2&#x22;&#x3E;Full name and date of birth&#x3C;/label&#x3E;
+    &#x3C;/li&#x3E;
+    &#x3C;li class=&#x22;checkbox checkbox-green&#x22;&#x3E;
+     &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox_3&#x22; name=&#x22;before-calling&#x22;&#x3E;
+     &#x3C;label for=&#x22;checkbox_3&#x22;&#x3E;Your complete address&#x3C;/label&#x3E;
+    &#x3C;/li&#x3E;
+  &#x3C;/ul&#x3E;
+  &#x3C;p&#x3E;&#x3C;label class=&#x22;label label-danger&#x22; id=&#x22;before-calling-label&#x22;&#x3E;&#x3C;span id=&#x22;before-calling-message&#x22;&#x3E;You need all of the above&#x3C;/span&#x3E; to call&#x3C;/label&#x3E;&#x3C;/p&#x3E;
+ &#x3C;/dd&#x3E;
+ &#x3C;dt&#x3E;Telephone number&#x3C;/dt&#x3E;
+ &#x3C;dd&#x3E;&#x3C;p&#x3E;&#x3C;b&#x3E;1-800-xxx-xxxx&#x3C;/b&#x3E;&#x3C;/p&#x3E;&#x3C;p&#x3E;Outside Canada and the US*: &#x3C;br&#x3E;&#x3C;b&#x3E;1-613-xxx-xxxx&#x3C;/b&#x3E;&#x3C;/p&#x3E;&#x3C;/dd&#x3E;
+ &#x3C;dt&#x3E;Hours&#x3C;/dt&#x3E;
+ &#x3C;dd&#x3E;Hours in local time
+  &#x3C;table class=&#x22;table&#x22;&#x3E;
+   &#x3C;thead&#x3E;
+    &#x3C;tr&#x3E;
+     &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Day&#x3C;/th&#x3E;
+     &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Hours&#x3C;/th&#x3E;
+    &#x3C;/tr&#x3E;
+   &#x3C;/thead&#x3E;
+   &#x3C;tbody&#x3E;
+    &#x3C;tr&#x3E;
+     &#x3C;td&#x3E;Mon-Fri&#x3C;/td&#x3E;
+     &#x3C;td&#x3E;9am-9pm&#x3C;/td&#x3E;
+    &#x3C;/tr&#x3E;
+    &#x3C;tr&#x3E;
+     &#x3C;td&#x3E;Sat&#x3C;/td&#x3E;
+     &#x3C;td&#x3E;9am-5pm&#x3C;/td&#x3E;
+    &#x3C;/tr&#x3E;
+    &#x3C;tr&#x3E;
+     &#x3C;td&#x3E;Sun&#x3C;/td&#x3E;
+     &#x3C;td&#x3E;Closed&#x3C;/td&#x3E;
+    &#x3C;/tr&#x3E;
+   &#x3C;/tbody&#x3E;
+  &#x3C;/table&#x3E;
+  &#x3C;details&#x3E;
+   &#x3C;summary&#x3E;Wait times and holidays&#x3C;/summary&#x3E;
+   &#x3C;div class=&#x22;row&#x22;&#x3E;
+    &#x3C;table class=&#x22;table&#x22;&#x3E;
+     &#x3C;thead&#x3E;
+      &#x3C;tr&#x3E;
+       &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Day&#x3C;/th&#x3E;
+       &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Wait times&#x3C;/th&#x3E;
+      &#x3C;/tr&#x3E;
+     &#x3C;/thead&#x3E;
+     &#x3C;tbody&#x3E;
+      &#x3C;tr&#x3E;
+       &#x3C;td&#x3E;Mon-Tue&#x3C;/td&#x3E;
+       &#x3C;td&#x3E;Long wait times&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+      &#x3C;tr&#x3E;
+       &#x3C;td&#x3E;Wed&#x3C;/td&#x3E;
+       &#x3C;td&#x3E;Medium wait times&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+      &#x3C;tr&#x3E;
+       &#x3C;td&#x3E;Thu-Sat&#x3C;/td&#x3E;
+       &#x3C;td&#x3E;Short wait times&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+      &#x3C;tr&#x3E;
+       &#x3C;td&#x3E;Sun&#x3C;/td&#x3E;
+       &#x3C;td&#x3E;Closed&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+     &#x3C;/tbody&#x3E;
+    &#x3C;/table&#x3E;
+   &#x3C;/div&#x3E;
+   &#x3C;h3 class=&#x22;h4&#x22;&#x3E;Holiday closures 2019:&#x3C;/h3&#x3E;
+   &#x3C;ul&#x3E;
+    &#x3C;li&#x3E;April 19 (Good Friday) &#x3C;/li&#x3E;
+    &#x3C;li&#x3E;April 22 (Easter Monday) &#x3C;/li&#x3E;
+    &#x3C;li&#x3E;May 20 (Victoria Day)&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;(etc.)&#x3C;/li&#x3E;
+   &#x3C;/ul&#x3E;
+  &#x3C;/details&#x3E;
+  &#x3C;small&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
+ &#x3C;/dd&#x3E;
+&#x3C;/dl&#x3E;</code></pre>
+			<div class="remove-width-restriction">
+				<h4>Note:</h4>
+				<ul>
+					<li><strong>Using a details summary:</strong> When using the checklist that checks completion in a details summary, the class "checklist-completion-check" must be applied to the details tag instead of the unordered list tag</li>
+				</ul>
+			</div>
+		</details>
+
+		<h3 id="multi-channel">Multi-channel contact block</h3>
+		<p><strong>When to use:</strong> If there's more than one way to contact or an online self-serve way in addition to ways to contact, use the multi-channel contact block.</p>
+		<p><strong>What to avoid:</strong> Do not make all channels visible. Decide on the best option and use progressive disclosure to make the choice between secondary options easier and conscious on the part of the user.</p>
+
+		<div class="callout">
+			<dl class="dl-horizontal contact-dl">
+				<dt>Online:</dt>
+				<dd>
+					<p>Change your address by signing in.</p>
+					<div class="mrgn-tp-lg">
+						<a href="" class="btn btn-call-to-action">Sign in to an online account</a>  <span class="register"><a href="">Register</a></span>
+					</div>
+					<p><b>Alternative:</b> <a href="">Use a mobile application</a></p>
+				</dd>
+				<dt>By phone:</dt>
+				<dd>
+					<details class="checklist-completion-check">
+						<summary>Call us to change your address</summary>
+						<dl class="dl-horizontal">
 							<dt>Before you call</dt>
 							<dd>
 								<p>To verify your identity, you'll need:</p>
 								<ul class="list-unstyled can-ca-form">
 									<li class="checkbox checkbox-green">
-										<input type="checkbox" id="checkbox_1" name="before-calling">
-										<label for="checkbox_1">Social Insurance Number</label>
+										<input type="checkbox" id="checkbox_4" name="before-calling-multi">
+										<label for="checkbox_4">Social Insurance Number</label>
 									</li>
 									<li class="checkbox checkbox-green">
-										<input type="checkbox" id="checkbox_2" name="before-calling">
-										<label for="checkbox_2">Full name and date of birth</label>
+										<input type="checkbox" id="checkbox_5" name="before-calling-multi">
+										<label for="checkbox_5">Full name and date of birth</label>
 									</li>
 									<li class="checkbox checkbox-green">
-										<input type="checkbox" id="checkbox_3" name="before-calling">
-										<label for="checkbox_3">Your complete address</label>
+										<input type="checkbox" id="checkbox_6" name="before-calling-multi">
+										<label for="checkbox_6">Your complete address</label>
 									</li>
 								</ul>
-								<p><label class="label label-danger" id="before-calling-label"><span id="before-calling-message">You need all of the above</span> to call</label></p>
+								<p><label class="label label-danger" id="before-calling-multi-label"><span id="before-calling-multi-message">You need all of the above</span> to call</label></p>
 							</dd>
 							<dt>Telephone number</dt>
-							<dd><p><b>1-800-959-8281</b></p><p>Yukon, Northwest Territories and Nunavut:<br> <b>1-866-426-1527</b></p><p>Outside Canada and the US*: <br><b>613-940-8495</b></p></dd>
+							<dd><p><strong>1-800-xxx-xxxx</strong></p><p>Outside Canada and the US*: <br><strong>1-613-xxx-xxxx</strong></p></dd>
 							<dt>Hours</dt>
-							<dd>Hours in local time<br><b>Extended tax season<br></b>
+							<dd>Hours in local time
 								<table class="table">
 									<thead>
 										<tr>
@@ -192,7 +391,295 @@
 								<details>
 									<summary>Wait times and holidays</summary>
 									<div class="row">
-										<div>
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="wb-inv">Day</th>
+													<th class="wb-inv">Wait times</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mon-Tue</td>
+													<td>Long wait times</td>
+												</tr>
+												<tr>
+													<td>Wed</td>
+													<td>Medium wait times</td>
+												</tr>
+												<tr>
+													<td>Thu-Sat</td>
+													<td>Short wait times</td>
+												</tr>
+												<tr>
+													<td>Sun</td>
+													<td>Closed</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<h3 class="h4">Holiday closures 2019:</h3>
+									<ul>
+										<li>April 19 (Good Friday) </li>
+										<li>April 22 (Easter Monday) </li>
+										<li>May 20 (Victoria Day)</li>
+										<li>(etc.)</li>
+									</ul>
+								</details>
+								<small>*When calling outside of Canada lines operate in Eastern time</small>
+							</dd>
+							<details>
+								<summary>Avoid waiting on the phone line</summary>
+								<ul>
+									<li><a href="">Benefits of signing up for an online account</a></li>
+								</ul>
+							</details>
+							<details>
+								<summary>If you are contacting us on someone else's behalf</summary>
+								<p>Any additional info needed goes here.</p>
+							</details>
+						</dl>
+					</details>
+				</dd>
+				<dt>By mail:</dt>
+				<dd>
+					<details>
+						<summary>Mail a form to change your address</summary>
+						<div class="alert alert-info">
+							<p><strong>Processing time</strong>: it may take up to x weeks to change your address by mail.</p>
+						</div>
+						<ol>
+							<li>Complete the <a href="">Address change form</a></li>
+							<li>Mail the completed form to the address on the form</li>
+						</ol>
+						<p>Note that you can change someone else’s address at the same time as yours, such as your spouse’s or common-law partner’s. Your letter must also include the name, social insurance number, and signature of that individual.</p>
+					</details>
+				</dd>
+			</dl>
+		</div>
+		<details>
+			<summary>Code</summary>
+			<pre class="prettyprint"><code>&#x3C;dl class=&#x22;dl-horizontal contact-dl&#x22;&#x3E;
+ &#x3C;dt&#x3E;Online:&#x3C;/dt&#x3E;
+ &#x3C;dd&#x3E;
+  &#x3C;p&#x3E;Change your address by signing in.&#x3C;/p&#x3E;
+  &#x3C;div class=&#x22;mrgn-tp-lg&#x22;&#x3E;
+   &#x3C;a href=&#x22;&#x22; class=&#x22;btn btn-call-to-action&#x22;&#x3E;Sign in to an online account&#x3C;/a&#x3E;  &#x3C;span class=&#x22;register&#x22;&#x3E;&#x3C;a href=&#x22;&#x22;&#x3E;Register&#x3C;/a&#x3E;&#x3C;/span&#x3E;
+  &#x3C;/div&#x3E;
+  &#x3C;p&#x3E;&#x3C;b&#x3E;Alternative:&#x3C;/b&#x3E; &#x3C;a href=&#x22;&#x22;&#x3E;Use a mobile application&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+ &#x3C;/dd&#x3E;
+ &#x3C;dt&#x3E;By phone:&#x3C;/dt&#x3E;
+ &#x3C;dd&#x3E;
+  &#x3C;details class=&#x22;checklist-completion-check&#x22;&#x3E;
+   &#x3C;summary&#x3E;Call us to change your address&#x3C;/summary&#x3E;
+   &#x3C;dl class=&#x22;dl-horizontal&#x22;&#x3E;
+    &#x3C;dt&#x3E;Before you call&#x3C;/dt&#x3E;
+    &#x3C;dd&#x3E;
+     &#x3C;p&#x3E;To verify your identity, you&#x27;ll need:&#x3C;/p&#x3E;
+     &#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
+      &#x3C;li class=&#x22;checkbox checkbox-green&#x22;&#x3E;
+       &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox_4&#x22; name=&#x22;before-calling-multi&#x22;&#x3E;
+       &#x3C;label for=&#x22;checkbox_4&#x22;&#x3E;Social Insurance Number&#x3C;/label&#x3E;
+      &#x3C;/li&#x3E;
+      &#x3C;li class=&#x22;checkbox checkbox-green&#x22;&#x3E;
+       &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox_5&#x22; name=&#x22;before-calling-multi&#x22;&#x3E;
+       &#x3C;label for=&#x22;checkbox_5&#x22;&#x3E;Full name and date of birth&#x3C;/label&#x3E;
+      &#x3C;/li&#x3E;
+      &#x3C;li class=&#x22;checkbox checkbox-green&#x22;&#x3E;
+       &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox_6&#x22; name=&#x22;before-calling-multi&#x22;&#x3E;
+       &#x3C;label for=&#x22;checkbox_6&#x22;&#x3E;Your complete address&#x3C;/label&#x3E;
+      &#x3C;/li&#x3E;
+     &#x3C;/ul&#x3E;
+     &#x3C;p&#x3E;&#x3C;label class=&#x22;label label-danger&#x22; id=&#x22;before-calling-multi-label&#x22;&#x3E;&#x3C;span id=&#x22;before-calling-multi-message&#x22;&#x3E;You need all of the above&#x3C;/span&#x3E; to call&#x3C;/label&#x3E;&#x3C;/p&#x3E;
+    &#x3C;/dd&#x3E;
+    &#x3C;dt&#x3E;Telephone number&#x3C;/dt&#x3E;
+    &#x3C;dd&#x3E;&#x3C;p&#x3E;&#x3C;strong&#x3E;1-800-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;p&#x3E;Outside Canada and the US*: &#x3C;br&#x3E;&#x3C;strong&#x3E;1-613-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;/dd&#x3E;
+    &#x3C;dt&#x3E;Hours&#x3C;/dt&#x3E;
+    &#x3C;dd&#x3E;Hours in local time
+     &#x3C;table class=&#x22;table&#x22;&#x3E;
+      &#x3C;thead&#x3E;
+       &#x3C;tr&#x3E;
+        &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Day&#x3C;/th&#x3E;
+        &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Hours&#x3C;/th&#x3E;
+       &#x3C;/tr&#x3E;
+      &#x3C;/thead&#x3E;
+      &#x3C;tbody&#x3E;
+       &#x3C;tr&#x3E;
+        &#x3C;td&#x3E;Mon-Fri&#x3C;/td&#x3E;
+        &#x3C;td&#x3E;9am-9pm&#x3C;/td&#x3E;
+       &#x3C;/tr&#x3E;
+       &#x3C;tr&#x3E;
+        &#x3C;td&#x3E;Sat&#x3C;/td&#x3E;
+        &#x3C;td&#x3E;9am-5pm&#x3C;/td&#x3E;
+       &#x3C;/tr&#x3E;
+       &#x3C;tr&#x3E;
+        &#x3C;td&#x3E;Sun&#x3C;/td&#x3E;
+        &#x3C;td&#x3E;Closed&#x3C;/td&#x3E;
+       &#x3C;/tr&#x3E;
+      &#x3C;/tbody&#x3E;
+     &#x3C;/table&#x3E;
+     &#x3C;details&#x3E;
+      &#x3C;summary&#x3E;Wait times and holidays&#x3C;/summary&#x3E;
+      &#x3C;div class=&#x22;row&#x22;&#x3E;
+       &#x3C;table class=&#x22;table&#x22;&#x3E;
+        &#x3C;thead&#x3E;
+         &#x3C;tr&#x3E;
+          &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Day&#x3C;/th&#x3E;
+          &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Wait times&#x3C;/th&#x3E;
+         &#x3C;/tr&#x3E;
+        &#x3C;/thead&#x3E;
+        &#x3C;tbody&#x3E;
+         &#x3C;tr&#x3E;
+          &#x3C;td&#x3E;Mon-Tue&#x3C;/td&#x3E;
+          &#x3C;td&#x3E;Long wait times&#x3C;/td&#x3E;
+         &#x3C;/tr&#x3E;
+         &#x3C;tr&#x3E;
+          &#x3C;td&#x3E;Wed&#x3C;/td&#x3E;
+          &#x3C;td&#x3E;Medium wait times&#x3C;/td&#x3E;
+         &#x3C;/tr&#x3E;
+         &#x3C;tr&#x3E;
+          &#x3C;td&#x3E;Thu-Sat&#x3C;/td&#x3E;
+          &#x3C;td&#x3E;Short wait times&#x3C;/td&#x3E;
+         &#x3C;/tr&#x3E;
+         &#x3C;tr&#x3E;
+          &#x3C;td&#x3E;Sun&#x3C;/td&#x3E;
+          &#x3C;td&#x3E;Closed&#x3C;/td&#x3E;
+         &#x3C;/tr&#x3E;
+        &#x3C;/tbody&#x3E;
+       &#x3C;/table&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;h3 class=&#x22;h4&#x22;&#x3E;Holiday closures 2019:&#x3C;/h3&#x3E;
+      &#x3C;ul&#x3E;
+       &#x3C;li&#x3E;April 19 (Good Friday) &#x3C;/li&#x3E;
+       &#x3C;li&#x3E;April 22 (Easter Monday) &#x3C;/li&#x3E;
+       &#x3C;li&#x3E;May 20 (Victoria Day)&#x3C;/li&#x3E;
+       &#x3C;li&#x3E;(etc.)&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+     &#x3C;/details&#x3E;
+     &#x3C;small&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
+    &#x3C;/dd&#x3E;
+    &#x3C;details&#x3E;
+     &#x3C;summary&#x3E;Avoid waiting on the phone line&#x3C;/summary&#x3E;
+     &#x3C;ul&#x3E;
+      &#x3C;li&#x3E;&#x3C;a href=&#x22;&#x22;&#x3E;Benefits of signing up for an online account&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+     &#x3C;/ul&#x3E;
+    &#x3C;/details&#x3E;
+    &#x3C;details&#x3E;
+     &#x3C;summary&#x3E;If you are contacting us on someone else&#x27;s behalf&#x3C;/summary&#x3E;
+     &#x3C;p&#x3E;Any additional info needed goes here.&#x3C;/p&#x3E;
+    &#x3C;/details&#x3E;
+   &#x3C;/dl&#x3E;
+  &#x3C;/details&#x3E;
+ &#x3C;/dd&#x3E;
+ &#x3C;dt&#x3E;By mail:&#x3C;/dt&#x3E;
+ &#x3C;dd&#x3E;
+  &#x3C;details&#x3E;
+   &#x3C;summary&#x3E;Mail a form to change your address&#x3C;/summary&#x3E;
+   &#x3C;div class=&#x22;alert alert-info&#x22;&#x3E;
+    &#x3C;p&#x3E;&#x3C;strong&#x3E;Processing time&#x3C;/strong&#x3E;: it may take up to x weeks to change your address by mail.&#x3C;/p&#x3E;
+   &#x3C;/div&#x3E;
+   &#x3C;ol&#x3E;
+    &#x3C;li&#x3E;Complete the &#x3C;a href=&#x22;&#x22;&#x3E;Address change form&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;Mail the completed form to the address on the form&#x3C;/li&#x3E;
+   &#x3C;/ol&#x3E;
+   &#x3C;p&#x3E;Note that you can change someone else&#x2019;s address at the same time as yours, such as your spouse&#x2019;s or common-law partner&#x2019;s. Your letter must also include the name, social insurance number, and signature of that individual.&#x3C;/p&#x3E;
+  &#x3C;/details&#x3E;
+ &#x3C;/dd&#x3E;
+&#x3C;/dl&#x3E;</code></pre>
+			<div class="remove-width-restriction">
+				<h4>Note:</h4>
+				<ul>
+					<li><strong>Using a details summary:</strong> When using the checklist that checks completion in a details summary, the class "checklist-completion-check" must be applied to the details tag. If not, then it should be applied instead of the unordered list tag of the checkboxes.</li>
+				</ul>
+			</div>
+		</details>
+
+		<h3 id="multi-channel-multi-context">Multi-channel multi-context contact block</h3>
+		<p><strong>When to use:</strong> If there's more than one way to contact or an online self-serve way in addition to ways to contact for a type of service, but it is served differently for different contexts, use the multi-channel multi-context contact block.</p>
+
+		<div class="callout">
+			<div data-wb-urlmapping='{
+				"p=personal": { "action": "addClass", "class": "hidden" },
+				"p=business": { "action": "addClass", "class": "hidden" }
+			}'>
+				<legend class="h5 ">What type of address do you need to change?</legend>
+				<ul class="list-unstyled can-ca-form" id="multi-context-chooser">
+					<li class="radio">
+						<input id="personal-context" type="radio" name="multi-context-chooser">
+						<label for="personal-context">a personal address</label>
+					</li>
+					<li class="radio">
+						<input id="business-context" type="radio" name="multi-context-chooser">
+						<label for="business-context">a business address</label>
+					</li>
+				</ul>
+			</div>
+			<a href="#personal" id="personal-btn" class="btn btn-primary hidden">Continue</a>
+			<a href="#business" id="business-btn" class="btn btn-primary hidden">Continue</a>
+			<div data-wb-urlmapping='{ "p=personal": { "action": "removeClass", "class": "hidden" } }' class="hidden mrgn-bttm-lg mrgn-tp-lg" id="personal">
+				<h2 class="h3">Change a personal address</h2>
+				<dl class="dl-horizontal contact-dl">
+					<dt>Online:</dt>
+					<dd>
+						<p>Change your address by signing in.</p>
+						<div class="mrgn-tp-lg">
+							<a href="" class="btn btn-call-to-action">Sign in to an online account</a>  <span class="register"><a href="">Register</a></span>
+						</div>
+						<p><b>Alternative:</b> <a href="">Use a mobile application</a></p>
+					</dd>
+					<dt>By phone:</dt>
+					<dd>
+						<details class="checklist-completion-check">
+							<summary>Call us to change your address</summary>
+							<dl class="dl-horizontal">
+								<dt>Before you call</dt>
+								<dd>
+									<p>To verify your identity, you'll need:</p>
+									<ul class="list-unstyled can-ca-form">
+										<li class="checkbox checkbox-green">
+											<input type="checkbox" id="checkbox_7" name="before-calling-multi-personal">
+											<label for="checkbox_7">Social Insurance Number</label>
+										</li>
+										<li class="checkbox checkbox-green">
+											<input type="checkbox" id="checkbox_8" name="before-calling-multi-personal">
+											<label for="checkbox_8">Full name and date of birth</label>
+										</li>
+										<li class="checkbox checkbox-green">
+											<input type="checkbox" id="checkbox_9" name="before-calling-multi-personal">
+											<label for="checkbox_9">Your complete address</label>
+										</li>
+									</ul>
+									<p><label class="label label-danger" id="before-calling-multi-personal-label"><span id="before-calling-multi-personal-message">You need all of the above</span> to call</label></p>
+								</dd>
+								<dt>Telephone number</dt>
+								<dd><p><strong>1-800-xxx-xxxx</strong></p><p>Outside Canada and the US*: <br><strong>1-613-xxx-xxxx</strong></p></dd>
+								<dt>Hours</dt>
+								<dd>Hours in local time
+									<table class="table">
+										<thead>
+											<tr>
+												<th class="wb-inv">Day</th>
+												<th class="wb-inv">Hours</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Mon-Fri</td>
+												<td>9am-9pm</td>
+											</tr>
+											<tr>
+												<td>Sat</td>
+												<td>9am-5pm</td>
+											</tr>
+											<tr>
+												<td>Sun</td>
+												<td>Closed</td>
+											</tr>
+										</tbody>
+									</table>
+									<details>
+										<summary>Wait times and holidays</summary>
+										<div class="row">
 											<table class="table">
 												<thead>
 													<tr>
@@ -216,192 +703,480 @@
 													<tr>
 														<td>Sun</td>
 														<td>Closed</td>
-														<td></td>
 													</tr>
 												</tbody>
 											</table>
 										</div>
-									</div>
-									<h3 class="h4">Holiday closures 2019:</h3>
+										<h3 class="h4">Holiday closures 2019:</h3>
+										<ul>
+											<li>April 19 (Good Friday) </li>
+											<li>April 22 (Easter Monday) </li>
+											<li>May 20 (Victoria Day)</li>
+											<li>(etc.)</li>
+										</ul>
+									</details>
+									<small>*When calling outside of Canada lines operate in Eastern time</small>
+								</dd>
+								<details>
+									<summary>Avoid waiting on the phone line</summary>
 									<ul>
-										<li>April 19 (Good Friday) </li>
-										<li>April 22 (Easter Monday) </li>
-										<li>May 20 (Victoria Day)</li>
-										<li>(etc.)</li>
+										<li><a href="">Benefits of signing up for an online account</a></li>
 									</ul>
 								</details>
-								<small>*When calling outside of Canada lines operate in Eastern time</small>
-							</dd>
-						</dl>
-					</div>
-					<details>
-						<summary>Code</summary>
-						<pre class="prettyprint"><code>
-</code></pre>
-						<p><b>Using the label to show all  list:</b> Keep in mind that:
-							<ul>
-								<li>When using the checklist that checks completion in a details summary, the class "checklist-completion-check" must be applied to the details tag instead of the unordered list tag</li>
-								<li>The id attribute of the span for the completion message, must be the same as the checkbox group's name attribute with "-message" added to the end</li>
-							</ul>
-						</p>
-					</details>
-				</details>
-				<details id="simple-telephone-contact">
-					<summary>Simple</summary>
-					<div class="callout">
-
-					</div>
-					<details>
-						<summary>Code</summary>
-						<pre class="prettyprint"><code>
-</code></pre>
-					</details>
-				</details>
+								<details>
+									<summary>If you are contacting us on someone else's behalf</summary>
+									<p>Any additional info needed goes here.</p>
+								</details>
+							</dl>
+						</details>
+					</dd>
+					<dt>By mail:</dt>
+					<dd>
+						<details>
+							<summary>Mail a form to change your address</summary>
+							<div class="alert alert-info">
+								<p><strong>Processing time</strong>: it may take up to x weeks to change your address by mail.</p>
+							</div>
+							<ol>
+								<li>Complete the <a href="">Address change form</a></li>
+								<li>Mail the completed form to the address on the form</li>
+							</ol>
+							<p>Note that you can change someone else’s address at the same time as yours, such as your spouse’s or common-law partner’s. Your letter must also include the name, social insurance number, and signature of that individual.</p>
+						</details>
+					</dd>
+				</dl>
 			</div>
-		</div>
-
-
-
-		<h3 id="multi-channel">Multi-channel contact block</h3>
-		<p><b>When to use:</b> Use small checkboxes when making a checklist or when there is a single item that can be checked.</p>
-		<p><b>What to avoid:</b> Do not use these larger checkboxes when you are making a checklist or when there is a single item that is being checked. For these situations, use the <a href="#small-checkbox-component">small checkboxes</a> below.</p>
-
-
-		<div class="wb-tabs">
-			<div class="tabpanels">
-				<details id="single-small-checkbox-example">
-					<summary>Single item</summary>
-					<div class="callout">
-						<ul class="list-unstyled can-ca-form">
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="confirmation-checkbox">
-								<label for="confirmation-checkbox">Home address is the same as mailing address</label>
-							</li>
-						</ul>
-					</div>
-					<details>
-						<summary>Code</summary>
-						<pre class="prettyprint"><code>&#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
- &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
-  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;confirmation-checkbox&#x22;&#x3E;
-  &#x3C;label for=&#x22;confirmation-checkbox&#x22;&#x3E;Home address is the same as mailing address&#x3C;/label&#x3E;
- &#x3C;/li&#x3E;
-&#x3C;/ul&#x3E;</code></pre>
-					</details>
-				</details>
-				<details id="checklist-small-checkbox-example">
-					<summary>Checklist</summary>
-					<div class="callout">
-						<p>To be eligible, you must meet all of the following conditions:</p>
-						<ul class="list-unstyled can-ca-form">
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility-checkbox1">
-								<label for="elibility-checkbox1">You have a cat</label>
-							</li>
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility-checkbox2">
-								<label for="elibility-checkbox2">You have a dog</label>
-							</li>
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility-checkbox3">
-								<label for="elibility-checkbox3">You have a goldfish</label>
-							</li>
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility-checkbox4">
-								<label for="elibility-checkbox4">You have a hamster</label>
-							</li>
-						</ul>
-					</div>
-					<details>
-						<summary>Code</summary>
-						<pre class="prettyprint"><code>&#x3C;p&#x3E;To be eligible, you must meet all of the following conditions:&#x3C;/p&#x3E;
-&#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
- &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
-  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility-checkbox1&#x22;&#x3E;
-  &#x3C;label for=&#x22;elibility-checkbox1&#x22;&#x3E;You have a cat&#x3C;/label&#x3E;
- &#x3C;/li&#x3E;
- &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
-  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility-checkbox2&#x22;&#x3E;
-  &#x3C;label for=&#x22;elibility-checkbox2&#x22;&#x3E;You have a dog&#x3C;/label&#x3E;
- &#x3C;/li&#x3E;
- &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
-  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility-checkbox3&#x22;&#x3E;
-  &#x3C;label for=&#x22;elibility-checkbox3&#x22;&#x3E;You have a goldfish&#x3C;/label&#x3E;
- &#x3C;/li&#x3E;
- &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
-  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility-checkbox4&#x22;&#x3E;
-  &#x3C;label for=&#x22;elibility-checkbox4&#x22;&#x3E;You have a hamster&#x3C;/label&#x3E;
- &#x3C;/li&#x3E;
-&#x3C;/ul&#x3E;</code></pre>
-					</details>
-				</details>
+			<div data-wb-urlmapping='{ "p=business": { "action": "removeClass", "class": "hidden" } }' class="hidden mrgn-bttm-lg mrgn-tp-lg" id="business">
+				<h2 class="h3">Change a business address</h2>
+				<dl class="dl-horizontal contact-dl">
+					<dt>Online:</dt>
+					<dd>
+						<p>Change your business address by signing in.</p>
+						<div class="mrgn-tp-lg">
+							<a href="" class="btn btn-call-to-action">Sign in to an online account</a>  <span class="register"><a href="">Register</a></span>
+						</div>
+						<p><b>Alternative:</b> <a href="">Use a mobile application</a></p>
+					</dd>
+					<dt>By phone:</dt>
+					<dd>
+						<details class="checklist-completion-check">
+							<summary>Call us to change your business address</summary>
+							<dl class="dl-horizontal">
+								<dt>Before you call</dt>
+								<dd>
+									<p>To verify your identity, you'll need:</p>
+									<ul class="list-unstyled can-ca-form">
+										<li class="checkbox checkbox-green">
+											<input type="checkbox" id="checkbox_10" name="before-calling-multi-business">
+											<label for="checkbox_10">Business number</label>
+										</li>
+										<li class="checkbox checkbox-green">
+											<input type="checkbox" id="checkbox_11" name="before-calling-multi-business">
+											<label for="checkbox_11">Business name</label>
+										</li>
+										<li class="checkbox checkbox-green">
+											<input type="checkbox" id="checkbox_12" name="before-calling-multi-business">
+											<label for="checkbox_12">Your business address</label>
+										</li>
+									</ul>
+									<p><label class="label label-danger" id="before-calling-multi-business-label"><span id="before-calling-multi-business-message">You need all of the above</span> to call</label></p>
+								</dd>
+								<dt>Telephone number</dt>
+								<dd><p><strong>1-800-xxx-xxxx</strong></p><p>Outside Canada and the US*: <br><strong>1-613-xxx-xxxx</strong></p></dd>
+								<dt>Hours</dt>
+								<dd>Hours in local time
+									<table class="table">
+										<thead>
+											<tr>
+												<th class="wb-inv">Day</th>
+												<th class="wb-inv">Hours</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Mon-Fri</td>
+												<td>9am-9pm</td>
+											</tr>
+											<tr>
+												<td>Sat</td>
+												<td>9am-5pm</td>
+											</tr>
+											<tr>
+												<td>Sun</td>
+												<td>Closed</td>
+											</tr>
+										</tbody>
+									</table>
+									<details>
+										<summary>Wait times and holidays</summary>
+										<div class="row">
+											<table class="table">
+												<thead>
+													<tr>
+														<th class="wb-inv">Day</th>
+														<th class="wb-inv">Wait times</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Mon-Tue</td>
+														<td>Long wait times</td>
+													</tr>
+													<tr>
+														<td>Wed</td>
+														<td>Medium wait times</td>
+													</tr>
+													<tr>
+														<td>Thu-Sat</td>
+														<td>Short wait times</td>
+													</tr>
+													<tr>
+														<td>Sun</td>
+														<td>Closed</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<h3 class="h4">Holiday closures 2019:</h3>
+										<ul>
+											<li>April 19 (Good Friday) </li>
+											<li>April 22 (Easter Monday) </li>
+											<li>May 20 (Victoria Day)</li>
+											<li>(etc.)</li>
+										</ul>
+									</details>
+									<small>*When calling outside of Canada lines operate in Eastern time</small>
+								</dd>
+								<details>
+									<summary>Avoid waiting on the phone line</summary>
+									<ul>
+										<li><a href="">Benefits of signing up for an online business account</a></li>
+									</ul>
+								</details>
+								<details>
+									<summary>If you are contacting us on someone else's behalf</summary>
+									<p>Any additional info needed goes here.</p>
+								</details>
+							</dl>
+						</details>
+					</dd>
+					<dt>By mail:</dt>
+					<dd>
+						<details>
+							<summary>Mail a form to change your business address</summary>
+							<div class="alert alert-info">
+								<p><strong>Processing time</strong>: it may take up to x weeks to change your address by mail.</p>
+							</div>
+							<ol>
+								<li>Complete the <a href="">Address change form</a></li>
+								<li>Mail the completed form to the address on the form</li>
+							</ol>
+							<p>Note that you can change someone else’s address at the same time as yours, such as your spouse’s or common-law partner’s. Your letter must also include the name, social insurance number, and signature of that individual.</p>
+						</details>
+					</dd>
+				</dl>
 			</div>
-		</div>
-
-		<h3>Radio buttons</h3>
-		<p><b>When to use:</b> Use radio buttons when only one selection can be made.</p>
-
-		<div class="mrgn-tp-lg callout">
-			<legend class="h5 ">What is your marital status?</legend>
-			<ul class="list-unstyled can-ca-form">
-				<li class="radio">
-					<input id="married" type="radio" name="marital-status">
-					<label for="married">Married</label>
-				</li>
-				<li class="radio">
-					<input id="single" type="radio" name="marital-status">
-					<label for="single">Single</label>
-				</li>
-				<li class="radio">
-					<input id="divorced" type="radio" name="marital-status">
-					<label for="divorced">Divorced</label>
-				</li>
-				<li class="radio">
-					<input id="widowed" type="radio" name="marital-status">
-					<label for="widowed">Widowed</label>
-				</li>
-				<li class="radio">
-					<input id="separated" type="radio" name="marital-status">
-					<label for="separated">Seperated</label>
-				</li>
-				<li class="radio">
-					<input id="common-law" type="radio" name="marital-status">
-					<label for="common-law">Common law</label>
-				</li>
-			</ul>
-			<input type="submit" value="Continue" class="btn btn-primary mrgn-bttm-md">
 		</div>
 		<details>
 			<summary>Code</summary>
-			<pre class="prettyprint"><code>&#x3C;legend class=&#x22;h5 &#x22;&#x3E;What is your marital status?&#x3C;/legend&#x3E;
- &#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
-  &#x3C;li class=&#x22;radio&#x22;&#x3E;
-   &#x3C;input id=&#x22;married&#x22; type=&#x22;radio&#x22; name=&#x22;marital-status&#x22;&#x3E;
-   &#x3C;label for=&#x22;married&#x22;&#x3E;Married&#x3C;/label&#x3E;
-  &#x3C;/li&#x3E;
-  &#x3C;li class=&#x22;radio&#x22;&#x3E;
-   &#x3C;input id=&#x22;single&#x22; type=&#x22;radio&#x22; name=&#x22;marital-status&#x22;&#x3E;
-   &#x3C;label for=&#x22;single&#x22;&#x3E;Single&#x3C;/label&#x3E;
-  &#x3C;/li&#x3E;
-  &#x3C;li class=&#x22;radio&#x22;&#x3E;
-   &#x3C;input id=&#x22;divorced&#x22; type=&#x22;radio&#x22; name=&#x22;marital-status&#x22;&#x3E;
-   &#x3C;label for=&#x22;divorced&#x22;&#x3E;Divorced&#x3C;/label&#x3E;
-  &#x3C;/li&#x3E;
-  &#x3C;li class=&#x22;radio&#x22;&#x3E;
-   &#x3C;input id=&#x22;widowed&#x22; type=&#x22;radio&#x22; name=&#x22;marital-status&#x22;&#x3E;
-   &#x3C;label for=&#x22;widowed&#x22;&#x3E;Widowed&#x3C;/label&#x3E;
-  &#x3C;/li&#x3E;
-  &#x3C;li class=&#x22;radio&#x22;&#x3E;
-   &#x3C;input id=&#x22;separated&#x22; type=&#x22;radio&#x22; name=&#x22;marital-status&#x22;&#x3E;
-   &#x3C;label for=&#x22;separated&#x22;&#x3E;Seperated&#x3C;/label&#x3E;
-  &#x3C;/li&#x3E;
-  &#x3C;li class=&#x22;radio&#x22;&#x3E;
-   &#x3C;input id=&#x22;common-law&#x22; type=&#x22;radio&#x22; name=&#x22;marital-status&#x22;&#x3E;
-   &#x3C;label for=&#x22;common-law&#x22;&#x3E;Common law&#x3C;/label&#x3E;
-  &#x3C;/li&#x3E;
- &#x3C;/ul&#x3E;
-&#x3C;input type=&#x22;submit&#x22; value=&#x22;Continue&#x22; class=&#x22;btn btn-primary mrgn-bttm-md&#x22;&#x3E;</code></pre>
+			<pre class="prettyprint"><code>&#x3C;div data-wb-urlmapping=&#x27;{
+ &#x22;p=personal&#x22;: { &#x22;action&#x22;: &#x22;addClass&#x22;, &#x22;class&#x22;: &#x22;hidden&#x22; },
+ &#x22;p=business&#x22;: { &#x22;action&#x22;: &#x22;addClass&#x22;, &#x22;class&#x22;: &#x22;hidden&#x22; }
+}&#x27; class=&#x22;wb-frmvld&#x22;&#x3E;
+ &#x3C;form method=&#x22;get&#x22;&#x3E;
+  &#x3C;!--Smart question!--&#x3E;
+  &#x3C;div id=&#x22;question1&#x22; class=&#x22;wb-fieldflow&#x22; data-wb-fieldflow=&#x27;{
+   &#x22;noForm&#x22;:true,
+   &#x22;renderas&#x22;:&#x22;radio&#x22;,
+   &#x22;base&#x22;: { &#x22;live&#x22;: true },
+   &#x22;noreqlabel&#x22;: true,
+   &#x22;default&#x22;: { &#x22;action&#x22;: &#x22;addClass&#x22;, &#x22;source&#x22;:&#x22;#personal,#personal-btn,#business,#business-btn&#x22;, &#x22;class&#x22;: &#x22;hidden&#x22; }
+  }&#x27;&#x3E;
+   &#x3C;p&#x3E;What type of address do you need to change?&#x3C;/p&#x3E;
+   &#x3C;ul&#x3E;
+    &#x3C;li data-wb-fieldflow=&#x27;[
+     { &#x22;action&#x22;: &#x22;removeClass&#x22;, &#x22;source&#x22;:&#x22;#personal-btn&#x22;, &#x22;class&#x22;: &#x22;hidden&#x22;},
+     { &#x22;action&#x22;: &#x22;removeClass&#x22;, &#x22;source&#x22;:&#x22;#personal&#x22;, &#x22;class&#x22;: &#x22;hidden&#x22;}
+    ]&#x27;&#x3E;a personal address&#x3C;/li&#x3E; &#x3C;!--result--&#x3E;
+    &#x3C;li data-wb-fieldflow=&#x27;[
+     { &#x22;action&#x22;: &#x22;removeClass&#x22;, &#x22;source&#x22;:&#x22;#business-btn&#x22;, &#x22;class&#x22;: &#x22;hidden&#x22;},
+     { &#x22;action&#x22;: &#x22;removeClass&#x22;, &#x22;source&#x22;:&#x22;#business&#x22;, &#x22;class&#x22;: &#x22;hidden&#x22; }
+    ]&#x27;&#x3E;a business address&#x3C;/li&#x3E;
+   &#x3C;/ul&#x3E;
+  &#x3C;/div&#x3E;
+ &#x3C;/form&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;a href=&#x22;#personal&#x22; id=&#x22;personal-btn&#x22; class=&#x22;btn btn-primary hidden&#x22;&#x3E;Continue&#x3C;/a&#x3E;
+&#x3C;a href=&#x22;#business&#x22; id=&#x22;business-btn&#x22; class=&#x22;btn btn-primary hidden&#x22;&#x3E;Continue&#x3C;/a&#x3E;
+&#x3C;div data-wb-urlmapping=&#x27;{ &#x22;p=personal&#x22;: { &#x22;action&#x22;: &#x22;removeClass&#x22;, &#x22;class&#x22;: &#x22;hidden&#x22; } }&#x27; class=&#x22;hidden mrgn-bttm-lg mrgn-tp-lg&#x22; id=&#x22;personal&#x22;&#x3E;
+ &#x3C;h2 class=&#x22;h3&#x22;&#x3E;Change a personal address&#x3C;/h2&#x3E;
+ &#x3C;dl class=&#x22;dl-horizontal contact-dl&#x22;&#x3E;
+  &#x3C;dt&#x3E;Online:&#x3C;/dt&#x3E;
+  &#x3C;dd&#x3E;
+   &#x3C;p&#x3E;Change your address by signing in.&#x3C;/p&#x3E;
+   &#x3C;div class=&#x22;mrgn-tp-lg&#x22;&#x3E;
+    &#x3C;a href=&#x22;&#x22; class=&#x22;btn btn-call-to-action&#x22;&#x3E;Sign in to an online account&#x3C;/a&#x3E;  &#x3C;span class=&#x22;register&#x22;&#x3E;&#x3C;a href=&#x22;&#x22;&#x3E;Register&#x3C;/a&#x3E;&#x3C;/span&#x3E;
+   &#x3C;/div&#x3E;
+   &#x3C;p&#x3E;&#x3C;b&#x3E;Alternative:&#x3C;/b&#x3E; &#x3C;a href=&#x22;&#x22;&#x3E;Use a mobile application&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+  &#x3C;/dd&#x3E;
+  &#x3C;dt&#x3E;By phone:&#x3C;/dt&#x3E;
+  &#x3C;dd&#x3E;
+   &#x3C;details class=&#x22;checklist-completion-check&#x22;&#x3E;
+    &#x3C;summary&#x3E;Call us to change your address&#x3C;/summary&#x3E;
+    &#x3C;dl class=&#x22;dl-horizontal&#x22;&#x3E;
+     &#x3C;dt&#x3E;Before you call&#x3C;/dt&#x3E;
+     &#x3C;dd&#x3E;
+      &#x3C;p&#x3E;To verify your identity, you&#x27;ll need:&#x3C;/p&#x3E;
+      &#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
+       &#x3C;li class=&#x22;checkbox checkbox-green&#x22;&#x3E;
+        &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox_7&#x22; name=&#x22;before-calling-multi-personal&#x22;&#x3E;
+        &#x3C;label for=&#x22;checkbox_7&#x22;&#x3E;Social Insurance Number&#x3C;/label&#x3E;
+       &#x3C;/li&#x3E;
+       &#x3C;li class=&#x22;checkbox checkbox-green&#x22;&#x3E;
+        &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox_8&#x22; name=&#x22;before-calling-multi-personal&#x22;&#x3E;
+        &#x3C;label for=&#x22;checkbox_8&#x22;&#x3E;Full name and date of birth&#x3C;/label&#x3E;
+       &#x3C;/li&#x3E;
+       &#x3C;li class=&#x22;checkbox checkbox-green&#x22;&#x3E;
+        &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox_9&#x22; name=&#x22;before-calling-multi-personal&#x22;&#x3E;
+        &#x3C;label for=&#x22;checkbox_9&#x22;&#x3E;Your complete address&#x3C;/label&#x3E;
+       &#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+      &#x3C;p&#x3E;&#x3C;label class=&#x22;label label-danger&#x22; id=&#x22;before-calling-multi-personal-label&#x22;&#x3E;&#x3C;span id=&#x22;before-calling-multi-personal-message&#x22;&#x3E;You need all of the above&#x3C;/span&#x3E; to call&#x3C;/label&#x3E;&#x3C;/p&#x3E;
+     &#x3C;/dd&#x3E;
+     &#x3C;dt&#x3E;Telephone number&#x3C;/dt&#x3E;
+     &#x3C;dd&#x3E;&#x3C;p&#x3E;&#x3C;strong&#x3E;1-800-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;p&#x3E;Outside Canada and the US*: &#x3C;br&#x3E;&#x3C;strong&#x3E;1-613-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;/dd&#x3E;
+     &#x3C;dt&#x3E;Hours&#x3C;/dt&#x3E;
+     &#x3C;dd&#x3E;Hours in local time
+      &#x3C;table class=&#x22;table&#x22;&#x3E;
+       &#x3C;thead&#x3E;
+        &#x3C;tr&#x3E;
+         &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Day&#x3C;/th&#x3E;
+         &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Hours&#x3C;/th&#x3E;
+        &#x3C;/tr&#x3E;
+       &#x3C;/thead&#x3E;
+       &#x3C;tbody&#x3E;
+        &#x3C;tr&#x3E;
+         &#x3C;td&#x3E;Mon-Fri&#x3C;/td&#x3E;
+         &#x3C;td&#x3E;9am-9pm&#x3C;/td&#x3E;
+        &#x3C;/tr&#x3E;
+        &#x3C;tr&#x3E;
+         &#x3C;td&#x3E;Sat&#x3C;/td&#x3E;
+         &#x3C;td&#x3E;9am-5pm&#x3C;/td&#x3E;
+        &#x3C;/tr&#x3E;
+        &#x3C;tr&#x3E;
+         &#x3C;td&#x3E;Sun&#x3C;/td&#x3E;
+         &#x3C;td&#x3E;Closed&#x3C;/td&#x3E;
+        &#x3C;/tr&#x3E;
+       &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;details&#x3E;
+       &#x3C;summary&#x3E;Wait times and holidays&#x3C;/summary&#x3E;
+       &#x3C;div class=&#x22;row&#x22;&#x3E;
+        &#x3C;table class=&#x22;table&#x22;&#x3E;
+         &#x3C;thead&#x3E;
+          &#x3C;tr&#x3E;
+           &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Day&#x3C;/th&#x3E;
+           &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Wait times&#x3C;/th&#x3E;
+          &#x3C;/tr&#x3E;
+         &#x3C;/thead&#x3E;
+         &#x3C;tbody&#x3E;
+          &#x3C;tr&#x3E;
+           &#x3C;td&#x3E;Mon-Tue&#x3C;/td&#x3E;
+           &#x3C;td&#x3E;Long wait times&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr&#x3E;
+           &#x3C;td&#x3E;Wed&#x3C;/td&#x3E;
+           &#x3C;td&#x3E;Medium wait times&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr&#x3E;
+           &#x3C;td&#x3E;Thu-Sat&#x3C;/td&#x3E;
+           &#x3C;td&#x3E;Short wait times&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr&#x3E;
+           &#x3C;td&#x3E;Sun&#x3C;/td&#x3E;
+           &#x3C;td&#x3E;Closed&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+         &#x3C;/tbody&#x3E;
+        &#x3C;/table&#x3E;
+       &#x3C;/div&#x3E;
+       &#x3C;h3 class=&#x22;h4&#x22;&#x3E;Holiday closures 2019:&#x3C;/h3&#x3E;
+       &#x3C;ul&#x3E;
+        &#x3C;li&#x3E;April 19 (Good Friday) &#x3C;/li&#x3E;
+        &#x3C;li&#x3E;April 22 (Easter Monday) &#x3C;/li&#x3E;
+        &#x3C;li&#x3E;May 20 (Victoria Day)&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;(etc.)&#x3C;/li&#x3E;
+       &#x3C;/ul&#x3E;
+      &#x3C;/details&#x3E;
+      &#x3C;small&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
+     &#x3C;/dd&#x3E;
+     &#x3C;details&#x3E;
+      &#x3C;summary&#x3E;Avoid waiting on the phone line&#x3C;/summary&#x3E;
+      &#x3C;ul&#x3E;
+       &#x3C;li&#x3E;&#x3C;a href=&#x22;&#x22;&#x3E;Benefits of signing up for an online account&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+     &#x3C;/details&#x3E;
+     &#x3C;details&#x3E;
+      &#x3C;summary&#x3E;If you are contacting us on someone else&#x27;s behalf&#x3C;/summary&#x3E;
+      &#x3C;p&#x3E;Any additional info needed goes here.&#x3C;/p&#x3E;
+     &#x3C;/details&#x3E;
+    &#x3C;/dl&#x3E;
+   &#x3C;/details&#x3E;
+  &#x3C;/dd&#x3E;
+  &#x3C;dt&#x3E;By mail:&#x3C;/dt&#x3E;
+  &#x3C;dd&#x3E;
+   &#x3C;details&#x3E;
+    &#x3C;summary&#x3E;Mail a form to change your address&#x3C;/summary&#x3E;
+    &#x3C;div class=&#x22;alert alert-info&#x22;&#x3E;
+     &#x3C;p&#x3E;&#x3C;strong&#x3E;Processing time&#x3C;/strong&#x3E;: it may take up to x weeks to change your address by mail.&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;ol&#x3E;
+     &#x3C;li&#x3E;Complete the &#x3C;a href=&#x22;&#x22;&#x3E;Address change form&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+     &#x3C;li&#x3E;Mail the completed form to the address on the form&#x3C;/li&#x3E;
+    &#x3C;/ol&#x3E;
+    &#x3C;p&#x3E;Note that you can change someone else&#x2019;s address at the same time as yours, such as your spouse&#x2019;s or common-law partner&#x2019;s. Your letter must also include the name, social insurance number, and signature of that individual.&#x3C;/p&#x3E;
+   &#x3C;/details&#x3E;
+  &#x3C;/dd&#x3E;
+ &#x3C;/dl&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div data-wb-urlmapping=&#x27;{ &#x22;p=business&#x22;: { &#x22;action&#x22;: &#x22;removeClass&#x22;, &#x22;class&#x22;: &#x22;hidden&#x22; } }&#x27; class=&#x22;hidden mrgn-bttm-lg mrgn-tp-lg&#x22; id=&#x22;business&#x22;&#x3E;
+ &#x3C;h2 class=&#x22;h3&#x22;&#x3E;Change a business address&#x3C;/h2&#x3E;
+ &#x3C;dl class=&#x22;dl-horizontal contact-dl&#x22;&#x3E;
+  &#x3C;dt&#x3E;Online:&#x3C;/dt&#x3E;
+  &#x3C;dd&#x3E;
+   &#x3C;p&#x3E;Change your business address by signing in.&#x3C;/p&#x3E;
+   &#x3C;div class=&#x22;mrgn-tp-lg&#x22;&#x3E;
+    &#x3C;a href=&#x22;&#x22; class=&#x22;btn btn-call-to-action&#x22;&#x3E;Sign in to an online account&#x3C;/a&#x3E;  &#x3C;span class=&#x22;register&#x22;&#x3E;&#x3C;a href=&#x22;&#x22;&#x3E;Register&#x3C;/a&#x3E;&#x3C;/span&#x3E;
+   &#x3C;/div&#x3E;
+   &#x3C;p&#x3E;&#x3C;b&#x3E;Alternative:&#x3C;/b&#x3E; &#x3C;a href=&#x22;&#x22;&#x3E;Use a mobile application&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+  &#x3C;/dd&#x3E;
+  &#x3C;dt&#x3E;By phone:&#x3C;/dt&#x3E;
+  &#x3C;dd&#x3E;
+   &#x3C;details class=&#x22;checklist-completion-check&#x22;&#x3E;
+    &#x3C;summary&#x3E;Call us to change your business address&#x3C;/summary&#x3E;
+    &#x3C;dl class=&#x22;dl-horizontal&#x22;&#x3E;
+     &#x3C;dt&#x3E;Before you call&#x3C;/dt&#x3E;
+     &#x3C;dd&#x3E;
+      &#x3C;p&#x3E;To verify your identity, you&#x27;ll need:&#x3C;/p&#x3E;
+      &#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
+       &#x3C;li class=&#x22;checkbox checkbox-green&#x22;&#x3E;
+        &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox_10&#x22; name=&#x22;before-calling-multi-business&#x22;&#x3E;
+        &#x3C;label for=&#x22;checkbox_10&#x22;&#x3E;Business number&#x3C;/label&#x3E;
+       &#x3C;/li&#x3E;
+       &#x3C;li class=&#x22;checkbox checkbox-green&#x22;&#x3E;
+        &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox_11&#x22; name=&#x22;before-calling-multi-business&#x22;&#x3E;
+        &#x3C;label for=&#x22;checkbox_11&#x22;&#x3E;Business name&#x3C;/label&#x3E;
+       &#x3C;/li&#x3E;
+       &#x3C;li class=&#x22;checkbox checkbox-green&#x22;&#x3E;
+        &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox_12&#x22; name=&#x22;before-calling-multi-business&#x22;&#x3E;
+        &#x3C;label for=&#x22;checkbox_12&#x22;&#x3E;Your business address&#x3C;/label&#x3E;
+       &#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+      &#x3C;p&#x3E;&#x3C;label class=&#x22;label label-danger&#x22; id=&#x22;before-calling-multi-business-label&#x22;&#x3E;&#x3C;span id=&#x22;before-calling-multi-business-message&#x22;&#x3E;You need all of the above&#x3C;/span&#x3E; to call&#x3C;/label&#x3E;&#x3C;/p&#x3E;
+     &#x3C;/dd&#x3E;
+     &#x3C;dt&#x3E;Telephone number&#x3C;/dt&#x3E;
+     &#x3C;dd&#x3E;&#x3C;p&#x3E;&#x3C;strong&#x3E;1-800-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;p&#x3E;Outside Canada and the US*: &#x3C;br&#x3E;&#x3C;strong&#x3E;1-613-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;/dd&#x3E;
+     &#x3C;dt&#x3E;Hours&#x3C;/dt&#x3E;
+     &#x3C;dd&#x3E;Hours in local time
+      &#x3C;table class=&#x22;table&#x22;&#x3E;
+       &#x3C;thead&#x3E;
+        &#x3C;tr&#x3E;
+         &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Day&#x3C;/th&#x3E;
+         &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Hours&#x3C;/th&#x3E;
+        &#x3C;/tr&#x3E;
+       &#x3C;/thead&#x3E;
+       &#x3C;tbody&#x3E;
+        &#x3C;tr&#x3E;
+         &#x3C;td&#x3E;Mon-Fri&#x3C;/td&#x3E;
+         &#x3C;td&#x3E;9am-9pm&#x3C;/td&#x3E;
+        &#x3C;/tr&#x3E;
+        &#x3C;tr&#x3E;
+         &#x3C;td&#x3E;Sat&#x3C;/td&#x3E;
+         &#x3C;td&#x3E;9am-5pm&#x3C;/td&#x3E;
+        &#x3C;/tr&#x3E;
+        &#x3C;tr&#x3E;
+         &#x3C;td&#x3E;Sun&#x3C;/td&#x3E;
+         &#x3C;td&#x3E;Closed&#x3C;/td&#x3E;
+        &#x3C;/tr&#x3E;
+       &#x3C;/tbody&#x3E;
+      &#x3C;/table&#x3E;
+      &#x3C;details&#x3E;
+       &#x3C;summary&#x3E;Wait times and holidays&#x3C;/summary&#x3E;
+       &#x3C;div class=&#x22;row&#x22;&#x3E;
+        &#x3C;table class=&#x22;table&#x22;&#x3E;
+         &#x3C;thead&#x3E;
+          &#x3C;tr&#x3E;
+           &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Day&#x3C;/th&#x3E;
+           &#x3C;th class=&#x22;wb-inv&#x22;&#x3E;Wait times&#x3C;/th&#x3E;
+          &#x3C;/tr&#x3E;
+         &#x3C;/thead&#x3E;
+         &#x3C;tbody&#x3E;
+          &#x3C;tr&#x3E;
+           &#x3C;td&#x3E;Mon-Tue&#x3C;/td&#x3E;
+           &#x3C;td&#x3E;Long wait times&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr&#x3E;
+           &#x3C;td&#x3E;Wed&#x3C;/td&#x3E;
+           &#x3C;td&#x3E;Medium wait times&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr&#x3E;
+           &#x3C;td&#x3E;Thu-Sat&#x3C;/td&#x3E;
+           &#x3C;td&#x3E;Short wait times&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+          &#x3C;tr&#x3E;
+           &#x3C;td&#x3E;Sun&#x3C;/td&#x3E;
+           &#x3C;td&#x3E;Closed&#x3C;/td&#x3E;
+          &#x3C;/tr&#x3E;
+         &#x3C;/tbody&#x3E;
+        &#x3C;/table&#x3E;
+       &#x3C;/div&#x3E;
+       &#x3C;h3 class=&#x22;h4&#x22;&#x3E;Holiday closures 2019:&#x3C;/h3&#x3E;
+       &#x3C;ul&#x3E;
+        &#x3C;li&#x3E;April 19 (Good Friday) &#x3C;/li&#x3E;
+        &#x3C;li&#x3E;April 22 (Easter Monday) &#x3C;/li&#x3E;
+        &#x3C;li&#x3E;May 20 (Victoria Day)&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;(etc.)&#x3C;/li&#x3E;
+       &#x3C;/ul&#x3E;
+      &#x3C;/details&#x3E;
+      &#x3C;small&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
+     &#x3C;/dd&#x3E;
+     &#x3C;details&#x3E;
+      &#x3C;summary&#x3E;Avoid waiting on the phone line&#x3C;/summary&#x3E;
+      &#x3C;ul&#x3E;
+       &#x3C;li&#x3E;&#x3C;a href=&#x22;&#x22;&#x3E;Benefits of signing up for an online business account&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+     &#x3C;/details&#x3E;
+     &#x3C;details&#x3E;
+      &#x3C;summary&#x3E;If you are contacting us on someone else&#x27;s behalf&#x3C;/summary&#x3E;
+      &#x3C;p&#x3E;Any additional info needed goes here.&#x3C;/p&#x3E;
+     &#x3C;/details&#x3E;
+    &#x3C;/dl&#x3E;
+   &#x3C;/details&#x3E;
+  &#x3C;/dd&#x3E;
+  &#x3C;dt&#x3E;By mail:&#x3C;/dt&#x3E;
+  &#x3C;dd&#x3E;
+   &#x3C;details&#x3E;
+    &#x3C;summary&#x3E;Mail a form to change your business address&#x3C;/summary&#x3E;
+    &#x3C;div class=&#x22;alert alert-info&#x22;&#x3E;
+     &#x3C;p&#x3E;&#x3C;strong&#x3E;Processing time&#x3C;/strong&#x3E;: it may take up to x weeks to change your address by mail.&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;ol&#x3E;
+     &#x3C;li&#x3E;Complete the &#x3C;a href=&#x22;&#x22;&#x3E;Address change form&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+     &#x3C;li&#x3E;Mail the completed form to the address on the form&#x3C;/li&#x3E;
+    &#x3C;/ol&#x3E;
+    &#x3C;p&#x3E;Note that you can change someone else&#x2019;s address at the same time as yours, such as your spouse&#x2019;s or common-law partner&#x2019;s. Your letter must also include the name, social insurance number, and signature of that individual.&#x3C;/p&#x3E;
+   &#x3C;/details&#x3E;
+  &#x3C;/dd&#x3E;
+ &#x3C;/dl&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+			<div class="remove-width-restriction">
+				<h4>Notes:</h4>
+				<ul>
+					<li><strong>Links to a specific context:</strong> When linking to the page from a context, use a URL parameter to hide the question and other contexts, such as "?p=personal" or "?p=business".</li>
+					<li><strong>Using a details summary:</strong> When using the checklist that checks completion in a details summary, the class "checklist-completion-check" must be applied to the details tag. If not, then it should be applied instead of the unordered list tag of the checkboxes.</li>
+				</ul>
+			</div>
 		</details>
+
 
 		<h3>Configuration options</h3>
 		<table class="table">
@@ -441,6 +1216,28 @@
 <!-- Write closure template -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 <script src="../src/contact-checkboxes-label.js"></script>
+<script>
+	//work around for the CDTS override of custom fieldflow script
+	$(document).ready(function(){
+	  $("#multi-context-chooser").change(function(field){
+	    console.log("hi");
+	    var sID = field.target.id;
+			if (sID == "business-context") {
+				//unhide button, unhide business section, hide personal section, hide personal button
+				$("#personal").addClass("hidden");
+				$("#personal-btn").addClass("hidden");
+				$("#business").removeClass("hidden");
+				$("#business-btn").removeClass("hidden");
+			} else {
+				//unhide button, unhide personal section, hide business section, hide business button
+				$("#personal").removeClass("hidden");
+				$("#personal-btn").removeClass("hidden");
+				$("#business").addClass("hidden");
+				$("#business-btn").addClass("hidden");
+			}
+	  });
+	});
+</script>
 <script type="text/javascript">
 	var defPreFooter = document.getElementById("def-preFooter");
 	defPreFooter.outerHTML = wet.builder.preFooter({
