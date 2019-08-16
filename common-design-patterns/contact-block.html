@@ -119,7 +119,6 @@
 	<h2>On this page</h2>
 	<ul>
 		<li><a href="#research">Research</a></li>
-		<li><a href="#cautions">What to avoid</a></li>
 		<li><a href="#how">When to use and how to implement</a></li>
 		<li><a href="#discuss">Discussion</a></li>
 	</ul>
@@ -133,8 +132,8 @@
 
 	<section>
 		<h2 id="how">When to use and how to implement</h2>
-		<h3 id="telephone-pattern">Telephone channel block</h3>
-		<p><strong>When to use:</strong> Use the telephone channel block to show details about how to contact the government by phone for an institution or service. Determine whether to use a simple or complex patterns based on your needs.</p>
+		<h3 id="phone-pattern">Phone channel block</h3>
+		<p><strong>When to use:</strong> Use the phone channel block to show details about how to contact the government by phone for an institution or service. Determine whether to use a simple or complex patterns based on your needs.</p>
 
 		<div class="callout">
 			<dl class="dl-horizontal contact-dl">
@@ -155,10 +154,13 @@
 							<label for="checkbox_3">Your complete address</label>
 						</li>
 					</ul>
-					<p><label class="label label-danger" id="before-calling-label"><span id="before-calling-message">You need all of the above</span> to call</label></p>
+					<p>
+						<label class="label label-danger" id="before-calling-incomplete">You need all of the above to call</label>
+						<label class="label label-success hidden" id="before-calling-complete">You are ready to call</label>
+					</p>
 				</dd>
-				<dt>Telephone number</dt>
-				<dd><p><strong>1-800-xxx-xxxx</strong></p><p>Outside Canada and the US*: <br><strong>1-613-xxx-xxxx</strong></p></dd>
+				<dt>Phone number</dt>
+				<dd><p><strong>1-800-xxx-xxxx</strong></p><p>Outside Canada and the US<a href="#outside-time-zone">*</a>: <br><strong>1-613-xxx-xxxx</strong></p></dd>
 				<dt>Hours</dt>
 				<dd>Hours in local time
 					<table class="table">
@@ -171,11 +173,11 @@
 						<tbody>
 							<tr>
 								<td>Mon-Fri</td>
-								<td>9am-9pm</td>
+								<td>9 am to 9 pm</td>
 							</tr>
 							<tr>
 								<td>Sat</td>
-								<td>9am-5pm</td>
+								<td>9 am to 5 pm</td>
 							</tr>
 							<tr>
 								<td>Sun</td>
@@ -221,7 +223,7 @@
 							<li>(etc.)</li>
 						</ul>
 					</details>
-					<small>*When calling outside of Canada lines operate in Eastern time</small>
+					<small id="outside-time-zone">*When calling outside of Canada lines operate in Eastern time</small>
 				</dd>
 			</dl>
 		</div>
@@ -245,10 +247,13 @@
      &#x3C;label for=&#x22;checkbox_3&#x22;&#x3E;Your complete address&#x3C;/label&#x3E;
     &#x3C;/li&#x3E;
   &#x3C;/ul&#x3E;
-  &#x3C;p&#x3E;&#x3C;label class=&#x22;label label-danger&#x22; id=&#x22;before-calling-label&#x22;&#x3E;&#x3C;span id=&#x22;before-calling-message&#x22;&#x3E;You need all of the above&#x3C;/span&#x3E; to call&#x3C;/label&#x3E;&#x3C;/p&#x3E;
+  &#x3C;p&#x3E;
+   &#x3C;label class=&#x22;label label-danger&#x22; id=&#x22;before-calling-incomplete&#x22;&#x3E;You need all of the above to call&#x3C;/label&#x3E;
+   &#x3C;label class=&#x22;label label-success hidden&#x22; id=&#x22;before-calling-complete&#x22;&#x3E;You are ready to call&#x3C;/label&#x3E;
+  &#x3C;/p&#x3E;
  &#x3C;/dd&#x3E;
- &#x3C;dt&#x3E;Telephone number&#x3C;/dt&#x3E;
- &#x3C;dd&#x3E;&#x3C;p&#x3E;&#x3C;b&#x3E;1-800-xxx-xxxx&#x3C;/b&#x3E;&#x3C;/p&#x3E;&#x3C;p&#x3E;Outside Canada and the US*: &#x3C;br&#x3E;&#x3C;b&#x3E;1-613-xxx-xxxx&#x3C;/b&#x3E;&#x3C;/p&#x3E;&#x3C;/dd&#x3E;
+ &#x3C;dt&#x3E;Phone number&#x3C;/dt&#x3E;
+ &#x3C;dd&#x3E;&#x3C;p&#x3E;&#x3C;b&#x3E;1-800-xxx-xxxx&#x3C;/b&#x3E;&#x3C;/p&#x3E;&#x3C;p&#x3E;Outside Canada and the US&#x3C;a href=&#x22;#outside-time-zone&#x22;&#x3E;*&#x3C;/a&#x3E;: &#x3C;br&#x3E;&#x3C;b&#x3E;1-613-xxx-xxxx&#x3C;/b&#x3E;&#x3C;/p&#x3E;&#x3C;/dd&#x3E;
  &#x3C;dt&#x3E;Hours&#x3C;/dt&#x3E;
  &#x3C;dd&#x3E;Hours in local time
   &#x3C;table class=&#x22;table&#x22;&#x3E;
@@ -261,11 +266,11 @@
    &#x3C;tbody&#x3E;
     &#x3C;tr&#x3E;
      &#x3C;td&#x3E;Mon-Fri&#x3C;/td&#x3E;
-     &#x3C;td&#x3E;9am-9pm&#x3C;/td&#x3E;
+     &#x3C;td&#x3E;9 am to 9 pm&#x3C;/td&#x3E;
     &#x3C;/tr&#x3E;
     &#x3C;tr&#x3E;
      &#x3C;td&#x3E;Sat&#x3C;/td&#x3E;
-     &#x3C;td&#x3E;9am-5pm&#x3C;/td&#x3E;
+     &#x3C;td&#x3E;9 am to 5 pm&#x3C;/td&#x3E;
     &#x3C;/tr&#x3E;
     &#x3C;tr&#x3E;
      &#x3C;td&#x3E;Sun&#x3C;/td&#x3E;
@@ -311,7 +316,7 @@
     &#x3C;li&#x3E;(etc.)&#x3C;/li&#x3E;
    &#x3C;/ul&#x3E;
   &#x3C;/details&#x3E;
-  &#x3C;small&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
+  &#x3C;small id=&#x22;outside-time-zone&#x22;&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
  &#x3C;/dd&#x3E;
 &#x3C;/dl&#x3E;</code></pre>
 			<div class="remove-width-restriction">
@@ -358,10 +363,13 @@
 										<label for="checkbox_6">Your complete address</label>
 									</li>
 								</ul>
-								<p><label class="label label-danger" id="before-calling-multi-label"><span id="before-calling-multi-message">You need all of the above</span> to call</label></p>
+								<p>
+									<label class="label label-danger" id="before-calling-multi-incomplete">You need all of the above to call</label>
+									<label class="label label-success hidden" id="before-calling-multi-complete">You are ready to call</label>
+								</p>
 							</dd>
-							<dt>Telephone number</dt>
-							<dd><p><strong>1-800-xxx-xxxx</strong></p><p>Outside Canada and the US*: <br><strong>1-613-xxx-xxxx</strong></p></dd>
+							<dt>Phone number</dt>
+							<dd><p><strong>1-800-xxx-xxxx</strong></p><p>Outside Canada and the US<a href="outside-time-zone-multi">*</a>: <br><strong>1-613-xxx-xxxx</strong></p></dd>
 							<dt>Hours</dt>
 							<dd>Hours in local time
 								<table class="table">
@@ -374,11 +382,11 @@
 									<tbody>
 										<tr>
 											<td>Mon-Fri</td>
-											<td>9am-9pm</td>
+											<td>9 am to 9 pm</td>
 										</tr>
 										<tr>
 											<td>Sat</td>
-											<td>9am-5pm</td>
+											<td>9 am to 5 pm</td>
 										</tr>
 										<tr>
 											<td>Sun</td>
@@ -424,7 +432,7 @@
 										<li>(etc.)</li>
 									</ul>
 								</details>
-								<small>*When calling outside of Canada lines operate in Eastern time</small>
+								<small id="outside-time-zone-multi">*When calling outside of Canada lines operate in Eastern time</small>
 							</dd>
 							<details>
 								<summary>Avoid waiting on the phone line</summary>
@@ -488,10 +496,13 @@
        &#x3C;label for=&#x22;checkbox_6&#x22;&#x3E;Your complete address&#x3C;/label&#x3E;
       &#x3C;/li&#x3E;
      &#x3C;/ul&#x3E;
-     &#x3C;p&#x3E;&#x3C;label class=&#x22;label label-danger&#x22; id=&#x22;before-calling-multi-label&#x22;&#x3E;&#x3C;span id=&#x22;before-calling-multi-message&#x22;&#x3E;You need all of the above&#x3C;/span&#x3E; to call&#x3C;/label&#x3E;&#x3C;/p&#x3E;
+     &#x3C;p&#x3E;
+      &#x3C;label class=&#x22;label label-danger&#x22; id=&#x22;before-calling-multi-incomplete&#x22;&#x3E;You need all of the above to call&#x3C;/label&#x3E;
+      &#x3C;label class=&#x22;label label-success hidden&#x22; id=&#x22;before-calling-multi-complete&#x22;&#x3E;You are ready to call&#x3C;/label&#x3E;
+     &#x3C;/p&#x3E; &#x3C;/dd&#x3E;
     &#x3C;/dd&#x3E;
-    &#x3C;dt&#x3E;Telephone number&#x3C;/dt&#x3E;
-    &#x3C;dd&#x3E;&#x3C;p&#x3E;&#x3C;strong&#x3E;1-800-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;p&#x3E;Outside Canada and the US*: &#x3C;br&#x3E;&#x3C;strong&#x3E;1-613-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;/dd&#x3E;
+    &#x3C;dt&#x3E;Phone number&#x3C;/dt&#x3E;
+    &#x3C;dd&#x3E;&#x3C;p&#x3E;&#x3C;strong&#x3E;1-800-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;p&#x3E;Outside Canada and the US&#x3C;a href=&#x22;#outside-time-zone-multi&#x3E;*&#x3C;/a&#x3E;: &#x3C;br&#x3E;&#x3C;strong&#x3E;1-613-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;/dd&#x3E;
     &#x3C;dt&#x3E;Hours&#x3C;/dt&#x3E;
     &#x3C;dd&#x3E;Hours in local time
      &#x3C;table class=&#x22;table&#x22;&#x3E;
@@ -504,11 +515,11 @@
       &#x3C;tbody&#x3E;
        &#x3C;tr&#x3E;
         &#x3C;td&#x3E;Mon-Fri&#x3C;/td&#x3E;
-        &#x3C;td&#x3E;9am-9pm&#x3C;/td&#x3E;
+        &#x3C;td&#x3E;9 am to 9 pm&#x3C;/td&#x3E;
        &#x3C;/tr&#x3E;
        &#x3C;tr&#x3E;
         &#x3C;td&#x3E;Sat&#x3C;/td&#x3E;
-        &#x3C;td&#x3E;9am-5pm&#x3C;/td&#x3E;
+        &#x3C;td&#x3E;9 am to 5 pm&#x3C;/td&#x3E;
        &#x3C;/tr&#x3E;
        &#x3C;tr&#x3E;
         &#x3C;td&#x3E;Sun&#x3C;/td&#x3E;
@@ -554,7 +565,7 @@
        &#x3C;li&#x3E;(etc.)&#x3C;/li&#x3E;
       &#x3C;/ul&#x3E;
      &#x3C;/details&#x3E;
-     &#x3C;small&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
+     &#x3C;small id=&#x22;outside-time-zone-multi&#x22;&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
     &#x3C;/dd&#x3E;
     &#x3C;details&#x3E;
      &#x3C;summary&#x3E;Avoid waiting on the phone line&#x3C;/summary&#x3E;
@@ -647,10 +658,13 @@
 											<label for="checkbox_9">Your complete address</label>
 										</li>
 									</ul>
-									<p><label class="label label-danger" id="before-calling-multi-personal-label"><span id="before-calling-multi-personal-message">You need all of the above</span> to call</label></p>
+									<p>
+										<label class="label label-danger" id="before-calling-multi-personal-incomplete">You need all of the above to call</label>
+										<label class="label label-success hidden" id="before-calling-multi-personal-complete">You are ready to call</label>
+									</p>
 								</dd>
-								<dt>Telephone number</dt>
-								<dd><p><strong>1-800-xxx-xxxx</strong></p><p>Outside Canada and the US*: <br><strong>1-613-xxx-xxxx</strong></p></dd>
+								<dt>Phone number</dt>
+								<dd><p><strong>1-800-xxx-xxxx</strong></p><p>Outside Canada and the US<a href="#outside-time-zone-mm-personal">*</a>: <br><strong>1-613-xxx-xxxx</strong></p></dd>
 								<dt>Hours</dt>
 								<dd>Hours in local time
 									<table class="table">
@@ -663,11 +677,11 @@
 										<tbody>
 											<tr>
 												<td>Mon-Fri</td>
-												<td>9am-9pm</td>
+												<td>9 am to 9 pm</td>
 											</tr>
 											<tr>
 												<td>Sat</td>
-												<td>9am-5pm</td>
+												<td>9 am to 5 pm</td>
 											</tr>
 											<tr>
 												<td>Sun</td>
@@ -713,7 +727,7 @@
 											<li>(etc.)</li>
 										</ul>
 									</details>
-									<small>*When calling outside of Canada lines operate in Eastern time</small>
+									<small id="outside-time-zone-mm-personal">*When calling outside of Canada lines operate in Eastern time</small>
 								</dd>
 								<details>
 									<summary>Avoid waiting on the phone line</summary>
@@ -777,10 +791,13 @@
 											<label for="checkbox_12">Your business address</label>
 										</li>
 									</ul>
-									<p><label class="label label-danger" id="before-calling-multi-business-label"><span id="before-calling-multi-business-message">You need all of the above</span> to call</label></p>
+									<p>
+										<label class="label label-danger" id="before-calling-multi-business-incomplete">You need all of the above to call</label>
+										<label class="label label-success hidden" id="before-calling-multi-business-complete">You are ready to call</label>
+									</p>
 								</dd>
-								<dt>Telephone number</dt>
-								<dd><p><strong>1-800-xxx-xxxx</strong></p><p>Outside Canada and the US*: <br><strong>1-613-xxx-xxxx</strong></p></dd>
+								<dt>Phone number</dt>
+								<dd><p><strong>1-800-xxx-xxxx</strong></p><p>Outside Canada and the US<a href="#outside-time-zone-mm-business">*</a>: <br><strong>1-613-xxx-xxxx</strong></p></dd>
 								<dt>Hours</dt>
 								<dd>Hours in local time
 									<table class="table">
@@ -793,11 +810,11 @@
 										<tbody>
 											<tr>
 												<td>Mon-Fri</td>
-												<td>9am-9pm</td>
+												<td>9 am to 9 pm</td>
 											</tr>
 											<tr>
 												<td>Sat</td>
-												<td>9am-5pm</td>
+												<td>9 am to 5 pm</td>
 											</tr>
 											<tr>
 												<td>Sun</td>
@@ -843,7 +860,7 @@
 											<li>(etc.)</li>
 										</ul>
 									</details>
-									<small>*When calling outside of Canada lines operate in Eastern time</small>
+									<small id="outside-time-zone-mm-business">*When calling outside of Canada lines operate in Eastern time</small>
 								</dd>
 								<details>
 									<summary>Avoid waiting on the phone line</summary>
@@ -939,10 +956,13 @@
         &#x3C;label for=&#x22;checkbox_9&#x22;&#x3E;Your complete address&#x3C;/label&#x3E;
        &#x3C;/li&#x3E;
       &#x3C;/ul&#x3E;
-      &#x3C;p&#x3E;&#x3C;label class=&#x22;label label-danger&#x22; id=&#x22;before-calling-multi-personal-label&#x22;&#x3E;&#x3C;span id=&#x22;before-calling-multi-personal-message&#x22;&#x3E;You need all of the above&#x3C;/span&#x3E; to call&#x3C;/label&#x3E;&#x3C;/p&#x3E;
+      &#x3C;p&#x3E;
+       &#x3C;label class=&#x22;label label-danger&#x22; id=&#x22;before-calling-multi-personal-incomplete&#x22;&#x3E;You need all of the above to call&#x3C;/label&#x3E;
+       &#x3C;label class=&#x22;label label-success hidden&#x22; id=&#x22;before-calling-multi-personal-complete&#x22;&#x3E;You are ready to call&#x3C;/label&#x3E;
+      &#x3C;/p&#x3E;
      &#x3C;/dd&#x3E;
-     &#x3C;dt&#x3E;Telephone number&#x3C;/dt&#x3E;
-     &#x3C;dd&#x3E;&#x3C;p&#x3E;&#x3C;strong&#x3E;1-800-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;p&#x3E;Outside Canada and the US*: &#x3C;br&#x3E;&#x3C;strong&#x3E;1-613-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;/dd&#x3E;
+     &#x3C;dt&#x3E;Phone number&#x3C;/dt&#x3E;
+     &#x3C;dd&#x3E;&#x3C;p&#x3E;&#x3C;strong&#x3E;1-800-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;p&#x3E;Outside Canada and the US&#x3C;a href=&#x22;#outside-time-zone-mm-personal&#x22;&#x3E;*&#x3C;/a&#x3E;: &#x3C;br&#x3E;&#x3C;strong&#x3E;1-613-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;/dd&#x3E;
      &#x3C;dt&#x3E;Hours&#x3C;/dt&#x3E;
      &#x3C;dd&#x3E;Hours in local time
       &#x3C;table class=&#x22;table&#x22;&#x3E;
@@ -955,11 +975,11 @@
        &#x3C;tbody&#x3E;
         &#x3C;tr&#x3E;
          &#x3C;td&#x3E;Mon-Fri&#x3C;/td&#x3E;
-         &#x3C;td&#x3E;9am-9pm&#x3C;/td&#x3E;
+         &#x3C;td&#x3E;9 am to 9 pm&#x3C;/td&#x3E;
         &#x3C;/tr&#x3E;
         &#x3C;tr&#x3E;
          &#x3C;td&#x3E;Sat&#x3C;/td&#x3E;
-         &#x3C;td&#x3E;9am-5pm&#x3C;/td&#x3E;
+         &#x3C;td&#x3E;9 am to 5 pm&#x3C;/td&#x3E;
         &#x3C;/tr&#x3E;
         &#x3C;tr&#x3E;
          &#x3C;td&#x3E;Sun&#x3C;/td&#x3E;
@@ -1005,7 +1025,7 @@
         &#x3C;li&#x3E;(etc.)&#x3C;/li&#x3E;
        &#x3C;/ul&#x3E;
       &#x3C;/details&#x3E;
-      &#x3C;small&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
+      &#x3C;small id=&#x22;outside-time-zone-mm-personal&#x22;&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
      &#x3C;/dd&#x3E;
      &#x3C;details&#x3E;
       &#x3C;summary&#x3E;Avoid waiting on the phone line&#x3C;/summary&#x3E;
@@ -1069,10 +1089,13 @@
         &#x3C;label for=&#x22;checkbox_12&#x22;&#x3E;Your business address&#x3C;/label&#x3E;
        &#x3C;/li&#x3E;
       &#x3C;/ul&#x3E;
-      &#x3C;p&#x3E;&#x3C;label class=&#x22;label label-danger&#x22; id=&#x22;before-calling-multi-business-label&#x22;&#x3E;&#x3C;span id=&#x22;before-calling-multi-business-message&#x22;&#x3E;You need all of the above&#x3C;/span&#x3E; to call&#x3C;/label&#x3E;&#x3C;/p&#x3E;
+      &#x3C;p&#x3E;
+       &#x3C;label class=&#x22;label label-danger&#x22; id=&#x22;before-calling-multi-business-incomplete&#x22;&#x3E;You need all of the above to call&#x3C;/label&#x3E;
+       &#x3C;label class=&#x22;label label-success hidden&#x22; id=&#x22;before-calling-multi-business-complete&#x22;&#x3E;You are ready to call&#x3C;/label&#x3E;
+      &#x3C;/p&#x3E;
      &#x3C;/dd&#x3E;
-     &#x3C;dt&#x3E;Telephone number&#x3C;/dt&#x3E;
-     &#x3C;dd&#x3E;&#x3C;p&#x3E;&#x3C;strong&#x3E;1-800-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;p&#x3E;Outside Canada and the US*: &#x3C;br&#x3E;&#x3C;strong&#x3E;1-613-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;/dd&#x3E;
+     &#x3C;dt&#x3E;Phone number&#x3C;/dt&#x3E;
+     &#x3C;dd&#x3E;&#x3C;p&#x3E;&#x3C;strong&#x3E;1-800-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;p&#x3E;Outside Canada and the US&#x3C;a href=&#x22;#outside-time-zone-mm-business&#x22;&#x3E;*&#x3C;/a&#x3E: &#x3C;br&#x3E;&#x3C;strong&#x3E;1-613-xxx-xxxx&#x3C;/strong&#x3E;&#x3C;/p&#x3E;&#x3C;/dd&#x3E;
      &#x3C;dt&#x3E;Hours&#x3C;/dt&#x3E;
      &#x3C;dd&#x3E;Hours in local time
       &#x3C;table class=&#x22;table&#x22;&#x3E;
@@ -1085,11 +1108,11 @@
        &#x3C;tbody&#x3E;
         &#x3C;tr&#x3E;
          &#x3C;td&#x3E;Mon-Fri&#x3C;/td&#x3E;
-         &#x3C;td&#x3E;9am-9pm&#x3C;/td&#x3E;
+         &#x3C;td&#x3E;9 am to 9 pm&#x3C;/td&#x3E;
         &#x3C;/tr&#x3E;
         &#x3C;tr&#x3E;
          &#x3C;td&#x3E;Sat&#x3C;/td&#x3E;
-         &#x3C;td&#x3E;9am-5pm&#x3C;/td&#x3E;
+         &#x3C;td&#x3E;9 am to 5 pm&#x3C;/td&#x3E;
         &#x3C;/tr&#x3E;
         &#x3C;tr&#x3E;
          &#x3C;td&#x3E;Sun&#x3C;/td&#x3E;
@@ -1135,7 +1158,7 @@
         &#x3C;li&#x3E;(etc.)&#x3C;/li&#x3E;
        &#x3C;/ul&#x3E;
       &#x3C;/details&#x3E;
-      &#x3C;small&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
+      &#x3C;small id=&#x22;outside-time-zone-mm-business&#x22;&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
      &#x3C;/dd&#x3E;
      &#x3C;details&#x3E;
       &#x3C;summary&#x3E;Avoid waiting on the phone line&#x3C;/summary&#x3E;

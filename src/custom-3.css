@@ -4,6 +4,14 @@ label {
   font-size: 20px !important; /*will not use important tags on PR, will correct source */
 }
 
+.label {
+  text-align: left!important;
+  display:block!important;
+  float:left!important;
+  clear: left!important;
+  white-space:normal!important;
+}
+
 .checkbox-small label {
   font-size: 17px !important; /* important needed for now, will rmv later */
 }
