@@ -5,14 +5,14 @@
 }
 
 .checkbox-small label {
-  font-size: 17px !important; /* important needed for now, will rmv later */
+  font-size: 18px !important; /* important needed for now, will rmv later */
 }
 /* increase field flow sizing */
 
 .wb-fieldflow-form legend.h5 {
-  margin-top: 0px !important; /*will not use important tags on PR, will correct source */
-  font-size: 22px !important; /*will not use important tags on PR, will correct source */
-  margin-bottom: 15px !important; /*will not use important tags on PR, will correct source */
+  margin-top: 0px; /*will not use important tags on PR, will correct source */
+  font-size: 22px; /*will not use important tags on PR, will correct source */
+  margin-bottom: 15px; /*will not use important tags on PR, will correct source */
 }
 
 .wb-fieldflow-form .btn {
