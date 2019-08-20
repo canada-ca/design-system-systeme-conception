@@ -1039,9 +1039,9 @@ function(a, b, c) {
     			}
     		}
         if ( isInline ) {
-          radCheckOut = "<div class='can-ca-form'>" + radCheckOut;
+          radCheckOut = "<div class='gc-form'>" + radCheckOut;
         } else {
-          radCheckOut = "<ul class='list-unstyled can-ca-form'>" + radCheckOut;
+          radCheckOut = "<ul class='list-unstyled gc-form'>" + radCheckOut;
         }
     		$out.append( radCheckOut );
     		$( "#" + bodyId ).append( $out );
