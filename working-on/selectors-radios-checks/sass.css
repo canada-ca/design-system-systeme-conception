@@ -178,21 +178,32 @@ input[type="reset"], input[type="button"], input[type="submit"]
   background: #333;
 }
 
-/* hide the check */
-.can-ca-form .form-checkbox input[type="checkbox"] + label::after,
+/* hide the check also SASSED */
+/* .can-ca-form .form-checkbox input[type="checkbox"] + label::after,
 .can-ca-form .form-radio input[type="radio"] + label::after,
 .can-ca-form .checkbox input[type="checkbox"] + label::after,
 .can-ca-form .radio input[type="radio"] + label::after {
     content: none;
+} */
+
+/* sass example  gc-form? */
+
+.can-ca-form {
+  .form-checkbox input[type="checkbox"] + label::after, .form-radio input[type="radio"] + label::after, .checkbox input[type="checkbox"] + label::after, .radio input[type="radio"] + label::after {
+    content: none;
+  }
+  .radio input[type="radio"]:checked + label::after, .checkbox input[type="checkbox"]:checked + label::after, .form-radio input[type="radio"]:checked + label::after, .form-checkbox input[type="checkbox"]:checked + label::after, {
+      content: "";
+  }
 }
 
-/* unhide check when checked */
-.can-ca-form .form-checkbox input[type="checkbox"]:checked + label::after,
+/* unhide check when checked  SASSED above */
+/* .can-ca-form .form-checkbox input[type="checkbox"]:checked + label::after,
 .can-ca-form .form-radio input[type="radio"]:checked + label::after,
 .can-ca-form .checkbox input[type="checkbox"]:checked + label::after,
 .can-ca-form .radio input[type="radio"]:checked + label::after {
     content: "";
-}
+} */
 
 /* add focus */
 .can-ca-form .checkbox input[type="checkbox"]:focus + label::before,

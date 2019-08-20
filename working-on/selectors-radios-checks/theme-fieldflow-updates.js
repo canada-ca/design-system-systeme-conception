@@ -1190,13 +1190,12 @@ function(a, b, c) {
 
 
         } else {
-        out += "/><label for='" + fieldID + "'";
+        out += "/><label for='" + fieldID + "'" + "for='" + fieldID + "'";
         out += " >" + label + "</label></li>";
         }
 
 
 
-        console.log(out);
     		return out;
     	};
 
