@@ -11,7 +11,8 @@
 		<!-- Load closure template scripts -->
 		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
 		<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
-
+		<link rel="stylesheet" href="../src/custom-3.css">
+		<link rel="stylesheet" href="../src/navigation.css">
 		<!-- Write closure template -->
 		<script type="text/javascript">
 			document.write(wet.builder.refTop({
@@ -99,34 +100,32 @@
 
 <h1 property="name" id="wb-cont" dir="ltr"><span class="stacked" role="text"><span>Alerts</span>: <span>Alpha design pattern</span></span></h1>
 
-<div class="col-md-12 pull-left">
-  <ul class="list-inline small mrgn-bttm-sm" style="line-height:1.65em">
-    <li class="mrgn-rght-lg"> Last updated: May 17, 2019</li>
-		<li class="mrgn-rght-lg"> Progress: Draft</li>
-		<li class="mrgn-rght-lg"> Design type: Pattern</li>
-
-  </ul>
+<div class="row">
+	<div class="col-md-12 pull-left">
+	  <ul class="list-inline small mrgn-bttm-sm" style="line-height:1.65em" id="list-inline-desktop-only">
+			<li class="mrgn-rght-lg"> Last updated: Aug 13, 2019</li>
+			<li class="mrgn-rght-lg"> Progress: <a href="https://gc-proto.github.io/travel-advice/scenarioA/travelling/destinations/costa-rica.html">Alpha</a> - draft</li>
+			<li class="mrgn-rght-lg"> Design type: Component</li>
+			<li class="mrgn-rght-lg"> Lead: Treasury Board of Canada Secretariat</li>
+	  </ul>
+	</div>
 
 </div>
 
 <p>Users' attention often needs to be brought to specific content that makes them aware of a result of a user action, a clarification or exception to surrounding content or to warn the user of a consequence of an action or inaction in their task.</p>
 
-<img class="pattern-demo" src="zika-warning.png" alt="Sample warning shows a do not travel advisory for Costa Rica for those who could be affected by Zika">
+<!-- <img class="pattern-demo" src="zika-warning.png" alt="Sample warning shows a do not travel advisory for Costa Rica for those who could be affected by Zika"> -->
 
 <h2>On this page</h2>
 <ul>
-	<li><a href="#status">Status</a></li>
+	<li><a href="#research">Research</a></li>
 	<li><a href="#cautions">What to avoid</a></li>
 	<li><a href="#how">When to use and how to implement</a></li>
 	<li><a href="#discuss">Discussion</a></li>
 </ul>
 <section>
-	<h2 id="status">Status</h2>
+	<h2 id="research">Research</h2>
 	<dl>
-		<dt>Lead department</dt>
-		<dd>Canada Revenue Agency</dd>
-		<dt>Current stage</dt>
-		<dd>Alpha - see the prototype: <a href="https://gc-proto.github.io/travel-advice/scenarioA/travelling/destinations/costa-rica.html">Costa Rica travel advisory</a></dd>
 		<dt>Testing</dt>
 		<dd>Explanation of the testing / blog article link</dd>
 	</dl>
@@ -144,70 +143,71 @@
     <section>
       <h2 id="how">When to use and how to implement</h2>
 			<h3>Danger alert</h3>
-			<p><b>When to use:</b> Use the danger alert to draw attention to a situation that could place the user in danger, such as a do not travel warning, or to alert the user of a technical issue that could cause them to be unable to complete their task.</p>
+			<p><strong>When to use:</strong> Use the danger alert to draw attention to a situation that could place the user in danger, such as a do not travel warning, or to alert the user of a technical issue that could cause them to be unable to complete their task.</p>
 
-			<section class="alert alert-danger">
-	      <h3>If pregnant or considering pregnancy - both partners</h3>
-	      <p>Avoid travel to Costa Rica if you are pregnant or planning to conceive a child in the next 3 months.</p>
-	    </section>
+			<div class="pattern-demo">
+
+				<section class="alert alert-danger">
+		      <h3>If pregnant or considering pregnancy - both partners</h3>
+		      <p>Avoid travel to Costa Rica if you are pregnant or planning to conceive a child in the next 3 months.</p>
+		    </section>
+			</div>
 
 
 			<details>
 				<summary>Code</summary>
-<pre class="prettyprint">
-&#x3C;section class=&#x22;alert alert-danger&#x22;&#x3E;
+<pre class="prettyprint"><code>&#x3C;section class=&#x22;alert alert-danger&#x22;&#x3E;
  &#x3C;h3&#x3E;If pregnant or considering pregnancy - both partners&#x3C;/h3&#x3E;
  &#x3C;p&#x3E;Avoid travel to Costa Rica if you are pregnant or planning to conceive a child in the next 3 months.&#x3C;/p&#x3E;
-&#x3C;/section&#x3E;
-</pre>
+&#x3C;/section&#x3E;</code></pre>
 			</details>
 			<h3>Warning alert</h3>
-			<p><b>When to use:</b> Use the warning alert to draw attention to a possible consequence of an action or inaction, such as legal penalty that could apply.</p>
+			<p><strong>When to use:</strong> Use the warning alert to draw attention to a possible consequence of an action or inaction, such as legal penalty that could apply.</p>
 
-			<section class="alert alert-warning">
-	      <h3>Changes to impaired driving and cannabis-related crime laws</h3>
-	      <p><a href="https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/impaired-driving-cannabis-penalties-affect-immigration-status.html">New penalties for impaired driving and cannabis-related crimes may affect your immigration status in Canada</a>. If you commit one of these crimes, you may not be able to come to or stay in Canada.</p>
-	    </section>
+			<div class="callout">
+				<section class="alert alert-warning">
+		      <h3>Changes to impaired driving and cannabis-related crime laws</h3>
+		      <p><a href="https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/impaired-driving-cannabis-penalties-affect-immigration-status.html">New penalties for impaired driving and cannabis-related crimes may affect your immigration status in Canada</a>. If you commit one of these crimes, you may not be able to come to or stay in Canada.</p>
+		    </section>
+			</div>
 			<details>
 				<summary>Code</summary>
-<pre class="prettyprint">
-&#x3C;section class=&#x22;alert alert-warning&#x22;&#x3E;
+<pre class="prettyprint"><code>&#x3C;section class=&#x22;alert alert-warning&#x22;&#x3E;
  &#x3C;h3&#x3E;Changes to impaired driving and cannabis-related crime laws&#x3C;/h3&#x3E;
  &#x3C;p&#x3E;&#x3C;a href=&#x22;https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/impaired-driving-cannabis-penalties-affect-immigration-status.html&#x22;&#x3E;New penalties for impaired driving and cannabis-related crimes may affect your immigration status in Canada&#x3C;/a&#x3E;. If you commit one of these crimes, you may not be able to come to or stay in Canada.&#x3C;/p&#x3E;
-&#x3C;/section&#x3E;
-</pre>
+&#x3C;/section&#x3E;</code></pre>
 			</details>
 			<h3>Info alert</h3>
-			<p><b>When to use:</b> Use the info alert to draw attention to a clarification, caveat or status of surrounding content.</p>
+			<p><strong>When to use:</strong> Use the info alert to draw attention to a clarification, caveat or status of surrounding content.</p>
 
-			<section class="alert alert-info">
-	      <h3>Current status of the call for applications: Closed</h3>
-	      <p>Thank you for your interest in Canada Summer Jobs. Applications are now closed.</p>
-	    </section>
+			<div class="callout">
+				<section class="alert alert-info">
+		      <h3>Current status of the call for applications: Closed</h3>
+		      <p>Thank you for your interest in Canada Summer Jobs. Applications are now closed.</p>
+		    </section>
+			</div>
 			<details>
 				<summary>Code</summary>
-<pre class="prettyprint">
-&#x3C;section class=&#x22;alert alert-info&#x22;&#x3E;
+<pre class="prettyprint"><code>&#x3C;section class=&#x22;alert alert-info&#x22;&#x3E;
  &#x3C;h3&#x3E;Current status of the call for applications: Closed&#x3C;/h3&#x3E;
  &#x3C;p&#x3E;Thank you for your interest in Canada Summer Jobs. Applications are now closed.&#x3C;/p&#x3E;
-&#x3C;/section&#x3E;
-</pre>
+&#x3C;/section&#x3E;</code></pre>
 			</details>
 			<h3>Success alert</h3>
-			<p><b>When to use:</b> Use success alert to draw attention to a successful action, such as with form validation.</p>
+			<p><strong>When to use:</strong> Use success alert to draw attention to a successful action, such as with form validation.</p>
 
-			<section class="alert alert-success">
-	      <h3>Your request for publicly available data from the list of charities has been successful</h3>
-	      <p>The turnaround time to process your request may take up to four (4) weeks. We will contact you if we need more information.</p>
-	    </section>
+			<div class="callout">
+				<section class="alert alert-success">
+		      <h3>Your request for publicly available data from the list of charities has been successful</h3>
+		      <p>The turnaround time to process your request may take up to four (4) weeks. We will contact you if we need more information.</p>
+		    </section>
+			</div>
 			<details>
 				<summary>Code</summary>
-<pre class="prettyprint">
-&#x3C;section class=&#x22;alert alert-success&#x22;&#x3E;
+<pre class="prettyprint"><code>&#x3C;section class=&#x22;alert alert-success&#x22;&#x3E;
  &#x3C;h3&#x3E;Your request for publicly available data from the List of charities has been successful&#x3C;/h3&#x3E;
  &#x3C;p&#x3E;The turnaround time to process your request may take up to four (4) weeks. We will contact you if we need more information.&#x3C;/p&#x3E;
-&#x3C;/section&#x3E;
-</pre>
+&#x3C;/section&#x3E;</code></pre>
 			</details>
 
     </section>
@@ -218,6 +218,9 @@
 
 <div id="def-preFooter">
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+<script src="../src/list-inline-desktop.js"></script>
 <!-- Write closure template -->
 <script type="text/javascript">
 	var defPreFooter = document.getElementById("def-preFooter");
