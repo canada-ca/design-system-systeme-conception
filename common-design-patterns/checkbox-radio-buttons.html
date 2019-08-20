@@ -119,7 +119,8 @@
 	<ul>
 		<li><a href="#research">Research</a></li>
 		<li><a href="#when">When to use</a></li>
-		<li><a href="#how">When to use and how to implement</a></li>
+		<li><a href="#when">What to avoid</a></li>
+		<li><a href="#how">How to implement</a></li>
 		<li><a href="#discuss">Discussion</a></li>
 	</ul>
 	<section>
@@ -128,19 +129,18 @@
 			<dt>Testing</dt>
 			<dd>Explanation of the testing / blog article link</dd>
 		</dl>
+	</section>
 
+	<section>
 		<h2 id="when">When to use</h2>
 		<p>Checkboxes and radio buttons should be used in interactive questions, such as in application forms for a service, wizards, or checklists.</p>
 		<p>Use of interactive questions or checklists is highly encouraged on Canada.ca.</p>
+	</section>
 
-		<!-- <h2 id="cautions">What to avoid</h2>
-		<p>Do not use an interactive patterns, such as radio buttons and checkboxes if presenting loosely related navigation options. Use doormat links to provide navigation to a loosely related set of pages.</p>
-		<p>For example:</p>
-		<ul>
-			<li>use a radio button pattern to ask which type of funding a Canadian is looking for</li>
-			<li>use a doormat links pattern instead to present loosely related tasks related to starting a business.</li>
-		</ul>
-		<p><a href="https://design.canada.ca/common-design-patterns/services-information.html">Doormat links pattern for services and information on Canada.ca</a></p> -->
+	<section>
+		<h2 id="cautions">What to avoid</h2>
+		<p>Do not use checkboxes or radio buttons if presenting options that are not easily comparable. Consider using navigation patterns such as <a href="https://design.canada.ca/common-design-patterns/services-information.html">doormat links</a>.</p>
+		<p>For a stand alone question with few options and a manageable amount of content per option that does not require separate pages, consider using expand/collapse or tabs.</p>
 	</section>
 
 	<section>
@@ -226,45 +226,69 @@
 				<details id="checklist-small-checkbox-example">
 					<summary>Checklist</summary>
 					<div class="pattern-demo">
-						<p>To be eligible, you must meet all of the following conditions:</p>
-						<ul class="list-unstyled can-ca-form">
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility-checkbox1">
-								<label for="elibility-checkbox1">You have a cat</label>
-							</li>
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility-checkbox2">
-								<label for="elibility-checkbox2">You have a dog</label>
-							</li>
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility-checkbox3">
-								<label for="elibility-checkbox3">You have a goldfish</label>
-							</li>
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility-checkbox4">
-								<label for="elibility-checkbox4">You have a hamster</label>
-							</li>
-						</ul>
+					<p>To be eligible, you must meet all of the following conditions:</p>
+					<ul class="list-unstyled can-ca-form">
+						<li class="checkbox checkbox-small">
+							<input type="checkbox" id="elibility1">
+							<label for="elibility1">You have a child that is under 18 years of age</label>
+						</li>
+						<li class="checkbox checkbox-small">
+							<input type="checkbox" id="elibility2">
+							<label for="elibility2">The child lives with you all the time, or at least about half of the time (see <a href="#shared">Custody arrangements and your benefits</a>)</label>
+						</li>
+						<li class="checkbox checkbox-small">
+							<input type="checkbox" id="elibility3">
+							<label for="elibility3">You are primarily responsible for the care and upbringing of the child (see <a href="#primary">Who is primarily responsible</a>)</label>
+						</li>
+						<li class="checkbox checkbox-small">
+							<input type="checkbox" id="elibility4">
+							<label for="elibility4">You are a resident of Canada for tax purposes</label>
+						</li>
+						<li class="checkbox checkbox-small">
+							<input type="checkbox" id="elibility5">
+							<label for="elibility5">You or your spouse or common-law partner must be <strong>any of the following</strong>:
+								<ul>
+									<li>a Canadian citizen</li>
+									<li>a permanent resident</li>
+									<li>a protected person (refugee)</li>
+									<li>a temporary resident who has lived in Canada for the previous 18 months, and who has a valid permit in the 19th month</li>
+									<li>an Indigenous person who meets the definition of "Indian" under the <a href="https://laws-lois.justice.gc.ca/eng/acts/i-5/page-1.html">Indian Act</a></li>
+								</ul>
+							</label>
+						</li>
+					</ul>
 					</div>
 					<details>
 						<summary>Code</summary>
 						<pre class="prettyprint"><code>&#x3C;p&#x3E;To be eligible, you must meet all of the following conditions:&#x3C;/p&#x3E;
 &#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
  &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
-  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility-checkbox1&#x22;&#x3E;
-  &#x3C;label for=&#x22;elibility-checkbox1&#x22;&#x3E;You have a cat&#x3C;/label&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility1&#x22;&#x3E;
+  &#x3C;label for=&#x22;elibility1&#x22;&#x3E;You have a child that is under 18 years of age&#x3C;/label&#x3E;
  &#x3C;/li&#x3E;
  &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
-  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility-checkbox2&#x22;&#x3E;
-  &#x3C;label for=&#x22;elibility-checkbox2&#x22;&#x3E;You have a dog&#x3C;/label&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility2&#x22;&#x3E;
+  &#x3C;label for=&#x22;elibility2&#x22;&#x3E;The child lives with you all the time, or at least about half of the time (see &#x3C;a href=&#x22;#shared&#x22;&#x3E;Custody arrangements and your benefits&#x3C;/a&#x3E;)&#x3C;/label&#x3E;
  &#x3C;/li&#x3E;
  &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
-  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility-checkbox3&#x22;&#x3E;
-  &#x3C;label for=&#x22;elibility-checkbox3&#x22;&#x3E;You have a goldfish&#x3C;/label&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility3&#x22;&#x3E;
+  &#x3C;label for=&#x22;elibility3&#x22;&#x3E;You are primarily responsible for the care and upbringing of the child (see &#x3C;a href=&#x22;#primary&#x22;&#x3E;Who is primarily responsible&#x3C;/a&#x3E;)&#x3C;/label&#x3E;
  &#x3C;/li&#x3E;
  &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
-  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility-checkbox4&#x22;&#x3E;
-  &#x3C;label for=&#x22;elibility-checkbox4&#x22;&#x3E;You have a hamster&#x3C;/label&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility4&#x22;&#x3E;
+  &#x3C;label for=&#x22;elibility4&#x22;&#x3E;You are a resident of Canada for tax purposes&#x3C;/label&#x3E;
+ &#x3C;/li&#x3E;
+ &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
+  &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility5&#x22;&#x3E;
+  &#x3C;label for=&#x22;elibility5&#x22;&#x3E;You or your spouse or common-law partner must be &#x3C;strong&#x3E;any of the following&#x3C;/strong&#x3E;:
+   &#x3C;ul&#x3E;
+    &#x3C;li&#x3E;a Canadian citizen&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;a permanent resident&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;a protected person (refugee)&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;a temporary resident who has lived in Canada for the previous 18 months, and who has a valid permit in the 19th month&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;an Indigenous person who meets the definition of &#x22;Indian&#x22; under the &#x3C;a href=&#x22;https://laws-lois.justice.gc.ca/eng/acts/i-5/page-1.html&#x22;&#x3E;Indian Act&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+   &#x3C;/ul&#x3E;
+  &#x3C;/label&#x3E;
  &#x3C;/li&#x3E;
 &#x3C;/ul&#x3E;</code></pre>
 					</details>
