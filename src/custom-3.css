@@ -6,8 +6,7 @@ label {
 
 .label {
   text-align: left!important;
-  display:block!important;
-  float:left!important;
+  display:inline-block!important;
   clear: left!important;
   white-space:normal!important;
 }

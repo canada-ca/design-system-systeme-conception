@@ -1,0 +1,151 @@
+<style>
+
+/* max tab width equal to label + x margin
+  tabs should be centered over the details being tabbed through
+  when take up full width+, scrollable, make sure to always cut off last tab on any screen width
+
+
+*/
+
+
+  .gc-tabs {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tabpanels {
+    clear:both;
+  }
+
+
+
+  .gc-tabs>.tabpanels>details[open]>summary, .wb-tabs>details[open]>summary {
+    display: none!important;
+  }
+  .gc-tabs [role=tablist]>li.active a {
+    width:50%;
+
+      border-color: #666;
+      border-style: solid;
+      border-width: 4px 0 0;
+      cursor: default;
+      padding-top: 6px;
+  }
+  .gc-tabs [role=tablist]>li a {
+    width:50%;
+      color: #000;
+      padding: 10px;
+      text-decoration: none;
+  }
+  .gc-tabs [role=tablist]>li, .wb-tabs [role=tablist]>li a, .wb-tabs.carousel-s1 [role=tablist]>li.control, .wb-tabs.carousel-s2 [role=tablist]>li.control {
+      display: inline-block;
+  }
+  .gc-tabs {
+
+  }
+
+</style>
+
+
+<div class="gc-tabs">
+  <ul role="tablist">
+    <li class="active" role="presentation">
+      <a id="single-small-checkbox-example-lnk" href="#single-small-checkbox-example" tabindex="0" role="tab">Single item</a>
+    </li>
+    <li role="presentation">
+      <a id="checklist-small-checkbox-example-lnk" href="#checklist-small-checkbox-example" tabindex="-1" role="tab">Checklist</a>
+    </li>
+  </ul>
+  <div class="tabpanels">
+    <details id="single-small-checkbox-example">
+      <summary>Single item</summary>
+      <div class="pattern-demo">
+        <ul class="list-unstyled can-ca-form">
+          <li class="checkbox checkbox-small">
+            <input type="checkbox" id="confirmation-checkbox">
+            <label for="confirmation-checkbox">Home address is the same as mailing address</label>
+          </li>
+        </ul>
+      </div>
+      <details>
+        <summary>Code</summary>
+        <pre class="prettyprint"><code>&#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
+&#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
+&#x3C;input type=&#x22;checkbox&#x22; id=&#x22;confirmation-checkbox&#x22;&#x3E;
+&#x3C;label for=&#x22;confirmation-checkbox&#x22;&#x3E;Home address is the same as mailing address&#x3C;/label&#x3E;
+&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;</code></pre>
+      </details>
+    </details>
+    <details id="checklist-small-checkbox-example">
+      <summary>Checklist</summary>
+      <div class="pattern-demo">
+      <p>To be eligible, you must meet all of the following conditions:</p>
+      <ul class="list-unstyled can-ca-form">
+        <li class="checkbox checkbox-small">
+          <input type="checkbox" id="elibility1">
+          <label for="elibility1">You have a child that is under 18 years of age</label>
+        </li>
+        <li class="checkbox checkbox-small">
+          <input type="checkbox" id="elibility2">
+          <label for="elibility2">The child lives with you all the time, or at least about half of the time (see <a href="#shared">Custody arrangements and your benefits</a>)</label>
+        </li>
+        <li class="checkbox checkbox-small">
+          <input type="checkbox" id="elibility3">
+          <label for="elibility3">You are primarily responsible for the care and upbringing of the child (see <a href="#primary">Who is primarily responsible</a>)</label>
+        </li>
+        <li class="checkbox checkbox-small">
+          <input type="checkbox" id="elibility4">
+          <label for="elibility4">You are a resident of Canada for tax purposes</label>
+        </li>
+        <li class="checkbox checkbox-small">
+          <input type="checkbox" id="elibility5">
+          <label for="elibility5">You or your spouse or common-law partner must be <strong>any of the following</strong>:
+            <ul>
+              <li>a Canadian citizen</li>
+              <li>a permanent resident</li>
+              <li>a protected person (refugee)</li>
+              <li>a temporary resident who has lived in Canada for the previous 18 months, and who has a valid permit in the 19th month</li>
+              <li>an Indigenous person who meets the definition of "Indian" under the <a href="https://laws-lois.justice.gc.ca/eng/acts/i-5/page-1.html">Indian Act</a></li>
+            </ul>
+          </label>
+        </li>
+      </ul>
+      </div>
+      <details>
+        <summary>Code</summary>
+        <pre class="prettyprint"><code>&#x3C;p&#x3E;To be eligible, you must meet all of the following conditions:&#x3C;/p&#x3E;
+&#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
+&#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
+&#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility1&#x22;&#x3E;
+&#x3C;label for=&#x22;elibility1&#x22;&#x3E;You have a child that is under 18 years of age&#x3C;/label&#x3E;
+&#x3C;/li&#x3E;
+&#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
+&#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility2&#x22;&#x3E;
+&#x3C;label for=&#x22;elibility2&#x22;&#x3E;The child lives with you all the time, or at least about half of the time (see &#x3C;a href=&#x22;#shared&#x22;&#x3E;Custody arrangements and your benefits&#x3C;/a&#x3E;)&#x3C;/label&#x3E;
+&#x3C;/li&#x3E;
+&#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
+&#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility3&#x22;&#x3E;
+&#x3C;label for=&#x22;elibility3&#x22;&#x3E;You are primarily responsible for the care and upbringing of the child (see &#x3C;a href=&#x22;#primary&#x22;&#x3E;Who is primarily responsible&#x3C;/a&#x3E;)&#x3C;/label&#x3E;
+&#x3C;/li&#x3E;
+&#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
+&#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility4&#x22;&#x3E;
+&#x3C;label for=&#x22;elibility4&#x22;&#x3E;You are a resident of Canada for tax purposes&#x3C;/label&#x3E;
+&#x3C;/li&#x3E;
+&#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
+&#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility5&#x22;&#x3E;
+&#x3C;label for=&#x22;elibility5&#x22;&#x3E;You or your spouse or common-law partner must be &#x3C;strong&#x3E;any of the following&#x3C;/strong&#x3E;:
+&#x3C;ul&#x3E;
+&#x3C;li&#x3E;a Canadian citizen&#x3C;/li&#x3E;
+&#x3C;li&#x3E;a permanent resident&#x3C;/li&#x3E;
+&#x3C;li&#x3E;a protected person (refugee)&#x3C;/li&#x3E;
+&#x3C;li&#x3E;a temporary resident who has lived in Canada for the previous 18 months, and who has a valid permit in the 19th month&#x3C;/li&#x3E;
+&#x3C;li&#x3E;an Indigenous person who meets the definition of &#x22;Indian&#x22; under the &#x3C;a href=&#x22;https://laws-lois.justice.gc.ca/eng/acts/i-5/page-1.html&#x22;&#x3E;Indian Act&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+&#x3C;/label&#x3E;
+&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;</code></pre>
+      </details>
+    </details>
+  </div>
+</div>
