@@ -113,7 +113,9 @@
 		</div>
 	</div>
 
-	<p>Cases à cocher et boutons radio avec de grandes cibles tactiles pour appuyer les habitudes comportementales d’interaction avec l’élément de forme, et non avec l’étiquette.</p>
+
+	<p>Les cases à cocher et les boutons radio servent de contrôles de formulaire et permettent de sélectionner une réponse à une question ou de confirmer des réponses, comme dans le cas d’une liste de contrôle.</p>
+	<p>La conception des grandes cases à cocher et des boutons radio facilite et accélère leur sélection, en particulier sur un appareil mobile.</p>
 
 	<h2>Sur cette page</h2>
 	<ul>
@@ -146,8 +148,8 @@
 	<section>
 		<h2 id="how">Mise en œuvre</h2>
 		<h3 id="large-checkbox-component">Grandes cases à cocher</h3>
-		<p><strong>Utilisation :</strong> Use large checkboxes when one or more selections can be made to answer a question. It can also be used for a checklist, with short labels that do not break across lines.</p>
-		<p><strong>Quoi éviter :</strong> Ne pas utiliser la conception des grandes cases à cocher pour une liste de contrôle ayant des éléments qui nécessitent un saut de ligne, ou lorsqu’il y a un seul élément à cocher. Pour ces situations, utiliser les <a href="#small-checkbox-component">petites cases à cocher</a>.</p>
+		<p><strong>Utilisation :</strong> Les grandes cases à cocher sont les cases à cocher utilisées par défaut. À utiliser particulièrement lorsque l’utilisateur peut faire une ou plusieurs sélections pour répondre à une question.</p>
+		<p><strong>Quoi éviter :</strong> Ne pas utiliser de grandes cases à cocher pour une liste de contrôle ayant des éléments qui nécessitent un saut de ligne, ou lorsqu’il y a un seul élément à cocher. Pour ces situations, utiliser les <a href="#small-checkbox-component">petites cases à cocher</a>.</p>
 
 		<div class="mrgn-tp-lg pattern-demo">
 			<legend class="h5">Le(s)quel(s) des animaux de compagnie suivants avez-vous?</legend>
@@ -196,24 +198,23 @@
 		</details>
 
 		<h3 id="small-checkbox-component">Petites cases à cocher</h3>
-		<p><strong>Utilisation :</strong> Utiliser les petites cases à cocher pour une liste de contrôle ayant des éléments qui nécessitent un saut de ligne, ou lorsqu’il y a un seul élément à cocher.</p>
-		<p><strong>Quoi éviter :</strong> Ne pas utiliser la conception des petites cases à cocher pour les réponses à une question ou les listes de contrôle formées d’étiquettes sans saut de ligne. Pour ces situations, utiliser les <a href="#large-checkbox-component">grandes cases à cocher</a>.</p>
+		<p><strong>Utilisation :</strong> Utiliser les petites cases à cocher uniquement pour une liste de contrôle ayant des éléments qui nécessitent un saut de ligne, ou lorsqu’il y a un seul élément à cocher, comme dans le cas d’une confirmation.</p>
+		<p><strong>Quoi éviter :</strong> Ne pas utiliser de petites cases à cocher pour les réponses à une question ou les listes de contrôle formées d’étiquettes sans saut de ligne. Pour ces situations, utiliser les <a href="#large-checkbox-component">grandes cases à cocher</a>.</p>
+		<p>Envisager d’utiliser un <a href="https://design.canada.ca/common-design-patterns/buttons.html">bouton</a> plutôt qu’une case à cocher lorsqu’il y a un seul élément à cocher, particulièrement lorsqu’il s’agit de l’action principale de la page ou d’un élément permettant de passer à l’étape suivante.</p>
 
-		<div class="wb-tabs">
-			<div class="tabpanels">
-				<details id="single-small-checkbox-example">
-					<summary>Élément unique</summary>
-					<div class="pattern-demo">
-						<ul class="list-unstyled can-ca-form">
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="confirmation-checkbox">
-								<label for="confirmation-checkbox">L’adresse domiciliaire est la même que l’adresse postale</label>
-							</li>
-						</ul>
-					</div>
-					<details>
-						<summary>Code</summary>
-						<pre class="prettyprint"><code>&#x3C;summary&#x3E;&#xC9;l&#xE9;ment unique&#x3C;/summary&#x3E;
+
+		<h4>Élément unique</h4>
+		<div class="pattern-demo">
+			<ul class="list-unstyled can-ca-form">
+				<li class="checkbox checkbox-small">
+					<input type="checkbox" id="confirmation-checkbox">
+					<label for="confirmation-checkbox">L’adresse domiciliaire est la même que l’adresse postale</label>
+				</li>
+			</ul>
+		</div>
+		<details>
+			<summary>Code</summary>
+			<pre class="prettyprint"><code>&#x3C;summary&#x3E;&#xC9;l&#xE9;ment unique&#x3C;/summary&#x3E;
 &#x3C;div class=&#x22;pattern-demo&#x22;&#x3E;
  &#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
   &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
@@ -222,46 +223,46 @@
   &#x3C;/li&#x3E;
  &#x3C;/ul&#x3E;
 &#x3C;/div&#x3E;</code></pre>
-					</details>
-				</details>
-				<details id="checklist-small-checkbox-example">
-					<summary>Listes de contrôle</summary>
-					<div class="pattern-demo">
-						<p>Pour être admissible, vous devez remplir toutes les conditions suivantes :</p>
-						<ul class="list-unstyled can-ca-form">
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility1">
-								<label for="elibility1">Vous avez un enfant qui est âgé de moins de 18 ans</label>
-							</li>
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility2">
-								<label for="elibility2">L’enfant vit avec vous tout le temps, ou au moins environ la moitié du temps (see <a href="#shared">Les modalités de garde et vos prestations</a>)</label>
-							</li>
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility3">
-								<label for="elibility3">Vous êtes le principal responsable des soins et de l’éducation de l’enfant (voir <a href="#primary">Qui est le principal responsable</a>)</label>
-							</li>
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility4">
-								<label for="elibility4">Vous êtes un résident du Canada aux fins de l’impôt</label>
-							</li>
-							<li class="checkbox checkbox-small">
-								<input type="checkbox" id="elibility5">
-								<label for="elibility5">Vous ou votre époux ou conjoint de fait devez être <strong>soit</strong>:
-									<ul>
-										<li>un citoyen canadien</li>
-										<li>un résident permanent</li>
-										<li>une personne protégée (réfugié)</li>
-										<li>un résident temporaire ayant résidé au Canada au cours des 18 derniers mois et qui possède un permis en règle le 19e mois</li>
-										<li>une personne autochtone qui satisfait à la définition d’« Indien » au sens de la <i><a href="https://laws-lois.justice.gc.ca/eng/acts/i-5/page-1.html">Loi sur les Indiens</a></i></li>
-									</ul>
-								</label>
-							</li>
-						</ul>
-					</div>
-					<details>
-						<summary>Code</summary>
-						<pre class="prettyprint"><code>&#x3C;p&#x3E;Pour &#xEA;tre admissible, vous devez remplir toutes les conditions suivantes :&#x3C;/p&#x3E;
+		</details>
+		<h4>Liste de contrôle comprenant des sauts de ligne</h4>
+		<details id="checklist-small-checkbox-example">
+			<summary>Listes de contrôle</summary>
+			<div class="pattern-demo">
+				<p>Pour être admissible, vous devez remplir toutes les conditions suivantes :</p>
+				<ul class="list-unstyled can-ca-form">
+					<li class="checkbox checkbox-small">
+						<input type="checkbox" id="elibility1">
+						<label for="elibility1">Vous avez un enfant qui est âgé de moins de 18 ans</label>
+					</li>
+					<li class="checkbox checkbox-small">
+						<input type="checkbox" id="elibility2">
+						<label for="elibility2">L’enfant vit avec vous tout le temps, ou au moins environ la moitié du temps (see <a href="#shared">Les modalités de garde et vos prestations</a>)</label>
+					</li>
+					<li class="checkbox checkbox-small">
+						<input type="checkbox" id="elibility3">
+						<label for="elibility3">Vous êtes le principal responsable des soins et de l’éducation de l’enfant (voir <a href="#primary">Qui est le principal responsable</a>)</label>
+					</li>
+					<li class="checkbox checkbox-small">
+						<input type="checkbox" id="elibility4">
+						<label for="elibility4">Vous êtes un résident du Canada aux fins de l’impôt</label>
+					</li>
+					<li class="checkbox checkbox-small">
+						<input type="checkbox" id="elibility5">
+						<label for="elibility5">Vous ou votre époux ou conjoint de fait devez être <strong>soit</strong>:
+							<ul>
+								<li>un citoyen canadien</li>
+								<li>un résident permanent</li>
+								<li>une personne protégée (réfugié)</li>
+								<li>un résident temporaire ayant résidé au Canada au cours des 18 derniers mois et qui possède un permis en règle le 19e mois</li>
+								<li>une personne autochtone qui satisfait à la définition d’« Indien » au sens de la <i><a href="https://laws-lois.justice.gc.ca/eng/acts/i-5/page-1.html">Loi sur les Indiens</a></i></li>
+							</ul>
+						</label>
+					</li>
+				</ul>
+			</div>
+			<details>
+				<summary>Code</summary>
+				<pre class="prettyprint"><code>&#x3C;p&#x3E;Pour &#xEA;tre admissible, vous devez remplir toutes les conditions suivantes :&#x3C;/p&#x3E;
 &#x3C;ul class=&#x22;list-unstyled can-ca-form&#x22;&#x3E;
  &#x3C;li class=&#x22;checkbox checkbox-small&#x22;&#x3E;
   &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;elibility1&#x22;&#x3E;
@@ -292,10 +293,7 @@
   &#x3C;/label&#x3E;
  &#x3C;/li&#x3E;
 &#x3C;/ul&#x3E;</code></pre>
-					</details>
-				</details>
-			</div>
-		</div>
+		</details>
 
 		<h3>Boutons radio</h3>
 		<p><strong>Utilisation :</strong> Utiliser des boutons radio lorsqu’une seule sélection peut être faite.</p>
