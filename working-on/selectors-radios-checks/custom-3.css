@@ -212,6 +212,19 @@
 }
 
 /* for green checks */
+.gc-form .checkbox-green-small input[type="checkbox"]:checked + label:before {
+  background-color: #318000;
+}
+
+/* for green checks */
+
+.gc-form .checkbox-green-small label::after {
+  content: "";
+  border: solid white;
+  border-width: 0 3px 3px 0;
+}
+
+/* for green checks */
 .gc-form .checkbox-green input[type="checkbox"]:checked + label:before {
   background-color: #318000;
 }
