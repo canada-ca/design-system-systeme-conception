@@ -87,12 +87,8 @@
 		</div>
 	</div>
 
-	<p>Service initiation pages:</p>
-	<ul>
-		<li>Support a consistent approach to finding answers about a service or task, particularly how to begin a transaction, such as applying for the service or submitting a return</li>
-		<li>Provide people with the information they need before initiating the task, offer alternate methods, where applicable, of completing a service; including online, in-person or by mail</li>
-		<li>Ensure that experienced clients (those who have previously used a particular service) can quickly find where to complete a task and choose whether or not to review all of the supporting information offered</li>
-	</ul>
+	<p>Service initiation are used to present services on Canada.ca. The template offers a local navigation pattern to help find answers related to the service, intended to offer a consistent experience across GC services.</p>
+	<p>The navigation can either be ordered or unordered, depending on the nature of the service. Particularly for services where the top task is applying, it is suggested to use an ordered navigation that explains who can apply, how to apply, and what an applicant must do after applying.</p>
 
 	<img class="pattern-demo mrgn-tp-lg img-responsive" src="vertical-service-initiation.png" alt="Image of a page that is part of the Canada Child Benefit set, showing the vertical list of steps on the right of the screen.">
 
@@ -129,8 +125,8 @@
 
 	<section>
 		<h2 id="ia">Information architecture and breadcrumb options</h2>
-		<h3>Overview page</h3>
-		<p><strong>Recommended implementation:</strong> Include an overview page as the parent page to all the task pages in the service initiation grouping.</p>
+		<h3>Option 1: Overview page</h3>
+		<p><strong>When to use:</strong> An overview page should generally be included to introduce what it is for and to provide a shortcut to the task page they need, whether it is about applying, after they apply or how to contact.</p>
 		<p><strong>Breadcrumb:</strong> The task pages should all have the overview page as their parent page.</p>
 		<p><strong>Titles:</strong> Do not use the word 'overview' on the overview page. It should simply be the name of the service. This will also be the label for the first H1 on each task page (<a href="#double-h1">see double H1s</a>).</p>
 
@@ -233,14 +229,19 @@
 		</details>
 
 
-		<h3>No overview variant</h3>
-		<p><strong>Recommended implementation for most services:</strong> Include an overview page as the parent page to all the task pages in the service initiation grouping.</p>
-		<p><strong>Breadcrumb:</strong> </p>
-
+		<h3>Option 2: No overview</h3>
+		<p><strong>When to use:</strong> For certain services, the overview page can be ommited. Consider ommitting it when:</p>
+		<ul>
+			<li>the user should always read through the pages in the sequence provided</li>
+			<li>the pages each provide a distinct enough task that Canadians usually only want to complete 1 of them during a visit</li>
+			<li>the convention for the tasks is to start </li>
+		</ul>
+		<p><strong>Breadcrumb:</strong> The task pages should point back to the topic or navigation page above the service.</p>
+		<p><strong>Titles:</strong> The double H1 pattern should still be used across the task pages. (<a href="#double-h1">See double H1s</a>).</p>
 
 
 		<h3>Menu</h3>
-
+		<p></p>
 
 
 

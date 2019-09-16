@@ -74,7 +74,7 @@
 			defTop.outerHTML = wet.builder.top({
 				lngLinks: [{
 					lang: "fr",
-					href: "#",
+					href: "../configurations-conception-communes/alertes.html",
 					text: "Français"
 				}],
 				breadcrumbs: [{
@@ -118,28 +118,23 @@
 
 <h2>On this page</h2>
 <ul>
-	<li><a href="#research">Research</a></li>
 	<li><a href="#cautions">What to avoid</a></li>
 	<li><a href="#how">When to use and how to implement</a></li>
+	<li><a href="#research">Research</a></li>
 	<li><a href="#discuss">Discussion</a></li>
 </ul>
-<section>
-	<h2 id="research">Research</h2>
-	<dl>
-		<dt>Testing</dt>
-		<dd>Explanation of the testing / blog article link</dd>
-	</dl>
 
-<h2 id="cautions">What to avoid</h2>
+		<section>
+			<h2 id="cautions">What to avoid</h2>
 
-<p>Do not use the alert pattern if the content does not need to stand out, such as in cases where a warning is neither high risk nor frequently experienced.</p>
-<p>The alert pattern should not be used to create labels or pills. There are patterns for these within the design system:</p>
-<ul>
-	<li><a href="https://wet-boew.github.io/wet-boew-styleguide/design/labels-en">Label pattern</a></li>
-	<li><a href="https://wet-boew.github.io/wet-boew-styleguide/design/pills-en">Pill pattern</a></li>
-</ul>
+			<p>Do not use the alert pattern if the content does not need to stand out, such as in cases where a warning is neither high risk nor frequently experienced.</p>
+			<p>The alert pattern should not be used to create labels or pills. There are patterns for these within the design system:</p>
+			<ul>
+				<li><a href="https://wet-boew.github.io/wet-boew-styleguide/design/labels-en">Label pattern</a></li>
+				<li><a href="https://wet-boew.github.io/wet-boew-styleguide/design/pills-en">Pill pattern</a></li>
+			</ul>
 
-</section>
+		</section>
     <section>
       <h2 id="how">When to use and how to implement</h2>
 			<h3>Danger alert</h3>
@@ -156,7 +151,7 @@
 
 			<details>
 				<summary>Code</summary>
-<pre class="prettyprint"><code>&#x3C;section class=&#x22;alert alert-danger&#x22;&#x3E;
+<pre class="prettyprint pre-collapsible"><code>&#x3C;section class=&#x22;alert alert-danger&#x22;&#x3E;
  &#x3C;h3&#x3E;If pregnant or considering pregnancy - both partners&#x3C;/h3&#x3E;
  &#x3C;p&#x3E;Avoid travel to Costa Rica if you are pregnant or planning to conceive a child in the next 3 months.&#x3C;/p&#x3E;
 &#x3C;/section&#x3E;</code></pre>
@@ -211,6 +206,39 @@
 			</details>
 
     </section>
+
+		<section>
+			<h2 id="research">Research</h2>
+			<h3>Noticeability was not impacted</h3>
+			<details>
+				<summary>First click A/B testing - x participants</summary>
+				<dl class="dl-vertical">
+					<dt>Test procedure</dt>
+					<dd></dd>
+					<dt>Conclusions</dt>
+					<dd>
+						<ul>
+							<li>The new design did not hinder noticeability</li>
+							
+							<li>Testing did not reveal a significant increase in noticeability</li>
+						</ul>
+					</dd>
+					<dt>Data</dt>
+					<dd>How to access</dd>
+				<h4>
+
+
+			</details>
+			<h3></h3>
+
+
+			<dl>
+				<dt>Testing</dt>
+
+				<dd>Explanation of the testing / blog article link</dd>
+			</dl>
+		</section>
+
     <section>
 
 			<h2 id="discuss">Discussion</h2>

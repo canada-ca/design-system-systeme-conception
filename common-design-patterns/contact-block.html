@@ -77,7 +77,7 @@
 			defTop.outerHTML = wet.builder.top({
 				lngLinks: [{
 					lang: "fr",
-					href: "#",
+					href: "../configurations-conception-communes/bloc-coordonnees.html",
 					text: "Français"
 				}],
 				breadcrumbs: [{
@@ -99,7 +99,7 @@
 			});
 </script>
 
-<main role="main" property="mainContentOfPage" class="container wb-prettify">
+<main role="main" property="mainContentOfPage" class="container wb-prettify all-pre">
 
 	<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked" role="text"><span>Contact block</span>: <span>Alpha design pattern</span></span></h1>
 
@@ -114,7 +114,8 @@
 		</div>
 	</div>
 
-	<p>Contact information should be displayed in a clear and consistent fashion, ensuring it is clear to the user what choices they are making to contact the correct GC institution in the most convenient way.</p>
+	<p>The contact block is a set of tested patterns to help display contact information in a clear and consistent layout to ensure users call the right phone number and have the documents they need ready before they call.</p>
+	<p>The pattern was also tested to support redirecting users to the online self-serve option where available and preferred.</p>
 
 	<h2>On this page</h2>
 	<ul>
@@ -125,10 +126,15 @@
 
 	<section>
 		<h2 id="research">Research</h2>
-		<dt>Testing</dt>
-		<dd>Explanation of the testing / blog article link</dd>
+		<details>
+			<summary>Layout choices</summary>
+			<ul>
+				<li>Redirecting users to primary self-service option first - online</li>
+				<li>Forcing choices (use of expand collapse for secondary options, smart question for audiences and url parameters) - make sure they get the right number</li>
+				<li>Using an interactive pattern to bring attention to what needs to be prepared before calling/</li>
+			</ul>
+		</details>
 	</section>
-
 
 	<section>
 		<h2 id="how">When to use and how to implement</h2>
@@ -236,7 +242,7 @@
 		</div>
 		<details>
 			<summary>Code</summary>
-			<pre class="prettyprint"><code>&#x3C;dl class=&#x22;dl-horizontal contact-dl&#x22;&#x3E;
+			<pre><code>&#x3C;dl class=&#x22;dl-horizontal contact-dl&#x22;&#x3E;
  &#x3C;dt&#x3E;Before you call&#x3C;/dt&#x3E;
   &#x3C;dd&#x3E;
    &#x3C;p&#x3E;To verify your identity, you&#x27;ll need your:&#x3C;/p&#x3E;
@@ -335,7 +341,7 @@
 		</details>
 
 		<h3 id="multi-channel">Multi-channel contact block</h3>
-		<p><strong>When to use:</strong> If there's more than one way to contact or an online self-serve way in addition to ways to contact, use the multi-channel contact block.</p>
+		<p><strong>When to use:</strong> If there's more than one audience in addition to ways to contact, use the multi-channel contact block.</p>
 		<p><strong>What to avoid:</strong> Do not make all channels visible. Decide on the best option and use progressive disclosure to make the choice between secondary options easier and conscious on the part of the user.</p>
 
 		<div class="pattern-demo">
@@ -441,16 +447,6 @@
 								</details>
 								<small id="outside-time-zone-multi">*When calling outside of Canada lines operate in Eastern time</small>
 							</dd>
-							<details>
-								<summary>Avoid waiting on the phone line</summary>
-								<ul>
-									<li><a href="">Benefits of signing up for an online account</a></li>
-								</ul>
-							</details>
-							<details>
-								<summary>If you are contacting us on someone else's behalf</summary>
-								<p>Any additional info needed goes here.</p>
-							</details>
 						</dl>
 					</details>
 				</dd>
@@ -477,7 +473,7 @@
 		</div>
 		<details>
 			<summary>Code</summary>
-			<pre class="prettyprint"><code>&#x3C;dl class=&#x22;dl-horizontal contact-dl&#x22;&#x3E;
+			<pre><code>&#x3C;dl class=&#x22;dl-horizontal contact-dl&#x22;&#x3E;
  &#x3C;dt&#x3E;Online:&#x3C;/dt&#x3E;
  &#x3C;dd&#x3E;
   &#x3C;p&#x3E;Change your address by signing in.&#x3C;/p&#x3E;
@@ -579,16 +575,6 @@
      &#x3C;/details&#x3E;
      &#x3C;small id=&#x22;outside-time-zone-multi&#x22;&#x3E;*When calling outside of Canada lines operate in Eastern time&#x3C;/small&#x3E;
     &#x3C;/dd&#x3E;
-    &#x3C;details&#x3E;
-     &#x3C;summary&#x3E;Avoid waiting on the phone line&#x3C;/summary&#x3E;
-     &#x3C;ul&#x3E;
-      &#x3C;li&#x3E;&#x3C;a href=&#x22;&#x22;&#x3E;Benefits of signing up for an online account&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-     &#x3C;/ul&#x3E;
-    &#x3C;/details&#x3E;
-    &#x3C;details&#x3E;
-     &#x3C;summary&#x3E;If you are contacting us on someone else&#x27;s behalf&#x3C;/summary&#x3E;
-     &#x3C;p&#x3E;Any additional info needed goes here.&#x3C;/p&#x3E;
-    &#x3C;/details&#x3E;
    &#x3C;/dl&#x3E;
   &#x3C;/details&#x3E;
  &#x3C;/dd&#x3E;
@@ -921,7 +907,7 @@
 		</div>
 		<details>
 			<summary>Code</summary>
-			<pre class="prettyprint"><code>&#x3C;div data-wb-urlmapping=&#x27;{
+			<pre><code>&#x3C;div data-wb-urlmapping=&#x27;{
  &#x22;p=personal&#x22;: { &#x22;action&#x22;: &#x22;addClass&#x22;, &#x22;class&#x22;: &#x22;hidden&#x22; },
  &#x22;p=business&#x22;: { &#x22;action&#x22;: &#x22;addClass&#x22;, &#x22;class&#x22;: &#x22;hidden&#x22; }
 }&#x27; class=&#x22;wb-frmvld&#x22;&#x3E;
