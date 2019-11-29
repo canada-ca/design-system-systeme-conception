@@ -1,8 +1,18 @@
 language: node_js
 
+node_js:
+  - "10"
+
 cache:
   directories:
   - node_modules
 
-node_js:
-  - "node"
+addons:
+  chrome: stable # make sure you have Chrome available
+
+before_install:
+  - npm install -g @lhci/cli
+
+script:
+  - npm run build # build your site
+  - lhci autorun
