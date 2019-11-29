@@ -14,5 +14,5 @@ before_install:
   - npm install -g @lhci/cli
 
 script:
-  - npm run build # build your site
   - lhci autorun
+  - npm test
