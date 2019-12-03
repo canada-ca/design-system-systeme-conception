@@ -1,2 +1,3 @@
-name: design.canada.ca / conception.canada.ca
+name: Canada.ca design system / Système de conception de Canada.ca
 markdown: kramdown
+remote_theme: wet-boew/gcweb-jekyll
