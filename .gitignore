@@ -1,0 +1,9 @@
+node_modules/
+.vscode/
+_site/
+.jekyll-cache/
+Gemfile.lock
+.sass-cahae
+*.gem
+assets/**/*.html
+assets/**/*.md
