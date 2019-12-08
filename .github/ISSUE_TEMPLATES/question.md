@@ -6,3 +6,14 @@ labels: 'question'
 assignees: ''
 
 ---
+
+<details>
+  <summary>English</summary>
+
+
+</details>
+<details>
+  <summary>Français</summary>
+
+
+</details>
