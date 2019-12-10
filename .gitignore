@@ -7,3 +7,4 @@ Gemfile.lock
 *.gem
 assets/**/*.html
 assets/**/*.md
+.jekyll-metadata
