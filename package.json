@@ -1,0 +1,32 @@
+{
+  "name": "design-system-systeme-conception",
+  "version": "1.1.0",
+  "description": "Canada.ca design library - evidence-based patterns &amp; templates",
+  "main": "index.html",
+  "engines": {
+    "npm": "~4.0.0"
+  },
+  "scripts": {
+    "test": "java -Xss4m -jar node_modules/vnu-jar/build/dist/vnu.jar --errors-only --skip-non-html --filterfile .vnurc --no-langdetect .",
+    "htmllint": "htmllint htmllinny",
+    "bootlint": "bootlint _pages/*.html",
+    "stylelint": "stylelint /assets/css/*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canada-ca/design-system-systeme-conception.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/canada-ca/design-system-systeme-conception/issues"
+  },
+  "homepage": "https://github.com/canada-ca/design-system-systeme-conception#readme",
+  "devDependencies": {
+    "bootlint": "1.0.0",
+    "htmllint": "~0.8.0",
+    "stylelint": "^12.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "vnu-jar": "^18.11.5"
+  }
+}

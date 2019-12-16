@@ -8,3 +8,4 @@ Gemfile.lock
 assets/**/*.html
 assets/**/*.md
 .jekyll-metadata
+.DS_Store
