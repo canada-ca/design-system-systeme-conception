@@ -16,7 +16,3 @@ before_install:
 script:
   - lhci autorun
   - npm test
-
-  language: generic
-dist: trusty
-sudo: required
