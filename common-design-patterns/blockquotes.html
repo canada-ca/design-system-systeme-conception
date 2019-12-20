@@ -3,7 +3,9 @@
 <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
 
 <!--[if gt IE 8]><!-->
+
 <html class="no-js" lang="en" dir="ltr">
+
 <!--<![endif]-->
 
 <head>
@@ -27,9 +29,15 @@
 
 <script type="text/javascript">
 
+
+
 			document.write(wet.builder.refTop({
 
+
+
 			}));
+
+
 
 		</script>
 <style>
@@ -55,58 +63,98 @@ img.pattern-demo {
 	filter: drop-shadow(3px 3px 5px #aaaaaa);
 }
 /* blockquote with quote design (over ride for border-left)*/
-blockquote.bq-alt {
+.experimental blockquote {
+	border-left-width: inherit;
+	border-left-style: inherit;
+	border-left-color: inherit;
+	padding: inherit;
+	margin: inherit;
+}
+.experimental blockquote.blockquote-reverse {
+	border-right-width: inherit;
+	border-right-style: inherit;
+	border-right-color: inherit;
+}
+blockquote:not(.blockquote-reverse):not(.blockquote-excerpt) {
+	padding: 11.5px 23px 11.5px 28px;
 	font-size: 1em;
 	margin-left: 12px;
 	border-left: 6px solid #d4d4d4;
 }
-blockquote.bq-alt.blockquote-reverse {
+blockquote.blockquote-reverse:not(.blockquote-excerpt) {
+	padding: 11.5px 28px 11.5px 23px;
 	font-size: 1em;
-	margin-left: 12px;
+	margin-right: 12px;
 	border-right: 6px solid #d4d4d4;
-	border-left: 0px solid transparent;
 }
-blockquote.bq-alt >:first-child {
+blockquote.blockquote-excerpt {
+	padding: 11.5px 50px;
+	font-size: 1em;
+	border-top: 2px solid #d4d4d4;
+	border-bottom: 2px solid #d4d4d4;
+	margin: 20px 0 20px 0;
+}
+blockquote >:first-child {
 	padding-top: 6px;
 	margin-top: auto;
 }
-blockquote.bq-alt >:last-child {
+blockquote:not(.blockquote-excerpt) >:last-child {
 	padding-bottom: 25px;
 }
-blockquote.bq-alt::before {
+blockquote.blockquote-excerpt >:last-child {
+	padding-bottom: 6px;
+}
+blockquote::before, blockquote::after {
 	font-family: sans-serif;
 	position: absolute;
 	background: #fff;
 	color: #d4d4d4;
 }
-blockquote:not(.blockquote-reverse).bq-alt:lang(en)::before {
+blockquote:not(.blockquote-reverse):lang(en)::before {
 	content: "\201C";
-	font-size: 5em;
+	font-size: 120px;
+	height: 38px;
 	margin-left: -0.45em;
 	padding-top: 20px;
 	line-height: 0.5em;
-	height: 38px;
 }
-blockquote.blockquote-reverse.bq-alt:lang(en)::before {
-	margin-left: 3px;
+blockquote.blockquote-excerpt::before {
+	margin-top: -30px;
+}
+blockquote.blockquote-reverse:lang(en)::before, blockquote.blockquote-excerpt:lang(en)::after {
 	content: "\201D";
-	font-size: 5em;
+	font-size: 120px;
+}
+blockquote.blockquote-reverse:lang(en)::before {
+	right: 0px;
+	margin-right: 10px;
 	line-height: 0.9em;
 	height: 38px;
 }
-blockquote:not(.blockquote-reverse).bq-alt:lang(fr)::before {
+blockquote.blockquote-excerpt:lang(en)::after {
+	right: 12px;
+	padding-top: 30px;
+	height: 30px;
+}
+blockquote:not(.blockquote-reverse):lang(fr)::before {
 	content: "\00AB";
-	font-size: 3.2em;
-	margin-left: -0.7em;
+	font-size: 70px;
+	margin-left: -0.8em;
 	line-height: 0.5em;
 	height: 44px;
 }
-blockquote:lang(fr).blockquote-reverse.bq-alt::before {
-	margin-left: 3px;
+blockquote.blockquote-reverse:lang(fr)::before, blockquote.blockquote-excerpt:lang(fr):after {
+	right: 0px;
+	margin-right: 10px;
 	content: "\00BB";
-	font-size: 3.2em;
-	line-height: 0.5em;
+	font-size: 70px;
 	height: 44px;
+}
+blockquote.blockquote-reverse:lang(fr)::before {
+	line-height: 0.5em;
+}
+blockquote.blockquote-excerpt:lang(fr)::after {
+	line-height: 0.1em;
 }
 </style>
 </head>
@@ -118,53 +166,103 @@ blockquote:lang(fr).blockquote-reverse.bq-alt::before {
 
 <script type="text/javascript">
 
+
+
 			var defTop = document.getElementById("def-top");
+
+
 
 			defTop.outerHTML = wet.builder.top({
 
+
+
 				lngLinks: [{
+
+
 
 					lang: "fr",
 
+
+
 					href: "#",
+
+
 
 					text: "Français"
 
+
+
 				}],
+
+
 
 				breadcrumbs: [{
 
+
+
 					title: "Home",
+
+
 
 					href: "https://www.canada.ca/en.html"
 
+
+
 				},{
+
+
 
 					title: "About Canada.ca",
 
+
+
 					href: 'https://www.canada.ca/en/government/about.html'
 
+
+
 				},{
+
+
 
 					title: "Canada.ca design system",
 
+
+
 					href: 'https://www.canada.ca/en/government/about/design-system.html'
+
+
 
 				},{
 
+
+
 					title: "Backlog",
+
+
 
 					href: '../backlog/index.html'
 
+
+
 				}],
+
+
 
 				search: true,
 
+
+
 				siteMenu: true,
+
+
 
 				showPreContent: true
 
+
+
 			});
+
+
 
 </script>
 <main role="main" property="mainContentOfPage" class="container wb-prettify">
@@ -198,44 +296,65 @@ blockquote:lang(fr).blockquote-reverse.bq-alt::before {
   <h2 id="cautions">What to avoid</h2>
   <p>Do not use when content needs to stand out but is not a quote or citation.  Use wells, alerts (when appropriate), or callouts (proposed) instead.</p>
 </section>
-<section>
+<section class="experimental">
   <h2 id="how">Implementation</h2>
-  <p>Replaces the current design for the <code>&lt;bockquote&gt;</code> element. </p>
+  <p>Replaces the current design for the <code>&lt;bockquote&gt;</code> element.  Examples below are wrapped in <code>.experimental</code> class in order to not use overriding styles. </p>
+  <h3>Basic use</h3>
   <div class="row">
     <div class="col-sm-6"> //Default quote in English (lang)
-      <blockquote class="bq-alt">
+      <blockquote>
         <p>This is a quote with quote icon<br>
           Second line</p>
         <cite class="small text-right">This is the citation</cite> </blockquote>
       //Default quote in French (lang)
-      <blockquote class="bq-alt" lang="fr">
+      <blockquote lang="fr">
         <p>This is a quote with quote icon<br>
           Second line</p>
         <cite class="small text-right">This is the citation</cite> </blockquote>
       //Default quote in any other language
-      <blockquote class="bq-alt" lang="de">
+      <blockquote lang="de">
         <p>This is a quote with quote icon<br>
           Second line</p>
         <cite class="small text-right">This is the citation</cite> </blockquote>
     </div>
     <div class="col-sm-6"> //Reverse quote in English (lang)
-      <blockquote class="bq-alt blockquote-reverse">
+      <blockquote class="blockquote-reverse">
         <p>This is a quote with quote icon<br>
           Second line</p>
         <cite class="small text-right">This is the citation</cite> </blockquote>
       //Reverse quote in French (lang)
-      <blockquote class="bq-alt blockquote-reverse" lang="fr">
+      <blockquote class="blockquote-reverse" lang="fr">
         <p>This is a quote with quote icon<br>
           Second line</p>
         <cite class="small text-right">This is the citation</cite> </blockquote>
       //Reverse quote in any other language
-      <blockquote class="bq-alt blockquote-reverse" lang="de">
+      <blockquote class="blockquote-reverse" lang="de">
         <p>This is a quote with quote icon<br>
           Second line</p>
         <cite class="small text-right">This is the citation</cite> </blockquote>
     </div>
   </div>
-  <p><strong>Note:</strong> The final CSS will need to be aligned with the current blockquote CSS. This design uses a class <code>.bq-alt</code> in order to avoid overriding the existing CSS (will need to be removed upon final implimentation in WET spec).</p>
+  <h3>Excerpt use</h3>
+  <p>Used to call out quote within a block of text.  Used primarily to summarize a block of text with a quote, similar to news articles, or highlight an existing quote in the text using the <code>&lt;q&gt;</code> element.</p>
+  <p>&nbsp;</p>
+  <div class="row">
+    <div class="col-sm-6"> //Excerpt quote in French
+      <p>Donec a urna sollicitudin, consectetur nibh in, vulputate eros. Proin in velit euismod, ultrices ipsum in, ultrices justo. Nullam congue finibus sem a tincidunt. Fusce tristique metus vel molestie varius. Nunc sollicitudin mattis tincidunt. Sed venenatis nunc id mauris aliquet, eget aliquam urna venenatis. Nulla porttitor lobortis velit eget volutpat. </p>
+      <blockquote class="blockquote-excerpt">
+        <p>Text quote goes here in between a content section</p>
+      </blockquote>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui elit, euismod eu facilisis quis, lacinia pretium nisi. Mauris volutpat tincidunt ligula et aliquet. Cras auctor tristique placerat. Sed mollis, leo sollicitudin condimentum euismod, arcu dui viverra dolor, at fringilla felis mauris vel erat. Etiam quis arcu rutrum, gravida lacus vitae, sagittis lectus. Suspendisse in dictum turpis. Sed finibus ex in ipsum aliquet, ut vulputate ligula pretium. Curabitur cursus, magna sollicitudin scelerisque rhoncus, mauris leo elementum enim, eget suscipit sapien sapien a mauris. Phasellus et lectus ex. </p>
+    </div>
+    <div class="col-sm-6"> //Excerpt quote in French
+      <p>Donec a urna sollicitudin, consectetur nibh in, vulputate eros. Proin in velit euismod, ultrices ipsum in, ultrices justo. Nullam congue finibus sem a tincidunt. Fusce tristique metus vel molestie varius. Nunc sollicitudin mattis tincidunt. Sed venenatis nunc id mauris aliquet, eget aliquam urna venenatis. Nulla porttitor lobortis velit eget volutpat. </p>
+      <blockquote class="blockquote-excerpt" lang="fr">
+        <p>Text quote goes here in between a content section</p>
+      </blockquote>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui elit, euismod eu facilisis quis, lacinia pretium nisi. Mauris volutpat tincidunt ligula et aliquet. Cras auctor tristique placerat. Sed mollis, leo sollicitudin condimentum euismod, arcu dui viverra dolor, at fringilla felis mauris vel erat. Etiam quis arcu rutrum, gravida lacus vitae, sagittis lectus. Suspendisse in dictum turpis. Sed finibus ex in ipsum aliquet, ut vulputate ligula pretium. Curabitur cursus, magna sollicitudin scelerisque rhoncus, mauris leo elementum enim, eget suscipit sapien sapien a mauris. Phasellus et lectus ex. </p>
+    </div>
+  </div>
+  //Other languages simply have two lines
+  <p><strong>Note:</strong> The final CSS will need to be aligned with the current blockquote CSS. This design uses a class <code></code> in order to avoid overriding the existing CSS (will need to be removed upon final implimentation in WET spec).</p>
 </section>
 <section>
 <h2 id="discuss">Discussion</h2>
@@ -248,19 +367,35 @@ blockquote:lang(fr).blockquote-reverse.bq-alt::before {
 
 <script type="text/javascript">
 
+
+
 	var defPreFooter = document.getElementById("def-preFooter");
+
+
 
 	defPreFooter.outerHTML = wet.builder.preFooter({
 
+
+
 		dateModified: "April 5, 2019",
+
+
 
 		showPostContent: true,
 
+
+
 		showFeedback: true,
+
+
 
 		showShare: true
 
+
+
 	});
+
+
 
 </script>
 </main>
@@ -270,15 +405,27 @@ blockquote:lang(fr).blockquote-reverse.bq-alt::before {
 
 <script type="text/javascript">
 
+
+
 			var defFooter = document.getElementById("def-footer");
+
+
 
 			defFooter.outerHTML = wet.builder.footer({
 
+
+
 				showFooter: true,
+
+
 
 				showFeatures: true
 
+
+
 			});
+
+
 
 		</script> 
 
@@ -286,9 +433,15 @@ blockquote:lang(fr).blockquote-reverse.bq-alt::before {
 
 <script type="text/javascript">
 
+
+
 			document.write(wet.builder.refFooter({
 
+
+
 			}));
+
+
 
 		</script>
 </body>
