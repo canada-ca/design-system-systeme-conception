@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/canada-ca/design-system-systeme-conception.svg?branch=master)](https://travis-ci.org/canada-ca/design-system-systeme-conception)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md) [![Build Status](https://travis-ci.org/canada-ca/design-system-systeme-conception.svg?branch=master)](https://travis-ci.org/canada-ca/design-system-systeme-conception)
 
 ([Français](#système-de-conception-du-gouvernement-du-canada))
 
