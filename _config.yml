@@ -13,11 +13,12 @@ exclude:
 - CODE_OF_CONDUCT.md
 - CONTRIBUTING.md
 - screenshot.png
-- LICENSE*
+- LICENCE*
 - SECURITY.md
 - CNAME
 - Gemfile
 - Gemfile.lock
+- package.json
 - gcweb-jekyll.gemspec
 - .jekyll-cache
 - node_modules
@@ -241,11 +242,11 @@ defaults:
           fr: Vous êtes ici&#160;
       layout: "page"
       lang: "en"
-      langtoggle: true
+      langtoggle: false
       noMainContainer: false
       noContentTitle: false
       share: true
-      sitemenu: true
+      sitemenu: false
       sitesearch: true
 
 # 6. Site settings
