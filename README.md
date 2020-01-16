@@ -1,4 +1,5 @@
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md) [![Slack](https://img.shields.io/badge/Slack-GC%20Design%20System%%20workspace-yellow?style=flat&logo=slack)](https://join.slack.com/t/design-gc-conception/shared_invite/enQtODE1OTc5Mzg5NzQ4LWQ3MjZjMTdjMjk2ZTZmMTJjYWQ3ZmRiNDYwYjRmN2NjYzQyNjFlNDBlY2FkNWE1ODg2YjExY2QwZmVjN2MwMGM)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
+[![Slack](https://img.shields.io/badge/Slack-GC%20Design%20System%20workspace-yellow?style=flat&logo=slack)](https://join.slack.com/t/design-gc-conception/shared_invite/enQtODE1OTc5Mzg5NzQ4LWQ3MjZjMTdjMjk2ZTZmMTJjYWQ3ZmRiNDYwYjRmN2NjYzQyNjFlNDBlY2FkNWE1ODg2YjExY2QwZmVjN2MwMGM)
 
 ([Français](#système-de-conception-du-gouvernement-du-canada))
 
