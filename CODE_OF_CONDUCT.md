@@ -60,10 +60,9 @@ available at [https://www.contributor-covenant.org/version/1/4/code-of-conduct.h
 
 This Code of Conduct is also inspired by GDS' `alphagov` [Code of conduct](https://github.com/alphagov/code-of-conduct)
 
----
-<!--markdownlint-disable MD025-->
+___
+
 # Code de conduite pour le projet `système de conception du GC`
-<!--markdownlint-enable MD025-->
 
 ([English](#Contributor-Covenant-Code-of-Conduct-for-the-GC-design-system-project))
 

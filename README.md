@@ -1,4 +1,4 @@
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md) [![Build Status](https://travis-ci.org/canada-ca/design-system-systeme-conception.svg?branch=master)](https://travis-ci.org/canada-ca/design-system-systeme-conception)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
 
 ([Français](#système-de-conception-du-gouvernement-du-canada))
 
@@ -23,6 +23,8 @@ Unless otherwise noted, the source code of this project is covered under Crown C
 The Canada wordmark and related graphics associated with this distribution are protected under trademark law and copyright law. No permission is granted to use them outside the parameters of the Government of Canada's corporate identity program. For more information, see [Federal identity requirements](https://www.canada.ca/en/treasury-board-secretariat/topics/government-communications/federal-identity-requirements.html).
 
 ______________________
+[![Pacte du contributeur](https://img.shields.io/badge/Pacte%20du%20contributeur-v1.4%20adopt%E9-ff69b4.svg)](CODE-OF-CONDUCT.md)
+
 ([English](#the-design-system-for-the-government-of-canada))
 
 # Système de conception du gouvernement du Canada

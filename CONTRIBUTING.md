@@ -16,6 +16,8 @@ If this is your first time contributing on GitHub, don't worry! Let us know if y
 
 ______________________
 
+([English](#how-to-contribe))
+
 ## Comment contribuer
 
 Lorsque vous contribuez, veuillez également publier des commentaires et discuter des modifications que vous souhaitez apporter par l'entremise des enjeux (Issues).
