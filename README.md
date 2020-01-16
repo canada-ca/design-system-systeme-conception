@@ -1,4 +1,4 @@
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md) [![Slack](https://img.shields.io/badge/Slack-GC%20Design%20System%%20workspace-yellow?style=flat&logo=slack)](https://join.slack.com/t/design-gc-conception/shared_invite/enQtODE1OTc5Mzg5NzQ4LWQ3MjZjMTdjMjk2ZTZmMTJjYWQ3ZmRiNDYwYjRmN2NjYzQyNjFlNDBlY2FkNWE1ODg2YjExY2QwZmVjN2MwMGM)
 
 ([Français](#système-de-conception-du-gouvernement-du-canada))
 
@@ -23,7 +23,7 @@ Unless otherwise noted, the source code of this project is covered under Crown C
 The Canada wordmark and related graphics associated with this distribution are protected under trademark law and copyright law. No permission is granted to use them outside the parameters of the Government of Canada's corporate identity program. For more information, see [Federal identity requirements](https://www.canada.ca/en/treasury-board-secretariat/topics/government-communications/federal-identity-requirements.html).
 
 ______________________
-[![Pacte du contributeur](https://img.shields.io/badge/Pacte%20du%20contributeur-v1.4%20adopt%E9-ff69b4.svg)](CODE-OF-CONDUCT.md)
+[![Pacte du contributeur](https://img.shields.io/badge/Pacte%20du%20contributeur-v1.4%20adopt%E9-ff69b4.svg)](CODE-OF-CONDUCT.md) [![Slack](https://img.shields.io/badge/Slack-Espace%20de%20travaill%20du%20systemes%20de%20conception%20GC-yellow?style=flat&logo=slack)](https://join.slack.com/t/design-gc-conception/shared_invite/enQtODE1OTc5Mzg5NzQ4LWQ3MjZjMTdjMjk2ZTZmMTJjYWQ3ZmRiNDYwYjRmN2NjYzQyNjFlNDBlY2FkNWE1ODg2YjExY2QwZmVjN2MwMGM)
 
 ([English](#the-design-system-for-the-government-of-canada))
 
