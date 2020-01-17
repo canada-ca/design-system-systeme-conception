@@ -28,6 +28,7 @@ exclude:
 - vendor/ruby/
 - .github
 - "*.tmp"
+- .editorconfig
 
 # 2. Installed Gems
 plugins:
@@ -45,6 +46,21 @@ collections:
   pages:
     output: true
     permalink: /:path
+  lib-behaviours:
+    output: true
+    permalink: /behaviours/
+  lib-components:
+    output: true
+    permalink: /components/
+  lib-design-patterns:
+    output: true
+    permalink: /design-patterns/
+  lib-page-layouts:
+    output: true
+    permalink: /page-layouts/
+  lib-styles:
+    output: true
+    permalink: /styles/
 
 # 5. Jekyll default page settings
 defaults:
