@@ -1,6 +1,5 @@
 ---
 contentTitle: What is the GC design system
-layout: page
 ---
 - [Home](./)
 - [What is the GC design system](./what-is-the-gc-design-system.html)
