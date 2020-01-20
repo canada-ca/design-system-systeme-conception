@@ -35,6 +35,13 @@ plugins:
   - jekyll-remote-theme
 
 # 3. Jekyll settings
+compress_html:
+  clippings: all
+  comments:
+  ignore:
+    envs: []
+  blanklines: true
+  profile: false
 quiet: false
 remote_theme: wet-boew/gcweb-jekyll
 timezone: America/Toronto # Timezone for blog posts and alike
@@ -46,29 +53,28 @@ collections:
   pages:
     output: true
     permalink: /:path
-  lib-behaviours:
+  lib_behaviours:
     output: true
-    permalink: /behaviours/
-  lib-components:
+    permalink: ./behaviours/:name
+  lib_components:
     output: true
-    permalink: /components/
-  lib-design-patterns:
+    permalink: ./components/:name
+  lib_design_patterns:
     output: true
-    permalink: /design-patterns/
-  lib-page-layouts:
+    permalink: ./design-patterns/:name
+  lib_page_layouts:
     output: true
-    permalink: /page-layouts/
-  lib-styles:
+    permalink: ./page-layouts/:name
+  lib_styles:
     output: true
-    permalink: /styles/
+    permalink: ./styles/:name
 
 # 5. Jekyll default page settings
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
-      footer: true
+      footer: false
       i18n:
         tmpl-about-government:
           en: About government
@@ -256,24 +262,36 @@ defaults:
         tmpl-you-are-here:
           en: You are here
           fr: Vous êtes ici&#160;
+      javascript:
+        - src: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity: "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin: "anonymous"
       layout: "page"
       lang: "en"
       langtoggle: false
       noMainContainer: false
       noContentTitle: false
       share: true
-      sitemenu: false
+      sitemenu: true
       sitesearch: true
+      stylesheets:
+        - href: "https://jmealing.github.io/design-system-systeme-conception/css/gc-design-sys-nav.css"
 
 # 6. Site settings
 analytics_google: ""
 analytics_google_anonymize_ip: ""
 assets: "https://wet-boew.github.io/themes-dist"
-baseurl: ""
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 email: ""
 encoding: utf-8 # Make sure the encoding is right
 lang: en-CA # Set the site language
 languages: ["en", "fr"]
+sitename:
+  en: GC Design System
+  fr: System de conception GC
+stylesheets:
+  - href: "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin: "anonymous"
 theme-name: GCWeb
-title: Canada.ca design system / Système de conception de Canada.ca # Site name or title, also used in jekyll-seo-tag
+title: GC design system / Système de conception GC # Site name or title, also used in jekyll-seo-tag

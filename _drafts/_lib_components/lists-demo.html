@@ -1,0 +1,287 @@
+<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>Lists</span>: <span>Demo and code</span></span></h1>
+         <div class="row profile">
+            <div class="col-md-9">
+               <p class="pagetag">Options for presenting lists.</p>
+            </div>
+            <div class="col-md-3">
+               <div class="small">
+                  <ul class="list-unstyled">
+
+                     <li class="mrgn-rght-lg"><strong>Version:</strong> x.x</li>
+                     <li class="mrgn-rght-lg"><strong>Updated:</strong> Dec 12, 2019</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-12">
+               <div class="btn-group mrgn-bttm-sm mrgn-tp-md">
+                  <a class="btn btn-default" href="./lists.html"><span class="fas fa-pen-square"></span> Design guidelines</a>
+                  <a class="btn btn-default active"><span class="fas fa-laptop-code"></span> <strong>Demo and code</strong></a>
+                  <a class="btn btn-default" href="./lists-rationale.html"><span class="fas fa-microscope"></span> Rationale</a>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+             <div class="col-md-9 col-xs-12 mrgn-tp-md pull-right">
+                <div id="demo" class="pattern-demo pattern-demo-component">
+                  <div id="unordered-demo" class="component-demo example-frame-bkg">
+                    <iframe title="Unordered list example layout" class="example-frame example-frame-resizable example-frame-m" src="./demos/lists/wet4/list-unordered.html" frameborder="0" loading="lazy" onload="resizeIframe(this);"></iframe>
+                  </div>
+                  <div id="ordered-demo" class="component-demo hidden">
+                    <div id="ordered-default-layout" class="layout-demo">
+                       <iframe title="Default ordered list example layout" class="example-frame example-frame-resizable example-frame-m" src="./demos/lists/wet4/list-ordered-default.html" frameborder="0" loading="lazy" onload="resizeIframe(this);"></iframe>
+                    </div>
+                    <div id="ordered-lower-alpha-layout" class="layout-demo hidden">
+                       <iframe title="Ordered list with lower alpha example layout" class="example-frame example-frame-resizable example-frame-m" src="./demos/lists/wet4/list-ordered-lower-alpha.html" frameborder="0" loading="lazy" onload="resizeIframe(this);"></iframe>
+                    </div>
+                    <div id="ordered-upper-alpha-layout" class="layout-demo hidden">
+                       <iframe title="Ordered list with upper alpha example layout" class="example-frame example-frame-resizable example-frame-m" src="./demos/lists/wet4/list-ordered-upper-alpha.html" frameborder="0" loading="lazy" onload="resizeIframe(this);"></iframe>
+                    </div>
+                    <div id="ordered-lower-roman-layout" class="layout-demo hidden">
+                       <iframe title="Ordered list with lower roman example layout" class="example-frame example-frame-resizable example-frame-m" src="./demos/lists/wet4/list-ordered-lower-roman.html" frameborder="0" loading="lazy" onload="resizeIframe(this);"></iframe>
+                    </div>
+                    <div id="ordered-upper-roman-layout" class="layout-demo hidden">
+                       <iframe title="Ordered list with upper roman example layout" class="example-frame example-frame-resizable example-frame-m" src="./demos/lists/wet4/list-ordered-upper-roman.html" frameborder="0" loading="lazy" onload="resizeIframe(this);"></iframe>
+                    </div>
+                  </div>
+                  <div id="links-demo" class="component-demo hidden">
+                    <div id="links-default-layout" class="layout-demo">
+                       <iframe title="Default list of link example layout" class="example-frame example-frame-resizable example-frame-m" src="./demos/lists/wet4/list-link-default.html" frameborder="0" loading="lazy" onload="resizeIframe(this);"></iframe>
+                    </div>
+                    <div id="links-toc-layout" class="layout-demo hidden">
+                       <iframe title="In-page table of contents example layout" class="example-frame example-frame-resizable example-frame-m" src="./demos/lists/wet4/list-link-toc.html" frameborder="0" loading="lazy" onload="resizeIframe(this);"></iframe>
+                    </div>
+                    <div id="links-mr-layout" class="layout-demo hidden">
+                       <iframe title="Most requested example layout" class="example-frame example-frame-resizable example-frame-m" src="./demos/lists/wet4/list-link-mr.html" frameborder="0" loading="lazy" onload="resizeIframe(this);"></iframe>
+                    </div>
+                  </div>
+                   <div class="btn-group">
+                      <button id="resize-iframe-mobile" class="btn btn-default"><span class="fas fa-mobile-alt"></span> <strong>SM</strong></button>
+                      <button id="resize-iframe-tablet" class="btn btn-default"><span class="fas fa-tablet-alt"></span> <strong>MD</strong></button>
+                      <button id="resize-iframe-desktop" class="btn btn-default"><span class="fas fa-desktop"></span> <strong>LG</strong></button>
+                   </div>
+                </div>
+             </div>
+            <div class="col-md-3 pull-left">
+               <div class="mrgn-bttm-sm">
+                  <fieldset>
+                    <label for="design-variant-menu" class="h5">Design variant</label>
+                    <select id="design-variant-menu" class="form-control">
+                      <option value="unordered">Unordered list</option>
+                      <option value="ordered">Ordered list</option>
+                      <option value="links">List of links</option>
+                    </select>
+                  </fieldset>
+               </div>
+               <div id="ordered-submenu" class="mrgn-bttm-sm ordered-options layout-submenu hidden">
+                  <fieldset>
+                     <label for="ordered-layout-menu" class="h5">Options</label>
+                     <select id="ordered-layout-menu" class="form-control layout-variant-menu">
+                        <option value="ordered-default">Default</option>
+                        <option value="ordered-lower-alpha">Lower alpha</option>
+                        <option value="ordered-upper-alpha">Upper alpha</option>
+                        <option value="ordered-lower-roman">Lower roman</option>
+                        <option value="ordered-upper-roman">Upper roman</option>
+                     </select>
+                  </fieldset>
+               </div>
+               <div id="links-submenu" class="mrgn-bttm-sm links-options layout-submenu hidden">
+                  <fieldset>
+                     <label for="links-layout-menu" class="h5">Options</label>
+                     <select id="links-layout-menu" class="form-control layout-variant-menu">
+                        <option value="links-default">Default</option>
+                        <option value="links-toc">In-page table of contents</option>
+                        <option value="links-mr">Most requested</option>
+                     </select>
+                  </fieldset>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-9 col-xs-12 mrgn-tp-md pull-right">
+               <div id="unordered-code" class="component-code">
+                  <div class="code-variant wet4-variant">
+                     <section data-ajax-replace="./demos/lists/wet4/list-unordered-code.html"></section>
+                  </div>
+                  <div class="code-variant react-variant hidden">
+                    <h3>ReactJS</h3>
+                     <p>Doesn't exist yet. Want to contribute?</p>
+                     <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                  </div>
+                  <div class="code-variant angular-variant hidden">
+                    <h3>Angular</h3>
+                     <p>Doesn't exist yet. Want to contribute?</p>
+                     <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                  </div>
+               </div>
+               <div id="ordered-code" class="component-code hidden">
+                 <div id="ordered-default-code" class="layout-code">
+                    <div class="code-variant wet4-variant">
+                      <section data-ajax-replace="./demos/lists/wet4/list-ordered-default-code.html"></section>
+                    </div>
+                    <div class="code-variant react-variant hidden">
+                      <h3>ReactJS</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+                    <div class="code-variant angular-variant hidden">
+                      <h3>Angular</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+
+                 </div>
+                 <div id="ordered-lower-alpha-code" class="layout-code hidden">
+
+                    <div class="code-variant wet4-variant">
+                      <section data-ajax-replace="./demos/lists/wet4/list-ordered-lower-alpha-code.html"></section>
+                    </div>
+                    <div class="code-variant react-variant hidden">
+                      <h3>ReactJS</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+                    <div class="code-variant angular-variant hidden">
+                      <h3>Angular</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+
+                 </div>
+                 <div id="ordered-upper-alpha-code" class="layout-code hidden">
+
+                    <div class="code-variant wet4-variant">
+                      <section data-ajax-replace="./demos/lists/wet4/list-ordered-upper-alpha-code.html"></section>
+                    </div>
+                    <div class="code-variant react-variant hidden">
+                      <h3>ReactJS</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+                    <div class="code-variant angular-variant hidden">
+                      <h3>Angular</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+
+                 </div>
+                 <div id="ordered-lower-roman-code" class="layout-code hidden">
+
+                    <div class="code-variant wet4-variant">
+                      <section data-ajax-replace="./demos/lists/wet4/list-ordered-lower-roman-code.html"></section>
+                    </div>
+                    <div class="code-variant react-variant hidden">
+                      <h3>ReactJS</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+                    <div class="code-variant angular-variant hidden">
+                      <h3>Angular</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+
+                 </div>
+                 <div id="ordered-upper-roman-code" class="layout-code hidden">
+
+                    <div class="code-variant wet4-variant">
+                      <section data-ajax-replace="./demos/lists/wet4/list-ordered-upper-roman-code.html"></section>
+                    </div>
+                    <div class="code-variant react-variant hidden">
+                      <h3>ReactJS</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+                    <div class="code-variant angular-variant hidden">
+                      <h3>Angular</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+
+                 </div>
+               </div>
+               <div id="links-code" class="component-code hidden">
+                 <div id="links-default-code" class="layout-code">
+                    <div class="code-variant wet4-variant">
+                      <section data-ajax-replace="./demos/lists/wet4/list-link-default-code.html"></section>
+                    </div>
+                    <div class="code-variant react-variant hidden">
+                      <h3>ReactJS</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+                    <div class="code-variant angular-variant hidden">
+                      <h3>Angular</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+
+                 </div>
+                 <div id="links-toc-code" class="layout-code hidden">
+
+                    <div class="code-variant wet4-variant">
+                      <section data-ajax-replace="./demos/lists/wet4/list-link-toc-code.html"></section>
+                    </div>
+                    <div class="code-variant react-variant hidden">
+                      <h3>ReactJS</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+                    <div class="code-variant angular-variant hidden">
+                      <h3>Angular</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+
+                 </div>
+                 <div id="links-mr-code" class="layout-code hidden">
+
+                    <div class="code-variant wet4-variant">
+                      <section data-ajax-replace="./demos/lists/wet4/list-link-mr-code.html"></section>
+                    </div>
+                    <div class="code-variant react-variant hidden">
+                      <h3>ReactJS</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+                    <div class="code-variant angular-variant hidden">
+                      <h3>Angular</h3>
+                       <p>Doesn't exist yet. Want to contribute?</p>
+                       <p><a href="https://canada-ca.github.io/design-system-systeme-conception/backlog/contribution-process.html" class="btn btn-default">Contribute to the design system</a></p>
+                    </div>
+
+                 </div>
+               </div>
+            </div>
+            <div class="col-md-3 pull-left">
+               <div class="mrgn-bttm-sm">
+                  <fieldset>
+                    <label for="code-variant-menu" class="h5">Code variant</label>
+                    <select id="code-variant-menu" class="form-control">
+                       <option value="wet4">WET 4</option>
+                       <option value="react">ReactJS</option>
+                       <option value="angular">Angular</option>
+                    </select>
+                  </fieldset>
+               </div>
+            </div>
+         </div>
+         <section>
+            <h2 id="how">Customisation</h2>
+            <section data-ajax-replace="./demos/lists/lists-customisation.html"></section>
+         </section>
+         <section>
+            <h2 id="versions">Latest changes</h2>
+            <dl class="dl-horizontal">
+               <dt>Version x.x:<br><small><time datetime="2019-12-17" class="text-muted">Dec 17, 2019</time></small></dt>
+               <dd>Changed the code to create drop-downs.</dd>
+            </dl>
+         </section>
+         <section>
+            <h2 id="discuss">Discussion</h2>
+            <div class="row">
+               <div class="col-md-4 col-sm-6 col-xs-12">
+                  <p><a href="https://github.com/canada-ca/design-system-systeme-conception/issues" class="btn btn-default btn-block"><span class="fab fa-github"></span> Report an issue in github</a></p>
+                  <p><a href="" class="btn btn-default btn-block"><span class="fab fa-slack"></span> Join the conversation on slack</a></p>
+               </div>
+            </div>
+         </section>

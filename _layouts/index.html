@@ -1,0 +1,13 @@
+---
+layout: page
+---
+<ul>
+{% assign pages = site.pages %}
+{% for doc in pages %}
+	{% if doc.breadcrumbs.last.title == page.contentTitle %}
+	{% if doc.url contains page.lang %}
+	<li><a href="{{ doc.url }}">{{ doc.contentTitle }}</a></li{>
+		{% endif  %}
+	{% endif %}
+{% endfor %}
+</ul>

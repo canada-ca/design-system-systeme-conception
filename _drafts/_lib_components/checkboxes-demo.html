@@ -1,0 +1,385 @@
+<h1 property="name" id="wb-cont" dir="ltr"><span class="stacked"><span>Checkboxes</span>: <span>Demo and code</span></span></h1>
+		<div class="row profile">
+			<div class="col-md-9">
+				<p class="pagetag">Alerts are notice boxes that bring users' attention to specific content that makes them aware of a result of a user action, a clarification or exception to surrounding content or to warn the user of a consequence of an action or inaction in their task.</p>
+			</div>
+			<div class="col-md-3">
+				<div class="small">
+					<ul class="list-unstyled">
+					<li><span class="wb-inv"><strong>Progress:</strong> </span><label class="label beta-label">Beta</label></li>
+					<li class="mrgn-rght-lg"><strong>Version:</strong> x.x</li>
+					<li class="mrgn-rght-lg"><strong>Updated:</strong> Nov 12, 2019</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="btn-group mrgn-bttm-sm mrgn-tp-md">
+					<a class="btn btn-default" href="./checkboxes-guide.html"><span class="fas fa-pen-square"></span> <strong>Design guidelines</strong></a>
+					<a class="btn btn-default active"><span class="fas fa-laptop-code"></span> Demo and code</a>
+					<a class="btn btn-default" href="./checkboxes-rationale.html"><span class="fas fa-microscope"></span> Rationale</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-9 col-xs-12 mrgn-tp-lg pull-right">
+				<div class="pattern-demo pattern-demo-component">
+					<div id="large-checkbox-demo" class="component-demo">
+					</div>
+					<div id="large-checkbox-checklist-demo" class="component-demo hidden">
+					</div>
+					<div id="small-checkbox-demo" class="component-demo hidden">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3  pull-left">
+				<div class="mrgn-bttm-sm">
+					<label class="h5 ">Design variant</label>
+					<select id="design-variant-menu" class="form-control">
+					<option value="large-checkbox">Danger</option>
+					<option value="large-green-checkbox">Warning</option>
+					<option value="large-inline-checkbox">Info</option>
+					<option value="success">Success</option>
+					<option value="show-all">Show all</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="example-code" class="col-md-9 col-xs-12 mrgn-tp-lg pull-right">
+				<div id="danger-code" class="component-code">
+					<div class="code-variant beta-variant">
+					<div class="wb-tabs">
+						<div class="tabpanels">
+							<details id="danger-details-panel1">
+								<summary>HTML</summary>
+								<pre><code>&lt;section class="alert alert-danger"&gt;
+&lt;h3&gt;Alert heading&lt;/h3&gt;
+&lt;p&gt;Alert description.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+							</details>
+							<details id="danger-details-panel2">
+								<summary>CSS</summary>
+								<pre><code>.alert:before {
+height: 34px;
+content: "";
+background-color: #fff;
+width: 6px;
+display: inline;
+margin-top: -1px;
+margin-left: -26px;
+position: absolute;
+}
+.alert-success, .alert-info, .alert-warning, .alert-danger {
+background: #fff !important;
+}
+.alert {
+border-width: 1px 1px 1px 4px !important;
+margin-left: 12px;
+padding-left: 20px;
+border-width: 0px 0px 0px 6px!important
+}
+.alert-success &gt; :first-child::before, .alert-info &gt; :first-child::before, .alert-warning &gt; :first-child::before, .alert-danger &gt; :first-child::before {
+font-size: 26px;
+margin-left: -1.48em;
+padding: 2px;
+line-height: 1.1em;
+}
+.alert &gt; :first-child {
+margin-left: 0em;
+}
+.alert &gt;:first-child::before {
+margin-right: 0.4em
+}</code></pre>
+							</details>
+						</div>
+					</div>
+					</div>
+					<div class="code-variant wet4-variant hidden">
+					<pre><code>&lt;section class="alert alert-danger"&gt;
+&lt;h3&gt;Alert heading&lt;/h3&gt;
+&lt;p&gt;Alert description.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+					</div>
+					<div class="code-variant wet5-variant hidden">
+					<pre><code>danger code for WET 5</code></pre>
+					</div>
+					<div class="code-variant react-variant hidden">
+					<pre><code>danger code for react</code></pre>
+					</div>
+					<div class="code-variant angular-variant hidden">
+					<pre><code>danger code for angular</code></pre>
+					</div>
+				</div>
+				<div id="warning-code" class="component-code hidden">
+					<div class="code-variant beta-variant">
+					<div class="wb-tabs">
+						<div class="tabpanels">
+							<details id="warning-details-panel1">
+								<summary>HTML</summary>
+								<pre><code>&lt;section class="alert alert-warning"&gt;
+&lt;h3&gt;Alert heading&lt;/h3&gt;
+&lt;p&gt;Alert description.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+							</details>
+							<details id="warning-details-panel2">
+								<summary>CSS</summary>
+								<pre><code>.alert:before {
+height: 34px;
+content: "";
+background-color: #fff;
+width: 6px;
+display: inline;
+margin-top: -1px;
+margin-left: -26px;
+position: absolute;
+}
+.alert-success, .alert-info, .alert-warning, .alert-danger {
+background: #fff !important;
+}
+.alert {
+border-width: 1px 1px 1px 4px !important;
+margin-left: 12px;
+padding-left: 20px;
+border-width: 0px 0px 0px 6px!important
+}
+.alert-success &gt; :first-child::before, .alert-info &gt; :first-child::before, .alert-warning &gt; :first-child::before, .alert-danger &gt; :first-child::before {
+font-size: 26px;
+margin-left: -1.48em;
+padding: 2px;
+line-height: 1.1em;
+}
+.alert &gt; :first-child {
+margin-left: 0em;
+}
+.alert &gt;:first-child::before {
+margin-right: 0.4em
+}</code></pre>
+							</details>
+						</div>
+					</div>
+					</div>
+					<div class="code-variant wet4-variant hidden">
+					<pre><code>warning code for WET 4</code></pre>
+					</div>
+					<div class="code-variant wet5-variant hidden">
+					<pre><code>warning code for WET 5</code></pre>
+					</div>
+					<div class="code-variant react-variant hidden">
+					<pre><code>warning code for react</code></pre>
+					</div>
+					<div class="code-variant angular-variant hidden">
+					<pre><code>warning code for angular</code></pre>
+					</div>
+				</div>
+				<div id="info-code" class="component-code hidden">
+					<div class="code-variant beta-variant">
+					<div class="wb-tabs">
+						<div class="tabpanels">
+							<details id="info-details-panel1">
+								<summary>HTML</summary>
+								<pre><code>&lt;section class="alert alert-info"&gt;
+&lt;h3&gt;Alert heading&lt;/h3&gt;
+&lt;p&gt;Alert description.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+							</details>
+							<details id="info-details-panel2">
+								<summary>CSS</summary>
+								<pre><code>.alert:before {
+height: 34px;
+content: "";
+background-color: #fff;
+width: 6px;
+display: inline;
+margin-top: -1px;
+margin-left: -26px;
+position: absolute;
+}
+.alert-success, .alert-info, .alert-warning, .alert-danger {
+background: #fff !important;
+}
+.alert {
+border-width: 1px 1px 1px 4px !important;
+margin-left: 12px;
+padding-left: 20px;
+border-width: 0px 0px 0px 6px!important
+}
+.alert-success &gt; :first-child::before, .alert-info &gt; :first-child::before, .alert-warning &gt; :first-child::before, .alert-danger &gt; :first-child::before {
+font-size: 26px;
+margin-left: -1.48em;
+padding: 2px;
+line-height: 1.1em;
+}
+.alert &gt; :first-child {
+margin-left: 0em;
+}
+.alert &gt;:first-child::before {
+margin-right: 0.4em
+}</code></pre>
+							</details>
+						</div>
+					</div>
+					</div>
+					<div class="code-variant wet4-variant hidden">
+					<pre><code>info code for WET 4</code></pre>
+					</div>
+					<div class="code-variant wet5-variant hidden">
+					<pre><code>info code for WET 5</code></pre>
+					</div>
+					<div class="code-variant react-variant hidden">
+					<pre><code>info code for react</code></pre>
+					</div>
+					<div class="code-variant angular-variant hidden">
+					<pre><code>info code for angular</code></pre>
+					</div>
+				</div>
+				<div id="success-code" class="component-code hidden">
+					<div class="code-variant beta-variant">
+					<div class="wb-tabs">
+						<div class="tabpanels">
+							<details id="success-details-panel1">
+								<summary>HTML</summary>
+								<pre><code>&lt;section class="alert alert-success"&gt;
+&lt;h3&gt;Alert heading&lt;/h3&gt;
+&lt;p&gt;Alert description.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+							</details>
+							<details id="success-details-panel2">
+								<summary>CSS</summary>
+								<pre><code>.alert:before {
+height: 34px;
+content: "";
+background-color: #fff;
+width: 6px;
+display: inline;
+margin-top: -1px;
+margin-left: -26px;
+position: absolute;
+}
+.alert-success, .alert-info, .alert-warning, .alert-danger {
+background: #fff !important;
+}
+.alert {
+border-width: 1px 1px 1px 4px !important;
+margin-left: 12px;
+padding-left: 20px;
+border-width: 0px 0px 0px 6px!important
+}
+.alert-success &gt; :first-child::before, .alert-info &gt; :first-child::before, .alert-warning &gt; :first-child::before, .alert-danger &gt; :first-child::before {
+font-size: 26px;
+margin-left: -1.48em;
+padding: 2px;
+line-height: 1.1em;
+}
+.alert &gt; :first-child {
+margin-left: 0em;
+}
+.alert &gt;:first-child::before {
+margin-right: 0.4em
+}</code></pre>
+							</details>
+						</div>
+					</div>
+					</div>
+					<div class="code-variant wet4-variant hidden">
+					<pre><code>success code for WET 4</code></pre>
+					</div>
+					<div class="code-variant wet5-variant hidden">
+					<pre><code>success code for WET 5</code></pre>
+					</div>
+					<div class="code-variant react-variant hidden">
+					<pre><code>success code for react</code></pre>
+					</div>
+					<div class="code-variant angular-variant hidden">
+					<pre><code>success code for angular</code></pre>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 pull-left">
+				<div class="mrgn-bttm-sm">
+					<label class="h5">Code variant</label>
+					<select id="code-variant-menu" class="form-control">
+					<option value="beta">Beta</option>
+					<option value="wet4">WET 4</option>
+					<option value="wet5">WET 5</option>
+					<option value="react">ReactJS</option>
+					<option value="angular">Angular</option>
+					</select>
+					<label class="label label-info code-variant beta-variant">Beta</label>
+					<label class="label label-warning code-variant wet4-variant wet5-variant react-variant angular-variant">Use beta for the latest design</label>
+				</div>
+			</div>
+		</div>
+		<section>
+			<h2 id="how">Customisation</h2>
+			<section data-ajax-replace="./demos/checkboxes-radio-buttons-customisation.html"></section>
+		</section>
+		<section>
+			<h3 id="states">States</h3>
+			<p>There are no additional states for the alert component.</p>
+		</section>
+		<section>
+			<h3 id="accessibility">Accessibility features and usage</h3>
+			<p>How the alerts are seen with predominant forms of colour blindness:</p>
+			<div class="row">
+				<div class="col-md-9 col-lg-8">
+					<div class="wb-tabs">
+					<div class="tabpanels">
+						<details id="colour-blindness-details-panel1">
+							<summary>Deutanopia</summary>
+							<img class="img-responsive" src="../images/alert-deutanopia.png" alt="Shows the 4 types of alerts under a colour filter.">
+						</details>
+						<details id="colour-blindness-details-panel2">
+							<summary>Tritanopia</summary>
+							<img class="img-responsive" src="../images/alert-tritanopia.png" alt="Shows the 4 types of alerts under a colour filter.">
+						</details>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		</section>
+		<section>
+			<h2 id="issues">Information schemas</h2>
+			<p><strong>Usage:</strong> Use the schema to submit code for automated actions (??).</p>
+			<div class="row">
+				<div class="col-md-9 col-lg-8">
+					<details>
+					<summary>Schema templates</summary>
+					<div class="wb-tabs">
+						<div class="tabpanels">
+							<details id="schema-details-panel1">
+								<summary>Basic</summary>
+							</details>
+							<details id="schema-details-panel2">
+								<summary>Shapes graphs</summary>
+							</details>
+							<details id="schema-details-panel3">
+								<summary>JSON-LD</summary>
+							</details>
+						</div>
+					</div>
+					</details>
+				</div>
+			</div>
+		</section>
+		<section>
+			<h2 id="issues">Known issues</h2>
+			<p>Potential lack of contrast for Deutanopia for some of the styles</p>
+			<p>Aria role="alert" or "alertdialog"? Are these relevant to accessible use? Should they not be used and a warning included?</p>
+		</section>
+		<section>
+			<h2 id="versions">Latest changes</h2>
+			<dl class="dl-horizontal">
+				<dt>Version x.x:<br><small><time datetime="2019-11-07" class="text-muted">Nov 7, 2019</time></small></dt>
+				<dd>Component was updated to not have a background colour that caused banner blindness.</dd>
+			</dl>
+		</section>
+		<section>
+			<h2 id="discuss">Discussion</h2>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<p><a href="https://github.com/canada-ca/design-system-systeme-conception/issues" class="btn btn-default btn-block"><span class="fab fa-github"></span> Report an issue in github</a></p>
+					<p><a href="" class="btn btn-default btn-block"><span class="fab fa-slack"></span> Join the conversation on slack</a></p>
+				</div>
+			</div>
+		</section>

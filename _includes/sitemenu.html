@@ -1,0 +1,24 @@
+	<div class="gc-ds-nav">
+		<div class="container">
+			<nav class="navbar navbar-expand-md">
+				<a href="#" class="navbar-brand">
+					<img src="/assets/img/logo.svg" height="28" alt="GC Design system">
+				</a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon">Menu</span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<div class="navbar-nav pstn-rght-md">
+						<ul>
+							{% assign pages = site.pages | sort: 'order' %}
+							{% for doc in pages %}
+								{% if doc.breadcrumbs.last.title == page.i18n.tmpl-home[page.lang] %}
+								<li><a class="nav-item nav-link{% if doc.url == page.url or doc.url contains page.breadcrumbs[1].link %} active{% endif %}" href="{{ doc.url }}">{{ doc.contentTitle }}</a></li>
+								{% endif %}
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>

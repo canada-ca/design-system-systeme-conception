@@ -1,0 +1,102 @@
+---
+breadcrumbs:
+  - title: "Home"
+    link: "/en"
+contentTitle: Library
+layout: page
+permalink: en/library/
+order: 2
+---
+<p><b>Search for:</b></p>
+<div class="wb-filter">
+	<section id="behaviours">
+		<h3 class="wb-inv">Behaviours</h3>
+		<ul class="list-unstyled row">
+			{% for behaviours in site.lib_behaviours %}
+			<li class="col-md-3">
+				<div class="panel panel-default">
+					<header class="panel-heading">
+						<h5 class="panel-title">Behaviours</h5>
+					</header>
+					<div class="panel-body">
+						<p><a class="stretched-link" href="{{ behaviours.url }}">{{ behaviours.contentTitle }}</a></p>
+						<p class="small">{{ behaviours.description }}</p>
+					</div>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+	<section id="components">
+		<h3 class="wb-inv">Components</h3>
+		<ul class="list-unstyled row">
+			{% for components in site.lib_components %}
+			<li class="col-md-3">
+				<div class="panel panel-default">
+					<header class="panel-heading">
+						<h5 class="panel-title">Components</h5>
+					</header>
+					<div class="panel-body">
+						<p><a class="stretched-link" href="{{ components.url }}">{{ components.contentTitle }}</a></p>
+						<p class="small">{{ components.description }}</p>
+					</div>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+	<section id="design-patterns">
+		<h3 class="wb-inv">Design patterns</h3>
+		<ul class="list-unstyled row">
+			{% for design-patterns in site.lib_design-patterns %}
+			<li class="col-md-3">
+				<div class="panel panel-default">
+					<header class="panel-heading">
+						<h5 class="panel-title">Design patterns</h5>
+					</header>
+					<div class="panel-body">
+						<p><a class="stretched-link" href="{{ design-patterns.url }}">{{ design-patterns.contentTitle }}</a></p>
+						<p class="small">{{ design-patterns.description }}</p>
+					</div>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+	<section id="page-layouts">
+		<h3 class="wb-inv">Page layouts</h3>
+		<ul class="list-unstyled row">
+			{% for page-layouts in site.lib_page-layouts %}
+			<li class="col-md-3">
+				<div class="panel panel-default">
+					<header class="panel-heading">
+						<h5 class="panel-title">Page layouts</h5>
+					</header>
+					<div class="panel-body">
+						<p><a class="stretched-link" href="{{ page-layouts.url }}">{{ page-layouts.contentTitle }}</a></p>
+						<p class="small">{{ page-layouts.description }}</p>
+					</div>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+	<section id="styles">
+		<h3 class="wb-inv">Styles</h3>
+		<ul class="list-unstyled row">
+			{% for styles in site.lib_styles %}
+			<li class="col-md-3">
+				<div class="panel panel-default">
+					<header class="panel-heading">
+						<h5 class="panel-title">Styles</h5>
+					</header>
+					<div class="panel-body">
+						<p><a class="stretched-link" href="{{ styles.url }}">{{ styles.contentTitle }}</a></p>
+						<p class="small">{{ styles.description }}</p>
+					</div>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+</div>

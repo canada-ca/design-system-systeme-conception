@@ -1,0 +1,8 @@
+---
+breadcrumbs:
+  - title: "Home"
+    link: "/en"
+  - title: "Community"
+    link: "/en/community"
+contentTitle: Report an issue
+---

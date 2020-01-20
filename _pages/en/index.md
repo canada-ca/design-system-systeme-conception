@@ -1,5 +1,16 @@
 ---
+# breadcrumbs: true
 contentTitle: GC Design system
+noContentTitle: true
+permalink: "/en"
 ---
-- [What is the GC design system](./what-is-the-gc-design-system.html)
-- [Who should use the GC design system](./who-should-use-the-gc-design-system.html)
+
+<p class="mrgn-tp-lg">The GC design system provides usable, consistant and trustworthy online experience for people to access Government of Canada digital services.</p>
+
+<a class="btn btn-primary" href="./get-started/">Get started</a>
+
+- [Library](./library/)
+- [Branding](./branding/)
+- [Content design](./content-design/)
+- [Solutions](./solutions/)
+- [Community](./community/)

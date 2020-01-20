@@ -1,0 +1,144 @@
+---
+layout: page
+---
+<div class="row profile">
+	<div class="col-md-9">
+		<p class="pagetag">{{ page.pagetag }}</p>
+	</div>
+	<div class="col-md-3">
+		<div class="small">
+			<ul class="list-unstyled component-tombstone">
+			<li class="mrgn-rght-lg"><strong>Progress:</strong> <label class="experimental label beta-label">{{ page.stage }}</label></li class="mrgn-rght-lg">
+			<li class="mrgn-rght-lg"><strong>Version:</strong> {{ page.version }}</li>
+			<li class="mrgn-rght-lg"><strong>Updated:</strong> {{ page.updated | date: "%b %d, %Y" }}</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="btn-group mrgn-bttm-sm mrgn-tp-md">
+			<a class="btn btn-default active"><span class="fas fa-pen-square"></span><strong>Design guidelines</strong></a>
+			<a class="btn btn-default" href="./demo-{{ page.component-grp }}"><span class="fas fa-laptop-code"></span> Demo and code</a>
+			<a class="btn btn-default" href="./rationale-{{ page.component-grp }}"><span class="fas fa-microscope"></span> Rationale</a>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<section class="col-md-6">
+		<h2>On this page</h2>
+		<ul>
+			<li><a href="#spec">Design specifications</a></li>
+			<li><a href="#variations">Design variants</a></li>
+			<li><a href="#patterns">Related patterns</a></li>
+			<li><a href="#usage">Usage</a></li>
+			<li><a href="#discuss">Discussion</a></li>
+		</ul>
+	</section>
+	{% if page.availibility %}
+	<section class="col-md-6">
+		<h2>Available in the design kit</h2>
+		<ul class="list-unstyled lst-spcd">
+			{% for availibility in page.availibility %}
+			<li><a class="btn btn-default" href="{{ availibility.link }}"><span class="fas fa-arrow-circle-down"></span> {{ availibility.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</section>
+	{% else %}
+	<div class="clearfix"></div>
+	{% endif %}
+	<section>
+		<h2 id="specs">Design specifications</h2>
+		{{ content }}
+	</section>
+	<section>
+		<h2 id="patterns">Related patterns</h2>
+		<p>{{ page.contentTitle }} are used in the following patterns:</p>
+		{% if page.related %}
+		<ul>
+			{% for related in page.related %}
+			<li><a href="../{{ related.link }}">{{ related.title }}</a></li>
+			{% endfor %}
+		</ul>
+		{% else %}
+		<p>No related pattern</p> <!-- Expand and edit later 2020-01-19 -->
+		{% endif %}
+	</section>
+	<section>
+		<h2 id="usage">Usage</h2>
+		<section class="design-usage">
+			<h3>Only use call to action buttons for the primary action</h3>
+			<div class="row mrgn-bttm-lg">
+				<div class="col-md-4">
+					<!-- 360x200 images -->
+					<img src="../images/buttons/call-to-action-example.gif" class="img-responsive pattern-demo" alt='.'>
+					<div class="dont-guideline">
+						<p class="h4">Don't</p>
+						<p>Avoid having 2 call to action buttons on the same page.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<!-- 360x200 images -->
+					<img src="../images/buttons/secondary-example.gif" class="img-responsive pattern-demo" alt='.'>
+					<div class="do-guideline">
+						<p class="h4">Do</p>
+						<p>Use secondary action buttons if there are various possible next steps with similar frequency or importance.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="design-usage">
+			<h3>Generally, don't disable buttons</h3>
+			<div class="row mrgn-bttm-lg">
+				<div class="col-md-4">
+					<!-- 360x200 images -->
+					<img src="" class="img-responsive pattern-demo" alt='.'>
+					<div class="do-guideline">
+						<p class="h4">Do</p>
+						<p>If a button requires permissions a visitor does not have, or if a button cannot be used conditionally, hide it, don't disable it.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<!-- 360x200 images -->
+					<img src="" class="img-responsive pattern-demo" alt='.'>
+					<div class="do-guideline">
+						<p class="h4">Do</p>
+						<p>Use form validation to indicate to a visitor that more fields are required before a button's action can be carried out.</p>
+					</div>
+					</div>
+				<div class="col-md-4">
+					<!-- 360x200 images -->
+					<img src="" class="img-responsive pattern-demo" alt='.'>
+					<div class="do-guideline">
+						<p class="h4">Do</p>
+						<p>Buttons can be disabled once they have been clicked to avoid accidental double-clicks.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<!-- 360x200 images -->
+					<img src="" class="img-responsive pattern-demo" alt='.'>
+					<div class="do-guideline">
+						<p class="h4">Do</p>
+						<p>Buttons in a toolbar that is consistent across various pages or states can be disabled if not applicable in the current page or situation.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section class="design-usage">
+		<h3>Button placement</h3>
+		<div class="do-guideline">
+			<p class="h4">Do</p>
+			<p>((Alternative usage style without images))</p>
+		</div>
+	</section>
+	<section>
+		<h2 id="discuss">Discussion</h2>
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<p><a href="https://github.com/canada-ca/design-system-systeme-conception/issues" class="btn btn-default btn-block"><span class="fab fa-github"></span> Report an issue in github</a></p>
+				<p><a href="" class="btn btn-default btn-block"><span class="fab fa-slack"></span> Join the conversation on slack</a></p>
+			</div>
+		</div>
+	</section>
+</div>

@@ -1,6 +1,8 @@
 ---
+breadcrumbs:
+  - title: "Home"
+    link: "/en"
+  - title: "Get started"
+    link: "/en/get-started"
 contentTitle: What is the GC design system
 ---
-- [Home](./)
-- [What is the GC design system](./what-is-the-gc-design-system.html)
-- [Who should use the GC design system](./who-should-use-the-gc-design-system.html)
