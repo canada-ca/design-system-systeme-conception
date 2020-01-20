@@ -9,7 +9,7 @@
   lang: en
   layout: splashpage
   pageclass: splash
-  permalink: ./
+  permalink: /
   section: message
   stylesheets:
     - href: "https://wet-boew.github.io/themes-dist/GCWeb/css/messages.min.css"
