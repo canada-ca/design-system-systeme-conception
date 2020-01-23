@@ -4,5 +4,5 @@ breadcrumbs:
     link: "/en"
   - title: "Community"
     link: "/en/community"
-contentTitle: Alpha designs
+contentTitle: Community principles
 ---
