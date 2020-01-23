@@ -6,8 +6,6 @@ breadcrumbs:
   - title: "Library"
     link: "/en/library"
 layout: guide-component
-stylesheets:
-  - href: "/assets/css/styles.css"
 
 # technical sheet
 a11y-rate:
