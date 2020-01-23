@@ -10,6 +10,7 @@ stylesheets:
   - href: "/assets/css/styles.css"
 
 # technical sheet
+a11y-rate:
 availibility:
   - title: Photoshop
     link: "#"
