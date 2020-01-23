@@ -7,7 +7,7 @@ permalink: "/en"
 
 <p class="mrgn-tp-lg">The GC design system provides usable, consistent and trustworthy online experience for people to access Government of Canada digital services.</p>
 
-<a class="btn btn-primary" href="./get-started/">Get started</a>
+<a class="btn btn-primary btn-lg" href="./get-started/">Get started</a>
 
 <section class="gc-srvinfo mrgn-bttm-lg">
  <div class="row">
