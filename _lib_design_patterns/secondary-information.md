@@ -15,8 +15,12 @@ description: Options to present secondary information.
 pagetag: Options to present secondary information.
 permalink: en/library/design-patterns/secondary-information
 related:
+screenshots:
 stage: Stable
 updated: 2019-12-24
 usage:
+variants:
+#  - documented:
+#  - undocumented:
 version: 0.1
 ---

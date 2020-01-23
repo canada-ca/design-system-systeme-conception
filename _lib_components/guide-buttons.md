@@ -25,9 +25,13 @@ related:
     link: "#"
   - title: Toggle
     link: "#"
+screenshots:
 stage: Stable
 updated: 2019-12-24
 usage:
+variants:
+#  - documented:
+#  - undocumented:
 version: 0.1
 ---
 <!-- Content -->

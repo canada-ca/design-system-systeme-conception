@@ -10,13 +10,17 @@ layout: guide-component
 # technical sheet
 a11y-rate:
 availibility:
-contentTitle: Multimedia
-description: Options to present multimedia content.
-pagetag: Options to present multimedia content.
-permalink: en/library/design-patterns/multimedia
+contentTitle: Forms
+description: Available components to build online forms.
+pagetag: Available components to build online forms.
+permalink: en/library/design-patterns/forms
 related:
+screenshots:
 stage: Stable
 updated: 2019-12-24
 usage:
+variants:
+#  - documented:
+#  - undocumented:
 version: 0.1
 ---

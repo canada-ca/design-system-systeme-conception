@@ -15,8 +15,12 @@ description: Theme and topic pages provide access to topics and destination page
 pagetag: Theme and topic pages provide access to topics and destination pages that support task completion.
 permalink: en/library/page-layouts/theme-topic
 related:
+screenshots:
 stage: Alpha
 updated: 2019-12-24
 usage:
+variants:
+#  - documented:
+#  - undocumented:
 version: 0.1
 ---
