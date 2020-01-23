@@ -13,7 +13,7 @@
 							{% assign pages = site.pages | sort: 'order' %}
 							{% for doc in pages %}
 								{% if doc.breadcrumbs.last.title == page.i18n.tmpl-home[page.lang] %}
-								<li><a class="nav-item nav-link{% if doc.url == page.url or doc.url contains page.breadcrumbs[1].link %} active{% endif %}" href="{{ site.baseurl }}{{ doc.url }}">{{ doc.contentTitle }}</a></li>
+								<li><a class="nav-item nav-link{% if doc.url == page.url or doc.url contains page.breadcrumbs[1].link %} active{% endif %}" href="{{ doc.url | relative_url }}">{{ doc.contentTitle }}</a></li>
 								{% endif %}
 							{% endfor %}
 						</ul>
