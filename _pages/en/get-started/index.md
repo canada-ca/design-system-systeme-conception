@@ -3,7 +3,6 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
 contentTitle: Get started
-# layout: index
 permalink: en/get-started/
 order: 1
 ---
@@ -37,7 +36,7 @@ order: 1
 </section>
 <section>
 <h2 id="latest">Latest changes to the design system</h2>
-<h3>November 28, 2019</h3>
+<h3><date datetime="2019-11-28">November 28, 2019</date></h3>
 
 <p>We made the following changes:</p>
 
@@ -53,7 +52,7 @@ order: 1
 
 <h3>Previous changes</h3>
 <details>
-<summary>August 27, 2019</summary>
+<summary><date datetime="2019-08-27">August 27, 2019</date></summary>
 <p>We made the following minor change:</p>
 <ul>
 <li>we changed the <a href="https://design.canada.ca/common-design-patterns/date-modified.html">Date modified pattern</a> to reflect the format currently in use across Canada.ca: yyyy-mm-dd</li>
@@ -61,7 +60,7 @@ order: 1
 </details>
 
 <details>
-<summary>January 31, 2019</summary>
+<summary><date datetime="2019-01-31">January 31, 2019</date></summary>
 
 <p>We’ve made major updates to the Canada.ca design system:</p>
 

@@ -3,7 +3,6 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
 contentTitle: Community
-#layout: index
 permalink: en/community/
 order: 6
 ---
