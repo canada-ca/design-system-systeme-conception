@@ -39,7 +39,7 @@ order: 2
 						<h5 class="panel-title">Behaviour</h5>
 					</header>
 					<div class="panel-body">
-						<p><a class="stretched-link" href="{{ behaviours.url }}">{{ behaviours.contentTitle }}</a></p>
+						<p><a class="stretched-link" href="{{ behaviours.url | relative_url }}">{{ behaviours.contentTitle }}</a></p>
 						<p class="small">{{ behaviours.description }}</p>
 					</div>
 				</div>
@@ -57,7 +57,7 @@ order: 2
 						<h5 class="panel-title">Component</h5>
 					</header>
 					<div class="panel-body">
-						<p><a class="stretched-link" href="{{ components.url }}">{{ components.contentTitle }}</a></p>
+						<p><a class="stretched-link" href="{{ components.url | relative_url }}">{{ components.contentTitle }}</a></p>
 						<p class="small">{{ components.description }}</p>
 					</div>
 				</div>
@@ -75,7 +75,7 @@ order: 2
 						<h5 class="panel-title">Design patterns</h5>
 					</header>
 					<div class="panel-body">
-						<p><a class="stretched-link" href="{{ design-patterns.url }}">{{ design-patterns.contentTitle }}</a></p>
+						<p><a class="stretched-link" href="{{ design-patterns.url | relative_url }}">{{ design-patterns.contentTitle }}</a></p>
 						<p class="small">{{ design-patterns.description }}</p>
 					</div>
 				</div>
@@ -93,7 +93,7 @@ order: 2
 						<h5 class="panel-title">Page layouts</h5>
 					</header>
 					<div class="panel-body">
-						<p><a class="stretched-link" href="{{ page-layouts.url }}">{{ page-layouts.contentTitle }}</a></p>
+						<p><a class="stretched-link" href="{{ page-layouts.url | relative_url }}">{{ page-layouts.contentTitle }}</a></p>
 						<p class="small">{{ page-layouts.description }}</p>
 					</div>
 				</div>
@@ -111,7 +111,7 @@ order: 2
 						<h5 class="panel-title">Styles</h5>
 					</header>
 					<div class="panel-body">
-						<p><a class="stretched-link" href="{{ styles.url }}">{{ styles.contentTitle }}</a></p>
+						<p><a class="stretched-link" href="{{ styles.url | relative_url }}">{{ styles.contentTitle }}</a></p>
 						<p class="small">{{ styles.description }}</p>
 					</div>
 				</div>
