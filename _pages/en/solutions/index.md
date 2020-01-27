@@ -15,7 +15,7 @@ order: 5
     <h2>Centrally Deployed Templates Solutions</h2>
     <p>Use the CDTS to deliver the presentation layer of the Canada.ca theme or Intranet.canada.ca theme to web assets.</p>
 
-    <button class="btn btn-primary"><a href="https://cenw-wscoe.github.io/sgdc-cdts/docs/index-en.html">Centrally Deployed Templates Solutions</a></button>
+    <a class="btn btn-primary" href="https://cenw-wscoe.github.io/sgdc-cdts/docs/index-en.html">Centrally Deployed Templates Solutions</a>
 
    </section>
    <section class="col-md-12">
@@ -24,7 +24,7 @@ order: 5
     Use the experimentation platform to quickly get started in experimentation.
     </p>
 
-    <button class="btn btn-primary"><a href="https://cenw-wscoe.github.io/sgdc-cdts/docs/index-en.html">alpha.canada.ca</a></button>
+    <a class="btn btn-primary" href="https://cenw-wscoe.github.io/sgdc-cdts/docs/index-en.html">alpha.canada.ca</a>
 
    </section>
    <section class="col-md-12">
@@ -32,7 +32,7 @@ order: 5
     <p>
     Use Notify, created by the Canadian Digital Service, to send updates and messages over email and SMS
     </p>
-    <button class="btn btn-primary"><a href="https://notification.alpha.canada.ca/">Notify</a></button>
+    <a class="btn btn-primary" href="https://notification.alpha.canada.ca/">Notify</a>
    </section>
   </div>
  </div>
