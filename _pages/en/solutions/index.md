@@ -24,7 +24,7 @@ order: 5
     Use the experimentation platform to quickly get started in experimentation.
     </p>
 
-    <a class="btn btn-primary" href="https://cenw-wscoe.github.io/sgdc-cdts/docs/index-en.html">alpha.canada.ca</a>
+    <a class="btn btn-primary" href="https://alpha.canada.ca/">alpha.canada.ca</a>
 
    </section>
    <section class="col-md-12">
