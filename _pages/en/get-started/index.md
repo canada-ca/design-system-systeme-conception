@@ -6,21 +6,22 @@ contentTitle: Get started
 permalink: en/get-started/
 order: 1
 ---
-<p>Get started with the GC design system.</p>
-<h2>On this page</h2>
+<p>There are many ways to get started with the GC design system:</p>
 <ul>
- <li><a href="#what">What is the GC design system</a></li>
+ <!-- <li><a href="#what">What is the GC design system</a></li>
  <li><a href="#who">Who should use the GC design system</a></li>
- <li><a href="#mandatory">Mandatory elements</a></li>
- <li><a href="#latest">Latest changes</a></li>
+ <li><a href="#mandatory">Find out what's mandatory</a></li>
+ <li><a href="#latest">Latest changes</a></li> -->
+ <li><a href="#mandatory">Find out what's mandatory</a></li>
+ <li><a href="#install">Install and use it on your site</a></li>
+ <li><a href="#design-assets">Get the design assets for Photoshop or Azure</a></li>
+ <li><a href="#content-design">Start designing content with the design system</a></li>
+ <li><a href="#issue-contribution">Create a new design or report an issue</a></li>
+ <li><a href="#theming">Theme the GC Design System for other purposes</a></li>
 </ul>
 
 
-<!--Elaborate streams of getting started-->
-
-
-
-<section>
+<!-- <section>
 <h2 id="what">What is the Government of Canada design system</h2>
 <p>The Government of Canada design system provides ready-to-use components and patterns for the Government of Canada web presence.</p>
 <p>Using this design system ensures the creation of a trusted digital brand for all Government of Canada web presence, as well as a way to connect institutional content with the broader Canada.ca theme and topic structure.</p>
@@ -31,15 +32,46 @@ order: 1
 <ul>
 <li><a href="./en/institutions">List of institutions who should use this design system</a></li>
 </ul>
-</section>
+</section> -->
+
+
 <section>
-<h2 id="mandatory">Mandatory elements</h2>
-<p>Most elements of this design system are recommended. To ensure the creation of a trusted digital brand, some elements are mandatory.</p>
+<h2 id="mandatory">Find out what's mandatory</h2>
+<p>Most elements of this design system are recommended. To ensure the creation of a trusted digital brand, some elements are mandatory for the Government of Canada's public facing web content.</p>
 <ul>
 <li><a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification/mandatory-elements.html">Mandatory elements of the design system</a></li>
 </ul>
 </section>
+
 <section>
+  <h2 id="install">Install and use it on your site</h2>
+  <p>To get the Design System installed on your website, you can use </p>
+</section>
+
+<section>
+  <h2 id="design-assets">Get the design assets for Photoshop or Azure</h2>
+  <p></p>
+</section>
+
+<section>
+  <h2 id="content-design">Start designing content with the design system</h2>
+  <p></p>
+</section>
+
+<section>
+  <h2 id="issue-contribution">Contribute or report an issue</h2>
+  <p>Find out how to contribute a new design or component or just report an issue.</p>
+  <ul><li><a href="../community/index.html">Community</a></li></ul>
+</section>
+
+<section>
+  <h2 id="theming">Theme the GC Design System for other purposes</h2>
+  <p></p>
+</section>
+
+
+
+<!-- <section>
 <h2 id="latest">Latest changes to the design system</h2>
 <h3><date datetime="2019-11-28">November 28, 2019</date></h3>
 
@@ -92,4 +124,4 @@ order: 1
 <p>Overall, this update signals a shift in philosophy. We’ve shortened the list of mandatory elements, and shifted the focus to task success for users. Templates and design patterns will be changed and improved regularly, based on evidence. All changes will be documented on this page.</p>
 </details>
 
-</section>
+</section> -->
