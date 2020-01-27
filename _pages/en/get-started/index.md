@@ -45,17 +45,29 @@ order: 1
 
 <section>
   <h2 id="install">Install and use it on your site</h2>
-  <p>To get the Design System installed on your website, you can use </p>
+  <p>The GC Design System is currently based on WET4 Canada.ca theme:</p>
+  <ul>
+    <li><a href="https://github.com/wet-boew/GCWeb/releases/tag/v6.0">Download and install WET4 Canada.ca theme</a></li>
+    <li><a href="https://cenw-wscoe.github.io/sgdc-cdts/docs/index-en.html">Use the Centrally Deployed Templates Solution (CDTS)</a></li>
+  </ul>
 </section>
 
 <section>
   <h2 id="design-assets">Get the design assets for Photoshop or Azure</h2>
-  <p></p>
+  <p>For designers, if you want to create mock-ups or iterate the design, you can get the design assets:</p>
+  <ul>
+    <li>Download the Photoshop design assets</li>
+    <li>Download the Azure design assets</li>
+    <!-- illustrator? Sketch? MS Paint??? -->
+  </ul>
 </section>
 
 <section>
   <h2 id="content-design">Start designing content with the design system</h2>
-  <p></p>
+  <p>Consider using our guide on task design to start designing your content with the design system:</p>
+  <ul>
+    <li><a href="../content-design/designing-for-task-success/index.html">Design for task success</a></li>
+  </ul>
 </section>
 
 <section>
@@ -66,7 +78,8 @@ order: 1
 
 <section>
   <h2 id="theming">Theme the GC Design System for other purposes</h2>
-  <p></p>
+  <p>A theming guide is available if you want to customise the GC Design System for internal Government services or non-federal websites:</p>
+  <ul><li><a href="??">Theming guide</a></li></ul>
 </section>
 
 
