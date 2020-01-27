@@ -15,6 +15,11 @@ order: 1
  <li><a href="#latest">Latest changes</a></li>
 </ul>
 
+
+<!--Elaborate streams of getting started-->
+
+
+
 <section>
 <h2 id="what">What is the Government of Canada design system</h2>
 <p>The Government of Canada design system provides ready-to-use components and patterns for the Government of Canada web presence.</p>
