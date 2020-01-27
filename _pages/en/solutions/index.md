@@ -7,7 +7,7 @@ contentTitle: Solutions
 permalink: en/solutions/
 order: 5
 ---
-
+<!--Work on presenting the different solutions or tools-->
 <section class="gc-srvinfo mrgn-bttm-lg">
  <div class="row">
   <div class="wb-eqht">
