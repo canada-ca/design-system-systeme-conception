@@ -7,7 +7,7 @@ permalink: en/community/
 order: 6
 ---
 
-
+<!--Working on the community page-->
 <section class="gc-srvinfo mrgn-bttm-lg">
  <div class="row">
   <div class="wb-eqht">
