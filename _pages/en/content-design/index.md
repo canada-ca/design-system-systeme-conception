@@ -19,7 +19,7 @@ order: 4
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="./en/content-style-guide">Content style guide</a></h3>
+      <h3><a href="./content-style-guide">Content style guide</a></h3>
       <p>
         Writing principles and techniques to make content clear and accessible to all
       </p>
