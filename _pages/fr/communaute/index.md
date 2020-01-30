@@ -1,5 +1,6 @@
 ---
 altLangPrefix: community/index
+lang: fr
 breadcrumbs:
   - title: Accueil
     link: /fr
