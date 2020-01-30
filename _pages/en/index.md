@@ -13,7 +13,7 @@ permalink: "/en"
  <div class="row">
   <div class="wb-eqht">
     <section class="col-sm-4">
-      <h3><a href="./en/library/">Library</a></h3>
+      <h3><a href="/en/library/">Library</a></h3>
       <p>
         Find all design elements: components, design patterns, page layouts, styles and behaviours
       </p>
