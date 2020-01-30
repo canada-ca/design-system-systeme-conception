@@ -1,0 +1,39 @@
+tmpl-progress:
+  en: Progress
+  fr:
+tmpl-version:
+  en: Version
+  fr:
+tmpl-updated:
+  en: Updated
+  fr:
+tmpl-guidance:
+  en: Design guidelines
+  fr:
+tmpl-demo-code:
+  en: Demo and code
+  fr:
+tmpl-rationale:
+  en: Rationale
+  fr:
+tmpl-on-this-page:
+  en: On this page
+  fr:
+tmpl-design-specifications:
+  en: Design specifications
+  fr:
+tmpl-design-variants:
+  en: Design variants
+  fr:
+tmpl-related-patterns:
+  en: Related patterns
+  fr:
+tmpl-usage:
+  en: Usage
+  fr:
+tmpl-discussion:
+  en: Discussion
+  fr:
+tmpl-design-kits:
+  en: Available in the design kit
+  fr:
