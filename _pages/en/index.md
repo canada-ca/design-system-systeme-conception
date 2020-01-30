@@ -1,5 +1,6 @@
 ---
 # breadcrumbs: true
+altLangPrefix: ../fr
 contentTitle: GC Design system
 noContentTitle: true
 permalink: "/en"
@@ -19,25 +20,25 @@ permalink: "/en"
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="./en/branding/">Branding </a></h3>
+      <h3><a href="/en/branding/">Branding </a></h3>
       <p>
         Elements of the Canada.ca brand, who should use it, and how to use other themes
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="./en/content-design/">Content design</a></h3>
+      <h3><a href="/en/content-design/">Content design</a></h3>
       <p>
         Content style guide, information architecture, accessibility and UX research
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="./en/solutions/">Solutions</a></h3>
+      <h3><a href="/en/solutions/">Solutions</a></h3>
       <p>
         Complete solutions to solve specific situations: email notification tool, Centrally Deployed Template Solution (CDTS), experimentation platform, etc.
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="./en/community/">Community</a></h3>
+      <h3><a href="/en/community/">Community</a></h3>
       <p>
         Propose or develop a change, report an issue, alpha designs, backlog
       </p>

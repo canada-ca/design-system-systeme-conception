@@ -1,4 +1,5 @@
 ---
+altLangPrefix: /marque/index
 breadcrumbs:
   - title: Home
     link: /en

@@ -1,5 +1,5 @@
 ---
-altLangPrefix: ./design-system-systeme-conception/en/get-started/index
+altLangPrefix: get-started/index
 lang: fr
 breadcrumbs:
   - title: Accueil

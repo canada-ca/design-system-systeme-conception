@@ -1,6 +1,6 @@
 ---
 lang: fr
-altLangPrefix: ./design-system-systeme-conception/en/library/index
+altLangPrefix: library/index
 breadcrumbs:
   - title: Accueil
     link: /fr

@@ -1,6 +1,6 @@
 ---
 lang: fr
-altLangPrefix: /solutions/index
+altLangPrefix: solutions/index
 breadcrumbs:
   - title: Accueil
     link: /fr

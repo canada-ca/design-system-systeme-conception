@@ -1,4 +1,5 @@
 ---
+altLangPrefix: /debuter/index
 breadcrumbs:
   - title: "Home"
     link: "/en"
@@ -30,7 +31,7 @@ order: 1
 <h2 id="who">Who should use the Government of Canada design system</h2>
 <p>All institutions subject to the <a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30682"><cite>Directive on the  Management of Communications</cite></a> need to prepare their web presence according to the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html"><cite>Canada.ca Content and Information Architecture specification</cite></a>, which mandates the use of this design system.</p>
 <ul>
-<li><a href="./en/institutions">List of institutions who should use this design system</a></li>
+<li><a href="./institutions">List of institutions who should use this design system</a></li>
 </ul>
 </section> -->
 
