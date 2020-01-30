@@ -1,4 +1,5 @@
 ---
+altLangPrefix: ./design-system-systeme-conception/en/branding/index
 lang: fr
 breadcrumbs:
   - title: Accueil

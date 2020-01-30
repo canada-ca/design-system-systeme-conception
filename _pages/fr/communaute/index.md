@@ -1,5 +1,5 @@
 ---
-lang: fr
+altLangPrefix: ./design-system-systeme-conception/en/community/index
 breadcrumbs:
   - title: Accueil
     link: /fr
