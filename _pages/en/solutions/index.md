@@ -1,4 +1,5 @@
 ---
+altLangPrefix: /solutions/index
 breadcrumbs:
   - title: Home
     link: /en

@@ -1,5 +1,6 @@
 ---
 lang: fr
+altLangPrefix: library/index
 breadcrumbs:
   - title: Accueil
     link: /fr

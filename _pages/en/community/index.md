@@ -1,4 +1,5 @@
 ---
+altLangPrefix: /communaute/index
 breadcrumbs:
   - title: "Home"
     link: "/en"

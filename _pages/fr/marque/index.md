@@ -1,4 +1,5 @@
 ---
+altLangPrefix: branding/index
 lang: fr
 breadcrumbs:
   - title: Accueil

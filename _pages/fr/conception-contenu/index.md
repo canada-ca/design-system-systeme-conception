@@ -1,4 +1,5 @@
 ---
+altLangPrefix: content-design/index
 lang: fr
 breadcrumbs:
   - title: Accueil
