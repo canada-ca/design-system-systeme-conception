@@ -2,7 +2,11 @@
 		<div class="container">
 			<nav class="navbar navbar-expand-md">
 				<a href="/{{ page.lang }}" class="navbar-brand">
+					{% if page.lang == "en" %}
 					<img src="{{ "/assets/img/logo.svg" | relative_url }}" height="28" alt="GC Design system">
+					{% else %}
+					<img src="{{ "/assets/img/logo-fr.svg" | relative_url }}" height="28" alt="System de conception GC">
+					{% endif %}
 				</a>
 				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 					<span class="navbar-toggler-icon">Menu</span>
