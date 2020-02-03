@@ -7,7 +7,7 @@ permalink: "/fr"
 ---
 <p class="mrgn-tp-lg">Le système de conception du GC offre une expérience en ligne conviviale, cohérente et fiable pour que les gens puissent accéder aux services numériques du gouvernement du Canada.</p>
 
-<a class="btn btn-primary btn-lg" href="./debuter/">Débuter</a>
+<a class="btn btn-primary btn-lg" href="/fr/debuter/">Débuter</a>
 
 <section class="gc-srvinfo mrgn-bttm-lg">
  <div class="row">
