@@ -274,14 +274,12 @@ defaults:
       share: true
       sitemenu: true
       sitesearch: true
-      stylesheets:
-        - href: "https://jmealing.github.io/design-system-systeme-conception/css/gc-design-sys-nav.css"
 
 # 6. Site settings
 analytics_google: ""
 analytics_google_anonymize_ip: ""
 assets: "https://wet-boew.github.io/themes-dist"
-baseurl: "/design-system-systeme-conception"
+baseurl: ""
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 email: ""
 encoding: utf-8 # Make sure the encoding is right
@@ -294,5 +292,6 @@ stylesheets:
   - href: "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin: "anonymous"
+  - href: "https://jmealing.github.io/design-system-systeme-conception/css/gc-design-sys-nav.css"
 theme-name: GCWeb
 title: GC design system / Système de conception GC # Site name or title, also used in jekyll-seo-tag
