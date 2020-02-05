@@ -1,4 +1,5 @@
 ---
+altLangPrefix: communaute/procedure-contribution/index
 breadcrumbs:
   - title: "Home"
     link: "/en"
@@ -10,7 +11,7 @@ contentTitle: Contribution process
 
 <p>The GC design system needs to be constantly improving. The goal of this framework is to foster continuous improvement of the guidance through experimentation. It creates a space for departments to experiment and innovate, and contribute their findings for the benefit of the whole GC web community.</p>
 
-<h2>On this page</h2>
+<h2 class="h3">On this page</h2>
 <ul>
  <li><a href="#backlog">Identify: submit a proposal for improvement</a></li>
  <li><a href="#design">Design: from prototype to stable</a></li>
@@ -26,7 +27,7 @@ contentTitle: Contribution process
  <li>a new component, pattern or template is needed to fill a gap in the design system</li>
 </ul>
 
-<h3>Consult the backlog the backlog and the experiments in progress</h3>
+<h3>Consult the backlog and the experiments in progress</h3>
 <p>The first step is to find out if the improvement has already been identified. To do so, consult the backlog:</p>
 <ul>
  <li><a href="https://github.com/canada-ca/design-system-systeme-conception/projects/1">Backlog</a></li>
@@ -59,7 +60,7 @@ contentTitle: Contribution process
 
 <h3>Alpha</h3>
 
-<p>To go from early prototype to Alpha, the prototype needs to be accompanied with <strong>documentation</strong> that includes at the minimum:</p>
+<p>To go from early prototype to Alpha, the prototype needs to be accompanied with documentation that includes at the minimum:</p>
 <ul>
  <li>a hypothesis of how to solve the issue</li>
  <li>a mock-up or a coded prototype</li>
@@ -83,7 +84,7 @@ contentTitle: Contribution process
 
 <p>Use the Beta phase to scale up the experiment and fix any issues you encounter.</p>
 
-<p>Beta updates are available through the main <a href="../library">design system library</a>, and departments can use them, as long as they consider it an experiment and are willing to report back on findings.</p>
+<p>Beta updates are available through the main <a href="/en/library/">design system library</a>, and departments can use them, as long as they consider it an experiment and are willing to report back on findings.</p>
 
 <p>When using a beta version of a component, pattern or template, departments need to provide a way for people to provide feedback. (placeholder for content on how to do that)</p>
 
@@ -91,7 +92,7 @@ contentTitle: Contribution process
 <p>To go from Beta to Stable, the following must be done:</p>
 
 <ul>
- <li>integrated to core frameword (WET)</li>
+ <li>integrated to core framework (WET)</li>
  <li>completely valid code</li>
  <li>no accessibility issues left unresolved</li>
  <li>comments from the community have been resolved</li>
