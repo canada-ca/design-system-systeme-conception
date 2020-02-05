@@ -2,55 +2,94 @@
 # page settings
 breadcrumbs:
   - title:
-      en:
-      fr:
+      en: Home
+      fr: Accueil
     link:
-      en:
-      fr:
-created: # ISO date format YYYY-MM-DD
+      en: /en
+      fr: /fr
+  - title:
+      en: Library
+      fr: Bibliothèque
+    link:
+      en: /en/library
+      fr: /fr/bibliotheque
+contentTitle: Component example # Need an override for bilingual title
+created: 2020-01-31 # ISO date format YYYY-MM-DD
 description-short: # max 80 characters long
-  en:
-  fr:
+  en: Short description of maximum 80 characters
+  fr: Brève description de 80 caractères maximum
 description-long:
-  en:
-  fr:
-layout:
-permalink:
-  en:
-  fr:
+  en: Long description over 80 characters. Lorem ipsum dolor sit amet, an est albucius deserunt. Ea nusquam assueverit vis, ex nec audiam expetenda disputationi. Vis eu etiam officiis, vel et hendrerit scribentur. Vocent sententiae argumentum qui.
+  fr: Description longue de plus de 80 caractères. Lôrem ipsum dôlor sît âmèt, utînàm màluîsset qùi eu. Omnes iisqué nônûmés has ex. Usu ad sçriptà çommunè suscîpït. Cum ôportèat sénsibûs maiêstatïs àn, êt debet dôlor pœssit prœ àperirî.
+lang: en
+layout: component
+permalink: en/library/components/component
+permalink_fr: fr/bibliotheque/composantes/composante
+stylesheets:
+  - href: "/assets/css/alpha-beta-banner.css"
 synonmyns:
-  en:
-  fr:
+  en: [atom, module, molecule, pattern, plugin]
+  fr: [atôme, module, molécule, motif, plugiciel]
 
 # technical sheet
-atomisation: # atom, molecule, orgamism (component), template (page layout), page, style, practice (design pattern), behaviour
+atomisation: organism # atom, molecule, orgamism (component), template (page layout), page, style, practice (design pattern), behaviour
 code:
   code-variants:
-    - name: # wet4, wet5, React, Angular, etc.
+    - variant:
       - layout-option:
-        - html-exemple: # encoded html code with content
-            en:
-            fr:
+        - html-example: # encoded html code with content
+            en: |
+                &lt;html&gt;
+                  &lt;head&gt;
+                    &lt;title&gt;HTML is awesome&lt;/title&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;p&gt;HTML is awesome&lt;/p&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+            fr: |
+                &lt;html&gt;
+                  &lt;head&gt;
+                    &lt;title&gt;Le HTML est génial&lt;/title&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;p&gt;Le HTML est génial&lt;/p&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
           html-layout: # encoded html code without content
             html: # empty or false if commented
-            liquid: # empty or false if commented
+            liquid: |
+                &lt;html&gt;
+                  &lt;head&gt;
+                    &lt;title&gt;{{ page.title }}&lt;/title&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    {{ content }}
+                  &lt;/body&gt;
+                &lt;/html&gt;
             mustache: # empty or false if commented
             twig: # empty or false if commented
             version:
+          id:
           stylesheet:
-            css:
+            css: |
+                p {
+                  color: black;
+                }
             scss: # empty or false if commented
-            version:
+            version: 1.0
             variables: # css-variables
           scripts:
             js:
             typescript: # empty or false if commented
             version:
-    - schema:
-        sample:
-        verions:
-    - json-ld:
-configuration:
+          value:
+        name: # wet4, wet5, React, Angular, etc.
+        schema:
+          sample:
+          verions:
+        json-ld:
+configuration: # Table of all configuration settings available
   - option:
       en:
       fr:
@@ -80,8 +119,8 @@ design-variant-screenshots:
       en:
       fr:
 design-kits: # empty or false if commented
-  - title:
-    link:
+  - title: Photoshop
+    link: \#
 design-spec:
   callouts: # list of all the numbered indicators on the screenshot
   - number:
@@ -132,13 +171,21 @@ related: # empty or false if commented
       fr:
 release-notes:
   - notes:
-      en:
+      en: Some notes that could be useful
       fr:
-    progress: # alpha, beta, stable
-      en:
+    progress:
+      en: Beta # alpha, beta, stable
+      fr: Béta
+    updated: 2020-02-01 # ISO date format YYYY-MM-DD
+    version: v0.0.2 # see guidelines for semantic versioning
+  - notes:
+      en: Some notes that could be useful
       fr:
-    updated: # ISO date format YYYY-MM-DD
-    version: # see guidelines for semantic versioning
+    progress:
+      en: Alpha # alpha, beta, stable
+      fr: Alpha
+    updated: 2020-01-01 # ISO date format YYYY-MM-DD
+    version: v0.0.1 # see guidelines for semantic versioning
 rendering: # non-encoded html code with content
   en:
   fr:
@@ -150,7 +197,7 @@ usage: # do and dont associated with a pattern
     dont: # can add as many dont as needed
       en:
       fr:
-    texttag: # ?: can mrakdown be uesd in yaml notation
+    texttag: # ?: can markdown be uesd in yaml notation. Yes with the `|`
       en:
       fr:
 ---

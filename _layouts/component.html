@@ -8,9 +8,9 @@ layout: page
 	<div class="col-md-3">
 		<div class="small">
 			<ul class="list-unstyled component-tombstone">
-			<li class="mrgn-rght-lg"><strong>{{ data.i18n.tmpl-progress[page.lang] }}:</strong> <label class="experimental label beta-label">{{ page.release-notes.first.progress[page.lang] }}</label></li class="mrgn-rght-lg">
-			<li class="mrgn-rght-lg"><strong>{{ data.i18n.tmpl-version[page.lang] }}:</strong> {{ page.release-notes.first.version[page.lang] }}</li>
-			<li class="mrgn-rght-lg"><strong>{{ data.i18n.tmpl-updated[page.lang] }}:</strong> {{ page.release-notes.first.updated[page.lang] | date: "%b %d, %Y" }}</li>
+			<li class="mrgn-rght-lg"><strong>{{ site.data.i18n.tmpl-progress[page.lang] }}:</strong> <label class="experimental label {{ page.release-notes.first.progress.en | downcase }}-label">{{ page.release-notes.first.progress[page.lang] }}</label></li class="mrgn-rght-lg">
+			<li class="mrgn-rght-lg"><strong>{{ site.data.i18n.tmpl-version[page.lang] }}:</strong> {{ page.release-notes.first.version }}</li>
+			<li class="mrgn-rght-lg"><strong>{{ site.data.i18n.tmpl-updated[page.lang] }}:</strong> {{ page.release-notes.first.updated | date: "%b %d, %Y" }}</li>
 			</ul>
 		</div>
 	</div>
@@ -18,20 +18,20 @@ layout: page
 <div class="wb-tabs ignore-session">
 	<div class="tabpanels">
 		<details id="details-panel1">
-			<summary><span class="fas fa-pen-square"></span> {{ data.i18n.tmpl-guidance[page.lang] }}</summary>
+			<summary><span class="fas fa-pen-square"></span> {{ site.data.i18n.tmpl-guidance[page.lang] }}</summary>
 			<section>
-				<h2>{{ data.i18n.tmpl-on-this-page[page.lang] }}</h2>
+				<h2>{{ site.data.i18n.tmpl-on-this-page[page.lang] }}</h2>
 				<ul>
-					<li><a href="#spec">{{ data.i18n.tmpl-design-specifications[page.lang] }}</a></li>
-					{% if page.design-variants %}<li><a href="#variations">{{ data.i18n.tmpl-design-variants[page.lang] }}</a></li>{% endif %}
-					{% if page.related %}<li><a href="#patterns">{{ data.i18n.tmpl-related-patterns[page.lang] }}</a></li>{% endif %}
-					<li><a href="#usage">{{ data.i18n.tmpl-usage[page.lang] }}</a></li>
-					<li><a href="#discuss">{{ data.i18n.tmpl-discussion[page.lang] }}</a></li>
+					<li><a href="#spec">{{ site.data.i18n.tmpl-design-specifications[page.lang] }}</a></li>
+					{% if page.design-variants %}<li><a href="#variations">{{ site.data.i18n.tmpl-design-variants[page.lang] }}</a></li>{% endif %}
+					{% if page.related %}<li><a href="#patterns">{{ site.data.i18n.tmpl-related-patterns[page.lang] }}</a></li>{% endif %}
+					<li><a href="#usage">{{ site.data.i18n.tmpl-usage[page.lang] }}</a></li>
+					<li><a href="#discuss">{{ site.data.i18n.tmpl-discussion[page.lang] }}</a></li>
 				</ul>
 			</section>
 			{% if page.design-kits %}
 			<section>
-				<h2>{{ data.i18n.tmpl-design-kits[page.lang] }}</h2>
+				<h2>{{ site.data.i18n.tmpl-design-kits[page.lang] }}</h2>
 				<ul class="list-unstyled lst-spcd">
 					{% for kit in page.design-kits %}
 					<li><a class="btn btn-default" href="{{ kit.link }}"><span class="fas fa-arrow-circle-down"></span> {{ kit.title }}</a></li>
@@ -40,7 +40,7 @@ layout: page
 			</section>
 			{% endif %}
 			<section>
-				<h2 id="specs">{{ data.i18n.tmpl-design-specifications[page.lang] }}</h2>
+				<h2 id="specs">{{ site.data.i18n.tmpl-design-specifications[page.lang] }}</h2>
 				<div class="row">
 					<div class="col-md-6">
 						<div class="pattern-demo mrgn-bttm-lg">
@@ -62,7 +62,7 @@ layout: page
 				</div>
 			</section>
 			<section>
-				<h2 id="usage">{{ data.i18n.tmpl-usage[page.lang] }}</h2>
+				<h2 id="usage">{{ site.data.i18n.tmpl-usage[page.lang] }}</h2>
 				{{ page.usage.texttag[page.lang] }}
 				{% for use in page.usage %}
 				<div class="row">
@@ -70,133 +70,28 @@ layout: page
 						<img src="" class="img-responsive pattern-demo" alt="">
 						<div class="do-guideline">
 						<p class="h4">Do</p>
-						<p>Place an alert above the page heading if it applies to more than one page.</p>
+						<p>...</p>
 						</div>
 					</div>
 				</div>
 				{% endfor %}
-				<p>Do not use contextual alerts:</p>
-				<ul>
-					<li>to provide information about a normal step in a process or task</li>
-					<li>to simply add emphasis to content</li>
-					<li>in cases where a warning is neither high risk nor frequently experienced</li>
-					<li>
-						to create labels or pills. For these components, see:
-						<ul>
-						<li><a href="https://wet-boew.github.io/wet-boew-styleguide/design/labels-en">label pattern</a></li>
-						<li><a href="https://wet-boew.github.io/wet-boew-styleguide/design/pills-en">pill pattern</a></li>
-						</ul>
-					</li>
-				</ul>
 			</section>
 		</details>
 		<details id="details-panel2">
-			<summary><span class="fas fa-laptop-code"></span> {{ data.i18n.tmpl-demo-code[page.lang] }}</summary>
-			<p>
-				...
-			</p>
+			<summary><span class="fas fa-laptop-code"></span> {{ site.data.i18n.tmpl-demo-code[page.lang] }}</summary>
+			<div id="{{ page.code.code-variants.value }}-code" class="component-code">
+				<div id="default-{{ page.code.code-variants.value }}-code" class="layout-code">
+					<div class="code-variant wet4-variant">
+						<pre><code>{{ page.code.code-variants.html-example[page.lang] }}</code></pre>
+					</div>
+				</div>
+			</div>
 		</details>
 		<details id="details-panel3">
-			<summary><span class="fas fa-microscope"></span> {{ data.i18n.tmpl-rationale[page.lang] }}</summary>
+			<summary><span class="fas fa-microscope"></span> {{ site.data.i18n.tmpl-rationale[page.lang] }}</summary>
 			<p>
 				...
 			</p>
 		</details>
 	</div>
-</div>
-
-<div class="row">
-
-	<section>
-		<h2 id="patterns">Related patterns</h2>
-		<p>{{ page.contentTitle }} are used in the following patterns:</p>
-		{% if page.related %}
-		<ul>
-			{% for related in page.related %}
-			<li><a href="../{{ related.link }}">{{ related.title }}</a></li>
-			{% endfor %}
-		</ul>
-		{% else %}
-		<p>No related pattern</p> <!-- Expand and edit later 2020-01-19 -->
-		{% endif %}
-	</section>
-	<section>
-		<h2 id="usage">Usage</h2>
-		<section class="design-usage">
-			<h3>Only use call to action buttons for the primary action</h3>
-			<div class="row mrgn-bttm-lg">
-				<div class="col-md-4">
-					<!-- 360x200 images -->
-					<img src="../images/buttons/call-to-action-example.gif" class="img-responsive pattern-demo" alt='.'>
-					<div class="dont-guideline">
-						<p class="h4">Don't</p>
-						<p>Avoid having 2 call to action buttons on the same page.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<!-- 360x200 images -->
-					<img src="../images/buttons/secondary-example.gif" class="img-responsive pattern-demo" alt='.'>
-					<div class="do-guideline">
-						<p class="h4">Do</p>
-						<p>Use secondary action buttons if there are various possible next steps with similar frequency or importance.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="design-usage">
-			<h3>Generally, don't disable buttons</h3>
-			<div class="row mrgn-bttm-lg">
-				<div class="col-md-4">
-					<!-- 360x200 images -->
-					<img src="" class="img-responsive pattern-demo" alt='.'>
-					<div class="do-guideline">
-						<p class="h4">Do</p>
-						<p>If a button requires permissions a visitor does not have, or if a button cannot be used conditionally, hide it, don't disable it.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<!-- 360x200 images -->
-					<img src="" class="img-responsive pattern-demo" alt='.'>
-					<div class="do-guideline">
-						<p class="h4">Do</p>
-						<p>Use form validation to indicate to a visitor that more fields are required before a button's action can be carried out.</p>
-					</div>
-					</div>
-				<div class="col-md-4">
-					<!-- 360x200 images -->
-					<img src="" class="img-responsive pattern-demo" alt='.'>
-					<div class="do-guideline">
-						<p class="h4">Do</p>
-						<p>Buttons can be disabled once they have been clicked to avoid accidental double-clicks.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<!-- 360x200 images -->
-					<img src="" class="img-responsive pattern-demo" alt='.'>
-					<div class="do-guideline">
-						<p class="h4">Do</p>
-						<p>Buttons in a toolbar that is consistent across various pages or states can be disabled if not applicable in the current page or situation.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-	</section>
-	<section class="design-usage">
-		<h3>Button placement</h3>
-		<div class="do-guideline">
-			<p class="h4">Do</p>
-			<p>((Alternative usage style without images))</p>
-		</div>
-	</section>
-	<section>
-		<h2 id="discuss">Discussion</h2>
-		<div class="row">
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<p><a href="https://github.com/canada-ca/design-system-systeme-conception/issues" class="btn btn-default btn-block"><span class="fab fa-github"></span> Report an issue in github</a></p>
-				<p><a href="" class="btn btn-default btn-block"><span class="fab fa-slack"></span> Join the conversation on slack</a></p>
-			</div>
-		</div>
-	</section>
 </div>

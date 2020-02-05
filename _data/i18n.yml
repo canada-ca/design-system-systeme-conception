@@ -1,15 +1,15 @@
 tmpl-progress:
   en: Progress
-  fr:
+  fr: Progrès
 tmpl-version:
   en: Version
-  fr:
+  fr: Version
 tmpl-updated:
   en: Updated
-  fr:
+  fr: Mise à jour
 tmpl-guidance:
   en: Design guidelines
-  fr:
+  fr: Lignes directrices de conception
 tmpl-demo-code:
   en: Demo and code
   fr:
