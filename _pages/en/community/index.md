@@ -1,5 +1,4 @@
 ---
-altLangPrefix: /communaute/index
 breadcrumbs:
   - title: "Home"
     link: "/en"
@@ -57,13 +56,8 @@ order: 6
 <a class="btn btn-call-to-action" href="./contribution-process">Contribution process</a>
 <section>
 <h2 id="backlog">Backlog</h2>
-<p>The community backlog is on GitHub.</p>
+<p>The community backlog is on GitHub. It documents all the ideas to work on and their status.</p>
 
-<p>There are three different lists:</p>
-<ul>
-<li><a href="https://github.com/canada-ca/design-system-systeme-conception/projects/3">backlog</a>: list of design and functionality proposals to tackle</li>
-<li><a href="https://github.com/canada-ca/design-system-systeme-conception/projects/1">in progress</a>: list of improvements and changes already in the work</li>
-<li><a href="https://github.com/canada-ca/design-system-systeme-conception/projects/4">gaps</a>: gaps and issues in the current guidance that need fixing</li>
-</ul>
+<a class="btn btn-primary btn-lg" href="https://github.com/canada-ca/design-system-systeme-conception/projects/1">Community backlog</a>
 
 </section>
