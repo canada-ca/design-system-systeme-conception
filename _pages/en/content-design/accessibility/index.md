@@ -1,4 +1,5 @@
 ---
+altLangPrefix: /conception-contenu/accessibilite/index
 breadcrumbs:
   - title: "Home"
     link: "/en"
@@ -8,9 +9,7 @@ contentTitle: Accessibility
 ---
 <p>The government of Canada is committed to deliver accessible and inclusive services.</p>
 
-<p>As your design content, accessibility has to be at the forefront of your considerations.</p>
-
-<p>To help you, all the components, patterns and page layouts in the library have been tested for accessibility. But making sure your product is accessible is your responsibility.</p>
+<p>As you design content, accessibility has to be at the forefront of your considerations.</p>
 
 <p>To help you, all the components, patterns and page layouts in the library have been tested for accessibility. But making sure your product is accessible is your responsibility.</p>
 

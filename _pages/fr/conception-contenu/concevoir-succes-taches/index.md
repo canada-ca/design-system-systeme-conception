@@ -8,4 +8,4 @@ breadcrumbs:
     link: "/fr/conception-contenu"
 contentTitle: Concevoir pour le succès des tâches
 ---
-<p>Placeholder for Optimization playbook</p>
+<p>Endroit pour le guide d'optimisation</p>

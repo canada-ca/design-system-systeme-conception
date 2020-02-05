@@ -41,6 +41,12 @@ order: 4
         Optimizing your content for voice search, claiming knowledge panels
       </p>
     </section>
+    <section class="col-sm-6">
+      <h3><a href="./design-task-success/">Design for task success</a></h3>
+      <p>
+        Optimization playbook
+      </p>
+    </section>
   </div>
 </div>
 </section>
