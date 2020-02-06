@@ -1,5 +1,5 @@
 ---
-altLangPrefix: /communaute/index
+altLangPrefix: communaute/index
 breadcrumbs:
   - title: "Home"
     link: "/en"
@@ -11,7 +11,7 @@ order: 6
 <!--Working on the community page-->
 
 <p>Anyone can contribute to the GC design system.</p>
-<h2>On this page</h2>
+<h2 class="h3">On this page</h2>
 <ul>
  <li><a href="#principles">Community principles</a></li>
  <li><a href="#how">How to contribute</a></li>
@@ -54,11 +54,13 @@ order: 6
 <li>anything that makes the design system better for the community</li>
 </ul>
 </section>
-<a class="btn btn-call-to-action" href="./contribution-process">Contribution process</a>
+<a class="btn btn-call-to-action" href="/en/community/contribution-process/">Contribution process</a>
 <section>
 <h2 id="backlog">Backlog</h2>
 <p>The community backlog is on GitHub. It documents all the ideas to work on and their status.</p>
 
-<a class="btn btn-primary btn-lg" href="https://github.com/canada-ca/design-system-systeme-conception/projects/1">Community backlog</a>
+<ul>
+<li><a href="https://github.com/canada-ca/design-system-systeme-conception/projects/1">community backlog</a></li>
+</ul>
 
 </section>

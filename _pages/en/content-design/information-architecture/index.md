@@ -1,4 +1,5 @@
 ---
+altLangPrefix: /conception-contenu/architecture-information/index
 breadcrumbs:
   - title: "Home"
     link: "/en"
