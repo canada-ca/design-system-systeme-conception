@@ -27,17 +27,16 @@ contentTitle: Contribution process
 </ul>
 
 <h3>Consult the backlog the backlog and the experiments in progress</h3>
-<p>The first step is to find out if the improvement has already been identified. To do so, consult the backlog and the experiments in progress:</p>
+<p>The first step is to find out if the improvement has already been identified. To do so, consult the backlog:</p>
 <ul>
- <li><a href="https://github.com/canada-ca/design-system-systeme-conception/projects/3">Backlog</a></li>
- <li><a href="https://github.com/canada-ca/design-system-systeme-conception/projects/1">Experiments in progress</a></li>
+ <li><a href="https://github.com/canada-ca/design-system-systeme-conception/projects/1">Backlog</a></li>
+
 </ul>
 
 <h3>If your suggestion is not already identified</h3>
 
 <p>If the pattern or template you identified for improvement is not in the backlog, you can submit a proposal by opening an <a href="https://github.com/canada-ca/design-system-systeme-conception/issues">issue in GitHub</a>.</p>
 
-<p>**** Placeholder for GitHub template or form to submit issue **** </p>
 
 <p>The proposal must include at least:</p>
 <ul>
@@ -54,7 +53,7 @@ contentTitle: Contribution process
 <p>Once an idea has been identified, anybody can work on tackling the issue.</p>
 
 <h3>Initial design and prototype</h3>
-<p>As soon as some form of prototype exists, it can be moved from the backlog to the <a href="https://github.com/canada-ca/design-system-systeme-conception/projects/1">Experiments in progress</a> project board.</p>
+<p>As soon as some form of prototype exists, it can be moved from the "to do" column to the the backlog to the "Design and prototyping" column in the <a href="https://github.com/canada-ca/design-system-systeme-conception/projects/1">backlog</a> project board.</p>
 
 <p>Update the corresponding issue in GitHub to share the prototype with the community.</p>
 
