@@ -74,6 +74,7 @@ defaults:
   - scope:
       path: ""
     values:
+      archives: true
       footer: false
       i18n:
         tmpl-about-government:
