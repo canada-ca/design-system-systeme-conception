@@ -1,10 +1,10 @@
 ---
+altLangPrefix: get-started/index
 lang: fr
-altLangPrefix: solutions/index
 breadcrumbs:
   - title: Accueil
     link: /fr
-contentTitle: Solutions
+contentTitle: Débuter
 layout: index
-order: 5
+order: 1
 ---
