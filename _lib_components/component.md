@@ -13,6 +13,12 @@ breadcrumbs:
     link:
       en: /en/library
       fr: /fr/bibliotheque
+  - title:
+      en: Component
+      fr: Composante
+    link:
+      en: /en/library/component
+      fr: /fr/bibliotheque/composante
 contentTitle: Component example # Need an override for bilingual title
 created: 2020-01-31 # ISO date format YYYY-MM-DD
 description-short: # max 80 characters long
@@ -39,34 +45,19 @@ code:
       - layout-option:
         - html-example: # encoded html code with content
             en: |
-                &lt;html&gt;
-                  &lt;head&gt;
-                    &lt;title&gt;HTML is awesome&lt;/title&gt;
-                  &lt;/head&gt;
-                  &lt;body&gt;
-                    &lt;p&gt;HTML is awesome&lt;/p&gt;
-                  &lt;/body&gt;
-                &lt;/html&gt;
+                &lt;component&gt;
+                  &lt;p&gt;This component is awesome&lt;/p&gt;
+                &lt;/component&gt;
             fr: |
-                &lt;html&gt;
-                  &lt;head&gt;
-                    &lt;title&gt;Le HTML est génial&lt;/title&gt;
-                  &lt;/head&gt;
-                  &lt;body&gt;
-                    &lt;p&gt;Le HTML est génial&lt;/p&gt;
-                  &lt;/body&gt;
-                &lt;/html&gt;
+                &lt;component&gt;
+                  &lt;p&gt;Cette composante est géniale&lt;/p&gt;
+                &lt;/component&gt;
           html-layout: # encoded html code without content
             html: # empty or false if commented
             liquid: |
-                &lt;html&gt;
-                  &lt;head&gt;
-                    &lt;title&gt;{{ page.title }}&lt;/title&gt;
-                  &lt;/head&gt;
-                  &lt;body&gt;
-                    {{ content }}
-                  &lt;/body&gt;
-                &lt;/html&gt;
+                &lt;component&gt;
+                  &lt;p&gt;{{ content }}&lt;/p&gt;
+                &lt;/component&gt;
             mustache: # empty or false if commented
             twig: # empty or false if commented
             version:
@@ -100,19 +91,19 @@ configuration: # Table of all configuration settings available
       en:
       fr:
 design-variants: # empty or false if commented
-  - img:
-      alt:
-        en:
-        fr:
-      link:
-        en:
-        fr:
-    texttag:
-      en:
-      fr:
-    title:
-      en:
-      fr:
+#  - img:
+#      alt:
+#        en:
+#        fr:
+#      link:
+#        en:
+#        fr:
+#    texttag:
+#      en:
+#      fr:
+#    title:
+#      en:
+#      fr:
 design-variant-screenshots:
   - link:
     alt:
@@ -123,24 +114,162 @@ design-kits: # empty or false if commented
     link: \#
 design-spec:
   callouts: # list of all the numbered indicators on the screenshot
-  - number:
+  - number: 1
     texttag: # Values can span multiple lines using |. Spanning multiple lines using a “Literal Block Scalar” | will include the newlines and any trailing spaces.
-      en:
-      fr:
+      en: |
+        <h3>Title 1.1</h3>
+        <ul>
+          <li>Some text 1.1.1</li>
+          <li>Some text 1.1.2</li>
+        </ul>
+        <h3>Title 1.2</h3>
+        <ul>
+          <li>Some text 1.2.1</li>
+          <li>Some text 1.2.2</li>
+          <li>Some text 1.2.3</li>
+        </ul>
+      fr: |
+        <h3>Titre 1.1</h3>
+        <ul>
+          <li>Texte quelconque 1.1.1</li>
+          <li>Texte quelconque 1.1.2</li>
+        </ul>
+        <h3>Titre 1.2</h3>
+        <ul>
+          <li>Texte quelconque 1.2.1</li>
+          <li>Texte quelconque 1.2.2</li>
+          <li>Texte quelconque 1.2.3</li>
+        </ul>
     title:
-      en:
-      fr:
+      en: Big title 1
+      fr: Gros titre 1
+  - number: 2
+    texttag:
+      en: |
+        <h3>Title 2.1</h3>
+        <ul>
+          <li>Some text 2.1.1</li>
+          <li>Some text 2.1.2</li>
+        </ul>
+        <h3>Title 2.2</h3>
+        <ul>
+          <li>Some text 2.2.1</li>
+          <li>Some text 2.2.2</li>
+          <li>Some text 2.2.3</li>
+        </ul>
+      fr: |
+        <h3>Titre 2.1</h3>
+        <ul>
+          <li>Texte quelconque 2.1.1</li>
+          <li>Texte quelconque 2.1.2</li>
+        </ul>
+        <h3>Titre 2.2</h3>
+        <ul>
+          <li>Texte quelconque 2.2.1</li>
+          <li>Texte quelconque 2.2.2</li>
+          <li>Texte quelconque 2.2.3</li>
+        </ul>
+    title:
+      en: Big title 2
+      fr: Gros titre 2
+  - number: 3
+    texttag:
+      en: |
+        <h3>Title 3.1</h3>
+        <ul>
+          <li>Some text 3.1.1</li>
+          <li>Some text 3.1.2</li>
+        </ul>
+        <h3>Title 3.2</h3>
+        <ul>
+          <li>Some text 3.2.1</li>
+          <li>Some text 3.2.2</li>
+          <li>Some text 3.2.3</li>
+        </ul>
+      fr: |
+        <h3>Titre 3.1</h3>
+        <ul>
+          <li>Texte quelconque 3.1.1</li>
+          <li>Texte quelconque 3.1.2</li>
+        </ul>
+        <h3>Titre 3.2</h3>
+        <ul>
+          <li>Texte quelconque 3.2.1</li>
+          <li>Texte quelconque 3.2.2</li>
+          <li>Texte quelconque 3.2.3</li>
+        </ul>
+    title:
+      en: Big title 3
+      fr: Gros titre 3
+  - number: 4
+    texttag:
+      en: |
+        <h3>Title 4.1</h3>
+        <ul>
+          <li>Some text 4.1.1</li>
+          <li>Some text 4.1.2</li>
+        </ul>
+        <h3>Title 4.2</h3>
+        <ul>
+          <li>Some text 4.2.1</li>
+          <li>Some text 4.2.2</li>
+          <li>Some text 4.2.3</li>
+        </ul>
+      fr: |
+        <h3>Titre 4.1</h3>
+        <ul>
+          <li>Texte quelconque 4.1.1</li>
+          <li>Texte quelconque 4.1.2</li>
+        </ul>
+        <h3>Titre 4.2</h3>
+        <ul>
+          <li>Texte quelconque 4.2.1</li>
+          <li>Texte quelconque 4.2.2</li>
+          <li>Texte quelconque 4.2.3</li>
+        </ul>
+    title:
+      en: Big title 4
+      fr: Gros titre 4
+  - number: 5
+    texttag:
+      en: |
+        <h3>Title 5.1</h3>
+        <ul>
+          <li>Some text 5.1.1</li>
+          <li>Some text 5.1.2</li>
+        </ul>
+        <h3>Title 5.2</h3>
+        <ul>
+          <li>Some text 5.2.1</li>
+          <li>Some text 5.2.2</li>
+          <li>Some text 5.2.3</li>
+        </ul>
+      fr: |
+        <h3>Titre 5.1</h3>
+        <ul>
+          <li>Texte quelconque 5.1.1</li>
+          <li>Texte quelconque 5.1.2</li>
+        </ul>
+        <h3>Titre 5.2</h3>
+        <ul>
+          <li>Texte quelconque 5.2.1</li>
+          <li>Texte quelconque 5.2.2</li>
+          <li>Texte quelconque 5.2.3</li>
+        </ul>
+    title:
+      en: Big title 5
+      fr: Gros titre 5
   screenshot: # link to image
     alt:
-      en:
+      en: Component specification
       fr:
-    link:
+    link: /assets/img/radio-buttons/spec.png
 layout-options:
   - option:
       en:
       fr:
 name:
-  en:
+  en: Componants name
   fr:
 rationale:
   a11y:
@@ -164,10 +293,16 @@ rationale:
         fr:
 related: # empty or false if commented
   - title:
-      en:
+      en: Design pattern &num;1
       fr:
     link:
-      en:
+      en: ../design-patterns/pattern
+      fr:
+  - title:
+      en: Design pattern &num;2
+      fr:
+    link:
+      en: ../design-patterns/pattern
       fr:
 release-notes:
   - notes:
@@ -177,7 +312,7 @@ release-notes:
       en: Beta # alpha, beta, stable
       fr: Béta
     updated: 2020-02-01 # ISO date format YYYY-MM-DD
-    version: v0.0.2 # see guidelines for semantic versioning
+    version: 0.0.2 # see guidelines for semantic versioning
   - notes:
       en: Some notes that could be useful
       fr:
@@ -191,13 +326,7 @@ rendering: # non-encoded html code with content
   fr:
 states:
 usage: # do and dont associated with a pattern
-  - do: # can add as many do as needed
-      en:
-      fr:
-    dont: # can add as many dont as needed
-      en:
-      fr:
-    texttag: # ?: can markdown be uesd in yaml notation. Yes with the `|`
-      en:
+  - texttag: # can markdown be uesd in yaml notation? Nope, even with the `|`
+      en: Only use Component for the primary action
       fr:
 ---

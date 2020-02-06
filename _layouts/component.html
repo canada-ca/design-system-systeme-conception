@@ -15,11 +15,16 @@ layout: page
 		</div>
 	</div>
 </div>
-<div class="wb-tabs ignore-session">
+<div class="row wb-tabs ignore-session mrgn-tp-lg">
 	<div class="tabpanels">
 		<details id="details-panel1">
 			<summary><span class="fas fa-pen-square"></span> {{ site.data.i18n.tmpl-guidance[page.lang] }}</summary>
+			{% if page.design-kits %}
+			<div class="row">
+				<section class="col-md-6">
+			{% else %}
 			<section>
+			{% endif %}
 				<h2>{{ site.data.i18n.tmpl-on-this-page[page.lang] }}</h2>
 				<ul>
 					<li><a href="#spec">{{ site.data.i18n.tmpl-design-specifications[page.lang] }}</a></li>
@@ -28,16 +33,17 @@ layout: page
 					<li><a href="#usage">{{ site.data.i18n.tmpl-usage[page.lang] }}</a></li>
 					<li><a href="#discuss">{{ site.data.i18n.tmpl-discussion[page.lang] }}</a></li>
 				</ul>
-			</section>
+				</section>
 			{% if page.design-kits %}
-			<section>
+				<section class="col-md-6">
 				<h2>{{ site.data.i18n.tmpl-design-kits[page.lang] }}</h2>
 				<ul class="list-unstyled lst-spcd">
 					{% for kit in page.design-kits %}
 					<li><a class="btn btn-default" href="{{ kit.link }}"><span class="fas fa-arrow-circle-down"></span> {{ kit.title }}</a></li>
 					{% endfor %}
 				</ul>
-			</section>
+				</section>
+			</div>
 			{% endif %}
 			<section>
 				<h2 id="specs">{{ site.data.i18n.tmpl-design-specifications[page.lang] }}</h2>
@@ -52,8 +58,8 @@ layout: page
 							{% for callout in page.design-spec.callouts %}
 							<li>
 								<details>
-									<summary>{{ page.callout.number }} {{ page.callout.title[page.lang] }}</summary>
-									{{ page.callout.texttag[page.lang] }}
+									<summary><span class="fa-stack fa-1x"><span class="fas fa-square fa-stack-1x" style="color: black;"></span><span class="fas fa-stack-1 fa-dice-one fa-inverse">{{ callout.number }}</span></span>&nbsp;{{ callout.title[page.lang] }}</summary>
+									{{ callout.texttag[page.lang] }}
 								</details>
 							</li>
 							{% endfor %}
@@ -61,20 +67,33 @@ layout: page
 					</div>
 				</div>
 			</section>
+			{% if page.related %}
+			<section>
+				<h2 id="patterns">{{ site.data.i18n.tmpl-related-patterns[page.lang] }}</h2>
+				<p>{{ page.name[page.lang] }} {{ site.data.i18n.tmpl-related-usage[page.lang] }}</p>
+				<ul>
+				{% for pattern in page.related %}
+					<li><a href="{{ pattern.link[page.lang] }}">{{ pattern.title[page.lang] }}</a></li>
+				{% endfor %}
+				</ul>
+			</section>
+			{% endif %}
 			<section>
 				<h2 id="usage">{{ site.data.i18n.tmpl-usage[page.lang] }}</h2>
-				{{ page.usage.texttag[page.lang] }}
-				{% for use in page.usage %}
-				<div class="row">
-					<div class="col-md-4">
-						<img src="" class="img-responsive pattern-demo" alt="">
-						<div class="do-guideline">
-						<p class="h4">Do</p>
-						<p>...</p>
+				<section>
+					<h3>{{ page.usage.texttag[page.lang] }}</h3>
+					<!-- {% for use in page.usage[2] %}
+					<div class="row">
+						<div class="col-md-4">
+							<img src="" class="img-responsive pattern-demo" alt="">
+							<div class="do-guideline">
+							<p class="h4">Do</p>
+							<p>...</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				{% endfor %}
+					{% endfor %} -->
+				</section>
 			</section>
 		</details>
 		<details id="details-panel2">
@@ -94,4 +113,14 @@ layout: page
 			</p>
 		</details>
 	</div>
+
 </div>
+<section>
+	<h2 id="discuss">{{site.data.i18n.tmpl-discussion[page.lang]}}</h2>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<p><a href="https://github.com/canada-ca/design-system-systeme-conception/issues" class="btn btn-default btn-block"><span class="fab fa-github"></span> {{ site.data.i18n.tmpl-github-issue[page.lang] }}</a></p>
+			<p><a href="https://join.slack.com/t/design-gc-conception/shared_invite/enQtODE1OTc5Mzg5NzQ4LWQ3MjZjMTdjMjk2ZTZmMTJjYWQ3ZmRiNDYwYjRmN2NjYzQyNjFlNDBlY2FkNWE1ODg2YjExY2QwZmVjN2MwMGM" class="btn btn-default btn-block"><span class="fab fa-slack"></span> {{ site.data.i18n.tmpl-join-slack[page.lang] }}</a></p>
+		</div>
+	</div>
+</section>

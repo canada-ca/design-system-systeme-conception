@@ -1,23 +1,8 @@
-tmpl-progress:
-  en: Progress
-  fr: Progrès
-tmpl-version:
-  en: Version
-  fr: Version
-tmpl-updated:
-  en: Updated
-  fr: Mise à jour
-tmpl-guidance:
-  en: Design guidelines
-  fr: Lignes directrices de conception
 tmpl-demo-code:
   en: Demo and code
   fr:
-tmpl-rationale:
-  en: Rationale
-  fr:
-tmpl-on-this-page:
-  en: On this page
+tmpl-design-kits:
+  en: Available in the design kit
   fr:
 tmpl-design-specifications:
   en: Design specifications
@@ -25,15 +10,39 @@ tmpl-design-specifications:
 tmpl-design-variants:
   en: Design variants
   fr:
-tmpl-related-patterns:
-  en: Related patterns
-  fr:
-tmpl-usage:
-  en: Usage
-  fr:
 tmpl-discussion:
   en: Discussion
   fr:
-tmpl-design-kits:
-  en: Available in the design kit
+tmpl-github-issue:
+  en: Report an issue in GitHub
   fr:
+tmpl-guidance:
+  en: Design guidelines
+  fr: Lignes directrices de conception
+tmpl-join-slack:
+  en: Join the conversation on Slack
+  fr:
+tmpl-on-this-page:
+  en: On this page
+  fr:
+tmpl-progress:
+  en: Progress
+  fr: Progrès
+tmpl-rationale:
+  en: Rationale
+  fr:
+tmpl-related-patterns:
+  en: Related patterns
+  fr:
+tmpl-related-usage:
+  en: are used in the following patterns&colon;
+  fr: est utilisés dans les motifs suivants&nbsp;&colon;
+tmpl-updated:
+  en: Updated
+  fr: Mise à jour
+tmpl-usage:
+  en: Usage
+  fr:
+tmpl-version:
+  en: Version
+  fr: Version
