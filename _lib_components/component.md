@@ -269,8 +269,8 @@ layout-options:
       en:
       fr:
 name:
-  en: Componants name
-  fr:
+  en: Components name
+  fr: Nom de la composante
 rationale:
   a11y:
     audit:
@@ -326,7 +326,32 @@ rendering: # non-encoded html code with content
   fr:
 states:
 usage: # do and dont associated with a pattern
-  - texttag: # can markdown be uesd in yaml notation? Nope, even with the `|`
-      en: Only use Component for the primary action
-      fr:
+  texttag: # can markdown be uesd in yaml notation? Nope, even with the `|`
+    en: Only use Component for the primary action
+    fr: Seulement pour une action primaire
+  uses:
+    -
+      do:
+        img: https://via.placeholder.com/250X75?text=test1
+        alt: alt-test 1
+        en: Place a <code>component</code> here and there, and don't worry
+        fr:
+    -
+      dont:
+        img: https://via.placeholder.com/250X75?text=test2
+        alt: alt-test 2
+        en: Place a <code>component</code> here and there, and do worry
+        fr:
+    -
+      dont:
+        img: https://via.placeholder.com/250X75?text=test3
+        alt: alt-test 3
+        en: Place another <code>component</code> here and there, and don't worry
+        fr:
+    -
+      do:
+        img: https://via.placeholder.com/250X75?text=test4
+        alt: alt-test 4
+        en: Place another <code>component</code> here and there, and don't worry
+        fr:
 ---

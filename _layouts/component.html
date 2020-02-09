@@ -58,7 +58,7 @@ layout: page
 							{% for callout in page.design-spec.callouts %}
 							<li>
 								<details>
-									<summary><span class="fa-stack fa-1x"><span class="fas fa-square fa-stack-1x" style="color: black;"></span><span class="fas fa-stack-1 fa-dice-one fa-inverse">{{ callout.number }}</span></span>&nbsp;{{ callout.title[page.lang] }}</summary>
+									<summary><span class="fa-stack" style="display: inline-block;"><span class="fas fa-square fa-stack-2x" style="color: black;"></span><span class="fa-stack-1x fa-inverse">{{ callout.number }}</span></span>&nbsp;{{ callout.title[page.lang] }}</summary>
 									{{ callout.texttag[page.lang] }}
 								</details>
 							</li>
@@ -82,17 +82,23 @@ layout: page
 				<h2 id="usage">{{ site.data.i18n.tmpl-usage[page.lang] }}</h2>
 				<section>
 					<h3>{{ page.usage.texttag[page.lang] }}</h3>
-					<!-- {% for use in page.usage[2] %}
 					<div class="row">
+					{% for use in page.usage.uses %}
 						<div class="col-md-4">
-							<img src="" class="img-responsive pattern-demo" alt="">
-							<div class="do-guideline">
-							<p class="h4">Do</p>
-							<p>...</p>
+						{% if use.first.last.img %}
+							<img src="{{ use.first.last.img }}" class="img-responsive pattern-demo" alt="{{ use.first.last.img }}">
+						{% endif %}
+							<div class="{{ use.first.first }}-guideline">
+						{% if use.first.first == "do" %}
+								<p class="h4">{{ site.data.i18n.tmpl-do-label[page.lang] }}</p>
+						{% else %}
+								<p class="h4">{{ site.data.i18n.tmpl-dont-label[page.lang] }}</p>
+						{% endif %}
+								<p>{{ use.first.last[page.lang] }}</p>
 							</div>
 						</div>
+					{% endfor %}
 					</div>
-					{% endfor %} -->
 				</section>
 			</section>
 		</details>
