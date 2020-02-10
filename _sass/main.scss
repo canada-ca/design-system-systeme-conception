@@ -41,19 +41,25 @@ $screen-lg-max: 1599px !default;
 $screen-xl-min: 1600px !default;
 
 //colors
+$brand-primary: #2572b4 !default;
+$brand-success: #1b6c1c !default;
+$brand-info: #4d4d4d !default;
+$brand-warning: #f2d40d !default;
+$brand-danger: #bc3331 !default;
+
 $color_cloud_burst_approx: #26374a;
-$black: #000;
-$white: #ffffff;
 $color_pale_sky_approx: #6c757d;
 $color_mercury_approx: #dee2e6;
 $color_gallery_approx: #e9ecef;
 $color_abbey_approx: #495057;
 $color_azure_radiance_approx: #007bff;
+$black: rgba(0, 0, 0, 1);
 $black_90: rgba(0, 0, 0, .9);
 $black_50: rgba(0, 0, 0, .5);
 $black_70: rgba(0, 0, 0, .7);
 $black_30: rgba(0, 0, 0, .3);
 $black_10: rgba(0, 0, 0, .1);
+$white: rgba(255, 255, 255, 1);
 $white_50: rgba(255, 255, 255, .5);
 $white_75: rgba(255, 255, 255, .75);
 $white_25: rgba(255, 255, 255, .25);

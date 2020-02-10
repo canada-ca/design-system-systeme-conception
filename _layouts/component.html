@@ -19,6 +19,7 @@ layout: page
 	<div class="tabpanels">
 		<details id="details-panel1">
 			<summary><span class="fas fa-pen-square"></span> {{ site.data.i18n.tmpl-guidance[page.lang] }}</summary>
+			{% comment %}<!-- # {% include on-this-page.html %} -->{% endcomment %}
 			{% if page.design-kits %}
 			<div class="row">
 				<section class="col-md-6">
@@ -34,6 +35,7 @@ layout: page
 					<li><a href="#discuss">{{ site.data.i18n.tmpl-discussion[page.lang] }}</a></li>
 				</ul>
 				</section>
+			{% comment %}<!-- {% include design-kits.html %} -->{% endcomment %}
 			{% if page.design-kits %}
 				<section class="col-md-6">
 				<h2>{{ site.data.i18n.tmpl-design-kits[page.lang] }}</h2>
@@ -68,6 +70,7 @@ layout: page
 				</div>
 			</section>
 			{% if page.related %}
+			{% comment %}<!-- {% include related.html %} -->{% endcomment %}
 			<section>
 				<h2 id="patterns">{{ site.data.i18n.tmpl-related-patterns[page.lang] }}</h2>
 				<p>{{ page.name[page.lang] }} {{ site.data.i18n.tmpl-related-usage[page.lang] }}</p>
@@ -78,15 +81,16 @@ layout: page
 				</ul>
 			</section>
 			{% endif %}
+			{% comment %}<!-- {% include usage.html %} -->{% endcomment %}
 			<section>
 				<h2 id="usage">{{ site.data.i18n.tmpl-usage[page.lang] }}</h2>
 				<section>
 					<h3>{{ page.usage.texttag[page.lang] }}</h3>
 					<div class="row">
 					{% for use in page.usage.uses %}
-						<div class="col-md-4">
-						{% if use.first.last.img %}
-							<img src="{{ use.first.last.img }}" class="img-responsive pattern-demo" alt="{{ use.first.last.img }}">
+						<div class="col-md-4 experimental">
+						{% if use.first.last.img[page.lang] %}
+							<img src="{{ use.first.last.img[page.lang] }}" class="img-responsive pattern-demo" alt="{{ use.first.last.alt[page.lang] }}">
 						{% endif %}
 							<div class="{{ use.first.first }}-guideline">
 						{% if use.first.first == "do" %}
@@ -104,13 +108,47 @@ layout: page
 		</details>
 		<details id="details-panel2">
 			<summary><span class="fas fa-laptop-code"></span> {{ site.data.i18n.tmpl-demo-code[page.lang] }}</summary>
-			<div id="{{ page.code.code-variants.value }}-code" class="component-code">
-				<div id="default-{{ page.code.code-variants.value }}-code" class="layout-code">
-					<div class="code-variant wet4-variant">
-						<pre><code>{{ page.code.code-variants.html-example[page.lang] }}</code></pre>
+			<div class="row">
+				<div class="col-xs-12 col-md-9 mrgn-tp-md">
+					<div id="demo" class="pattern-demo pattern-demo-component">
+						{% for variant in code-variants %}
+						<div id="{{ variant.name }}-demo" class="component-demo">
+							{% for layout in variant %}
+							<div class="{{ variant.code }}-{{ variant.name }}-layout" class="layout-demo example-frame-bkg">
+								<iframe title="{{ page.layout.title }}" class="example-frame example-frame-resizable example-frame-m" src="{{ page.layout.src }}" frameborder="0" loading="lazy" onload="resizeIframe(this);"></iframe>
+							</div>
+							{% endfor %}
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="mrgn-bttm-sm">
+						<fieldset>
+							<label for="design-variant-menu" class="chkbxrdio-grp">{{ site.data.i18n.tmpl-design-variants[page.lang] }}</label>
+							<section id="design-variant-menu" class="form-control">
+							{% for variant in page.code.code-variants.variants %}
+							{% endfor %}
+							</section>
+						</fieldset>
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-9 mrgn-tp-md">
+
+				</div>
+				<div class="col-md-3">
+
+				</div>
+			</div>
+				<div id="{{ page.code.code-variants.value }}" class="component-code">
+					<div id="default-{{ page.code.code-variants.value }}-code" class="layout-code">
+						<div class="code-variant wet4-variant">
+							<pre><code>{{ page.code.code-variants.html-example[page.lang] }}</code></pre>
+						</div>
+					</div>
+				</div>
 		</details>
 		<details id="details-panel3">
 			<summary><span class="fas fa-microscope"></span> {{ site.data.i18n.tmpl-rationale[page.lang] }}</summary>

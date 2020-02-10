@@ -32,7 +32,8 @@ layout: component
 permalink: en/library/components/component
 permalink_fr: fr/bibliotheque/composantes/composante
 stylesheets:
-  - href: "/assets/css/alpha-beta-banner.css"
+  - href: /assets/css/alpha-beta-banner.css
+  - href: /assets/css/do-dont.css
 synonmyns:
   en: [atom, module, molecule, pattern, plugin]
   fr: [atôme, module, molécule, motif, plugiciel]
@@ -41,9 +42,9 @@ synonmyns:
 atomisation: organism # atom, molecule, orgamism (component), template (page layout), page, style, practice (design pattern), behaviour
 code:
   code-variants:
-    - variant:
+    - variants:
       - layout-option:
-        - html-example: # encoded html code with content
+        - iframe-src: # url for the encoded html code with content
             en: |
                 &lt;component&gt;
                   &lt;p&gt;This component is awesome&lt;/p&gt;
@@ -61,7 +62,6 @@ code:
             mustache: # empty or false if commented
             twig: # empty or false if commented
             version:
-          id:
           stylesheet:
             css: |
                 p {
@@ -90,25 +90,7 @@ configuration: # Table of all configuration settings available
     how-to:
       en:
       fr:
-design-variants: # empty or false if commented
-#  - img:
-#      alt:
-#        en:
-#        fr:
-#      link:
-#        en:
-#        fr:
-#    texttag:
-#      en:
-#      fr:
-#    title:
-#      en:
-#      fr:
-design-variant-screenshots:
-  - link:
-    alt:
-      en:
-      fr:
+design-variants:
 design-kits: # empty or false if commented
   - title: Photoshop
     link: \#
@@ -330,28 +312,40 @@ usage: # do and dont associated with a pattern
     en: Only use Component for the primary action
     fr: Seulement pour une action primaire
   uses:
-    -
-      do:
-        img: https://via.placeholder.com/250X75?text=test1
-        alt: alt-test 1
-        en: Place a <code>component</code> here and there, and don't worry
-        fr:
-    -
-      dont:
-        img: https://via.placeholder.com/250X75?text=test2
-        alt: alt-test 2
-        en: Place a <code>component</code> here and there, and do worry
-        fr:
-    -
-      dont:
-        img: https://via.placeholder.com/250X75?text=test3
-        alt: alt-test 3
+    - dont:
+        img:
+          en: https://via.placeholder.com/390X75?text=test-eng1
+          fr: https://via.placeholder.com/390X75?text=test-fra1
+        alt:
+          en: alt-test eng1
+          fr: alt-test fra1
+        en: Place a <code>component</code> here and there, and don't worry.
+        fr: Placez un <code>composant</code> ici et là, et ne vous inquiétez de rien.
+    - dont:
+        img:
+          en: https://via.placeholder.com/390X75?text=test-eng2
+          fr: https://via.placeholder.com/390X75?text=test-fra2
+        alt:
+          en: alt-test eng2
+          fr: alt-test fra2
+        en: Place a <code>component</code> here and there, and do worry.
+        fr: Placez un <code>composant</code> ici et là, et inquiétez vous.
+    - do:
+        img:
+          en: https://via.placeholder.com/390X75?text=test-eng3
+          fr: https://via.placeholder.com/390X75?text=test-fra3
+        alt:
+          en: alt-test eng3
+          fr: alt-test fra3
         en: Place another <code>component</code> here and there, and don't worry
-        fr:
-    -
-      do:
-        img: https://via.placeholder.com/250X75?text=test4
-        alt: alt-test 4
+        fr: Placez un autre <code>composant</code> ici et là, et ne vous inquiétez de rien.
+    - do:
+        img:
+          en: https://via.placeholder.com/390X75?text=test-eng4
+          fr: https://via.placeholder.com/390X75?text=test-fra4
+        alt:
+          en: alt-test eng4
+          fr: alt-test fra4
         en: Place another <code>component</code> here and there, and don't worry
-        fr:
+        fr: Placez un <code>composant</code> ici et là, et ne vous inquiétez de rien.
 ---
