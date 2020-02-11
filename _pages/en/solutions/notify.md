@@ -3,6 +3,6 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
   - title: "Solutions"
-    link: "/en/solutions"
+    link: "./solutions"
 contentTitle: Notify (CDS)
 ---

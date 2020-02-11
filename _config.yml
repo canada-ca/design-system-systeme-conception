@@ -52,7 +52,6 @@ verbose: true
 collections:
   pages:
     output: true
-    permalink: /:path
   lib_behaviours:
     output: true
     permalink: ./behaviours/:name
@@ -72,7 +71,7 @@ collections:
 # 5. Jekyll default page settings
 defaults:
   - scope:
-      path: ""
+      path: "_pages"
     values:
       pageType: archived
       footer: false
@@ -263,13 +262,10 @@ defaults:
         tmpl-you-are-here:
           en: You are here
           fr: Vous êtes ici&#160;
-      javascript:
-        - src: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-          integrity: "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-          crossorigin: "anonymous"
-      layout: "page"
-      lang: "en"
+      layout: page
+      lang: en
       langtoggle: true
+      permalink: /:path
       noMainContainer: false
       noContentTitle: false
       share: true
@@ -277,23 +273,27 @@ defaults:
       sitesearch: true
 
 # 6. Site settings
-analytics_google: ""
-analytics_google_anonymize_ip: ""
-assets: "https://wet-boew.github.io/themes-dist"
-baseurl: ""
+analytics_google:
+analytics_google_anonymize_ip:
+assets: https://wet-boew.github.io/themes-dist
+baseurl:
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
-email: ""
+email:
 encoding: utf-8 # Make sure the encoding is right
+javascript:
+  - src: https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
+    integrity: sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM
+    crossorigin: anonymous
 lang: en-CA # Set the site language
 languages: ["en", "fr"]
 sitename:
   en: GC Design System
   fr: System de conception GC
 stylesheets:
-  - href: "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin: "anonymous"
-  - href: "https://jmealing.github.io/design-system-systeme-conception/css/gc-design-sys-nav.css"
-  - href: "assets/css/alpha-beta-banner.css"
+  - href: https://use.fontawesome.com/releases/v5.8.1/css/all.css
+    integrity: sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf
+    crossorigin: anonymous
+  - href: https://jmealing.github.io/design-system-systeme-conception/css/gc-design-sys-nav.css
+  - href: assets/css/alpha-beta-banner.css
 theme-name: GCWeb
 title: GC design system / Système de conception GC # Site name or title, also used in jekyll-seo-tag

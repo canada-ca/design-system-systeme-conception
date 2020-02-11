@@ -3,6 +3,6 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
   - title: "Community"
-    link: "/en/community"
+    link: "./community"
 contentTitle: Community principles
 ---

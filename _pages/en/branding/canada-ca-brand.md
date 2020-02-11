@@ -3,6 +3,6 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
   - title: "Branding"
-    link: "/en/branding"
+    link: "./branding"
 contentTitle: Canada.ca brand
 ---
