@@ -5,7 +5,15 @@ breadcrumbs:
     link: "/en"
   - title: "Library"
     link: "/en/library"
+contentTitle: &title Buttons
+footer: true
+lang: en
+langtoggle: true
 layout: guide-component
+pageType: archived
+share: true
+sitemenu: true
+sitesearch: true
 
 # technical sheet
 a11y-rate:
@@ -14,10 +22,10 @@ availibility:
     link: "#"
   - title: Axure XP
     link:
-contentTitle: Buttons
 description: Call to action to let a user complete an action, find a next step or submit a form.
+name: *title
 pagetag: Call to action to let a user complete an action, find a next step or submit a form.
-permalink: en/library/components/guide-buttons
+# permalink: en/library/components/guide-buttons
 related:
   - title: Interactive questions
     link: design-patterns/interactive-questions

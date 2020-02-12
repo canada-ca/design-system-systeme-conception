@@ -19,7 +19,9 @@ breadcrumbs:
     link:
       en: /en/library/component
       fr: /fr/bibliotheque/composante
-contentTitle: Component example # Need an override for bilingual title
+contentTitle:
+  en: Component example # Need an override for bilingual title
+  fr: Exemple de composante
 created: 2020-01-31 # ISO date format YYYY-MM-DD
 description-short: # max 80 characters long
   en: Short description of maximum 80 characters
@@ -27,10 +29,7 @@ description-short: # max 80 characters long
 description-long:
   en: Long description over 80 characters. Lorem ipsum dolor sit amet, an est albucius deserunt. Ea nusquam assueverit vis, ex nec audiam expetenda disputationi. Vis eu etiam officiis, vel et hendrerit scribentur. Vocent sententiae argumentum qui.
   fr: Description longue de plus de 80 caractères. Lôrem ipsum dôlor sît âmèt, utînàm màluîsset qùi eu. Omnes iisqué nônûmés has ex. Usu ad sçriptà çommunè suscîpït. Cum ôportèat sénsibûs maiêstatïs àn, êt debet dôlor pœssit prœ àperirî.
-lang: en
 layout: component
-permalink: en/library/components/component
-permalink_fr: fr/bibliotheque/composantes/composante
 stylesheets:
   - href: /assets/css/alpha-beta-banner.css
   - href: /assets/css/do-dont.css
