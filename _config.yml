@@ -71,7 +71,7 @@ collections:
 # 5. Jekyll default page settings
 defaults:
   - scope:
-      path: "_pages"
+      path: ""
     values:
       pageType: archived
       footer: false
