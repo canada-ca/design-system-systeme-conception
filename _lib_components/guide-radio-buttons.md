@@ -16,11 +16,11 @@ description: Radio buttons allow for a single option to be selected in a list of
 pagetag: Radio buttons allow for a single option to be selected in a list of items.
 related:
   - title: Interactive questions
-    link: design-patterns/interactive-questions
+    link:
   - title: Form
-    link: "#"
+    link:
   - title: Toggle
-    link: "#"
+    link:
 screenshots:
 stage: Beta
 updated: 2019-11-07

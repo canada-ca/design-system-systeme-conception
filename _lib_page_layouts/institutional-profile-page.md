@@ -13,7 +13,6 @@ availibility:
 contentTitle: Institutional landing page
 description: Use this template as the landing page for Government of Canada institutions and organizations.
 pagetag: Use this template as the landing page for Government of Canada institutions and organizations.
-permalink: en/library/page-layouts/institutional-landing-page
 related:
 screenshots:
 stage: Stable

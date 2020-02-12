@@ -1,0 +1,2 @@
+language: ruby
+script: "rake test" # You may need to use "bundle exec rake test" if Travis fails on the require for the HTML/Proofer
