@@ -2,9 +2,9 @@
 # page settings
 breadcrumbs:
   - title: "Home"
-    link: "/en"
+    link: "/"
   - title: "Library"
-    link: "/en/library"
+    link: "/library"
 layout: guide-component
 
 # technical sheet

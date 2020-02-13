@@ -17,9 +17,9 @@ related:
   - title: Interactive questions
     link: design-patterns/interactive-questions
   - title: Form
-    link: "#"
+    link:
   - title: Toggle
-    link: "#"
+    link:
 screenshots:
 stage: Stable
 updated: 2019-12-24
