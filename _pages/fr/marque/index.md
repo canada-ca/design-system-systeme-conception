@@ -47,12 +47,6 @@ Exigences de l'en-tête général
 
   </tr>
 </thead>
-<tfoot>
-		<tr>
-			<td colspan="4">
-			</td>
-		</tr>
-	</tfoot>
 <tbody>
 
   <tr>
@@ -107,7 +101,14 @@ Exigences de l'en-tête général
     <td>Obligatoire</td>
 
   </tr>
-</tbody></table>
+</tbody>
+<tfoot>
+		<tr>
+			<td colspan="4">
+			</td>
+		</tr>
+	</tfoot>
+</table>
 
 
 <h4>Footer</h4>
