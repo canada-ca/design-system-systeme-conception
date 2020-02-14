@@ -74,6 +74,7 @@ defaults:
   - scope:
       path: ""
     values:
+      analytics: true
       pageType: archived
       footer: false
       i18n:
@@ -278,10 +279,16 @@ defaults:
       sitesearch: true
 
 # 6. Site settings
-analytics_google:
-analytics_google_anonymize_ip:
-assets: https://wet-boew.github.io/themes-dist
-baseurl:
+analytics:
+  provider: adobe # false (default), "google", "google-universal", "gtag", "adobe", "custom"
+  adobe:
+    staging: -staging # -staging, false (default)
+    tracking_id: caacec67651710193d2331efef325107c23a0145/satelliteLib-c2082deaf69c358c641c5eb20f94b615dd606662
+  google:
+    tracking_id: # UA-XXXX-YY
+    anonymize_ip: # true, false (default)
+assets: "https://wet-boew.github.io/themes-dist"
+baseurl: ""
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 email:
 encoding: utf-8 # Make sure the encoding is right
@@ -295,10 +302,10 @@ sitename:
   en: GC Design System
   fr: System de conception GC
 stylesheets:
-  - href: https://use.fontawesome.com/releases/v5.8.1/css/all.css
-    integrity: sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf
-    crossorigin: anonymous
-  - href: https://jmealing.github.io/design-system-systeme-conception/css/gc-design-sys-nav.css
-  - href: assets/css/alpha-beta-banner.css
+  - href: "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin: "anonymous"
+  - href: "assets/css/alpha.gc-desig-system-nav.css"
+  - href: "assets/css/alpha-beta-banner.css"
 theme-name: GCWeb
 title: GC design system / Système de conception GC # Site name or title, also used in jekyll-seo-tag
