@@ -16,7 +16,6 @@ availibility:
     link:
 contentTitle: Buttons
 description: Call to action to let a user complete an action, find a next step or submit a form.
-name: *title
 pagetag: Call to action to let a user complete an action, find a next step or submit a form.
 permalink: en/library/components/guide-buttons
 related:
