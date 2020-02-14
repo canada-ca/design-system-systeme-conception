@@ -58,7 +58,7 @@ collections:
     permalink: ./behaviours/:name
   lib_components:
     output: true
-    permalink: ./:categories/:name
+    permalink: ./components/:name
   lib_design_patterns:
     output: true
     permalink: ./design-patterns/:name
