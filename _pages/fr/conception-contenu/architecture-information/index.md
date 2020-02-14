@@ -114,7 +114,7 @@ contentTitle: Organiser votre contenu
 
 	  <ul>
 	  <li>de l'arborescence thématique</li>
-	  <li>de la section « Services et renseignements » du profil institutionnel ou organisationnel</li>  
+	  <li>de la section « Services et renseignements » du profil institutionnel ou organisationnel</li>
 	  </ul>
 
 	   <p>Toutes vos décisions de navigation devraient permettre aux utilisateurs de trouver plus facilement vos tâches principales.</p>
@@ -380,7 +380,7 @@ contentTitle: Organiser votre contenu
 		  <li>Un maximum de deux mots clés est recommandé.</li>
 
 		  <li>Il est fortement recommandé d'utiliser des mots clés unilingues, dans la langue de la page.</li>
-		  <li>Les sous-sites et les services numériques connexes doivent être groupés sous le même sous-domaine, lorsque c'est possible.</li>
+		  <li>Les sous-sites et les services numériques connexes doivent être groupés sous le même sous-domaine, lorsque c'est possible.
 
 			<p class="mrgn-tp-md"><strong>Exemples :</strong></p>
 
@@ -393,7 +393,7 @@ contentTitle: Organiser votre contenu
 
 
 			</ul>
-
+      </li>
 
 
 		</ul>
