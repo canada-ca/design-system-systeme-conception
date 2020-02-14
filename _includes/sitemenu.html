@@ -1,24 +1,30 @@
 	<div class="gc-ds-nav">
 		<div class="container">
-			<nav class="navbar navbar-expand-md">
-				<a href="/{{ page.lang }}" class="navbar-brand">
-					<img src="{{ "/assets/img/logo.svg" | relative_url }}" height="28" alt="GC Design system">
-				</a>
-				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-					<span class="navbar-toggler-icon">Menu</span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<div class="navbar-nav pstn-rght-md">
-						<ul>
-							{% assign pages = site.pages | sort: 'order' %}
-							{% for doc in pages %}
-								{% if doc.breadcrumbs.last.title == page.i18n.tmpl-home[page.lang] %}
-								<li><a class="nav-item nav-link{% if doc.url == page.url or doc.url contains page.breadcrumbs[1].link %} active{% endif %}" href="{{ doc.url | relative_url }}">{{ doc.contentTitle }}</a></li>
-								{% endif %}
-							{% endfor %}
-						</ul>
+			<div class="row">
+				<nav class="navbar navbar-expand-md">
+					<a href="/{{ page.lang }}" class="navbar-brand">
+						{% if page.lang == "en" %}
+						<img src="{{ "/assets/img/logo-en.svg" | relative_url }}" height="28" alt="GC Design system">
+						{% else %}
+						<img src="{{ "/assets/img/logo-fr.svg" | relative_url }}" height="28" alt="System de conception GC">
+						{% endif %}
+					</a>
+					<button type="button" class="navbar-toggler white" data-toggle="collapse" data-target="#navbarCollapse">
+						<span class="fas fa-bars"></span><span>&nbsp;Menu</span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+						<div class="navbar-nav">
+							<ul>
+								{% assign pages = site.pages | sort: 'order' %}
+								{% for doc in pages %}
+									{% if doc.breadcrumbs.last.title == page.i18n.tmpl-home[page.lang] %}
+									<li><a class="nav-item nav-link{% if doc.url == page.url or doc.url contains page.breadcrumbs[1].link %} active{% endif %}" href="{{ doc.url | relative_url }}">{{ doc.contentTitle }}</a></li>
+									{% endif %}
+								{% endfor %}
+							</ul>
+						</div>
 					</div>
-				</div>
-			</nav>
+				</nav>
+			</div>
 		</div>
 	</div>

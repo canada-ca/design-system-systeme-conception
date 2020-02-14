@@ -1,29 +1,29 @@
 ---
-altLangPrefix: /bibliotheque/index
+lang: fr
+altLangPrefix: library/index
 breadcrumbs:
-  - title: "Home"
-    link: "/en"
-contentTitle: Library
-layout: page
-permalink: en/library/
+  - title: Accueil
+    link: /fr
+contentTitle: Bibliothèque
 order: 2
 ---
-<p><b>Search for:</b></p>
+
+<p><b>Chercher des :</b></p>
 <ul class="btn-toolbar list-inline" role="toolbar">
 	<li class="btn-group">
-		<button type="button" class="wb-toggle btn btn-primary" data-toggle="{'selector': '#behaviours, #components, #design-patterns, #page-layouts, #styles', 'group': '.grouped', 'type': 'on'}">All</button>
+		<button type="button" class="wb-toggle btn btn-primary" data-toggle="{'selector': '#behaviours, #components, #design-patterns, #page-layouts, #styles', 'group': '.grouped', 'type': 'on'}">Tout</button>
 	</li>
 	<li class="btn-group">
-		<button type="button" class="wb-toggle btn btn-default" data-toggle="{'selector': '#behaviours', 'group': '.grouped', 'type': 'on'}">Behaviours</button>
+		<button type="button" class="wb-toggle btn btn-default" data-toggle="{'selector': '#behaviours', 'group': '.grouped', 'type': 'on'}">Comportements</button>
 	</li>
 	<li class="btn-group">
-		<button type="button" class="wb-toggle btn btn-default" data-toggle="{'selector': '#components', 'group': '.grouped', 'type': 'on'}">Components</button>
+		<button type="button" class="wb-toggle btn btn-default" data-toggle="{'selector': '#components', 'group': '.grouped', 'type': 'on'}">Composants</button>
 	</li>
 	<li class="btn-group">
-		<button type="button" class="wb-toggle btn btn-default" data-toggle="{'selector': '#design-patterns', 'group': '.grouped', 'type': 'on'}">Design patterns</button>
+		<button type="button" class="wb-toggle btn btn-default" data-toggle="{'selector': '#design-patterns', 'group': '.grouped', 'type': 'on'}">Modèles de conception</button>
 	</li>
 	<li class="btn-group">
-		<button type="button" class="wb-toggle btn btn-default" data-toggle="{'selector': '#page-layouts', 'group': '.grouped', 'type': 'on'}">Page layouts</button>
+		<button type="button" class="wb-toggle btn btn-default" data-toggle="{'selector': '#page-layouts', 'group': '.grouped', 'type': 'on'}">Mises en page</button>
 	</li>
 	<li class="btn-group">
 		<button type="button" class="wb-toggle btn btn-default" data-toggle="{'selector': '#styles', 'group': '.grouped', 'type': 'on'}">Styles</button>
@@ -31,13 +31,13 @@ order: 2
 </ul>
 <div class="wb-filter">
 	<section id="behaviours" class="grouped">
-		<h3>Behaviours</h3>
+		<h3>Comportements</h3>
 		<ul class="list-unstyled row">
 			{% for behaviours in site.lib_behaviours %}
 			<li class="col-md-3">
 				<div class="panel panel-default">
 					<header class="panel-heading">
-						<h5 class="panel-title">Behaviour</h5>
+						<h5 class="panel-title">Comportement</h5>
 					</header>
 					<div class="panel-body">
 						<p><a class="stretched-link" href="{{ behaviours.url | relative_url }}">{{ behaviours.contentTitle }}</a></p>
@@ -49,13 +49,13 @@ order: 2
 		</ul>
 	</section>
 	<section id="components" class="grouped">
-		<h3>Components</h3>
+		<h3>Composants</h3>
 		<ul class="list-unstyled row">
 			{% for components in site.lib_components %}
 			<li class="col-md-3">
 				<div class="panel panel-default">
 					<header class="panel-heading">
-						<h5 class="panel-title">Component</h5>
+						<h5 class="panel-title">Composant</h5>
 					</header>
 					<div class="panel-body">
 						<p><a class="stretched-link" href="{{ components.url | relative_url }}">{{ components.contentTitle }}</a></p>
@@ -67,13 +67,13 @@ order: 2
 		</ul>
 	</section>
 	<section id="design-patterns" class="grouped">
-		<h3>Design pattern</h3>
+		<h3>Modèle de conception</h3>
 		<ul class="list-unstyled row">
 			{% for design-patterns in site.lib_design_patterns %}
 			<li class="col-md-3">
 				<div class="panel panel-default">
 					<header class="panel-heading">
-						<h5 class="panel-title">Design patterns</h5>
+						<h5 class="panel-title">Modèle de conception</h5>
 					</header>
 					<div class="panel-body">
 						<p><a class="stretched-link" href="{{ design-patterns.url | relative_url }}">{{ design-patterns.contentTitle }}</a></p>
@@ -85,13 +85,13 @@ order: 2
 		</ul>
 	</section>
 	<section id="page-layouts" class="grouped">
-		<h3>Page layout</h3>
+		<h3>Mises en page</h3>
 		<ul class="list-unstyled row">
 			{% for page-layouts in site.lib_page_layouts %}
 			<li class="col-md-3">
 				<div class="panel panel-default">
 					<header class="panel-heading">
-						<h5 class="panel-title">Page layouts</h5>
+						<h5 class="panel-title">Mise en page</h5>
 					</header>
 					<div class="panel-body">
 						<p><a class="stretched-link" href="{{ page-layouts.url | relative_url }}">{{ page-layouts.contentTitle }}</a></p>
@@ -103,13 +103,13 @@ order: 2
 		</ul>
 	</section>
 	<section id="styles" class="grouped">
-		<h3>Style</h3>
+		<h3>Styles</h3>
 		<ul class="list-unstyled row">
 			{% for styles in site.lib_styles %}
 			<li class="col-md-3">
 				<div class="panel panel-default">
 					<header class="panel-heading">
-						<h5 class="panel-title">Styles</h5>
+						<h5 class="panel-title">Style</h5>
 					</header>
 					<div class="panel-body">
 						<p><a class="stretched-link" href="{{ styles.url | relative_url }}">{{ styles.contentTitle }}</a></p>

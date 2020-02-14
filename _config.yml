@@ -75,6 +75,7 @@ defaults:
       path: ""
     values:
       analytics: true
+      pageType: archived
       footer: false
       i18n:
         tmpl-about-government:
@@ -263,13 +264,13 @@ defaults:
         tmpl-you-are-here:
           en: You are here
           fr: Vous êtes ici&#160;
-      javascript:
+      javascripts:
         - src: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
           integrity: "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
           crossorigin: "anonymous"
       layout: "page"
       lang: "en"
-      langtoggle: false
+      langtoggle: true
       noMainContainer: false
       noContentTitle: false
       share: true
@@ -300,5 +301,6 @@ stylesheets:
     integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin: "anonymous"
   - href: "https://jmealing.github.io/design-system-systeme-conception/css/gc-design-sys-nav.css"
+  - href: "assets/css/alpha-beta-banner.css"
 theme-name: GCWeb
 title: GC design system / Système de conception GC # Site name or title, also used in jekyll-seo-tag
