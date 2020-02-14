@@ -1,0 +1,11 @@
+{% unless page.pageclass contains "home" %}
+  {% if page.breadcrumbs %}
+	{% for breadcrumb in page.breadcrumbs %}
+		{% if breadcrumb.title[page.lang] %}
+	<li><a href="{{ breadcrumb.link[page.lang] | relative_url }}">{{ breadcrumb.title[page.lang] }}</a></li>
+		{% else %}
+	<li><a href="{{ breadcrumb.link | relative_url }}">{{ breadcrumb.title }}</a></li>
+		{% endif %}
+    {% endfor %}
+  {% endif %}
+{% endunless %}
