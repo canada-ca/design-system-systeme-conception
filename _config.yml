@@ -53,6 +53,7 @@ verbose: true
 collections:
   pages:
     output: true
+    permalink: /:path
   lib_behaviours:
     output: true
     permalink: ./behaviours/:name
@@ -267,7 +268,6 @@ defaults:
       layout: page
       lang: en
       langtoggle: true
-      permalink: /:path
       noMainContainer: false
       noContentTitle: false
       share: true
@@ -303,7 +303,7 @@ stylesheets:
   - href: https://use.fontawesome.com/releases/v5.8.1/css/all.css
     integrity: sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf
     crossorigin: anonymous
-  - href: assets/css/alpha.gc-desig-system-nav.css
+  - href: assets/css/alpha.gc-design-system-nav.css
   - href: assets/css/beta.alpha-beta-banner.css
 theme-name: GCWeb
 title: GC design system / Système de conception GC # Site name or title, also used in jekyll-seo-tag
