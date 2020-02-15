@@ -53,6 +53,7 @@ verbose: true
 collections:
   pages:
     output: true
+    permalink: /:path
   lib_behaviours:
     output: true
     permalink: ./behaviours/:name
