@@ -7,19 +7,7 @@ layout: default
   <div class="row">
     <main property="mainContentOfPage" class="col-md-9 col-md-push-3" typeof="WebPageElement">
 {% else %}
-    <main property="mainContentOfPage" class="{% unless page.noMainContainer %}container{% endunless %}
-    {% case page.pageType %}
-      {% when 'institution' %}
-        gc-instttn
-      {% when 'organization' %}
-        gc-orgnztn
-      {% when 'theme' %}
-        gc-theme
-      {% when 'news' %}
-        gc-news
-      {% when 'advance service' %}
-        gc-advnc-srvc
-    {% endcase %}" typeof="WebPageElement">{% endif %}
+    <main property="mainContentOfPage" class="{% unless page.noMainContainer %}container{% endunless %}{% case page.pageType %}{% when 'institution' %} gc-instttn{% when 'organization' %} gc-orgnztn{% when 'theme' %} gc-theme{% when 'news' %} gc-news{% when 'advance service' %} gc-advnc-srvc{% endcase %}" typeof="WebPageElement">{% endif %}
 {% unless page.noContentTitle %}
   {% assign navclass = page.pageclass | split: " " %}
   {% unless navclass contains "page-type-nav" %}

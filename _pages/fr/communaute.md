@@ -1,10 +1,10 @@
 ---
 altLangPrefix: community
-lang: fr
 breadcrumbs:
   - title: Accueil
     link: /fr
 contentTitle: Communauté
+lang: fr
 order: 6
 ---
 <p>Tout le monde peut contribuer au système de conception du GC.</p>

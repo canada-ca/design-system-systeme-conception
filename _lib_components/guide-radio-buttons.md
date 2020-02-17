@@ -1,5 +1,6 @@
 ---
 # page settings
+altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
@@ -18,9 +19,9 @@ related:
   - title: Interactive questions
     link: design-patterns/interactive-questions
   - title: Form
-    link: "#"
+    link:
   - title: Toggle
-    link: "#"
+    link:
 screenshots:
 stage: Beta
 updated: 2019-11-07

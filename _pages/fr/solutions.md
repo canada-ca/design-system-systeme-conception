@@ -1,10 +1,10 @@
 ---
-lang: fr
 altLangPrefix: solutions
 breadcrumbs:
   - title: Accueil
     link: /fr
 contentTitle: Solutions
+lang: fr
 order: 5
 ---
 <section class="gc-srvinfo mrgn-bttm-lg">

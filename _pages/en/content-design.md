@@ -1,5 +1,5 @@
 ---
-altLangPrefix: /conception-contenu
+altLangPrefix: conception-contenu
 breadcrumbs:
   - title: "Home"
     link: "/en"
@@ -12,7 +12,7 @@ order: 4
  <div class="row">
   <div class="wb-eqht">
     <section class="col-sm-6">
-      <h3><a href="./accessibility">Accessibility</a></h3>
+      <h3><a href="./content-design/accessibility">Accessibility</a></h3>
       <p>
         Make your content accessible
       </p>
@@ -24,23 +24,23 @@ order: 4
       </p>
     </section>
     <section class="col-sm-6">
-      <h3><a href="./content-design-tips/">Content design tips</a></h3>
+      <h3><a href="./content-design/content-design-tips/">Content design tips</a></h3>
       <p>Content design tips to design for task success</p>
     </section>
     <section class="col-sm-6">
-      <h3><a href="./information-architecture/">Organize your content in Canada.ca</a></h3>
+      <h3><a href="./content-design/information-architecture/">Organize your content in Canada.ca</a></h3>
       <p>
         Canada.ca information architecture, user need categories, URL model
       </p>
     </section>
     <section class="col-sm-6">
-      <h3><a href="./search/">Optimize for search</a></h3>
+      <h3><a href="./content-design/search/">Optimize for search</a></h3>
       <p>
         Optimizing your content for voice search, claiming knowledge panels
       </p>
     </section>
     <section class="col-sm-6">
-      <h3><a href="./design-task-success/">Design for task success</a></h3>
+      <h3><a href="./content-design/design-task-success/">Design for task success</a></h3>
       <p>
         Optimization playbook
       </p>

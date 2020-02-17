@@ -1,10 +1,10 @@
 ---
 altLangPrefix: content-design
-lang: fr
 breadcrumbs:
   - title: Accueil
     link: /fr
 contentTitle: Conception de contenu
+lang: fr
 order: 4
 ---
 

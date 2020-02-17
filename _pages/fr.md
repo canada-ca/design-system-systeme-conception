@@ -1,10 +1,10 @@
 ---
 altLangPrefix: ../en
-lang: fr
 contentTitle: Système de conception du GC
+lang: fr
 noContentTitle: true
 ---
-<p class="mrgn-tp-lg">Le système de conception du GC offre une expérience en ligne conviviale, cohérente et fiable pour que les gens puissent accéder aux services numériques du gouvernement du Canada.</p>
+<p id="wb-cont" class="mrgn-tp-lg">Le système de conception du GC offre une expérience en ligne conviviale, cohérente et fiable pour que les gens puissent accéder aux services numériques du gouvernement du Canada.</p>
 
 <a class="btn btn-primary btn-lg" href="./debuter/">Débuter</a>
 

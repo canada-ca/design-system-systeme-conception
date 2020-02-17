@@ -4,7 +4,7 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
   - title: "Content design"
-    link: "./content-design"
+    link: "/en/content-design"
 contentTitle: Content design tips
 ---
 <p>When you design content, focus on the task: what are people trying to accomplish? How can my choices help them complete that task?</p>

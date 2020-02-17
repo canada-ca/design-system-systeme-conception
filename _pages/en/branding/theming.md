@@ -1,4 +1,5 @@
 ---
+altLangPrefix: ../fr
 breadcrumbs:
   - title: Home
     link: /en

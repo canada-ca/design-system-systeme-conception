@@ -1,5 +1,6 @@
 ---
 # page settings
+altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"

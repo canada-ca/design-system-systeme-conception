@@ -1,10 +1,10 @@
 ---
 altLangPrefix: get-started
-lang: fr
 breadcrumbs:
   - title: Accueil
     link: /fr
 contentTitle: Débuter
+lang: fr
 order: 1
 ---
 <p>Il existe de nombreuses façons de commencer à utiliser le système de conception GC :</p>

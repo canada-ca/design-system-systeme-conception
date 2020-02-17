@@ -5,7 +5,7 @@ breadcrumbs:
   - title: Accueil
     link: /fr
   - title: Communauté
-    link: /fr/communaute/
+    link: /fr/communaute
 contentTitle: Procédure de contribution
 ---
 
@@ -66,7 +66,7 @@ contentTitle: Procédure de contribution
  <li>une maquette ou un prototype codé</li>
 </ul>
 
-<p>Vous pouvez commencer à utiliser le <a href="#">modèle de documentation</a>. Vous n'avez pas besoin de remplir toutes les sections pour mettre le prototype en alpha.</p>
+<p>Vous pouvez commencer à utiliser le <a href="">modèle de documentation</a>. Vous n'avez pas besoin de remplir toutes les sections pour mettre le prototype en alpha.</p>
 
 <p>La phase alpha est utilisée pour tester l'hypothèse, mener des recherches, traiter les considérations d'accessibilité et coder un exemple de travail pour les tests.</p>
 
@@ -79,12 +79,12 @@ contentTitle: Procédure de contribution
  <li>une évaluation de l'accessibilité</li>
  <li>la justification des choix de conception - il peut s'agir de résultats de la recherche ou d'une justification solide</li>
  <li>quelques conseils sur le "Quand utiliser" cette composante, ce modèle ou ce gabarit</li>
- <li>la documentation dans les deux langues officielles, en utilisant le <a href="#">modèle de documentation</a></li>
+ <li>la documentation dans les deux langues officielles, en utilisant le <a href="">modèle de documentation</a></li>
 </ul>
 
 <p>Utilisez la phase bêta pour intensifier l'expérience et résoudre les problèmes que vous rencontrez.</p>
 
-<p>Les mises à jour bêta sont disponibles dans la <a href="./bibliotheque/">bibliothèque principale du système de conception</a>, et les ministères peuvent les utiliser, à condition qu'ils considèrent qu'il s'agit d'une expérimentation et qu'ils soient disposés à rendre compte des résultats.</p>
+<p>Les mises à jour bêta sont disponibles dans la <a href="./bibliotheque">bibliothèque principale du système de conception</a>, et les ministères peuvent les utiliser, à condition qu'ils considèrent qu'il s'agit d'une expérimentation et qu'ils soient disposés à rendre compte des résultats.</p>
 
 <p>Lorsqu'ils utilisent une version bêta d'un composant, d'un modèle ou d'un gabarit, les ministères doivent prévoir un moyen pour que les personnes concernées puissent donner leur avis. (place prévue pour le contenu sur la façon de le faire)</p>
 

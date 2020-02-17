@@ -53,7 +53,7 @@ order: 6
 <li>anything that makes the design system better for the community</li>
 </ul>
 </section>
-<a class="btn btn-call-to-action" href="./community/contribution-process/">Contribution process</a>
+<a class="btn btn-call-to-action" href="./community/contribution-process">Contribution process</a>
 <section>
 <h2 id="backlog">Backlog</h2>
 <p>The community backlog is on GitHub. It documents all the ideas to work on and their status.</p>

@@ -1,10 +1,10 @@
 ---
-lang: fr
 altLangPrefix: library
 breadcrumbs:
   - title: Accueil
     link: /fr
 contentTitle: Bibliothèque
+lang: fr
 order: 2
 ---
 

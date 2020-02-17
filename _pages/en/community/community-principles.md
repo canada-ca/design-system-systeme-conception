@@ -1,8 +1,9 @@
 ---
+altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
   - title: "Community"
-    link: "./community"
+    link: "/en/community"
 contentTitle: Community principles
 ---

@@ -1,5 +1,5 @@
 ---
-altLangPrefix: /marque
+altLangPrefix: marque
 breadcrumbs:
   - title: Home
     link: /en

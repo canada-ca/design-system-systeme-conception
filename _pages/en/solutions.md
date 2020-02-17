@@ -1,5 +1,5 @@
 ---
-altLangPrefix: /solutions
+altLangPrefix: solutions
 breadcrumbs:
   - title: Home
     link: /en

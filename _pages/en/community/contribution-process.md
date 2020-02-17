@@ -4,7 +4,7 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
   - title: "Community"
-    link: "./community"
+    link: "/en/community"
 contentTitle: Contribution process
 ---
 
@@ -66,7 +66,7 @@ contentTitle: Contribution process
  <li>a mock-up or a coded prototype</li>
 </ul>
 
-<p>You can start using the <a href="#">documentation template</a>. You don't need to fill every section to put the prototype in Alpha.</p>
+<p>You can start using the <a href="">documentation template</a>. You don't need to fill every section to put the prototype in Alpha.</p>
 
 <p>The Alpha phase is used to test the hypothesis, conduct research, deal with accessibility considerations, and code a working example for testing.</p>
 
@@ -79,12 +79,12 @@ contentTitle: Contribution process
  <li>assessment of accessibility</li>
  <li>rationale for design choices - this can be results from research or a strong rationale</li>
  <li>some guidance on "When to use" this component, pattern or template</li>
- <li>documentation in both official languages, using the <a href="#">documentation template</a></li>
+ <li>documentation in both official languages, using the <a href="">documentation template</a></li>
 </ul>
 
 <p>Use the Beta phase to scale up the experiment and fix any issues you encounter.</p>
 
-<p>Beta updates are available through the main <a href="./library/">design system library</a>, and departments can use them, as long as they consider it an experiment and are willing to report back on findings.</p>
+<p>Beta updates are available through the main <a href="../library">design system library</a>, and departments can use them, as long as they consider it an experiment and are willing to report back on findings.</p>
 
 <p>When using a beta version of a component, pattern or template, departments need to provide a way for people to provide feedback. (placeholder for content on how to do that)</p>
 

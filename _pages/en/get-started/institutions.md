@@ -1,4 +1,5 @@
 ---
+altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
@@ -7,7 +8,7 @@ breadcrumbs:
 contentTitle: Institutions list
 ---
 
-<p>Institutions subject to "Appendix D: Mandatory Procedures for Social Media and Web Communications" of the <a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30682"><cite>Directive on the  Management of Communications</cite></a> must apply the requirements of the <a href="./treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html"><cite>Canada.ca Content and Information Architecture Specification</cite></a>.
+<p>Institutions subject to "Appendix D: Mandatory Procedures for Social Media and Web Communications" of the <cite><a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30682">Directive on the  Management of Communications</a></cite> must apply the requirements of the <cite><a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">Canada.ca Content and Information Architecture Specification</a></cite>.
 
 </p><p>These organizations must apply Canada.ca design requirements for all their public-facing  websites or digital services, regardless of the technology, domain name (both canada.ca and gc.ca) or publishing platform through which these are delivered. </p>
 

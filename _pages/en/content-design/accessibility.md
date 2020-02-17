@@ -4,7 +4,7 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
   - title: "Content design"
-    link: "./content-design"
+    link: "/en/content-design"
 contentTitle: Accessibility
 ---
 <p>The government of Canada is committed to deliver accessible and inclusive services.</p>

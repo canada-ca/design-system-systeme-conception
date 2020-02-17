@@ -1,10 +1,10 @@
 ---
 altLangPrefix: branding
-lang: fr
 breadcrumbs:
   - title: Accueil
     link: /fr
 contentTitle: Image de marque
+lang: fr
 order: 3
 ---
 

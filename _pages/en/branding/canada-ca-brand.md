@@ -1,8 +1,9 @@
 ---
+altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
   - title: "Branding"
-    link: "./branding"
+    link: "/en/branding"
 contentTitle: Canada.ca brand
 ---
