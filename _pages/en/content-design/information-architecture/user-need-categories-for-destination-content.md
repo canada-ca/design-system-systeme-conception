@@ -4,8 +4,8 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
   - title: "Content design"
-    link: "./content-design"
+    link: "/en/content-design"
   - title: "Information architecture"
-    link: "./content-design/information-architecture/"
+    link: "/en/content-design/information-architecture/"
 contentTitle: User-need categories for destination content
 ---

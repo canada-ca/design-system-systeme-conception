@@ -4,6 +4,6 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
   - title: "Solutions"
-    link: "./solutions"
+    link: "/en/solutions"
 contentTitle: Experimentation platform
 ---

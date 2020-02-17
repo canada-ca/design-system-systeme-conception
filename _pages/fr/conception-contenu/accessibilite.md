@@ -5,7 +5,7 @@ breadcrumbs:
   - title: Accueil
     link: /fr
   - title: "Conception de contenu"
-    link: "./conception-contenu"
+    link: "/fr/conception-contenu"
 contentTitle: Accessibilité
 ---
 <p>Le gouvernement du Canada s'est engagé à fournir des services accessibles et inclusifs.</p>

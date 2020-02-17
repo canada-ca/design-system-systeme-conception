@@ -4,7 +4,7 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
   - title: "Get started"
-    link: "./get-started"
+    link: "/en/get-started"
 contentTitle: Institutions list
 ---
 

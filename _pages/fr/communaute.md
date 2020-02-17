@@ -51,7 +51,7 @@ order: 6
 <li>tout ce qui améliore le système de conception pour la communauté</li>
 </ul>
 </section>
-<a class="btn btn-call-to-action" href="./communaute/procedure-contribution/">Procédure de contribution</a>
+<a class="btn btn-call-to-action" href="./communaute/procedure-contribution">Procédure de contribution</a>
 <section>
 <h2 id="liste">Liste d'améliorations</h2>
 <p>La liste d'améliorations de la communauté est sur GitHub. Il documente toutes les idées sur lesquelles travailler et leur statut.</p>

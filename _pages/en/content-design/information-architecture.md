@@ -32,7 +32,7 @@ contentTitle: Organizing your content
 </ul>
 
 <p>Most people looking for government services and information don't understand how government is organized. To address this, the theme-based navigation is the priority navigation path on Canada.ca.</p>
-<p>See where your content fits under themes and their corresponding topics in the <a href="https://www.canada.ca/en/government/about/design-system/topic-tree-content-types.html">Canada.ca Topic tree</a>.</p>
+<p>See where your content fits under themes and their corresponding topics in the <a href="https://www.canada.ca/en/government/about/design-system/topic-tree-content-types.html#tree">Canada.ca Topic tree</a>.</p>
 
 
 <figure class="mrgn-bttm-lg">

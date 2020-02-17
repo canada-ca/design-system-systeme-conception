@@ -4,8 +4,8 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
   - title: "Content design"
-    link: "./content-design"
+    link: "/en/content-design"
   - title: "Search"
-    link: "./content-design/search/"
+    link: "/en/content-design/search/"
 contentTitle: Optimizing content for search
 ---
