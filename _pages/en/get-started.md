@@ -46,18 +46,18 @@ order: 1
   <h2 id="content-design">Start designing content with the design system</h2>
   <p>Consider using our guide on task design to start designing your content with the design system:</p>
   <ul>
-    <li><a href="../content-design/design-for-task-success">Design for task success</a></li>
+    <li><a href="./content-design/design-for-task-success">Design for task success</a></li>
   </ul>
 </section>
 
 <section>
   <h2 id="issue-contribution">Contribute or report an issue</h2>
   <p>Find out how to contribute a new design or component or just report an issue.</p>
-  <ul><li><a href="../community">Community</a></li></ul>
+  <ul><li><a href="./community">Community</a></li></ul>
 </section>
 
 <section>
   <h2 id="theming">Theme the GC Design System for other purposes</h2>
   <p>A theming guide is available if you want to customise the GC Design System for internal Government services or non-federal websites:</p>
-  <ul><li><a href="../branding/theming">Theming guide</a></li></ul>
+  <ul><li><a href="./branding/theming">Theming guide</a></li></ul>
 </section>
