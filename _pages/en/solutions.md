@@ -3,8 +3,8 @@ altLangPrefix: solutions
 breadcrumbs:
   - title: Home
     link: /en
-contentTitle: Solutions
-order: 5
+contentTitle: Services and tools
+order: 6
 ---
 <section class="gc-srvinfo mrgn-bttm-lg">
  <div class="row">

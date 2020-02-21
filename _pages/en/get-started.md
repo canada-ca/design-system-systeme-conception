@@ -3,7 +3,7 @@ altLangPrefix: debuter
 breadcrumbs:
   - title: "Home"
     link: "/en"
-contentTitle: Overview
+contentTitle: Getting started
 order: 1
 ---
 <p>There are many ways to get started with the GC design system:</p>

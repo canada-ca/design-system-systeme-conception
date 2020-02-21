@@ -1,10 +1,10 @@
 ---
-altLangPrefix: conception-contenu
+altLangPrefix: architecture-information
 breadcrumbs:
   - title: "Home"
     link: "/en"
-contentTitle: Writing
-order: 4
+contentTitle: Information architecture
+order: 5
 ---
 
 

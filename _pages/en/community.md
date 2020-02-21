@@ -4,7 +4,7 @@ breadcrumbs:
   - title: "Home"
     link: "/en"
 contentTitle: Community
-order: 6
+order: 7
 ---
 
 <!--Working on the community page-->
