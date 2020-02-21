@@ -4,7 +4,7 @@ breadcrumbs:
   - title: Home
     link: /en
 contentTitle: Branding
-order: 3
+order: 4
 ---
 <p>How and when to apply the Canada.ca brand, and how to use themes.</p>
 
