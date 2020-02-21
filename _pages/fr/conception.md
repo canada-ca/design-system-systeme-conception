@@ -1,9 +1,9 @@
 ---
-altLangPrefix: library
+altLangPrefix: design
 breadcrumbs:
   - title: Accueil
     link: /fr
-contentTitle: Bibliothèque
+contentTitle: Conception
 lang: fr
 order: 2
 ---

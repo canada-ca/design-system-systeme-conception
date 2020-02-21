@@ -7,13 +7,18 @@ title: *title
 ---
 <p id="wb-cont" class="mrgn-tp-lg">Le système de conception du GC offre une expérience en ligne conviviale, cohérente et fiable pour que les gens puissent accéder aux services numériques du gouvernement du Canada.</p>
 
-<a class="btn btn-primary btn-lg" href="/fr/debuter">Débuter</a>
 
 <section class="gc-srvinfo mrgn-bttm-lg">
  <div class="row">
   <div class="wb-eqht">
+  <section class="col-sm-4">
+    <h3><a href="/fr/debuter">Débuter</a></h3>
+    <p>
+      Qu'est-ce que le système de conception, qui devrait l'utiliser, normes Web, accessibilité, architecture de l'information, derniers changements
+    </p>
+  </section>
     <section class="col-sm-4">
-      <h3><a href="/fr/bibliotheque">Bibliothèque</a></h3>
+      <h3><a href="/fr/conception">Conception</a></h3>
       <p>
         Trouvez tous les éléments de conception : composants, modèles, mises en page, styles et comportements
       </p>
@@ -25,13 +30,13 @@ title: *title
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="/fr/conception-contenu">Conception de contenu</a></h3>
+      <h3><a href="/fr/redaction">Rédaction</a></h3>
       <p>
         Guide de rédaction, architecture de l'information, accessibilité et recherche UX
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="/fr/solutions">Solutions</a></h3>
+      <h3><a href="/fr/services">Services et outils</a></h3>
       <p>
       Solutions complètes pour résoudre des situations spécifiques : outil de notification par courrier électronique, centralisation de la solution modèle (CDTS), plate-forme d'expérimentation, etc.
       </p>
