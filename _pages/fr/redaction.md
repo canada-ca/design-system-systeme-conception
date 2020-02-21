@@ -5,7 +5,7 @@ breadcrumbs:
     link: /fr
 contentTitle: Rédaction
 lang: fr
-order: 4
+order: 3
 ---
 
 <section class="gc-srvinfo mrgn-bttm-lg">

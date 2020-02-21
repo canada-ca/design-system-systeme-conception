@@ -5,7 +5,7 @@ breadcrumbs:
     link: /fr
 contentTitle: Image de marque
 lang: fr
-order: 3
+order: 4
 ---
 
 <p>Comment et quand appliquer la marque Canada.ca, et comment utiliser les thèmes.</p>
