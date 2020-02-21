@@ -3,7 +3,7 @@ altLangPrefix: design
 breadcrumbs:
   - title: Accueil
     link: /fr
-contentTitle: Design
+contentTitle: Concevoir
 lang: fr
 order: 2
 ---

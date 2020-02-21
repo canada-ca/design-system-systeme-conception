@@ -3,7 +3,7 @@ altLangPrefix: write
 breadcrumbs:
   - title: Accueil
     link: /fr
-contentTitle: Rédaction
+contentTitle: Rédiger
 lang: fr
 order: 3
 ---
