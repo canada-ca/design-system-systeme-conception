@@ -1,5 +1,5 @@
 ---
-altLangPrefix: branding
+altLangPrefix: brand
 breadcrumbs:
   - title: Accueil
     link: /fr

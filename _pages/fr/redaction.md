@@ -1,9 +1,9 @@
 ---
-altLangPrefix: content-design
+altLangPrefix: write
 breadcrumbs:
   - title: Accueil
     link: /fr
-contentTitle: Conception de contenu
+contentTitle: Rédaction
 lang: fr
 order: 4
 ---
