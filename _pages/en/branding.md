@@ -3,7 +3,7 @@ altLangPrefix: marque
 breadcrumbs:
   - title: Home
     link: /en
-contentTitle: Branding
+contentTitle: Brand
 order: 4
 ---
 <p>How and when to apply the Canada.ca brand, and how to use themes.</p>

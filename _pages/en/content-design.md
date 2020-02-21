@@ -3,7 +3,7 @@ altLangPrefix: conception-contenu
 breadcrumbs:
   - title: "Home"
     link: "/en"
-contentTitle: Writing
+contentTitle: Write
 order: 3
 ---
 
