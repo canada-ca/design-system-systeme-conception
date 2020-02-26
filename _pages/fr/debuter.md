@@ -1,7 +1,7 @@
 ---
 altLangPrefix: get-started
 breadcrumbs:
-  - title: "Système de conception"
+  - title: "Accueil"
     link: /fr
 contentTitle: Débuter
 lang: fr

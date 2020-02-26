@@ -1,7 +1,7 @@
 ---
 altLangPrefix: /debuter/accessibilite
 breadcrumbs:
-  - title: "Design system"
+  - title: "Home"
     link: "/en"
   - title: "Get started"
     link: "/en/get-started"

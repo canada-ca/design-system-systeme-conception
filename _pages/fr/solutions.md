@@ -1,7 +1,7 @@
 ---
 altLangPrefix: solutions
 breadcrumbs:
-  - title: "Système de conception"
+  - title: "Accueil"
     link: /fr
 contentTitle: Solutions
 lang: fr

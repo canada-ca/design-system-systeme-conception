@@ -2,7 +2,7 @@
 altLangPrefix: /get-started/how
 lang: fr
 breadcrumbs:
-  - title: "Système de conception"
+  - title: "Accueil"
     link: /fr
   - title: "Débuter"
     link: "/fr/debuter"

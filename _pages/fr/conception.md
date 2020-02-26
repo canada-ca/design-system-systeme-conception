@@ -1,7 +1,7 @@
 ---
 altLangPrefix: design
 breadcrumbs:
-  - title: "Système de conception"
+  - title: "Accueil"
     link: /fr
 contentTitle: Concevoir
 lang: fr

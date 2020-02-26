@@ -1,7 +1,7 @@
 ---
 altLangPrefix: solutions
 breadcrumbs:
-  - title: Design system
+  - title: Home
     link: /en
 contentTitle: Solutions
 order: 5

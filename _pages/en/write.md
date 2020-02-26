@@ -1,7 +1,7 @@
 ---
 altLangPrefix: redaction
 breadcrumbs:
-  - title: "Design system"
+  - title: "Home"
     link: "/en"
 contentTitle: Write
 order: 3

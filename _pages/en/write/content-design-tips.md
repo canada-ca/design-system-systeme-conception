@@ -1,7 +1,7 @@
 ---
 altLangPrefix: /conception-contenu/conseils-conception
 breadcrumbs:
-  - title: "Design system"
+  - title: "Home"
     link: "/en"
   - title: "Content design"
     link: "/en/content-design"

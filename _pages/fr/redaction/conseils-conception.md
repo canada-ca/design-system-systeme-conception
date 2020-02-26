@@ -2,7 +2,7 @@
 altLangPrefix: content-design/content-design-tips
 lang: fr
 breadcrumbs:
-  - title: "Système de conception"
+  - title: "Accueil"
     link: /fr
   - title: Conception de contenu
     link: /fr/conception-contenu

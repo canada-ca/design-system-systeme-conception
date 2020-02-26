@@ -1,7 +1,7 @@
 ---
 altLangPrefix: write
 breadcrumbs:
-  - title: "Système de conception"
+  - title: "Accueil"
     link: /fr
 contentTitle: Rédiger
 lang: fr
