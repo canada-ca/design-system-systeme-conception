@@ -10,13 +10,13 @@ order: 1
  <div class="row">
   <div class="wb-eqht">
     <section class="col-sm-6">
-    <h3><a href="en/get-started/who">Who should use the design system</a></h3>
+    <h3><a href="./get-started/who">Who should use the design system</a></h3>
       <p>
       What is the Governement of Canada design system, and who should use it.
       </p>
     </section>
     <section class="col-sm-6">
-      <h3><a href="en/get-started/how">How to use the design system</a></h3>
+      <h3><a href="./get-started/how">How to use the design system</a></h3>
       <p>
       How to install it and use it on your site, getting design assets for Photoshop or Azure, starting designing content with design system.
     </p>

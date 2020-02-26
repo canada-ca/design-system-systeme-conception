@@ -17,7 +17,7 @@ order: 3
       </p>
     </section>
     <section class="col-sm-6">
-      <h3><a href="./search">Optimize for search</a></h3>
+      <h3><a href="./write/search">Optimize for search</a></h3>
       <p>
         Optimizing your content for voice search, claiming knowledge panels
       </p>
