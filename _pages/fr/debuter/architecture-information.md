@@ -1,11 +1,11 @@
 ---
-altLangPrefix: content-design/information-architecture
+altLangPrefix: get-started/information-architecture
 lang: fr
 breadcrumbs:
   - title: Accueil
     link: /fr
-  - title: "Conception de contenu"
-    link: "/fr/conception-contenu"
+  - title: "Débuter"
+    link: "/fr/debuter"
 contentTitle: Organiser votre contenu
 ---
 <h2 class="h3">Sur cette page</h2>

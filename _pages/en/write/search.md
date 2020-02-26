@@ -3,8 +3,8 @@ altLangPrefix: /conception-contenu/recherche
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Content design"
-    link: "/en/content-design"
+  - title: "Write"
+    link: "/en/write"
 contentTitle: Optimize for search
 ---
 

@@ -1,11 +1,11 @@
 ---
-altLangPrefix: content-design/accessibility
+altLangPrefix: get-started/accessibility
 lang: fr
 breadcrumbs:
   - title: Accueil
     link: /fr
-  - title: "Conception de contenu"
-    link: "/fr/conception-contenu"
+  - title: "Débuter
+    link: "/fr/debuter"
 contentTitle: Accessibilité
 ---
 <p>Le gouvernement du Canada s'est engagé à fournir des services accessibles et inclusifs.</p>
