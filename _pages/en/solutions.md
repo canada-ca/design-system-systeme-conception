@@ -1,9 +1,9 @@
 ---
-altLangPrefix: services
+altLangPrefix: solutions
 breadcrumbs:
   - title: Home
     link: /en
-contentTitle: Services and tools
+contentTitle: Solutions
 order: 5
 ---
 <section class="gc-srvinfo mrgn-bttm-lg">

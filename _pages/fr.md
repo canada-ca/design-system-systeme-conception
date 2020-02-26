@@ -18,7 +18,7 @@ title: *title
     </p>
   </section>
     <section class="col-sm-4">
-      <h3><a href="/fr/conception">Conception</a></h3>
+      <h3><a href="/fr/conception">Concevoir</a></h3>
       <p>
         Trouvez tous les éléments de conception : composants, modèles, mises en page, styles et comportements
       </p>
@@ -26,17 +26,17 @@ title: *title
     <section class="col-sm-4">
       <h3><a href="/fr/marque">Image de marque </a></h3>
       <p>
-      Éléments de l'image de marque de Canada.ca, qui devrait l'utiliser et comment utiliser d'autres thèmes
+      Éléments obligatoires de l'image de marque de Canada.ca, qui devrait l'utiliser et comment utiliser d'autres thèmes
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="/fr/redaction">Rédaction</a></h3>
+      <h3><a href="/fr/redaction">Rédiger</a></h3>
       <p>
-        Guide de rédaction, architecture de l'information, accessibilité et recherche UX
+        Guide de rédaction, optimisation pour la recherche, transformation de contenu Web
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="/fr/services">Services et outils</a></h3>
+      <h3><a href="/fr/solutions">Solutions</a></h3>
       <p>
       Solutions complètes pour résoudre des situations spécifiques : outil de notification par courrier électronique, centralisation de la solution modèle (CDTS), plate-forme d'expérimentation, etc.
       </p>

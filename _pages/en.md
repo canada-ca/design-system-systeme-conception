@@ -19,25 +19,25 @@ title: *title
     </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="/en/library">Design</a></h3>
+      <h3><a href="/en/design">Design</a></h3>
       <p>
-        Find all design elements: components, design patterns, page layouts, styles and behaviours
+        Find all design elements: components, patterns, layouts, styles and behaviours
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="/en/content-design">Write</a></h3>
+      <h3><a href="/en/write">Write</a></h3>
       <p>
-        Content style guide, information architecture, accessibility and UX research
+        Content style guide, optimizing for search, web content makeovers
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="/en/branding">Brand</a></h3>
+      <h3><a href="/en/brand">Brand</a></h3>
       <p>
         Elements of the Canada.ca brand, who should use it, and how to use other themes
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="/en/solutions">Services and tools</a></h3>
+      <h3><a href="/en/solutions">Solutions</a></h3>
       <p>
         Complete solutions to solve specific situations: email notification tool, Centrally Deployed Template Solution (CDTS), experimentation platform, etc.
       </p>

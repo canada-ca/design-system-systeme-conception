@@ -1,9 +1,9 @@
 ---
-altLangPrefix: Services
+altLangPrefix: solutions
 breadcrumbs:
   - title: Accueil
     link: /fr
-contentTitle: Services et outils
+contentTitle: Solutions
 lang: fr
 order: 5
 ---
