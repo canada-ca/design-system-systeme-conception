@@ -1,11 +1,11 @@
 ---
-altLangPrefix: /conception-contenu/architecture-information
+altLangPrefix: /debuter/architecture-information
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Content design"
-    link: "/en/content-design"
-contentTitle: Organizing your content
+  - title: "Get started"
+    link: "/en/get-started"
+contentTitle: Canada.ca information architecture
 ---
 <h2 class="h3">On this page</h2>
 <ul>

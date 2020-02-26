@@ -24,15 +24,15 @@ title: *title
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="/fr/marque">Image de marque </a></h3>
-      <p>
-      Éléments obligatoires de l'image de marque de Canada.ca, qui devrait l'utiliser et comment utiliser d'autres thèmes
-      </p>
-    </section>
-    <section class="col-sm-4">
       <h3><a href="/fr/redaction">Rédiger</a></h3>
       <p>
         Guide de rédaction, optimisation pour la recherche, transformation de contenu Web
+      </p>
+    </section>
+    <section class="col-sm-4">
+      <h3><a href="/fr/marque">Image de marque </a></h3>
+      <p>
+      Éléments obligatoires de l'image de marque de Canada.ca, qui devrait l'utiliser et comment utiliser d'autres thèmes
       </p>
     </section>
     <section class="col-sm-4">
