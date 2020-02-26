@@ -1,7 +1,7 @@
 ---
 altLangPrefix: /conception-contenu/recherche
 breadcrumbs:
-  - title: "Home"
+  - title: "Design system"
     link: "/en"
   - title: "Write"
     link: "/en/write"

@@ -2,7 +2,7 @@
 altLangPrefix: writing/search
 lang: fr
 breadcrumbs:
-  - title: Accueil
+  - title: "Système de conception"
     link: /fr
   - title: Rédiger
     link: /fr/redaction

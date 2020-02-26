@@ -1,7 +1,7 @@
 ---
 altLangPrefix: brand
 breadcrumbs:
-  - title: Accueil
+  - title: "Système de conception"
     link: /fr
 contentTitle: Image de marque
 lang: fr

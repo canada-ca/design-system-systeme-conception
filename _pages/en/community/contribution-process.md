@@ -1,7 +1,7 @@
 ---
 altLangPrefix: communaute/procedure-contribution
 breadcrumbs:
-  - title: "Home"
+  - title: "Design system"
     link: "/en"
   - title: "Community"
     link: "/en/community"

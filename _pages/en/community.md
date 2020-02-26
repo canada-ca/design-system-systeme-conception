@@ -1,7 +1,7 @@
 ---
 altLangPrefix: communaute
 breadcrumbs:
-  - title: "Home"
+  - title: "Design system"
     link: "/en"
 contentTitle: Community
 order: 6

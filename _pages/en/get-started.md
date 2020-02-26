@@ -1,7 +1,7 @@
 ---
 altLangPrefix: debuter
 breadcrumbs:
-  - title: "Home"
+  - title: "Design system"
     link: "/en"
 contentTitle: Get started
 order: 1

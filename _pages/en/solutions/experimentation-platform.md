@@ -1,7 +1,7 @@
 ---
 altLangPrefix: ../fr
 breadcrumbs:
-  - title: "Home"
+  - title: "Design system"
     link: "/en"
   - title: "Solutions"
     link: "/en/solutions"

@@ -1,7 +1,7 @@
 ---
 altLangPrefix: community
 breadcrumbs:
-  - title: Accueil
+  - title: "Système de conception"
     link: /fr
 contentTitle: Communauté
 lang: fr

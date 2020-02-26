@@ -2,7 +2,7 @@
 altLangPrefix: community/contribution-process
 lang: fr
 breadcrumbs:
-  - title: Accueil
+  - title: "Système de conception"
     link: /fr
   - title: Communauté
     link: /fr/communaute

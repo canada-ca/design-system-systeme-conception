@@ -1,7 +1,7 @@
 ---
 altLangPrefix: marque
 breadcrumbs:
-  - title: Home
+  - title: Design system
     link: /en
 contentTitle: Brand
 order: 4

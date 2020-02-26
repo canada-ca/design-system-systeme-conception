@@ -2,7 +2,7 @@
 altLangPrefix: get-started/accessibility
 lang: fr
 breadcrumbs:
-  - title: "Accueil"
+  - title: "Système de conception"
     link: /fr
   - title: "Débuter"
     link: "/fr/debuter"

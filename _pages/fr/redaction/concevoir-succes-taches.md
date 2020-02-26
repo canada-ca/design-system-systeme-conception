@@ -2,7 +2,7 @@
 altLangPrefix: content-design/design-for-task-success
 lang: fr
 breadcrumbs:
-  - title: "Accueil"
+  - title: "Système de conception"
     link: "/fr"
   - title: "Conception de contenu"
     link: "./conception-contenu"

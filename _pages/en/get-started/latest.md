@@ -1,7 +1,7 @@
 ---
 altLangPrefix: /debuter/changements
 breadcrumbs:
-  - title: "Home"
+  - title: "Design system"
     link: "/en"
   - title: "Get started"
     link: "/en/get-started"
