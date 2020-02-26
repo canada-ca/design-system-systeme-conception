@@ -4,7 +4,7 @@ lang: fr
 breadcrumbs:
   - title: "Accueil"
     link: /fr
-  - title: "Débuter
+  - title: "Débuter"
     link: "/fr/debuter"
 contentTitle: Qui devrait utiliser le système de conception
 ---
