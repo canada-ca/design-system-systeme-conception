@@ -1,5 +1,6 @@
 ---
 altLangPrefix: /get-started/who
+lang: fr
 breadcrumbs:
   - title: Accueil
     link: /fr

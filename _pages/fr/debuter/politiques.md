@@ -1,5 +1,6 @@
 ---
 altLangPrefix: /get-started/policies
+lang: fr
 breadcrumbs:
   - title: Accueil
     link: /fr

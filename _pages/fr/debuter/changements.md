@@ -1,5 +1,6 @@
 ---
 altLangPrefix: /get-started/latest
+lang: fr
 breadcrumbs:
   - title: Accueil
     link: /fr

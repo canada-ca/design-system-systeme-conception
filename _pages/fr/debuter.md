@@ -7,7 +7,7 @@ contentTitle: Débuter
 lang: fr
 order: 1
 ---
-section class="gc-srvinfo mrgn-bttm-lg">
+<section class="gc-srvinfo mrgn-bttm-lg">
  <div class="row">
   <div class="wb-eqht">
     <section class="col-sm-6">
