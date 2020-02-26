@@ -2,9 +2,9 @@
 altLangPrefix: /get-started/policies
 lang: fr
 breadcrumbs:
-  - title: Accueil
+  - title: "Accueil"
     link: /fr
-  - title: "Débuter
+  - title: "Débuter"
     link: "/fr/debuter"
 contentTitle: Normes et politiques du Web
 ---

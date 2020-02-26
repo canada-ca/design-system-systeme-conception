@@ -2,9 +2,9 @@
 altLangPrefix: /get-started/latest
 lang: fr
 breadcrumbs:
-  - title: Accueil
+  - title: "Accueil"
     link: /fr
-  - title: "Débuter
+  - title: "Débuter"
     link: "/fr/debuter"
 contentTitle: Derniers changements
 ---

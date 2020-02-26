@@ -2,9 +2,9 @@
 altLangPrefix: /get-started/how
 lang: fr
 breadcrumbs:
-  - title: Accueil
+  - title: "Accueil"
     link: /fr
-  - title: "Débuter
+  - title: "Débuter"
     link: "/fr/debuter"
 contentTitle: Qui devrait utiliser ce système de conception
 ---
