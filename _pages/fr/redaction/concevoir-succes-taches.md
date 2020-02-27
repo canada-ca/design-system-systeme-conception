@@ -1,6 +1,7 @@
 ---
 altLangPrefix: write/design-for-task-success
 lang: fr
+breadcrumbs:
 - title: "Accueil"
   link: /fr
 - title: Rédiger

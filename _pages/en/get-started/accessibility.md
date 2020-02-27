@@ -1,5 +1,5 @@
 ---
-altLangPrefix: /debuter/accessibilite
+altLangPrefix: debuter/accessibilite
 breadcrumbs:
   - title: "Home"
     link: "/en"

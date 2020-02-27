@@ -1,5 +1,5 @@
 ---
-altLangPrefix: /debuter/politiques
+altLangPrefix: debuter/politiques
 breadcrumbs:
   - title: "Home"
     link: "/en"

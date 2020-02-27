@@ -84,7 +84,7 @@ contentTitle: Procédure de contribution
 
 <p>Utilisez la phase bêta pour intensifier l'expérience et résoudre les problèmes que vous rencontrez.</p>
 
-<p>Les mises à jour bêta sont disponibles dans la <a href="../bibliotheque">bibliothèque principale du système de conception</a>, et les ministères peuvent les utiliser, à condition qu'ils considèrent qu'il s'agit d'une expérimentation et qu'ils soient disposés à rendre compte des résultats.</p>
+<p>Les mises à jour bêta sont disponibles dans la <a href="/fr/conception">bibliothèque principale du système de conception</a>, et les ministères peuvent les utiliser, à condition qu'ils considèrent qu'il s'agit d'une expérimentation et qu'ils soient disposés à rendre compte des résultats.</p>
 
 <p>Lorsqu'ils utilisent une version bêta d'un composant, d'un modèle ou d'un gabarit, les ministères doivent prévoir un moyen pour que les personnes concernées puissent donner leur avis. (place prévue pour le contenu sur la façon de le faire)</p>
 

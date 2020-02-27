@@ -1,5 +1,5 @@
 ---
-altLangPrefix: /debuter/architecture-information
+altLangPrefix: debuter/architecture-information
 breadcrumbs:
   - title: "Home"
     link: "/en"
