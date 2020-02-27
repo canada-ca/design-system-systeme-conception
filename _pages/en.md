@@ -5,29 +5,35 @@ noContentTitle: true
 title: *title
 ---
 
-<p id="wb-cont" class="mrgn-tp-lg">The GC design system provides usable, consistent and trustworthy online experience for people to access Government of Canada digital services.</p>
+<p id="wb-cont" class="mrgn-tp-lg">The Governement of Canada Design System provides usable, consistent and trustworthy online experience for people to access Government of Canada digital services.</p>
 
-<a class="btn btn-primary btn-lg" href="/en/get-started">Get started</a>
+<p>This is an alpha version, still under development.</p>
 
 <section class="gc-srvinfo mrgn-bttm-lg">
  <div class="row">
   <div class="wb-eqht">
     <section class="col-sm-4">
-      <h3><a href="/en/library">Library</a></h3>
+    <h3><a href="/en/get-started">Get started</a></h3>
+    <p>
+      What is the design system, who should use it, web standards, accessibility, information architecture, latest updates
+    </p>
+    </section>
+    <section class="col-sm-4">
+      <h3><a href="/en/design">Design</a></h3>
       <p>
-        Find all design elements: components, design patterns, page layouts, styles and behaviours
+        Find all design elements: components, patterns, layouts, styles and behaviours
       </p>
     </section>
     <section class="col-sm-4">
-      <h3><a href="/en/branding">Branding </a></h3>
+      <h3><a href="/en/write">Write</a></h3>
+      <p>
+        Content style guide, optimizing for search, web content makeovers
+      </p>
+    </section>
+    <section class="col-sm-4">
+      <h3><a href="/en/brand">Brand</a></h3>
       <p>
         Elements of the Canada.ca brand, who should use it, and how to use other themes
-      </p>
-    </section>
-    <section class="col-sm-4">
-      <h3><a href="/en/content-design">Content design</a></h3>
-      <p>
-        Content style guide, information architecture, accessibility and UX research
       </p>
     </section>
     <section class="col-sm-4">

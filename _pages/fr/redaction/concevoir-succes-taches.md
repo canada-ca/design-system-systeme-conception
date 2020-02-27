@@ -1,13 +1,16 @@
 ---
-altLangPrefix: content-design/content-design-tips
+altLangPrefix: write/design-for-task-success
 lang: fr
 breadcrumbs:
-  - title: Accueil
-    link: /fr
-  - title: Conception de contenu
-    link: /fr/conception-contenu
-contentTitle: Conseils en matière de conception de contenu
+- title: "Accueil"
+  link: /fr
+- title: Rédiger
+  link: /fr/redaction
+contentTitle: Concevoir pour le succès des tâches
 ---
+<p>******Endroit prévu pour le guide d'optimisation********</p>
+
+
 <p>Lorsque vous concevez du contenu, concentrez-vous sur la tâche : qu'est-ce que les gens essaient d'accomplir ? Comment mes choix peuvent-ils les aider à accomplir cette tâche ?</p>
 <p>Lorsque vous travaillez sur du contenu, les réponses que les gens recherchent doivent être :</p>
 <ul>

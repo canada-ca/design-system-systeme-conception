@@ -4,8 +4,8 @@ altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Library"
-    link: "/en/library"
+  - title: "Design"
+    link: "/en/design"
 layout: guide-component
 
 # technical sheet
@@ -14,7 +14,7 @@ availibility:
 contentTitle: Theme and topic page
 description: Theme and topic pages provide access to topics and destination pages that support task completion.
 pagetag: Theme and topic pages provide access to topics and destination pages that support task completion.
-permalink: en/library/page-layouts/theme-topic
+permalink: en/design/page-layouts/theme-topic
 related:
 screenshots:
 stage: Alpha

@@ -1,11 +1,11 @@
 ---
-altLangPrefix: content-design/search
+altLangPrefix: writing/search
 lang: fr
 breadcrumbs:
-  - title: Accueil
+  - title: "Accueil"
     link: /fr
-  - title: Conception de contenu
-    link: /fr/conception-contenu
+  - title: Rédiger
+    link: /fr/redaction
 contentTitle: Optimisez pour la recherche
 ---
 

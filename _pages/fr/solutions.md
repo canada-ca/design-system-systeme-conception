@@ -1,7 +1,7 @@
 ---
 altLangPrefix: solutions
 breadcrumbs:
-  - title: Accueil
+  - title: "Accueil"
     link: /fr
 contentTitle: Solutions
 lang: fr

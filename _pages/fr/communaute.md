@@ -1,7 +1,7 @@
 ---
 altLangPrefix: community
 breadcrumbs:
-  - title: Accueil
+  - title: "Accueil"
     link: /fr
 contentTitle: Communauté
 lang: fr
