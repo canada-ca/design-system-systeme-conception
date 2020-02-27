@@ -3,19 +3,14 @@ availibility:
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Library"
-    link: "/en/library"
-breadcrumbs:
-  - title: "Home"
-    link: "/en"
-  - title: "Library"
-    link: "/en/library"
+  - title: "Design"
+    link: "/en/design"
 contentTitle: Radio buttons
 component-grp: radio-buttons
 description: Radio buttons allow for a single option to be selected in a list of items.
 layout: guide-component
 pagetag: Radio buttons allow for a single option to be selected in a list of items.
-permalink: en/library/components/guide-radio-buttons
+permalink: en/design/components/guide-radio-buttons
 related:
   - title: Interactive questions
     link: design-patterns/interactive-questions

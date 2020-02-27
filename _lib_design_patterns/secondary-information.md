@@ -4,8 +4,8 @@ altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Library"
-    link: "/en/library"
+  - title: "Design"
+    link: "/en/design"
 layout: guide-component
 
 # technical sheet
@@ -14,7 +14,7 @@ availibility:
 contentTitle: Presenting secondary information
 description: Options to present secondary information.
 pagetag: Options to present secondary information.
-permalink: en/library/design-patterns/secondary-information
+permalink: en/design/design-patterns/secondary-information
 related:
 screenshots:
 stage: Stable

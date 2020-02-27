@@ -4,8 +4,8 @@ altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Library"
-    link: "/en/library"
+  - title: "Design"
+    link: "/en/design"
 layout: guide-component
 
 # technical sheet
@@ -14,7 +14,7 @@ availibility:
 contentTitle: Contextual content
 description: Options to provide contextual content.
 pagetag: Options to provide contextual content.
-permalink: en/library/design-patterns/contextual-content
+permalink: en/design/design-patterns/contextual-content
 related:
 screenshots:
 stage: Stable

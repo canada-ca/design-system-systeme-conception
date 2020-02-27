@@ -4,10 +4,10 @@ altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Library"
-    link: "/en/library"
+  - title: "Design"
+    link: "/en/design"
 layout: guide-component
-permalink: en/library/components/guide-radio-buttons
+permalink: en/design/components/guide-radio-buttons
 
 # technical sheet
 availibility:
@@ -17,7 +17,7 @@ description: Radio buttons allow for a single option to be selected in a list of
 pagetag: Radio buttons allow for a single option to be selected in a list of items.
 related:
   - title: Interactive questions
-    link: design-patterns/interactive-questions
+    link:
   - title: Form
     link:
   - title: Toggle

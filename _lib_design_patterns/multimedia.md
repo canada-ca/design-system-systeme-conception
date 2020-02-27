@@ -4,8 +4,8 @@ altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Library"
-    link: "/en/library"
+  - title: "Design"
+    link: "/en/design"
 layout: guide-component
 
 # technical sheet
@@ -14,7 +14,7 @@ availibility:
 contentTitle: Multimedia
 description: Options to present multimedia content.
 pagetag: Options to present multimedia content.
-permalink: en/library/design-patterns/multimedia
+permalink: en/design/design-patterns/multimedia
 related:
 screenshots:
 stage: Stable
