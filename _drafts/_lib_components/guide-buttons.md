@@ -7,13 +7,13 @@ availibility:
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Library"
-    link: "/en/library"
+  - title: "Design"
+    link: "/en/design"
 contentTitle: Buttons
 description: Call to action to let a user complete an action, find a next step or submit a form.
 layout: guide-component
 pagetag: Call to action to let a user complete an action, find a next step or submit a form.
-permalink: en/library/components/guide-buttons
+permalink: en/design/components/guide-buttons
 related:
   - title: Interactive questions
     link: design-patterns/interactive-questions

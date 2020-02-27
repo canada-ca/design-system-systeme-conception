@@ -4,8 +4,8 @@ altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Library"
-    link: "/en/library"
+  - title: "Design"
+    link: "/en/design"
 layout: guide-component
 
 # technical sheet
@@ -13,10 +13,10 @@ availibility:
 contentTitle: Colours
 description: Lorem ipsum bla bla.
 pagetag: Set of links with accompanying descriptions (also known as doormats).
-permalink: en/library/components/link-description
+permalink: en/design/components/link-description
 related:
   - title: Interactive questions
-    link: design-patterns/interactive-questions
+    link:
   - title: Form
     link:
   - title: Toggle
