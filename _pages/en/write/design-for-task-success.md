@@ -1,10 +1,10 @@
 ---
-altLangPrefix: /conception-contenu/conseils-conception
+altLangPrefix: redaction/concevoir-succes-taches
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Content design"
-    link: "/en/content-design"
+  - title: "Write"
+    link: "/en/write"
 contentTitle: Content design tips
 ---
 <p>When you design content, focus on the task: what are people trying to accomplish? How can my choices help them complete that task?</p>

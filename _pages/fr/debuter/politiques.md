@@ -1,5 +1,5 @@
 ---
-altLangPrefix: /get-started/policies
+altLangPrefix: get-started/policies
 lang: fr
 breadcrumbs:
   - title: "Accueil"

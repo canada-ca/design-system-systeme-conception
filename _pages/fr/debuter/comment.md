@@ -1,5 +1,5 @@
 ---
-altLangPrefix: /get-started/how
+altLangPrefix: get-started/how
 lang: fr
 breadcrumbs:
   - title: "Accueil"

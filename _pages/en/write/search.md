@@ -1,5 +1,5 @@
 ---
-altLangPrefix: /conception-contenu/recherche
+altLangPrefix: redaction/recherche
 breadcrumbs:
   - title: "Home"
     link: "/en"
