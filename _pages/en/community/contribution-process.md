@@ -84,7 +84,7 @@ contentTitle: Contribution process
 
 <p>Use the Beta phase to scale up the experiment and fix any issues you encounter.</p>
 
-<p>Beta updates are available through the main <a href="../library">design system library</a>, and departments can use them, as long as they consider it an experiment and are willing to report back on findings.</p>
+<p>Beta updates are available through the main <a href="../design">design system library</a>, and departments can use them, as long as they consider it an experiment and are willing to report back on findings.</p>
 
 <p>When using a beta version of a component, pattern or template, departments need to provide a way for people to provide feedback. (placeholder for content on how to do that)</p>
 

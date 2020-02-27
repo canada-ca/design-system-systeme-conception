@@ -4,8 +4,8 @@ altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Library"
-    link: "/en/library"
+  - title: "Design"
+    link: "/en/design"
 layout: guide-component
 
 # technical sheet
@@ -14,7 +14,7 @@ availibility:
 contentTitle: Search and filer
 description: Options to search and filter information.
 pagetag: Options to search and filter information.
-permalink: en/library/design-patterns/search-filter
+permalink: en/design/design-patterns/search-filter
 related:
 screenshots:
 stage: Stable

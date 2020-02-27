@@ -4,8 +4,8 @@ altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Library"
-    link: "/en/library"
+  - title: "Design"
+    link: "/en/design"
 layout: guide-component
 
 # technical sheet
@@ -14,7 +14,7 @@ availibility:
 contentTitle: Institutional landing page
 description: Use this template as the landing page for Government of Canada institutions and organizations.
 pagetag: Use this template as the landing page for Government of Canada institutions and organizations.
-permalink: en/library/page-layouts/institutional-landing-page
+permalink: en/design/page-layouts/institutional-landing-page
 related:
 screenshots:
 stage: Stable

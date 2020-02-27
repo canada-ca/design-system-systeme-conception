@@ -4,8 +4,8 @@ altLangPrefix: ../fr
 breadcrumbs:
   - title: "Home"
     link: "/en"
-  - title: "Library"
-    link: "/en/library"
+  - title: "Design"
+    link: "/en/design"
 layout: guide-component
 
 # technical sheet
@@ -18,10 +18,10 @@ availibility:
 contentTitle: Buttons
 description: Call to action to let a user complete an action, find a next step or submit a form.
 pagetag: Call to action to let a user complete an action, find a next step or submit a form.
-permalink: en/library/components/guide-buttons
+permalink: en/design/components/guide-buttons
 related:
   - title: Interactive questions
-    link: design-patterns/interactive-questions
+    link:
   - title: Form
     link:
   - title: Toggle
