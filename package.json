@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/nschonni/design-system-systeme-conception#readme",
   "devDependencies": {
-    "vnu-jar": "^18.11.5"
+    "vnu-jar": "^20.3.16"
   }
 }
