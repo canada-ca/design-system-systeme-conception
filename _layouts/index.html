@@ -6,8 +6,8 @@ layout: page
 {% for doc in pages %}
 	{% if doc.breadcrumbs.last.title == page.contentTitle %}
 	{% if doc.url contains page.lang %}
-	<li><a href="{{ doc.url | relative_url }}">{{ doc.contentTitle }}</a></li{>
-		{% endif  %}
+	<li><a href="{{ doc.url | relative_url }}">{{ doc.contentTitle }}</a></li>
+		{% endif %}
 	{% endif %}
 {% endfor %}
 </ul>
