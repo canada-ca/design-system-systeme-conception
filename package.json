@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/canada-ca/design-system-systeme-conception#readme",
   "devDependencies": {
-    "bootlint": "1.0.0",
+    "bootlint": "1.1.0",
     "htmllint": "~0.8.0",
     "stylelint": "^12.0.0",
     "stylelint-config-recommended": "^3.0.0",
