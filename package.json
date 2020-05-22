@@ -27,6 +27,6 @@
     "htmllint": "~0.8.0",
     "stylelint": "^13.5.0",
     "stylelint-config-recommended": "^3.0.0",
-    "vnu-jar": "^18.11.5"
+    "vnu-jar": "^20.3.16"
   }
 }
