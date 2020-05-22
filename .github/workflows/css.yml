@@ -1,0 +1,26 @@
+name: Lint CSS
+
+on:
+  push:
+    paths:
+      - ".github/workflows/css.yml"
+      - "assets/css/*.css"
+      - "package*.json"
+
+  pull_request:
+    paths:
+      - ".github/workflows/css.yml"
+      - "assets/css/*.css"
+      - "package*.json"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - run: npm ci
+
+    - run: npm run stylelint
