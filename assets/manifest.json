@@ -4,7 +4,7 @@
 	"name" : "Canada.ca design system",
 	"scope" : "/",
 	"display" : "browser",
-	"start_url" : "https://design.alpha.canada.ca",
+	"start_url" : "https://design-system-systeme-conception.netlify.app",
 	"short_name" : "GC Design System",
 	"theme_color" : "transparent",
 	"description" : "The Governement of Canada Design System provides usable, consistent and trustworthy online experience for people to access Government of Canada digital services. This is an alpha version, still under development.",
