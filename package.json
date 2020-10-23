@@ -10,7 +10,7 @@
     "test": "java -Xss4m -jar node_modules/vnu-jar/build/dist/vnu.jar --errors-only --skip-non-html --filterfile .vnurc --no-langdetect .",
     "htmllint": "htmllint htmllinny",
     "bootlint": "bootlint _pages/*.html",
-    "stylelint": "stylelint /assets/css/*.css"
+    "stylelint": "stylelint \"assets/css/*.css\""
   },
   "repository": {
     "type": "git",
