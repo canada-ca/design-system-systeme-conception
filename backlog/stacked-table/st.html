@@ -433,6 +433,66 @@ table.table-row-group .table-vertical-header>tr>td {
       </tr>
     </tbody>
   </table>
+<h2 id="h_5">Vertical data table design with headers (ajax/script) in a tab system</h2>
+	<p>Does not require every <code>&lt;td&gt;</code> to have <code>data-header</code> attribute and value to be added. Takes the text of the header and binds to each corresponding table cell. Does not allow sorting of rows, but most other functions of datatables can be used). Script is mandatory for ajax.</p>
+	
+	<div class="wb-tabs">
+	<div class="tabpanels">
+		<details id="details-panel1">
+			<summary>Example 1</summary>
+
+	 <table class="table wb-tables table-vertical-header table-row-group table-bordered" id="table5" data-wb-tables='{"rowGroup": {"dataSrc": 0, "orderFixed": [0, "asc"]}, "columnDefs": [{"className": "wb-inv", "targets": [0]}]}'>
+    <caption>
+    Caption here
+    </caption>
+    <thead>
+      <tr>
+		  <th scope="col">Topic</th>
+        <th scope="col">Heading</th>
+        <th scope="col">Teaser text</th>
+        <th scope="col">Full text info</th>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+		  <td>Sports</td>
+        <td class="h3 mrgn-tp-sm"><a href="#">Item number 1</a></td>
+        <td>Teaser text for item number one</td>
+        <td>Duis efficitur at quam in euismod. Nam congue cursus auctor. Nam dapibus viverra diam a laoreet. Integer hendrerit molestie mattis. Ut semper rutrum mauris quis aliquam. Nullam quis neque id sapien condimentum venenatis id quis mauris. Donec fringilla sed orci nec malesuada. Integer sed tortor malesuada, sagittis sem commodo, lobortis nulla. Vivamus et risus ac lectus rutrum tincidunt. Nam sed finibus elit. Phasellus non neque efficitur, porta ligula vel, dignissim lectus. Sed urna tellus, finibus pulvinar aliquet vel, ultrices nec est. Sed pellentesque magna et bibendum bibendum. Duis venenatis nisi ac bibendum imperdiet. Praesent venenatis diam eget neque molestie, id sagittis urna porttitor. </td>
+        <td><span class="text-muted small">2019-04-01</span></td>
+      </tr>
+      <tr>
+		   <td>Weather</td>
+        <td class="h3 mrgn-tp-sm"><a href="#">Item number 2</a></td>
+        <td>Teaser text for item number two</td>
+        <td>Cras non egestas purus, non pulvinar justo. Etiam lorem ante, dictum sed varius eget, vulputate ut tortor. Duis sit amet porta enim, sit amet condimentum ipsum. Fusce ut tincidunt magna. Pellentesque et hendrerit arcu, quis elementum dolor. Nullam congue ex vitae ex cursus, sed tristique leo tincidunt. Nulla rutrum vestibulum purus, ut facilisis leo condimentum ac. Maecenas condimentum mollis magna, eu fermentum sem tempus nec. Donec metus lectus, placerat vitae nibh a, egestas pellentesque lacus. Nunc condimentum vehicula viverra. Praesent molestie semper purus non consectetur. Cras at convallis dui, maximus viverra tortor. Morbi orci mauris, lacinia eget pharetra a, ullamcorper in urna. Duis mauris urna, ultrices non aliquam et, consequat sit amet metus. Nam egestas, ipsum venenatis lacinia elementum, justo dui fringilla purus, condimentum pharetra ex leo vel leo. Nullam vestibulum vel metus vehicula commodo. </td>
+        <td><span class="text-muted small">2019-03-12</span></td>
+      </tr>
+      <tr>
+		   <td>Sports</td>
+        <td class="h3 mrgn-tp-sm"><a href="#">Item number 3</a></td>
+        <td>Teaser text for item number three</td>
+        <td>Proin iaculis nisl sed purus convallis, ac bibendum libero ullamcorper. Morbi egestas felis mollis purus vehicula luctus. Donec mi ante, ultrices quis orci quis, faucibus hendrerit orci. In rutrum dolor odio, sit amet vestibulum neque finibus eget. Aenean ligula est, tristique ut dolor aliquam, pretium ornare nisl. Quisque eu diam vel lacus vehicula pulvinar ac vel nibh. Aenean varius nisl quis porttitor iaculis. Suspendisse tincidunt scelerisque tempor. Morbi accumsan feugiat elit, vitae aliquam lectus elementum at. Sed nibh enim, posuere ut ligula non, varius aliquam orci. </td>
+        <td><span class="text-muted small">2019-03-01</span></td>
+      </tr>
+      <tr>
+		   <td>News</td>
+        <td class="h3 mrgn-tp-sm"><a href="#">Item number 4</a></td>
+        <td>Teaser text for item number four</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor nisl a ultricies imperdiet. Duis viverra turpis eget arcu finibus ornare. Praesent mollis auctor ipsum, et luctus ante faucibus ac. Nullam pretium justo ullamcorper purus ultricies, at aliquam urna posuere. Suspendisse eros dui, accumsan ac semper in, vulputate laoreet ex. Sed dignissim lacus eu leo congue finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur vestibulum bibendum erat vel bibendum. </td>
+        <td><span class="text-muted small">2019-01-22</span></td>
+      </tr>
+    </tbody>
+  </table>
+		</details>
+		<details id="details-panel2">
+			<summary>Example 2</summary>
+			<p>Add ajax table here</p>
+		</details>
+		</div>
+	</div>	
+	
   <div id="def-preFooter"> </div>
   
   <!-- Write closure template --> 
