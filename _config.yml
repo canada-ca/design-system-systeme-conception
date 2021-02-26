@@ -44,7 +44,7 @@ compress_html:
   blanklines: true
   profile: false
 quiet: false
-remote_theme: wet-boew/gcweb-jekyll
+remote_theme: wet-boew/gcweb-jekyll@v1.0.0
 timezone: America/Toronto # Timezone for blog posts and alike
 themeJS: true
 verbose: true
