@@ -12,7 +12,7 @@
   permalink: /
   section: message
   stylesheets:
-    - href: "https://wet-boew.github.io/themes-dist/GCWeb/css/messages.min.css"
+    - href: "https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/messages.min.css"
   subject:
     en: Government of Canada, services
     fr: Gouvernement du Canada, services

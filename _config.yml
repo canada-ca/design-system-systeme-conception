@@ -305,5 +305,5 @@ stylesheets:
     crossorigin: anonymous
   - href: assets/css/alpha.gc-design-system-nav.css
   - href: assets/css/beta.alpha-beta-banner.css
-theme-name: GCWeb
+theme-name: GCWeb/GCWeb
 title: GC design system / Système de conception GC # Site name or title, also used in jekyll-seo-tag
