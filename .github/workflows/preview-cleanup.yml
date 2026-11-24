@@ -16,23 +16,29 @@ jobs:
     if: "${{ startsWith(github.head_ref, 'content/') || startsWith(github.head_ref, 'hotfix/') || startsWith(github.head_ref, 'feat/') }}"
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    permissions: {}
+    permissions:
+      contents: read
     defaults:
       run:
         shell: bash
     steps:
+      - name: Check out trusted base commit
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+
       - name: Read preview host repository
         id: preview_repo
         shell: bash
         env:
-          REPOSITORY_SLUG: ${{ vars.PREVIEW_HOST_REPO }}
+          PREVIEW_HOST_REPO: ${{ vars.PREVIEW_HOST_REPO }}
         run: |
           set -euo pipefail
-          if [[ ! "${REPOSITORY_SLUG}" =~ ^[A-Za-z0-9-]+/[A-Za-z0-9_.-]+$ ]]; then
-            echo "::error::Expected a repository slug in owner/repository form."
-            exit 1
-          fi
-          printf 'owner=%s\nrepository=%s\n' "${REPOSITORY_SLUG%%/*}" "${REPOSITORY_SLUG#*/}" >> "$GITHUB_OUTPUT"
+          source .github/scripts/parse_target.sh
+          parse_preview_target "${PREVIEW_HOST_REPO}"
+          printf 'owner=%s\nrepository=%s\nslug=%s\nen_dir=%s\nfr_dir=%s\n' \
+            "${TARGET_REPO%%/*}" "${TARGET_REPO#*/}" "$TARGET_REPO" "$EN_DIR" "$FR_DIR" >> "$GITHUB_OUTPUT"
 
       - name: Mint preview host token
         id: preview-token
@@ -46,22 +52,31 @@ jobs:
       - name: Check out preview host
         uses: actions/checkout@v7
         with:
-          repository: ${{ vars.PREVIEW_HOST_REPO }}
+          repository: ${{ steps.preview_repo.outputs.slug }}
           ref: main
           token: "${{ steps.preview-token.outputs.token }}"
           path: preview-host
           persist-credentials: true
 
       - name: Delete preview and production-config paths
-        working-directory: preview-host
         env:
+          EN_DIR: ${{ steps.preview_repo.outputs.en_dir }}
+          FR_DIR: ${{ steps.preview_repo.outputs.fr_dir }}
           PR_NUMBER: "${{ github.event.pull_request.number }}"
         run: |
-          rm -rf \
-            "design-system/pr-preview/pr-${PR_NUMBER}" \
-            "systeme-conception/pr-preview/pr-${PR_NUMBER}" \
-            "design-system/prod-artifact/pr-${PR_NUMBER}" \
-            "systeme-conception/prod-artifact/pr-${PR_NUMBER}"
+          source .github/scripts/parse_target.sh
+          paths=(
+            "${EN_DIR}/pr-preview/pr-${PR_NUMBER}"
+            "${FR_DIR}/pr-preview/pr-${PR_NUMBER}"
+            "${EN_DIR}/prod-artifact/pr-${PR_NUMBER}"
+            "${FR_DIR}/prod-artifact/pr-${PR_NUMBER}"
+          )
+          for path in "${paths[@]}"; do
+            check_checkout_path preview-host "$path"
+          done
+          for path in "${paths[@]}"; do
+            rm -rf -- "preview-host/$path"
+          done
 
       - name: Commit and push cleanup
         working-directory: preview-host
@@ -70,7 +85,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
+          git add -u
 
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Clean up PR ${PR_NUMBER} preview"

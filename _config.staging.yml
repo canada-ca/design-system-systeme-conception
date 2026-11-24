@@ -1,2 +1,3 @@
 # The staging task sets the base URL for each language.
 incremental: false
+baseurl: ""

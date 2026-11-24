@@ -1,4 +1,4 @@
-# Repository variables: none
+# Repository variables: vars.PREVIEW_HOST_REPO
 # Repository secrets: none (also uses the automatic GITHUB_TOKEN)
 
 name: Build PR preview
@@ -39,6 +39,7 @@ jobs:
 
       - name: Build staging preview
         env:
+          PREVIEW_HOST_REPO: ${{ vars.PREVIEW_HOST_REPO }}
           JEKYLL_ENV: staging
           PR_NUMBER: "${{ github.event.pull_request.number }}"
         run: bundle exec rake staging
@@ -48,21 +49,27 @@ jobs:
 
       - name: Enforce English config delta
         env:
+          PREVIEW_HOST_REPO: ${{ vars.PREVIEW_HOST_REPO }}
           PR_NUMBER: "${{ github.event.pull_request.number }}"
         run: |
+          source .github/scripts/parse_target.sh
+          parse_preview_target "${PREVIEW_HOST_REPO}"
           python3 .github/scripts/config_delta_gate.py \
-            --staging "_staging/design-system/en" \
+            --staging "_staging/en" \
             --production "_site/en" \
-            --baseurl "/design-system/pr-preview/pr-${PR_NUMBER}"
+            --baseurl "/${EN_DIR}/pr-preview/pr-${PR_NUMBER}"
 
       - name: Enforce French config delta
         env:
+          PREVIEW_HOST_REPO: ${{ vars.PREVIEW_HOST_REPO }}
           PR_NUMBER: "${{ github.event.pull_request.number }}"
         run: |
+          source .github/scripts/parse_target.sh
+          parse_preview_target "${PREVIEW_HOST_REPO}"
           python3 .github/scripts/config_delta_gate.py \
-            --staging "_staging/systeme-conception/fr" \
+            --staging "_staging/fr" \
             --production "_site/fr" \
-            --baseurl "/systeme-conception/pr-preview/pr-${PR_NUMBER}"
+            --baseurl "/${FR_DIR}/pr-preview/pr-${PR_NUMBER}"
 
       - name: Compute preview metadata
         id: sha
@@ -96,14 +103,14 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: staging-en
-          path: _staging/design-system/en/
+          path: _staging/en/
           if-no-files-found: error
 
       - name: Upload staging French artifact
         uses: actions/upload-artifact@v7
         with:
           name: staging-fr
-          path: _staging/systeme-conception/fr/
+          path: _staging/fr/
           if-no-files-found: error
 
       - name: Upload production-config English artifact

@@ -10,17 +10,10 @@ all leave orphaned directories that only a periodic sweep can recover).
 from __future__ import annotations
 
 import argparse
+import re
 import shutil
 import sys
 from pathlib import Path
-
-PATH_FAMILIES = (
-    "design-system/pr-preview",
-    "systeme-conception/pr-preview",
-    "design-system/prod-artifact",
-    "systeme-conception/prod-artifact",
-)
-
 
 def parse_open_prs(raw: str) -> set[str]:
     return {part.strip() for part in raw.split(",") if part.strip()}
@@ -29,6 +22,8 @@ def parse_open_prs(raw: str) -> set[str]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--preview-host", required=True)
+    parser.add_argument("--en-dir", required=True)
+    parser.add_argument("--fr-dir", required=True)
     parser.add_argument("--open-prs", default="")
     args = parser.parse_args()
 
@@ -36,12 +31,14 @@ def main() -> int:
     open_prs = parse_open_prs(args.open_prs)
 
     deleted = 0
-    for family in PATH_FAMILIES:
-        family_dir = host / family
+    families = (host / language_dir / kind
+                for language_dir in (args.en_dir, args.fr_dir)
+                for kind in ("pr-preview", "prod-artifact"))
+    for family_dir in families:
         if not family_dir.is_dir():
             continue
         for entry in sorted(family_dir.iterdir()):
-            if not entry.is_dir() or not entry.name.startswith("pr-"):
+            if entry.is_symlink() or not entry.is_dir() or not re.fullmatch(r"pr-[1-9][0-9]*", entry.name):
                 continue
             pr_number = entry.name[len("pr-"):]
             if pr_number in open_prs:

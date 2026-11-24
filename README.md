@@ -16,13 +16,28 @@ Open pull requests against `main`. Use `content/` for content changes, `hotfix/`
 
 ## GitHub settings
 
-Set these repository variables to `owner/repository` values.
+Set these three GitHub repository variables.
 
-| Variable | Repository |
-| --- | --- |
-| `PREVIEW_HOST_REPO` | Preview host. Serve its `main` branch from the root of a GitHub Pages site. |
-| `PUBLISH_REPO_EN` | English production target. |
-| `PUBLISH_REPO_FR` | French production target. |
+| Variable | Format | Example |
+| --- | --- | --- |
+| `PREVIEW_HOST_REPO` | `owner/repo:EN_DIR,FR_DIR` | `gc-proto/gc-proto.github.io:design,conception` |
+| `PUBLISH_REPO_EN` | `owner/repo[:subpath]` | `gc-proto/design-live` |
+| `PUBLISH_REPO_FR` | `owner/repo[:subpath]` | `gc-proto/conception-live` |
+
+The preview host serves its `main` branch from the root of a GitHub Pages site. Set both language directories to distinct paths.
+
+Each production variable selects a repository and can include a subpath inside that repository. Omit the colon and subpath to publish at the repository root. Root deployments keep `.git`, `CNAME`, and `.nojekyll` intact.
+
+Use letters, digits, periods, underscores, and hyphens in each path segment. Use slashes between segments. Empty segments, single-period segments, and consecutive periods are invalid.
+
+For pull request `N`, the preview host uses these paths.
+
+| Content | English | French |
+| --- | --- | --- |
+| Staging preview | `EN_DIR/pr-preview/pr-N/` | `FR_DIR/pr-preview/pr-N/` |
+| Production-config artifact | `EN_DIR/prod-artifact/pr-N/SHA/` | `FR_DIR/prod-artifact/pr-N/SHA/` |
+
+`SHA` is the seven-character prefix of the pull request head commit. The staging base URL is the preview path with a leading slash and no trailing slash. The default Jekyll base URL is empty.
 
 Set the `PUBLISH_APP_ID` secret to the GitHub App client ID. Set `PUBLISH_APP_PRIVATE_KEY` to the private key. Install the app on all three targets with Contents write access. GitHub supplies `GITHUB_TOKEN` to the workflows.
 
@@ -32,4 +47,10 @@ Set the `PUBLISH_APP_ID` secret to the GitHub App client ID. Set `PUBLISH_APP_PR
 2. Run `bundle install`.
 3. Run `bundle exec rake build` to build `_site/en/` and `_site/fr/`.
 
-To build a local preview for pull request 42, run `JEKYLL_ENV=staging PR_NUMBER=42 bundle exec rake staging`. The output goes to `_staging/design-system/en/` and `_staging/systeme-conception/fr/`.
+For a local preview of pull request 42, run this command with your preview target.
+
+```sh
+PREVIEW_HOST_REPO=owner/repo:alpha,beta JEKYLL_ENV=staging PR_NUMBER=42 bundle exec rake staging
+```
+
+The build writes English to `_staging/en/` and French to `_staging/fr/`.

@@ -2,7 +2,6 @@
 # Repository secrets: secrets.PUBLISH_APP_ID, secrets.PUBLISH_APP_PRIVATE_KEY (also uses the automatic GITHUB_TOKEN)
 
 # AUTHORITATIVE cleanup mechanism for PR previews; preview-cleanup.yml is a best-effort fast path backstopped by this scheduled sweep.
-# Targets: design-system/pr-preview/pr-*, systeme-conception/pr-preview/pr-*, design-system/prod-artifact/pr-*, and systeme-conception/prod-artifact/pr-*.
 name: Scheduled PR preview cleanup
 
 on:
@@ -35,14 +34,13 @@ jobs:
         id: preview_repo
         shell: bash
         env:
-          REPOSITORY_SLUG: ${{ vars.PREVIEW_HOST_REPO }}
+          PREVIEW_HOST_REPO: ${{ vars.PREVIEW_HOST_REPO }}
         run: |
           set -euo pipefail
-          if [[ ! "${REPOSITORY_SLUG}" =~ ^[A-Za-z0-9-]+/[A-Za-z0-9_.-]+$ ]]; then
-            echo "::error::Expected a repository slug in owner/repository form."
-            exit 1
-          fi
-          printf 'owner=%s\nrepository=%s\n' "${REPOSITORY_SLUG%%/*}" "${REPOSITORY_SLUG#*/}" >> "$GITHUB_OUTPUT"
+          source .github/scripts/parse_target.sh
+          parse_preview_target "${PREVIEW_HOST_REPO}"
+          printf 'owner=%s\nrepository=%s\nslug=%s\nen_dir=%s\nfr_dir=%s\n' \
+            "${TARGET_REPO%%/*}" "${TARGET_REPO#*/}" "$TARGET_REPO" "$EN_DIR" "$FR_DIR" >> "$GITHUB_OUTPUT"
 
       - name: Mint preview host token
         id: preview-token
@@ -56,21 +54,31 @@ jobs:
       - name: Check out preview host
         uses: actions/checkout@v7
         with:
-          repository: ${{ vars.PREVIEW_HOST_REPO }}
+          repository: ${{ steps.preview_repo.outputs.slug }}
           ref: main
           token: "${{ steps.preview-token.outputs.token }}"
           path: preview-host
           persist-credentials: true
 
       - name: Reconcile stale preview directories
-        run: python3 .github/scripts/scheduled_cleanup.py --preview-host preview-host --open-prs "$OPEN_PRS"
+        env:
+          EN_DIR: ${{ steps.preview_repo.outputs.en_dir }}
+          FR_DIR: ${{ steps.preview_repo.outputs.fr_dir }}
+        run: |
+          source .github/scripts/parse_target.sh
+          for dir in "$EN_DIR" "$FR_DIR"; do
+            check_checkout_path preview-host "$dir/pr-preview"
+            check_checkout_path preview-host "$dir/prod-artifact"
+          done
+          python3 .github/scripts/scheduled_cleanup.py --preview-host preview-host \
+            --en-dir="$EN_DIR" --fr-dir="$FR_DIR" --open-prs "$OPEN_PRS"
 
       - name: Commit and push cleanup
         working-directory: preview-host
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
+          git add -u
 
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Sweep stale PR preview directories"

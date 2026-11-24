@@ -226,13 +226,15 @@ def build_comment(
     repo: str,
     sha: str,
     preview_host: str,
+    en_dir: str,
+    fr_dir: str,
     staging_en: str,
     staging_fr: str,
     changed_paths: list[str],
 ) -> str:
     preview_host = preview_host.rstrip("/")
-    en_base = f"{preview_host}/design-system/pr-preview/pr-{pr_number}"
-    fr_base = f"{preview_host}/systeme-conception/pr-preview/pr-{pr_number}"
+    en_base = f"{preview_host}/{en_dir}/pr-preview/pr-{pr_number}"
+    fr_base = f"{preview_host}/{fr_dir}/pr-preview/pr-{pr_number}"
     en = PreviewTarget(en_base, Path(staging_en))
     fr = PreviewTarget(fr_base, Path(staging_fr))
 
@@ -287,6 +289,8 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--repo", required=True)
     parser.add_argument("--sha", required=True)
     parser.add_argument("--preview-host", required=True)
+    parser.add_argument("--en-dir", required=True)
+    parser.add_argument("--fr-dir", required=True)
     parser.add_argument("--staging-en", required=True)
     parser.add_argument("--staging-fr", required=True)
     return parser.parse_args(argv)
@@ -301,6 +305,8 @@ def main(argv: list[str] | None = None) -> int:
             repo=args.repo,
             sha=args.sha,
             preview_host=args.preview_host,
+            en_dir=args.en_dir,
+            fr_dir=args.fr_dir,
             staging_en=args.staging_en,
             staging_fr=args.staging_fr,
             changed_paths=changed_paths,

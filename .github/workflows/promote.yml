@@ -34,6 +34,11 @@ jobs:
     environment:
       name: production-${{ inputs.language }}
     steps:
+      - name: Check out trusted repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
       - name: Verify PR head still matches approved SHA
         id: verify_pr
         shell: bash
@@ -69,11 +74,25 @@ jobs:
           echo "current_head_sha=${current_head_sha}" >> "${GITHUB_OUTPUT}"
           echo "short_sha=${current_head_sha:0:7}" >> "${GITHUB_OUTPUT}"
 
+      - name: Read preview host repository
+        id: preview_repo
+        shell: bash
+        env:
+          PREVIEW_HOST_REPO: ${{ vars.PREVIEW_HOST_REPO }}
+        run: |
+          set -euo pipefail
+          source .github/scripts/parse_target.sh
+          parse_preview_target "${PREVIEW_HOST_REPO}"
+          printf 'owner=%s\nrepository=%s\nslug=%s\nen_dir=%s\nfr_dir=%s\n' \
+            "${TARGET_REPO%%/*}" "${TARGET_REPO#*/}" "$TARGET_REPO" "$EN_DIR" "$FR_DIR" >> "$GITHUB_OUTPUT"
+
       - name: Select artifact and production target
         id: select_target
         shell: bash
         env:
           LANGUAGE: ${{ inputs.language }}
+          EN_DIR: ${{ steps.preview_repo.outputs.en_dir }}
+          FR_DIR: ${{ steps.preview_repo.outputs.fr_dir }}
           PUBLISH_REPO_EN: ${{ vars.PUBLISH_REPO_EN }}
           PUBLISH_REPO_FR: ${{ vars.PUBLISH_REPO_FR }}
           PR_NUMBER: ${{ inputs.pr_number }}
@@ -83,13 +102,13 @@ jobs:
 
           case "${LANGUAGE}" in
             en)
-              artifact_path="design-system/prod-artifact/pr-${PR_NUMBER}/${SHORT_SHA}"
-              target_repo="${PUBLISH_REPO_EN}"
+              artifact_path="${EN_DIR}/prod-artifact/pr-${PR_NUMBER}/${SHORT_SHA}"
+              target_value="${PUBLISH_REPO_EN}"
               site_label="English"
               ;;
             fr)
-              artifact_path="systeme-conception/prod-artifact/pr-${PR_NUMBER}/${SHORT_SHA}"
-              target_repo="${PUBLISH_REPO_FR}"
+              artifact_path="${FR_DIR}/prod-artifact/pr-${PR_NUMBER}/${SHORT_SHA}"
+              target_value="${PUBLISH_REPO_FR}"
               site_label="French"
               ;;
             *)
@@ -99,21 +118,11 @@ jobs:
           esac
 
           echo "artifact_path=${artifact_path}" >> "${GITHUB_OUTPUT}"
-          echo "target_repo=${target_repo}" >> "${GITHUB_OUTPUT}"
+          source .github/scripts/parse_target.sh
+          parse_publish_target "$target_value"
+          printf 'owner=%s\nrepository=%s\nslug=%s\nsubpath=%s\n' \
+            "${TARGET_REPO%%/*}" "${TARGET_REPO#*/}" "$TARGET_REPO" "$TARGET_SUBPATH" >> "$GITHUB_OUTPUT"
           echo "site_label=${site_label}" >> "${GITHUB_OUTPUT}"
-
-      - name: Read preview host repository
-        id: preview_repo
-        shell: bash
-        env:
-          REPOSITORY_SLUG: ${{ vars.PREVIEW_HOST_REPO }}
-        run: |
-          set -euo pipefail
-          if [[ ! "${REPOSITORY_SLUG}" =~ ^[A-Za-z0-9-]+/[A-Za-z0-9_.-]+$ ]]; then
-            echo "::error::Expected a repository slug in owner/repository form."
-            exit 1
-          fi
-          printf 'owner=%s\nrepository=%s\n' "${REPOSITORY_SLUG%%/*}" "${REPOSITORY_SLUG#*/}" >> "$GITHUB_OUTPUT"
 
       - name: Mint preview-host read token
         id: preview_token
@@ -129,9 +138,10 @@ jobs:
         id: artifact
         shell: bash
         env:
-          PREVIEW_HOST_REPO: ${{ vars.PREVIEW_HOST_REPO }}
+          PREVIEW_REPO: ${{ steps.preview_repo.outputs.slug }}
           PREVIEW_TOKEN: ${{ steps.preview_token.outputs.token }}
           ARTIFACT_PATH: ${{ steps.select_target.outputs.artifact_path }}
+          TARGET_SUBPATH: ${{ steps.select_target.outputs.subpath }}
           PR_NUMBER: ${{ inputs.pr_number }}
           CURRENT_HEAD_SHA: ${{ steps.verify_pr.outputs.current_head_sha }}
           SHORT_SHA: ${{ steps.verify_pr.outputs.short_sha }}
@@ -141,10 +151,12 @@ jobs:
           preview_dir="${RUNNER_TEMP}/preview-host"
           artifact_dir="${preview_dir}/${ARTIFACT_PATH}"
 
-          git clone --depth 1 --branch main "https://x-access-token:${PREVIEW_TOKEN}@github.com/${PREVIEW_HOST_REPO}.git" "${preview_dir}"
+          git clone --depth 1 --branch main "https://x-access-token:${PREVIEW_TOKEN}@github.com/${PREVIEW_REPO}.git" "${preview_dir}"
 
+          source .github/scripts/parse_target.sh
+          check_checkout_path "$preview_dir" "$ARTIFACT_PATH"
           if [[ ! -d "${artifact_dir}" ]]; then
-            echo "::error::Production-config artifact '${ARTIFACT_PATH}' was not found in ${PREVIEW_HOST_REPO} for PR #${PR_NUMBER} at ${SHORT_SHA}."
+            echo "::error::Production-config artifact '${ARTIFACT_PATH}' was not found in ${PREVIEW_REPO} for PR #${PR_NUMBER} at ${SHORT_SHA}."
             exit 1
           fi
 
@@ -155,14 +167,17 @@ jobs:
 
           manifest="${RUNNER_TEMP}/promotion-manifest.txt"
           {
-            echo "source_repository=${PREVIEW_HOST_REPO}"
+            echo "source_repository=${PREVIEW_REPO}"
             echo "source_branch=main"
             echo "source_path=${ARTIFACT_PATH}"
             echo "approved_sha=${CURRENT_HEAD_SHA}"
-            echo "protected_paths:"
-            printf '  - %s\n' "CNAME" ".nojekyll" "_config.yml" ".github/" "google*.html"
-            echo "excluded_from_promotion:"
-            printf '  - %s\n' "netlify.toml"
+            echo "target_subpath=${TARGET_SUBPATH:-.}"
+            if [[ -z "$TARGET_SUBPATH" ]]; then
+              echo "protected_paths:"
+              printf '  - %s\n' ".git" "CNAME" ".nojekyll" "_config.yml" ".github/" "google*.html"
+              echo "excluded_from_promotion:"
+              printf '  - %s\n' "netlify.toml"
+            fi
             echo "copied_paths:"
             (cd "${artifact_dir}" && find . -mindepth 1 -print | sed 's#^\./#  - #' | sort)
           } > "${manifest}"
@@ -170,35 +185,23 @@ jobs:
           echo "artifact_dir=${artifact_dir}" >> "${GITHUB_OUTPUT}"
           echo "manifest=${manifest}" >> "${GITHUB_OUTPUT}"
 
-      - name: Read production repository
-        id: production_repo
-        shell: bash
-        env:
-          REPOSITORY_SLUG: ${{ steps.select_target.outputs.target_repo }}
-        run: |
-          set -euo pipefail
-          if [[ ! "${REPOSITORY_SLUG}" =~ ^[A-Za-z0-9-]+/[A-Za-z0-9_.-]+$ ]]; then
-            echo "::error::Expected a repository slug in owner/repository form."
-            exit 1
-          fi
-          printf 'owner=%s\nrepository=%s\n' "${REPOSITORY_SLUG%%/*}" "${REPOSITORY_SLUG#*/}" >> "$GITHUB_OUTPUT"
-
       - name: Mint production write token
         id: production_token
         uses: actions/create-github-app-token@v3
         with:
           client-id: ${{ secrets.PUBLISH_APP_ID }}
           private-key: ${{ secrets.PUBLISH_APP_PRIVATE_KEY }}
-          owner: ${{ steps.production_repo.outputs.owner }}
-          repositories: ${{ steps.production_repo.outputs.repository }}
+          owner: ${{ steps.select_target.outputs.owner }}
+          repositories: ${{ steps.select_target.outputs.repository }}
           permission-contents: write
 
       - name: Promote artifact to production repository
         shell: bash
         env:
-          PREVIEW_HOST_REPO: ${{ vars.PREVIEW_HOST_REPO }}
+          PREVIEW_REPO: ${{ steps.preview_repo.outputs.slug }}
           PRODUCTION_TOKEN: ${{ steps.production_token.outputs.token }}
-          TARGET_REPO: ${{ steps.select_target.outputs.target_repo }}
+          TARGET_REPO: ${{ steps.select_target.outputs.slug }}
+          TARGET_SUBPATH: ${{ steps.select_target.outputs.subpath }}
           SITE_LABEL: ${{ steps.select_target.outputs.site_label }}
           ARTIFACT_DIR: ${{ steps.artifact.outputs.artifact_dir }}
           ARTIFACT_PATH: ${{ steps.select_target.outputs.artifact_path }}
@@ -233,26 +236,12 @@ jobs:
             exit 1
           fi
 
-          rsync -a --delete \
-            --exclude=".git/" \
-            --exclude="CNAME" \
-            --exclude=".nojekyll" \
-            --exclude="_config.yml" \
-            --exclude=".github/" \
-            --exclude="google*.html" \
-            --exclude="netlify.toml" \
-            "${ARTIFACT_DIR}/" "${prod_dir}/"
-
-          protected_status="$(git -C "${prod_dir}" status --short -- CNAME .nojekyll _config.yml .github ':(glob)google*.html')"
-          if [[ -n "${protected_status}" ]]; then
-            echo "::error::Promotion attempted to modify protected production paths:"
-            printf '%s\n' "${protected_status}"
-            exit 1
-          fi
+          source .github/scripts/parse_target.sh
+          replace_site "$ARTIFACT_DIR" "$prod_dir" "$TARGET_SUBPATH"
 
           git -C "${prod_dir}" config user.name "github-actions[bot]"
           git -C "${prod_dir}" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C "${prod_dir}" add -A
+          git -C "${prod_dir}" add --all -- "${TARGET_SUBPATH:-.}"
 
           if [[ -z "$(git -C "${prod_dir}" status --porcelain)" ]]; then
             echo "No production changes to promote for ${SITE_LABEL}."
@@ -262,7 +251,7 @@ jobs:
 
           git -C "${prod_dir}" commit -m "Promote PR #${PR_NUMBER} (${SHORT_SHA}) to ${SITE_LABEL} production" \
             -m "Source SHA: ${CURRENT_HEAD_SHA}" \
-            -m "Artifact: ${PREVIEW_HOST_REPO}:${ARTIFACT_PATH}"
+            -m "Artifact: ${PREVIEW_REPO}:${ARTIFACT_PATH}"
 
           git -C "${prod_dir}" push origin "HEAD:${default_branch}"
 

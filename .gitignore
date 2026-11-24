@@ -4,3 +4,4 @@ _staging/
 vendor/
 .DS_Store
 .jekyll-cache/
+/.github/scripts/__pycache__/

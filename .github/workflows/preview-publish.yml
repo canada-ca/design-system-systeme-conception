@@ -127,14 +127,13 @@ jobs:
         id: preview_repo
         shell: bash
         env:
-          REPOSITORY_SLUG: ${{ vars.PREVIEW_HOST_REPO }}
+          PREVIEW_HOST_REPO: ${{ vars.PREVIEW_HOST_REPO }}
         run: |
           set -euo pipefail
-          if [[ ! "${REPOSITORY_SLUG}" =~ ^[A-Za-z0-9-]+/[A-Za-z0-9_.-]+$ ]]; then
-            echo "::error::Expected a repository slug in owner/repository form."
-            exit 1
-          fi
-          printf 'owner=%s\nrepository=%s\n' "${REPOSITORY_SLUG%%/*}" "${REPOSITORY_SLUG#*/}" >> "$GITHUB_OUTPUT"
+          source .github/scripts/parse_target.sh
+          parse_preview_target "${PREVIEW_HOST_REPO}"
+          printf 'owner=%s\nrepository=%s\nslug=%s\nen_dir=%s\nfr_dir=%s\n' \
+            "${TARGET_REPO%%/*}" "${TARGET_REPO#*/}" "$TARGET_REPO" "$EN_DIR" "$FR_DIR" >> "$GITHUB_OUTPUT"
 
       - name: Mint preview host token
         id: preview-token
@@ -148,7 +147,7 @@ jobs:
       - name: Check out preview host
         uses: actions/checkout@v7
         with:
-          repository: ${{ vars.PREVIEW_HOST_REPO }}
+          repository: ${{ steps.preview_repo.outputs.slug }}
           ref: main
           token: "${{ steps.preview-token.outputs.token }}"
           path: preview-host
@@ -156,15 +155,21 @@ jobs:
 
       - name: Copy preview and production-config artifacts
         env:
+          EN_DIR: ${{ steps.preview_repo.outputs.en_dir }}
+          FR_DIR: ${{ steps.preview_repo.outputs.fr_dir }}
           PR_NUMBER: "${{ steps.metadata.outputs.pr_number }}"
           SHORT_SHA: "${{ steps.metadata.outputs.short_sha }}"
         run: |
-          en_preview="preview-host/design-system/pr-preview/pr-${PR_NUMBER}"
-          fr_preview="preview-host/systeme-conception/pr-preview/pr-${PR_NUMBER}"
-          en_prod="preview-host/design-system/prod-artifact/pr-${PR_NUMBER}/${SHORT_SHA}"
-          fr_prod="preview-host/systeme-conception/prod-artifact/pr-${PR_NUMBER}/${SHORT_SHA}"
+          en_preview="preview-host/${EN_DIR}/pr-preview/pr-${PR_NUMBER}"
+          fr_preview="preview-host/${FR_DIR}/pr-preview/pr-${PR_NUMBER}"
+          en_prod="preview-host/${EN_DIR}/prod-artifact/pr-${PR_NUMBER}/${SHORT_SHA}"
+          fr_prod="preview-host/${FR_DIR}/prod-artifact/pr-${PR_NUMBER}/${SHORT_SHA}"
 
-          rm -rf "${en_preview}" "${fr_preview}" "${en_prod}" "${fr_prod}"
+          source .github/scripts/parse_target.sh
+          for path in "$en_preview" "$fr_preview" "$en_prod" "$fr_prod"; do
+            check_checkout_path preview-host "${path#preview-host/}"
+          done
+          rm -rf -- "${en_preview}" "${fr_preview}" "${en_prod}" "${fr_prod}"
           mkdir -p "${en_preview}" "${en_preview}/${SHORT_SHA}" "${fr_preview}" "${fr_preview}/${SHORT_SHA}" "${en_prod}" "${fr_prod}"
 
           cp -a "artifacts/staging-en/." "${en_preview}/"
@@ -178,12 +183,14 @@ jobs:
       - name: Commit and push preview host changes
         working-directory: preview-host
         env:
+          EN_DIR: ${{ steps.preview_repo.outputs.en_dir }}
+          FR_DIR: ${{ steps.preview_repo.outputs.fr_dir }}
           PR_NUMBER: "${{ steps.metadata.outputs.pr_number }}"
           SHORT_SHA: "${{ steps.metadata.outputs.short_sha }}"
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ".nojekyll" "design-system/pr-preview/pr-${PR_NUMBER}" "systeme-conception/pr-preview/pr-${PR_NUMBER}" "design-system/prod-artifact/pr-${PR_NUMBER}/${SHORT_SHA}" "systeme-conception/prod-artifact/pr-${PR_NUMBER}/${SHORT_SHA}"
+          git add -- ".nojekyll" "${EN_DIR}/pr-preview/pr-${PR_NUMBER}" "${FR_DIR}/pr-preview/pr-${PR_NUMBER}" "${EN_DIR}/prod-artifact/pr-${PR_NUMBER}/${SHORT_SHA}" "${FR_DIR}/prod-artifact/pr-${PR_NUMBER}/${SHORT_SHA}"
 
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Publish PR ${PR_NUMBER} preview ${SHORT_SHA}"
@@ -198,10 +205,10 @@ jobs:
           PR_NUMBER: "${{ steps.metadata.outputs.pr_number }}"
           REPOSITORY: "${{ github.repository }}"
           PR_HEAD_SHA: "${{ steps.metadata.outputs.head_sha }}"
-          PREVIEW_HOST_REPO: ${{ vars.PREVIEW_HOST_REPO }}
+          PREVIEW_REPO: ${{ steps.preview_repo.outputs.slug }}
         run: |
-          owner="${PREVIEW_HOST_REPO%%/*}"
-          repository="${PREVIEW_HOST_REPO#*/}"
+          owner="${PREVIEW_REPO%%/*}"
+          repository="${PREVIEW_REPO#*/}"
           preview_url="https://${owner,,}.github.io"
           if [[ "${repository,,}" != "${owner,,}.github.io" ]]; then
             preview_url="${preview_url}/${repository}"
@@ -214,6 +221,8 @@ jobs:
               --repo "${REPOSITORY}" \
               --sha "${PR_HEAD_SHA}" \
               --preview-host "${preview_url}" \
+              --en-dir="$EN_DIR" \
+              --fr-dir="$FR_DIR" \
               --staging-en "artifacts/staging-en" \
               --staging-fr "artifacts/staging-fr" > block.md
 
