@@ -1,0 +1,164 @@
+# Repository variables: none
+# Repository secrets: none (also uses the automatic GITHUB_TOKEN)
+
+name: Build PR preview
+
+"on":
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: "preview-build-pr-${{ github.event.pull_request.number }}"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: build
+    if: "${{ startsWith(github.head_ref, 'content/') || startsWith(github.head_ref, 'hotfix/') || startsWith(github.head_ref, 'feat/') }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out PR head
+        uses: actions/checkout@v7
+        with:
+          repository: "${{ github.event.pull_request.head.repo.full_name }}"
+          ref: "${{ github.event.pull_request.head.sha }}"
+          persist-credentials: false
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "4.0.4"
+          bundler-cache: true
+
+      - name: Build staging preview
+        env:
+          JEKYLL_ENV: staging
+          PR_NUMBER: "${{ github.event.pull_request.number }}"
+        run: bundle exec rake staging
+
+      - name: Build production-config artifact
+        run: bundle exec rake build
+
+      - name: Enforce English config delta
+        env:
+          PR_NUMBER: "${{ github.event.pull_request.number }}"
+        run: |
+          python3 .github/scripts/config_delta_gate.py \
+            --staging "_staging/design-system/en" \
+            --production "_site/en" \
+            --baseurl "/design-system/pr-preview/pr-${PR_NUMBER}"
+
+      - name: Enforce French config delta
+        env:
+          PR_NUMBER: "${{ github.event.pull_request.number }}"
+        run: |
+          python3 .github/scripts/config_delta_gate.py \
+            --staging "_staging/systeme-conception/fr" \
+            --production "_site/fr" \
+            --baseurl "/systeme-conception/pr-preview/pr-${PR_NUMBER}"
+
+      - name: Compute preview metadata
+        id: sha
+        env:
+          PR_NUMBER: "${{ github.event.pull_request.number }}"
+          PR_HEAD_SHA: "${{ github.event.pull_request.head.sha }}"
+        run: |
+          short_sha="${PR_HEAD_SHA::7}"
+          printf 'short-sha=%s\n' "${short_sha}" >> "${GITHUB_OUTPUT}"
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          metadata = {
+              "pr_number": int(os.environ["PR_NUMBER"]),
+              "head_sha": os.environ["PR_HEAD_SHA"],
+              "short_sha": os.environ["PR_HEAD_SHA"][:7],
+          }
+          Path("metadata.json").write_text(json.dumps(metadata, separators=(",", ":")) + "\n")
+          PY
+
+      - name: Upload preview metadata artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: preview-metadata
+          path: metadata.json
+          if-no-files-found: error
+
+      - name: Upload staging English artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: staging-en
+          path: _staging/design-system/en/
+          if-no-files-found: error
+
+      - name: Upload staging French artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: staging-fr
+          path: _staging/systeme-conception/fr/
+          if-no-files-found: error
+
+      - name: Upload production-config English artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: prod-config-en
+          path: _site/en/
+          if-no-files-found: error
+
+      - name: Upload production-config French artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: prod-config-fr
+          path: _site/fr/
+          if-no-files-found: error
+
+  route-fallthrough:
+    name: route fallthrough
+    if: "${{ !startsWith(github.head_ref, 'content/') && !startsWith(github.head_ref, 'hotfix/') && !startsWith(github.head_ref, 'feat/') && !startsWith(github.head_ref, 'dependabot/') }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Comment with routing decision
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const marker = '<!-- routing-fallthrough -->';
+            const branch = context.payload.pull_request.head.ref;
+            const body = `${marker}
+            Branch \`${branch}\` does not match a routed prefix (\`content/\`, \`hotfix/\`, \`feat/\`), so no preview will be published and no promotion path applies.`;
+
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner,
+              repo,
+              issue_number,
+              per_page: 100,
+            });
+            const existing = comments.find((comment) => comment.body?.includes(marker));
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner,
+                repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number,
+                body,
+              });
+            }

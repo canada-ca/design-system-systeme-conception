@@ -1,0 +1,80 @@
+# Repository variables: vars.PREVIEW_HOST_REPO
+# Repository secrets: secrets.PUBLISH_APP_ID, secrets.PUBLISH_APP_PRIVATE_KEY
+
+name: Clean up PR preview
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  cleanup:
+    name: cleanup
+    if: "${{ startsWith(github.head_ref, 'content/') || startsWith(github.head_ref, 'hotfix/') || startsWith(github.head_ref, 'feat/') }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions: {}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Read preview host repository
+        id: preview_repo
+        shell: bash
+        env:
+          REPOSITORY_SLUG: ${{ vars.PREVIEW_HOST_REPO }}
+        run: |
+          set -euo pipefail
+          if [[ ! "${REPOSITORY_SLUG}" =~ ^[A-Za-z0-9-]+/[A-Za-z0-9_.-]+$ ]]; then
+            echo "::error::Expected a repository slug in owner/repository form."
+            exit 1
+          fi
+          printf 'owner=%s\nrepository=%s\n' "${REPOSITORY_SLUG%%/*}" "${REPOSITORY_SLUG#*/}" >> "$GITHUB_OUTPUT"
+
+      - name: Mint preview host token
+        id: preview-token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: "${{ secrets.PUBLISH_APP_ID }}"
+          private-key: "${{ secrets.PUBLISH_APP_PRIVATE_KEY }}"
+          owner: ${{ steps.preview_repo.outputs.owner }}
+          repositories: ${{ steps.preview_repo.outputs.repository }}
+
+      - name: Check out preview host
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ vars.PREVIEW_HOST_REPO }}
+          ref: main
+          token: "${{ steps.preview-token.outputs.token }}"
+          path: preview-host
+          persist-credentials: true
+
+      - name: Delete preview and production-config paths
+        working-directory: preview-host
+        env:
+          PR_NUMBER: "${{ github.event.pull_request.number }}"
+        run: |
+          rm -rf \
+            "design-system/pr-preview/pr-${PR_NUMBER}" \
+            "systeme-conception/pr-preview/pr-${PR_NUMBER}" \
+            "design-system/prod-artifact/pr-${PR_NUMBER}" \
+            "systeme-conception/prod-artifact/pr-${PR_NUMBER}"
+
+      - name: Commit and push cleanup
+        working-directory: preview-host
+        env:
+          PR_NUMBER: "${{ github.event.pull_request.number }}"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Clean up PR ${PR_NUMBER} preview"
+            git push origin main
+          else
+            echo "No preview host paths exist for PR ${PR_NUMBER}."
+          fi

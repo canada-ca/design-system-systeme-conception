@@ -1,0 +1,208 @@
+# Repository variables: vars.PUBLISH_REPO_EN, vars.PUBLISH_REPO_FR
+# Repository secrets: secrets.PUBLISH_APP_ID, secrets.PUBLISH_APP_PRIVATE_KEY
+
+name: Deploy merged Dependabot updates
+
+on:
+  pull_request:
+    types:
+      - closed
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  deploy:
+    name: Build and deploy Dependabot merge
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    if: >-
+      github.event.pull_request.merged == true &&
+      (github.actor == 'dependabot[bot]' || github.event.pull_request.user.login == 'dependabot[bot]')
+    steps:
+      - name: Check out merge commit
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "4.0.4"
+          bundler-cache: true
+
+      - name: Build production-config site
+        shell: bash
+        env:
+          JEKYLL_ENV: production
+        run: |
+          set -euo pipefail
+
+          bundle exec rake build
+          test -d "_site/en"
+          test -d "_site/fr"
+
+      - name: Read English production repository
+        id: production_repo_en
+        shell: bash
+        env:
+          REPOSITORY_SLUG: ${{ vars.PUBLISH_REPO_EN }}
+        run: |
+          set -euo pipefail
+          if [[ ! "${REPOSITORY_SLUG}" =~ ^[A-Za-z0-9-]+/[A-Za-z0-9_.-]+$ ]]; then
+            echo "::error::Expected a repository slug in owner/repository form."
+            exit 1
+          fi
+          printf 'owner=%s\nrepository=%s\n' "${REPOSITORY_SLUG%%/*}" "${REPOSITORY_SLUG#*/}" >> "$GITHUB_OUTPUT"
+
+      - name: Mint English production write token
+        id: production_token_en
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.PUBLISH_APP_ID }}
+          private-key: ${{ secrets.PUBLISH_APP_PRIVATE_KEY }}
+          owner: ${{ steps.production_repo_en.outputs.owner }}
+          repositories: ${{ steps.production_repo_en.outputs.repository }}
+          permission-contents: write
+
+      - name: Read French production repository
+        id: production_repo_fr
+        shell: bash
+        env:
+          REPOSITORY_SLUG: ${{ vars.PUBLISH_REPO_FR }}
+        run: |
+          set -euo pipefail
+          if [[ ! "${REPOSITORY_SLUG}" =~ ^[A-Za-z0-9-]+/[A-Za-z0-9_.-]+$ ]]; then
+            echo "::error::Expected a repository slug in owner/repository form."
+            exit 1
+          fi
+          printf 'owner=%s\nrepository=%s\n' "${REPOSITORY_SLUG%%/*}" "${REPOSITORY_SLUG#*/}" >> "$GITHUB_OUTPUT"
+
+      - name: Mint French production write token
+        id: production_token_fr
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.PUBLISH_APP_ID }}
+          private-key: ${{ secrets.PUBLISH_APP_PRIVATE_KEY }}
+          owner: ${{ steps.production_repo_fr.outputs.owner }}
+          repositories: ${{ steps.production_repo_fr.outputs.repository }}
+          permission-contents: write
+
+      - name: Deploy language subtrees
+        shell: bash
+        env:
+          PRODUCTION_TOKEN_EN: ${{ steps.production_token_en.outputs.token }}
+          PRODUCTION_TOKEN_FR: ${{ steps.production_token_fr.outputs.token }}
+          PUBLISH_REPO_EN: ${{ vars.PUBLISH_REPO_EN }}
+          PUBLISH_REPO_FR: ${{ vars.PUBLISH_REPO_FR }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          MERGE_SHA: ${{ github.event.pull_request.merge_commit_sha }}
+        run: |
+          set -euo pipefail
+
+          short_sha="${MERGE_SHA:0:7}"
+          push_list="${RUNNER_TEMP}/dependabot-push-list"
+          mkdir -p "${push_list}"
+
+          append_manifest_summary() {
+            local manifest="$1"
+            local site_label="$2"
+            local total_lines
+            total_lines="$(wc -l < "${manifest}" | tr -d ' ')"
+            {
+              echo "### ${site_label} deployment manifest"
+              echo
+              echo '```text'
+              sed -n '1,200p' "${manifest}"
+              if (( total_lines > 200 )); then
+                echo "... truncated in summary; full manifest was generated at ${manifest}"
+              fi
+              echo '```'
+            } >> "${GITHUB_STEP_SUMMARY}"
+          }
+
+          stage_language() {
+            local language="$1"
+            local target_repo="$2"
+            local source_dir="$3"
+            local site_label="$4"
+            local production_token="$5"
+            local prod_dir="${RUNNER_TEMP}/dependabot-production-${language}"
+
+            if [[ ! -d "${source_dir}" ]]; then
+              echo "::error::Expected build output '${source_dir}' does not exist."
+              exit 1
+            fi
+
+            git clone --depth 1 "https://x-access-token:${production_token}@github.com/${target_repo}.git" "${prod_dir}"
+            local default_branch
+            default_branch="$(git -C "${prod_dir}" branch --show-current)"
+            if [[ -z "${default_branch}" ]]; then
+              echo "::error::Could not determine default branch for ${target_repo}."
+              exit 1
+            fi
+
+            local manifest="${RUNNER_TEMP}/dependabot-${language}-manifest.txt"
+            {
+              echo "source_repository=${GITHUB_REPOSITORY}"
+              echo "source_commit=${MERGE_SHA}"
+              echo "source_path=${source_dir}"
+              echo "target_repository=${target_repo}"
+              echo "protected_paths:"
+              printf '  - %s\n' "CNAME" ".nojekyll" "_config.yml" ".github/" "google*.html"
+              echo "excluded_from_promotion:"
+              printf '  - %s\n' "netlify.toml"
+              echo "copied_paths:"
+              (cd "${source_dir}" && find . -mindepth 1 -print | sed 's#^\./#  - #' | sort)
+            } > "${manifest}"
+
+            rsync -a --delete \
+              --exclude=".git/" \
+              --exclude="CNAME" \
+              --exclude=".nojekyll" \
+              --exclude="_config.yml" \
+              --exclude=".github/" \
+              --exclude="google*.html" \
+              --exclude="netlify.toml" \
+              "${source_dir}/" "${prod_dir}/"
+
+            local protected_status
+            protected_status="$(git -C "${prod_dir}" status --short -- CNAME .nojekyll _config.yml .github ':(glob)google*.html')"
+            if [[ -n "${protected_status}" ]]; then
+              echo "::error::Dependabot deploy attempted to modify protected production paths for ${target_repo}:"
+              printf '%s\n' "${protected_status}"
+              exit 1
+            fi
+
+            git -C "${prod_dir}" config user.name "github-actions[bot]"
+            git -C "${prod_dir}" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git -C "${prod_dir}" add -A
+
+            if [[ -z "$(git -C "${prod_dir}" status --porcelain)" ]]; then
+              echo "No production changes to deploy for ${site_label}."
+              append_manifest_summary "${manifest}" "${site_label}"
+              return
+            fi
+
+            git -C "${prod_dir}" commit -m "Deploy Dependabot PR #${PR_NUMBER} (${short_sha}) to ${site_label} production" \
+              -m "Source SHA: ${MERGE_SHA}" \
+              -m "Build command: bundle exec rake build"
+
+            {
+              printf 'prod_dir=%q\n' "${prod_dir}"
+              printf 'default_branch=%q\n' "${default_branch}"
+            } > "${push_list}/${language}.env"
+
+            append_manifest_summary "${manifest}" "${site_label}"
+          }
+
+          stage_language "en" "${PUBLISH_REPO_EN}" "_site/en" "English" "${PRODUCTION_TOKEN_EN}"
+          stage_language "fr" "${PUBLISH_REPO_FR}" "_site/fr" "French" "${PRODUCTION_TOKEN_FR}"
+
+          for target in "${push_list}"/*.env; do
+            [[ -e "${target}" ]] || continue
+            # shellcheck disable=SC1090
+            source "${target}"
+            git -C "${prod_dir}" push origin "HEAD:${default_branch}"
+          done
